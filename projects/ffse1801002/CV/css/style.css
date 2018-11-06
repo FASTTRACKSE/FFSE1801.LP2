@@ -1,0 +1,557 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: arial;
+}
+td {
+  vertical-align: top;
+}
+/*------------------------------------*/
+@font-face {
+  font-family: uvnmaychu;
+  src: url(../fonts/UVNMayChuP_B.TTF);
+}
+.mobi {
+  color: #333333;
+  padding-top: 10rem;
+  font-size: 100px;
+  font-family: uvnmaychu;
+}
+/*------------------------------------*/
+.nav1 {
+  position: relative;
+  background-image: url("../img/b1.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.nav1-1 {
+  position: absolute;
+  color: #ffffff;
+  top: 35%;
+  left: 29%;
+}
+.nav1-1 b {
+  font-size: 75px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.nav1-1 p {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Expletus Sans", cursive;
+}
+.nav1-1 b i {
+  font-size: 13px;
+  color: #00ccff;
+}
+.nav1 a {
+  margin-top: 32%;
+  font-size: 60px;
+  text-align: center;
+  display: block;
+  color: #cccccc;
+}
+.nav1 a i:hover {
+  color: #00ccff;
+}
+/*------------------------------------*/
+.nav2 {
+  position: fixed;
+  display: none;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 1px 1px 13px 2px #cccccc;
+}
+.nav2 div a img {
+  padding-left: 10%;
+  float: left;
+  width: 293px;
+}
+.nav2 ul {
+  padding-left: 41.66%;
+  padding-top: 0;
+}
+.nav2 ul li {
+  list-style-type: none;
+}
+.nav2 ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
+  color: #000000;
+  display: block;
+  float: left;
+  transition: 0.8s;
+}
+.nav2 ul li a:hover {
+  color: #00ccff;
+  box-shadow: 1px 1px 10px 3px #aaaaaa;
+}
+.clearfix {
+  display: block;
+  clear: both;
+  content: " ";
+}
+/*------------------------------------*/
+.nav2-1 {
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 1px 1px 13px 2px #cccccc;
+}
+.nav2-1 div a img {
+  padding-left: 10%;
+  float: left;
+  width: 293px;
+}
+.nav2-1 ul {
+  padding-left: 41.66%;
+  padding-top: 1px;
+}
+.nav2-1 ul li {
+  list-style-type: none;
+}
+.nav2-1 ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
+  color: #000000;
+  display: block;
+  float: left;
+  transition: 0.8s;
+}
+.nav2-1 ul li a:hover {
+  color: #00ccff;
+  box-shadow: 1px 1px 10px 3px #aaaaaa;
+}
+/*------------------------------------*/
+.nav3 {
+  color: #000000;
+  padding-left: 10%;
+  padding-top: 6%;
+}
+.nav3 b {
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+}
+.nav3 b i {
+  font-size: 10px;
+  color: #00ccff;
+}
+.nav3-1 {
+  padding-top: 1%;
+}
+.nav3-1 img {
+  float: left;
+  width: 26%;
+  border: solid 4px #ffffff;
+  box-shadow: -18px 18px 40px -14px #2f2f2f;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.nav3-1 img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.nav3-2 {
+  float: left;
+  padding: 0 1.5%;
+}
+.nav3-2 ul {
+  display: inline;
+}
+.nav3-2 ul li {
+  width: 101%;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 4.5%;
+  padding-bottom: 4.5%;
+  padding-left: 1%;
+}
+.nav3-2 ul li h4 {
+  display: inline;
+  font-size: 1rem;
+}
+.ke {
+  padding-left: 29.5%;
+  border-top: solid 1px #cccccc;
+}
+.nav3-3 {
+  line-height: 2rem;
+  float: left;
+  display: inline;
+  width: 30%;
+  padding-left: 2%;
+}
+.nav3-3 p {
+  font-size: 15px;
+  padding: 2% 0%;
+}
+.nav3-4 {
+  clear: both;
+}
+.nav3-4 h3 {
+  padding-left: 39.5%;
+}
+.nav3-4 b {
+  font-size: 15px;
+}
+.nav3-4 table {
+  padding-left: 15%;
+  border-collapse: separate;
+}
+.nav3-4 table tr td {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+.nav3-4 table tr td i {
+  display: block;
+  color: #555555;
+  font-size: 62px;
+  padding: 33px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.nav3-4 table tr td i:hover {
+  color: #00ccff;
+  -webkit-transform: scale(1.7);
+  transform: scale(1.7);
+}
+.nav3-4 table tr td small {
+  opacity: 0;
+  line-height: 3rem;
+}
+.nav3-4 table tr td:hover small {
+  opacity: 1;
+  transition-duration: 1.5s;
+  border-bottom: solid 2px #00ccff;
+}
+.nav4 {
+  padding-left: 10%;
+  padding-top: 6%;
+  clear: both;
+}
+.nav4 b {
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+}
+.nav4 b i {
+  font-size: 10px;
+  color: #00ccff;
+}
+/*------------------------------------*/
+.nav4-1 {
+  padding-top: 1%;
+  margin: 0;
+  position: relative;
+  float: left;
+  font-size: 15px;
+  color: #777777;
+  line-height: 2em;
+  width: 750px;
+}
+#skill {
+  list-style: none;
+  padding-top: 30px;
+}
+#skill li {
+  margin-bottom: 96px;
+  background: #bbbbbb;
+  height: 7px;
+}
+#skill li p {
+  position: relative;
+  top: -36px;
+}
+.expand {
+  height: 7px;
+  background: #222222;
+  position: absolute;
+  width: 0%;
+  transition: 3s;
+}
+.nav4-2 {
+  float: left;
+  padding-left: 2%;
+}
+.nav4-2 div {
+  box-shadow: 1px 1px 13px 2px #cccccc;
+  transition: 0.5s;
+}
+.nav4-2 div:hover {
+  box-shadow: 1px 1px 13px 2px #00ccff;
+}
+.nav4-2 div p {
+  padding: 26px 44px;
+  font-size: 26px;
+  line-height: 49px;
+}
+.nav4-2 div p i {
+  padding-right: 5px;
+  color: #00ccff;
+}
+/*------------------------------------*/
+.nav5 {
+  padding-left: 10%;
+  padding-top: 6%;
+  clear: both;
+}
+.nav5 b {
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+}
+.nav5 b i {
+  font-size: 10px;
+  color: #00ccff;
+}
+.nav5 div table tr td {
+  padding: 20px;
+  width: 607px;
+}
+.nav5 div table tr td div {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 25px;
+  line-height: 30px;
+  transition: all 0.7s ease;
+}
+.nav5 div table tr td div:hover {
+  box-shadow: 0px 20px 30px -5px #cccccc;
+  transform: scale(1.04);
+}
+.nav5 div table tr td div h2 {
+  line-height: 60px;
+  color: #333333;
+}
+.nav5 div table tr td div i {
+  font-size: 40px;
+  color: #333333;
+}
+/*------------------------------------*/
+.nav6 {
+  padding-left: 10%;
+  padding-top: 6%;
+  clear: both;
+}
+.nav6 b {
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+}
+.nav6 b i {
+  font-size: 10px;
+  color: #00ccff;
+}
+.nav6-1-1 {
+  padding-top: 3%;
+}
+.nav6-1 {
+  position: relative;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  height: 500px;
+  width: 88%;
+}
+.nav6-1 div {
+  padding-left: 50px;
+  padding-right: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.nav6-1 p {
+  /*height: 10%;
+	width: 10%;*/
+}
+.sl {
+  display: none;
+}
+#prev {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 42px;
+  padding-top: 169px;
+  padding-left: 262px;
+  color: #000;
+  opacity: 0;
+}
+#next {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 42px;
+  top: 169px;
+  left: 881px;
+  color: #000;
+  opacity: 0;
+}
+.animate {
+  position: relative;
+  animation: fade 3s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*------------------------------------*/
+.nav7 {
+  padding-left: 10%;
+  padding-top: 6%;
+  clear: both;
+}
+.nav7 b {
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+}
+.nav7 b i {
+  font-size: 10px;
+  color: #00ccff;
+}
+.nav7 td {
+  text-align: center;
+  padding: 0px 20px;
+  width: 607px;
+}
+.nav7 div table {
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.nav7 div table tr td div {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 17px 25px;
+  line-height: 30px;
+  transition: all 0.7s ease;
+}
+.kt img {
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+}
+.nav7 div table tr:hover img {
+  opacity: 1;
+  box-shadow: 0px 20px 30px -5px #ccc;
+  transform: scale(1.04);
+}
+.nav7 div table tr td div h2 {
+  line-height: 60px;
+  color: #333333;
+}
+.nav7 div table tr td div i {
+  font-size: 40px;
+  color: #333333;
+}
+/*------------------------------------*/
+.nav8 {
+  position: relative;
+  padding-left: 10%;
+  padding-top: 6%;
+  clear: both;
+  background-image: url("../img/b2.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mask1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.nav8 b {
+  position: absolute;
+  color: #cccccc;
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+}
+.nav8 b i {
+  font-size: 10px;
+  color: #00ccff;
+}
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+input {
+  height: 45px;
+}
+.submit {
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+.submit:hover {
+  cursor: pointer;
+}
+.nav8-1 {
+  padding-top: 5%;
+  position: absolute;
+  padding-left: 25px;
+}
+.nav8-1-1 {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ddd;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding-left: 7px;
+}
+.cao {
+  height: 260px;
+}
+.nav8-2 {
+  float: left;
+  padding-left: 693px;
+  padding-top: 183px;
+}
+.nav8-2 i {
+  display: block;
+  font-size: 77px;
+}
+/*------------------------------------*/
+.nav9 {
+  display: none;
+  position: fixed;
+  bottom: 61px;
+  right: -1421px;
+  width: 100%;
+}
+.nav9 a {
+  font-size: 20px;
+}
+.nav9 a i {
+  color: #eeeeee;
+  font-size: 50px;
+  transform: rotate(-45deg);
+  transition: 0.8s;
+}
+.nav9 a i:hover {
+  color: #00ccff;
+}
+/*------------------------------------*/
+/*Từ khóa cần tìm
+kiếm để kéo trang scroll animation jquery*/
