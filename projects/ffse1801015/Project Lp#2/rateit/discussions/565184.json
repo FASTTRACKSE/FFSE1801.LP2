@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1299010",
+    "ThreadId": "565184",
+    "Html": "Hi\r<br />\n<br />\nJust wonder how to know if the star is rated at all?\r<br />\n<br />\nLet say that you have a form, and fills in all the required fields, and before posting you must select rate/rating the stars ??\r<br />\n<br />\nStuck here...\r<br />\n<br />\nHTML data attribute? or Jquery?\r<br />\n<br />\nCan someone help me with that?<br />\n",
+    "PostedDate": "2014-09-04T07:01:12.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1299243",
+    "ThreadId": "565184",
+    "Html": "Use the RateIt event handlers to add an attribute to the control once the control is rated or reset. On form post you can check for existence of the attribute.<br />\n",
+    "PostedDate": "2014-09-04T14:02:38.887-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

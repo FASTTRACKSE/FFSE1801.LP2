@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2011-11-08T05:08:17.753-08:00",
+    "CommentCount": 6,
+    "Custom": "",
+    "Description": "The hover/selected stars just append behind the 'grey' stars..\n \n<div style=\"text-align:right;\">\n    <div class=\"rateit\" data-rateit-value=\"2.5\"></div>\n</div>\nor test this in IE7 or IE7 compatibility mode: http://jsfiddle.net/N2Ltq/\n \n \nfix: add \"left: 0px;\" in rateit.css\ndiv.rateit div.rateit-hover, div.rateit div.rateit-selected {\n    position: absolute;\n    left: 0px; // <-- this is the fix\n}",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2011-11-08T02:36:24.873-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IE7: selected/hover stars don't overlay correctly when in text-align: right; container",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 397
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks for reporting, and sending in the fix. I will add it soon.",
+      "PostedDate": "2011-11-08T05:02:21.227-08:00",
+      "Id": 141052
+    },
+    {
+      "Message": "Resolved with changeset 13773.",
+      "PostedDate": "2011-11-08T05:08:17.753-08:00",
+      "Id": 141053
+    },
+    {
+      "Message": "Later on I will update the NuGet package.",
+      "PostedDate": "2011-11-08T05:16:19.787-08:00",
+      "Id": 141054
+    },
+    {
+      "Message": "Thanks for the fast reply and for the Nuget package! (that's the reason i chose RateIt :p)\r\n\r\nbtw: I haven't tested the fix in RTL mode.",
+      "PostedDate": "2011-11-08T05:35:27.38-08:00",
+      "Id": 141055
+    },
+    {
+      "Message": "Nuget package has been updated. (version 1.2.11)",
+      "PostedDate": "2011-11-11T02:34:04.437-08:00",
+      "Id": 141056
+    },
+    {
+      "Message": "thanks for the mention ;-)",
+      "PostedDate": "2011-11-11T03:17:25.287-08:00",
+      "Id": 141057
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "997215",
+    "ThreadId": "432176",
+    "Html": "I tried a different plugin before that replaced radio buttons with stars, and that way it was easy for me to send the value in a form ( I need to add the rating to a database)\r<br />\nThat plugin was giving me problems, so I'm trying this one which looks great, but I'm not sure how to post the rating value if there is no input. \r<br />\nCan I get a simple explanation? I'm kind of new to jQuery...\r<br />\n<br />\nThanks <br />\n",
+    "PostedDate": "2013-02-06T04:09:21.807-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "997230",
+    "ThreadId": "432176",
+    "Html": "If you want you can bind the rateit control to a hidden input field. This way when your page submits the form the values are sent to the server.  Much like how your old rating control worked. \r<br />\nPlease have a look at <a href=\"http://www.radioactivethinking.com/rateit/example/example.htm\" rel=\"nofollow\">http://www.radioactivethinking.com/rateit/example/example.htm</a>\r<br />\n<br />\nSee for example 2a and 2b, instead of using select or range you can put a hidden field. \r<br />\n<br />\nIf you want to send the rating using Ajax have a look at example #11. \r<br />\n<br />\nIf you want more info, please put up a jsfiddle and then I can help you with the code. <br />\n",
+    "PostedDate": "2013-02-06T04:35:21.237-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

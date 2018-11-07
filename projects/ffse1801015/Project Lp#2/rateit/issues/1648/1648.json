@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-08-16T23:31:28.07-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Not all browsers (IE < 9) have a window.console object available, so it's necessary to check for its existence before using it. Otherwise, you'll get an error like the following:\n\nMessage: 'console' is undefined\nLine: 134\nChar: 17\nCode: 0\nURI: /js/jquery.rateit.js\n\nThis error was observed in IE8, which _does_ have a console, but it's undefined unless the developer tools are open.",
+    "LastUpdatedDate": "2013-08-16T23:36:29.367-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-08-16T10:21:16.477-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Need to check for window.console before using it",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1648
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 31876: Removed console.log",
+      "PostedDate": "2013-08-16T23:31:28.07-07:00",
+      "Id": 141092
+    },
+    {
+      "Message": "Thanks for reporting the issue. The console.log slipped through somehow. It's fixed.",
+      "PostedDate": "2013-08-16T23:36:29.367-07:00",
+      "Id": 141093
+    }
+  ]
+}

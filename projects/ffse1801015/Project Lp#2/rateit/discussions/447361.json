@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1058012",
+    "ThreadId": "447361",
+    "Html": "I am using Rating Plugin on a page which also contains Jquery Dialog. While retrieving value it is giving following error: Error: TypeError: $(...).rateit is not a function.\r<br />\n<br />\nI have observed that if i remove dialog from page then rating plugin works fine.\r<br />\n<br />\nCan anybody suggest solution for this?<br />\n",
+    "PostedDate": "2013-06-17T21:54:26.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1058040",
+    "ThreadId": "447361",
+    "Html": "Hi Nimisha,\r<br />\n<br />\nIt seems like you have some sort of integration problem. Perhaps when adding the jQuery dialog, you also add another version of jQuery (thus overriding all registered plugins).\r<br />\nAnother issue might be that the dialog shows its content in an IFRAME, and the IFRAME did not register the rateit script reference.\r<br />\n<br />\nThis is also the reason why I closed the issue, since it is an integration problem, not specific to jQuery RateIt.\r<br />\n<br />\nIf you can post a small example of your code in jsfiddle.net, it would help us to understand the root of the problem.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2013-06-18T00:07:48.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1058123",
+    "ThreadId": "447361",
+    "Html": "I have created this fiddle <a href=\"http://jsfiddle.net/CTpkk/13/\" rel=\"nofollow\">http://jsfiddle.net/CTpkk/13/</a>. \r<br />\n<br />\nThe code works in isolation but it does not work integrated in my code.  I can send the code file for your reference, please let me know where i should attach the files.<br />\n",
+    "PostedDate": "2013-06-18T03:32:17.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

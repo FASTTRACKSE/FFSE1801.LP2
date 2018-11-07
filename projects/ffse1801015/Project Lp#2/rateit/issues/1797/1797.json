@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 6,
+    "Custom": "",
+    "Description": "There are Unicode characters for stars, https://en.wikipedia.org/wiki/Star_(glyph), and for \"delete\" too. This would make the package even lighter.",
+    "LastUpdatedDate": "2014-03-04T07:26:40.31-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-01-23T20:18:44.79-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Using Unicode characters instead of GIFs?",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1797
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Might also resolve this complaint - http://stackoverflow.com/questions/4542883/jquery-star-rating/13176213#comment31855746_13176213",
+      "PostedDate": "2014-01-23T20:19:16.727-08:00",
+      "Id": 141110
+    },
+    {
+      "Message": "Out of my head I would say that one could add a \"svg\" image as background. This would allow you to add textual elements as background.\r\n\r\nAny background, both the GIF and the SVG file could be embedded inside the CSS file (data URI), thus removing the extra image file.I will soon add an example showing this in the examples gallery.\r\n\r\nI guess your real request is to pass in a character on-the-fly. Changing the current layout system would mean a big overhaul. For a later release I might be able to create something that takes that character and builds either a canvas, or svg picture on the fly.",
+      "PostedDate": "2014-01-26T01:56:39.177-08:00",
+      "Id": 141111
+    },
+    {
+      "Message": "Associated with changeset 35795: Added example of using SVG images as background",
+      "PostedDate": "2014-01-26T05:49:35.563-08:00",
+      "Id": 141112
+    },
+    {
+      "Message": "My real request is to get rid of the image dependencies, and instead use a vector image (or character/CSS icon) to make the rating scalable at any resolution (e.g. Retina).\r\n\r\nThere's a pure CSS icon for star at http://nicolasgallagher.com/pure-css-gui-icons/demo/ (search for \"Save\").",
+      "PostedDate": "2014-02-25T06:10:29.07-08:00",
+      "Id": 141113
+    },
+    {
+      "Message": "Not having image files would ease packaging of the jquery-rating plugin for Meteor too (I saw the [issue on GitHub](https://github.com/dandv/meteor-jquery-rateit/issues/1) and would love to repackage without image files).",
+      "PostedDate": "2014-02-25T06:15:44.663-08:00",
+      "Id": 141114
+    },
+    {
+      "Message": "Currently you have two options:\r\n\r\n1) embed the image as is as a data-uri url instead of a url to a file. Then you can remove the image all together from the pack. Won't help with the Retina issue.2) Embed an SVG file into the css, then it will be fully vector and this will fix the retina issue.\r\n\r\nA black star: (copied from http://upload.wikimedia.org/wikipedia/commons/1/18/Five-pointed_star.svg)\r\n\r\n\r\n\r\n\r\nI might in a future update, change the gif file, and move to svg only.",
+      "PostedDate": "2014-03-04T07:26:40.31-08:00",
+      "Id": 141115
+    }
+  ]
+}

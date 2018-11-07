@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "544414",
+    "ThreadId": "240598",
+    "Html": "\r\n<p>Awesome plugin.&nbsp; Easy to implement even for non-javascript people like myself.&nbsp; That said, I have a javascript question.&nbsp; Don't understand why I'm getting the error: $(&quot;#rateit9&quot;).rateit is not a function.&nbsp; I know you mentioned there\r\n was the rated, reset and hover events that are built in.&nbsp; I've got the reference to the js script at the bottom of my page, with the attempts to call $('#rateit9').rateit('value', 3) in the code above it.&nbsp; What am I missing?</p>\r\n",
+    "PostedDate": "2011-01-05T09:41:26.817-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "544437",
+    "ThreadId": "240598",
+    "Html": "\r\n<p>Figured out the answer to my own question.&nbsp; I'm using Telerik controls on the page and had to register the jquery.rateit.js file in ScriptRegistrar.&nbsp; Thanks.&nbsp; The plugin is totally Rad!</p>\r\n",
+    "PostedDate": "2011-01-05T10:28:27.67-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "544690",
+    "ThreadId": "240598",
+    "Html": "\r\n<p>Thanks!</p>\r\n",
+    "PostedDate": "2011-01-06T01:01:14.3-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "613869",
+    "ThreadId": "240598",
+    "Html": "<p>I think the rateit function should be called once the document is ready.</p>\r\n<p>The last part of the code in the plugin should be (in the min version)</p>\r\n<pre><pre>i(<span style=\"color: blue;\">function</span>(){i(<span style=\"color: #a31515;\">\"div.rateit\"</span>).rateit();});\r\n</pre>\r\n</pre>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2011-05-17T05:21:20.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "626303",
+    "ThreadId": "240598",
+    "Html": "<p>Hi row1,</p>\r\n<p>The whole thing (including that line), is only called once the document is ready.</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2011-06-11T01:40:47.55-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

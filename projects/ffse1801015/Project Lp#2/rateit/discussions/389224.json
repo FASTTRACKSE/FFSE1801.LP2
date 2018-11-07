@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "892020",
+    "ThreadId": "389224",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I working on incorporating your plugin and noticed the following issue:</p>\r\n<p>when i call&nbsp;</p>\r\n<p><span>$(</span>'#my-rating'<span>).rateit({ </span>'readonly'<span>: </span><span>true</span><span>,\r\n</span>'value'<span>: 3});&nbsp;</span></p>\r\n<p><span>for this&nbsp;</span></p>\r\n<p><span>&lt;</span><span>div</span><span> </span><span>id</span><span>=</span>&quot;my-rating&quot;<span>&gt;&lt;/</span><span>div</span><span>&gt;</span></p>\r\n<p>the plugin does not set the value. I believe the issue is on line 83:</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;itemdata(<span>'value'</span>, itemdata(<span>'value'</span>) || options.<strong><span style=\"color:#ff0000\">min</span></strong>);</p>\r\n<p>when it's supposed to be&nbsp;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;itemdata(<span>'value'</span>, itemdata(<span>'value'</span>) || options.<strong><span style=\"color:#ff0000\">value</span></strong>);</p>\r\n<p>Thanks</p>\r\n<p>-Alex</p>\r\n",
+    "PostedDate": "2012-07-26T17:11:54.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "892509",
+    "ThreadId": "389224",
+    "Html": "<p>Hi Alex,&nbsp;</p>\r\n<p>I'll have a look at it asap.</p>\r\n<p>regards,<br />Gidon</p>",
+    "PostedDate": "2012-07-28T02:27:10.993-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "892514",
+    "ThreadId": "389224",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://rateit.codeplex.com/workitem/729\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2012-07-28T02:51:32.56-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "892515",
+    "ThreadId": "389224",
+    "Html": "<p>Fixed</p>",
+    "PostedDate": "2012-07-28T02:59:00.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "893138",
+    "ThreadId": "389224",
+    "Html": "<p>Thanks a lot. Very useful control and easy to use!</p>",
+    "PostedDate": "2012-07-30T09:34:10.943-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

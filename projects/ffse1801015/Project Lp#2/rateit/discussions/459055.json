@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1098954",
+    "ThreadId": "459055",
+    "Html": "Hi, Thanks for the wonderful plugin. I need some help on how I can retrieve and show these stars on retrieval of stored data. When I store and retrieve back.<br />\n<br />\nThanks in advance. :)<br />\n",
+    "PostedDate": "2013-09-25T03:25:09.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1109005",
+    "ThreadId": "459055",
+    "Html": "Sorry for the late reply. Vacation got in between. I'm not completely sure what did you mean with your question. If your question has to do with the actual storage of the ratings , this is client side code only so the storage is out of its scope. If that\r<br />\n doesn't answer your question please let me know. Gidon<br />\n",
+    "PostedDate": "2013-10-17T18:03:05.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

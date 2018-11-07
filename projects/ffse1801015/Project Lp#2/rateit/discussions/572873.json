@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1325072",
+    "ThreadId": "572873",
+    "Html": "Use on MODX lexrating that runs on jquery.rateit.js\r<br />\nIn the derivation of rating results in the categories of goods - this code is displayed<br />\n<pre><code>&lt;div id=&quot;rateit-range-2&quot; class=&quot;rateit-range&quot; tabindex=&quot;0&quot; role=&quot;slider&quot; aria-label=&quot;rating&quot; aria-owns=&quot;rateit-reset-2&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;5&quot; aria-valuenow=&quot;1.83333333333&quot; aria-readonly=&quot;true&quot; style=&quot;width: 80px; height: 16px;&quot;&gt;\n  &lt;div class=&quot;rateit-selected&quot; style=&quot;height: 16px; width: 29.33333333328px;&quot;&gt;&lt;/div&gt;\n  &lt;div class=&quot;rateit-hover&quot; style=&quot;height: 16px;&quot;&gt;&lt;/div&gt;\n&lt;/div&gt;\n</code></pre>\n\nBut when there is a Ajax  filtering product or Ajax pagination, stars n evyvodyatsya, and the code becomes:<br />\n<pre><code>&lt;div data-objectid=&quot;11&quot; data-rateit-value=&quot;1.83333333333&quot; class=&quot;rateit&quot; id=&quot;articles8_8&quot; data-rateit-readonly=&quot;true&quot;&gt;\n&lt;/div&gt;</code></pre>\n\nHow do I get a script with Ajax reload the page?<br />\n",
+    "PostedDate": "2014-11-22T09:53:46.747-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1486730",
+    "ThreadId": "572873",
+    "Html": "webgefest:\r<br />\nDid you get any fix for this issue?<br />\n",
+    "PostedDate": "2016-10-23T22:18:23.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

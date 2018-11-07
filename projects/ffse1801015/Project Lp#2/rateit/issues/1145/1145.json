@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-10-20T02:48:17.733-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Thanks again. I have been testing it and it seems to work but with jQuery mobile, it actually does show the slider and the stars. So I had to put a  around the slider and hide it. has this bug been reported before?",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2012-10-20T02:27:38.96-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "jQuery Mobile support",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1145
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Not a rateit bug. Needs to add data-role=\"none\" to input element, so that jQuery mobile doesn't enhance it:\r\n\n\r\n \r\n\n\r\ninput type=\"range\" id=\"test\" data-role=\"none\" max=\"5\"/>\r\n\n\r\ndiv class=\"rateit\" data-rateit-backingfld=\"#test\">div>\r\n",
+      "PostedDate": "2012-10-20T02:48:17.733-07:00",
+      "Id": 141076
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2014-01-26T06:02:54.837-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Is that possible configure or customize the code to open some __confirmation__ dialog __before__ do a __rate__?\n\n__My code for rate is below:__\n\n\n        $('.ratingContainer .rateit')\n\t\t.rateit({ max:5, step: 1 , min:0 })\n\t\t.bind('rated reset', function (e) \n\t\t{\n\n\t\t     var ri = $(this);\n\t\t     var voteValue = ri.rateit('value');\n\t\t     var localID = ri.data('productid');\n\t\t     var localName = ri.data('productname');\n\n\t\t     ri.rateit('readonly', false);\n\n\t\t     $.ajax({\n\t\t         url: 'rate.php',\n\t\t         data: { localID: localID, voteValue: voteValue, localName: localName },\n\t\t         type: 'POST',\n\t\t         success: function (data) {\n\t\t            $('#responseRate'+localID).show();\n\t\t         }\t             \n\t\t     });\n\t\t});",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-01-26T01:03:26.993-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Confirmation before do a rate",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 1801
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 35796: * Added beforerated and beforereset events, which are cancellable.\n* Added example demonstrating this",
+      "PostedDate": "2014-01-26T06:02:54.837-08:00",
+      "Id": 141116
+    }
+  ]
+}

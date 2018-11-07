@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1002057",
+    "ThreadId": "433329",
+    "Html": "I read through the previous discussions about populating simple hidden input fields (by using the built-in data-rateit-backingfld=&quot;#ID&quot; functionality), but I'm struggling to get my Javascript to auto-populate a hidden radio input, which has separate IDs for each choice. Here's a JSfiddle example, with my custom javascript that's supposed to populate the radios in realtime at the bottom. Any ideas how to make this work, or will I need to switch to single ID input fields (like a hidden number input)? <br />\n<br />\n<a href=\"http://jsfiddle.net/YHqQX/3\" rel=\"nofollow\">http://jsfiddle.net/YHqQX/3</a><br />\n",
+    "PostedDate": "2013-02-15T15:18:50.787-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1002059",
+    "ThreadId": "433329",
+    "Html": "Answered my own question with the help of a friend. Basically I was trying to append the value to the variable name before the star was clicked, and I was using &quot;selected&quot; instead of &quot;checked.&quot; Here's a working version: \r<br />\n<br />\n<a href=\"http://jsfiddle.net/YHqQX/4/\" rel=\"nofollow\">http://jsfiddle.net/YHqQX/4/</a><br />\n",
+    "PostedDate": "2013-02-15T15:29:15.583-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1002395",
+    "ThreadId": "433329",
+    "Html": "Great!<br />\n",
+    "PostedDate": "2013-02-17T03:34:24.037-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

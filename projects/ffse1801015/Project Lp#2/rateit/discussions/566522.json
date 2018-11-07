@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1301899",
+    "ThreadId": "566522",
+    "Html": "Hmmm, so here is a very strange one. I'm using jquery .on click event of a rateit to trigger an update to an iframe. It works lovely on desktop. I click on the rateit, the stars update, and the iframe gets regenerated (it's a Google Map). However, if I try on mobile chrome, then the jquery event only gets fired if the user clicks either on the 5th star or the reset stars (-) symbol. \r<br />\n<br />\nIdeas? \r<br />\n<br />\nYou can check the page here:\r<br />\n<br />\n<a href=\"http://www.homeducate.me/en/index.htm\" rel=\"nofollow\">http://www.homeducate.me/en/index.htm</a>\r<br />\n<br />\nScroll down to the map. Click on the stars and the map updates. Try on mobile. Map doesn't update if you click on stars 1 through 4.\r<br />\n<br />\nAm I going mad?!?  :) <br />\n",
+    "PostedDate": "2014-09-06T23:40:44.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

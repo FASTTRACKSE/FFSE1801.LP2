@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1459276",
+    "ThreadId": "650040",
+    "Html": "I am trying to create a scale from -1 to 10 with the select dropdown method.<br />\nThus the default reset value should be &quot;-1&quot; and the first star to be value 0<br />\nBut reset defaults to 0 instead of -1 and the first value becomes 1 instead of 0.<br />\nPlease help.<br />\nThanks.<br />\n",
+    "PostedDate": "2016-01-14T06:23:27.393-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1459478",
+    "ThreadId": "650040",
+    "Html": "Can you post a JSFiddle?<br />\n",
+    "PostedDate": "2016-01-16T01:06:04.533-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1460825",
+    "ThreadId": "650040",
+    "Html": "Hi Gidon,\r<br />\n<br />\nPlease have a look at this jsfiddle to see what I mean:\r<br />\n<a href=\"https://jsfiddle.net/kew7gdhc/9/\" rel=\"nofollow\">https://jsfiddle.net/kew7gdhc/9/</a>\r<br />\n<br />\non load it defaults the value to &quot;-1&quot; - this is ok\r<br />\nwhen selecting the first rate item value is &quot;1&quot; - expected it to be 0\r<br />\nOn reset  the value shows &quot;0&quot; - expected -1\r<br />\n<br />\nThank you,\r<br />\nHope this is clear.\r<br />\n<br />\nCheers.<br />\n",
+    "PostedDate": "2016-01-27T00:05:37.927-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1462370",
+    "ThreadId": "650040",
+    "Html": "I see.\r<br />\n<br />\nI would suggest adding data-rateit-min=&quot;-1&quot; on your rateit div. The select box has always been a bit of an edge case, since it is not a &quot;range-control&quot;  by design. So sometimes we just have to guide rateit a little so it grabs the correct values from the select box.\r<br />\n<br />\nYou could also &quot;post&quot; calculate the correct rating. So have your select box show options 1-10, and  then afterwards correct them to the values you want.\r<br />\n<br />\nCheers,\r<br />\nGidon<br />\n",
+    "PostedDate": "2016-02-08T03:39:00.453-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1462971",
+    "ThreadId": "650040",
+    "Html": "Thanks Gidon,\r<br />\n<br />\nI shall try that out.\r<br />\n<br />\nCheers.\r<br />\n<br />\nChirag<br />\n",
+    "PostedDate": "2016-02-12T01:24:59.1-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

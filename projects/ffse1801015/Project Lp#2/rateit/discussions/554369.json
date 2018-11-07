@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1278241",
+    "ThreadId": "554369",
+    "Html": "Hi,\r<br />\n<br />\nI've been using rateit for a few days now,thanks!\r<br />\n<br />\nI just noticed there are a bunch of 0 values being submitted to my database.\r<br />\n<br />\nI want the possible values should be only 1,2,3,4,5 and I want users to be able to update their rating but not delete, so this is why I am using data-rateit-resetable=&quot;false&quot; which from the documentation seems to not display reset button:<br />\n<blockquote>\nHTML: data-rateit-resetable, JS: resetable =  when not readonly, whether to show the reset button (default: true)<br />\n</blockquote>\nThis is my HTML:<br />\n<blockquote>\n&lt;div class=&quot;rateit bigstars&quot; id=&quot;rateit-poemdetail&quot;  data-rateit-starwidth=&quot;32&quot; data-rateit-starheight=&quot;32&quot; data-rateit-step=&quot;1&quot; data-rateit-resetable=&quot;false&quot;&gt;&lt;/div&gt;<br />\n</blockquote>\nThis is my javascript:<br />\n<blockquote>\n$('#rating_wrapper .rateit').bind('rated reset', function (e) {<br />\n</blockquote>\nWhat am I doing wrong? Is it including reset in my Javascript? \r<br />\nHow are users submitting a rating of 0, I'm not able to duplicate this?\r<br />\n<br />\nThanks!<br />\n",
+    "PostedDate": "2014-07-27T19:11:52.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1278297",
+    "ThreadId": "554369",
+    "Html": "\r\n<div dir=\"ltr\">\r\n<div>I could recreate the bug by clicking on the first pixel of the rateit box. </div>\r\n<div>For now I would just add a condition to your JS that would filter these cases out.</div>\r\n<div><br>\r\n</div>\r\n<div>I'll create a bug report from this item.</div>\r\n</div>\r\n",
+    "PostedDate": "2014-07-28T01:12:27.563-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1278298",
+    "ThreadId": "554369",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"https://rateit.codeplex.com/workitem/1861\" rel=\"nofollow\">here</a> to go to the work item and continue the discussion.<br />\n",
+    "PostedDate": "2014-07-28T01:12:47.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

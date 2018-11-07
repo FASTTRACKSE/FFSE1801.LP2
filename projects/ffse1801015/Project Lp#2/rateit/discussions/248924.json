@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "577417",
+    "ThreadId": "248924",
+    "Html": "\r\n<p>Forgive me if this is obvious, but how can I get the Value of the Div and send it to my asp.Net Function so it can be saved in a DB?</p>\r\n",
+    "PostedDate": "2011-03-08T14:01:36.943-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "577737",
+    "ThreadId": "248924",
+    "Html": "<p>I guess you are using ASP.NET WebForms.</p>\r\n<p>The easiest way is to create a hidden field and bind it to the rating plugin:</p>\r\n<p><span style=\"white-space: pre;\"> <span style=\"white-space: normal;\"> </span></span><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\"><span style=\"color: #0000ff;\">&nbsp;&nbsp;&nbsp;&lt;asp:HiddenField&nbsp;ID=\"RateIt\"&nbsp;runat=\"server\"&nbsp;</span><span><span style=\"color: #0000ff;\">/&gt; </span><br /></span></span><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;</span><span>div</span>&nbsp;<span>class</span><span>=</span><span>\"rateit\"</span>&nbsp;<span><span style=\"color: #0000ff;\">data-rateit-backingfld</span></span><span style=\"color: #0000ff;\">=\"#<strong>&lt;%=&nbsp;RateIt.ClientID&nbsp;%&gt;</strong></span><span>\"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span></span></p>\r\n<p>&nbsp;</p>\r\n<p>Now whenever the rating changes, it will update the HiddenField control.</p>\r\n<p>&nbsp;</p>\r\n<hr />\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>In your code behind:</p>\r\n<pre>&nbsp;&nbsp;&nbsp;&nbsp;<span>protected</span>&nbsp;<span>void</span>&nbsp;RateIt_ValueChanged(<span>object</span>&nbsp;sender,&nbsp;<span>EventArgs</span>&nbsp;e)\r\n&nbsp;&nbsp;&nbsp;&nbsp;{\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response.Write(<span>\"NEW&nbsp;VALUE:\"</span>&nbsp;+&nbsp;RateIt.Value);\r\n&nbsp;&nbsp;&nbsp;&nbsp;}</pre>\r\n<pre><br /></pre>\r\n<pre>On your page:</pre>\r\n<pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;</span><span>asp</span><span>:</span><span>HiddenField</span>&nbsp;<span>ID</span><span>=</span><span>\"RateIt\"</span>&nbsp;<span>runat</span><span>=</span><span>\"server\"</span>&nbsp;&nbsp;<span>onvaluechanged</span><span>=</span><span>\"RateIt_ValueChanged\"</span>&nbsp;&nbsp;&nbsp;<span>/&gt;</span>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;</span><span>div</span>&nbsp;<span>class</span><span>=</span><span>\"rateit\"</span>&nbsp;<span>data-rateit-backingfld</span><span>=</span><span>\"#</span><span>&lt;%</span><span>=</span>&nbsp;RateIt.ClientID&nbsp;<span>%&gt;</span><span>\"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span></pre>\r\nExtra javascript:</pre>\r\n<pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;</span><span>script</span><span>&gt;</span>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(<span>'.rateit'</span>).bind(<span>'rated'</span>,&nbsp;<span>function</span>&nbsp;()&nbsp;{&nbsp;$(<span>this</span>).closest(<span>'form'</span>).submit();&nbsp;})\r\n&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;/</span><span>script</span><span>&gt;</span></pre>\r\n<br /></pre>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-03-09T06:25:48.533-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

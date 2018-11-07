@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "942850",
+    "ThreadId": "403512",
+    "Html": "\r\n<p>Hello my friends</p>\r\n<p>How can set default value to stars and bypass filling the stars?</p>\r\n<p>(please answer me,its very vital for me )</p>\r\n<p>( at first i said that my knowledge about jquery is very low ,please helping step by step me,many thanks ;) )</p>\r\n<p>----</p>\r\n<p>I am using your jquery in part of my codes,when i change many lines as like as this lines to comment codes ,another section of my code have problem</p>\r\n<p>&nbsp;</p>\r\n<p>sample codes&nbsp; :&nbsp; //&nbsp; if (!itemdata('readonly')) {<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //if we are not read only, add all the events</p>\r\n",
+    "PostedDate": "2012-11-16T08:56:28.413-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "942957",
+    "ThreadId": "403512",
+    "Html": "\r\n<p>I'm not sure what you mean. Please use jsfiddle to give me an example.</p>\r\n",
+    "PostedDate": "2012-11-16T11:41:21.22-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

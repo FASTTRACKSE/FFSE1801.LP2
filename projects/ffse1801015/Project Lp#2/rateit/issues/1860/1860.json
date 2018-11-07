@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "hello,\r\n\r\nThank you for your great plugin. I'm using this plugin in two ways and on the same page.\r\n\r\nI have a news page the main Story has a very big vertical stars and the the oldest topics have horizontal stars which is the same of what you developed. so how I can display stars vertically but don't forget that I need to use horizontal as well.\r\n\r\n\r\nI did all what I know but I didn't get it vertical. :)\r\n\r\nThank you.",
+    "LastUpdatedDate": "2014-07-01T03:46:28.433-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-07-01T03:46:28.433-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Support vertical direction",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1860
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

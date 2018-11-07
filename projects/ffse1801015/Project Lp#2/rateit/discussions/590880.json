@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1371152",
+    "ThreadId": "590880",
+    "Html": "Hi.\r<br />\n<br />\nMy Motherlanguage is German, i understand not so good English.\r<br />\n<br />\nI have set up Rate It on my Website. I want let rate my Maps for the Game Unreal Tournament 2004. \r<br />\n<br />\nThe Rating was displayed at my Page, but if i rate, the Data was not saved. What i must do, that the Data become saved?\r<br />\n<br />\nHere the Example at the bottom of the Page :\r<br />\n<br />\n<a href=\"http://anton-gremaud.square7.ch/?leveldesign.html\" rel=\"nofollow\">http://anton-gremaud.square7.ch/?leveldesign.html</a>\r<br />\n<br />\nGreetings.<br />\n",
+    "PostedDate": "2015-03-21T18:08:28.123-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1393375",
+    "ThreadId": "590880",
+    "Html": "RateIt is a client side component, in order to save the info you'll need to build some server side component, that will receive the info and save it somehow.<br />\n",
+    "PostedDate": "2015-03-24T07:05:19.257-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

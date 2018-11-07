@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "801032",
+    "ThreadId": "345662",
+    "Html": "\r\n<p>I have referenced Jquery 1.7.1 min. &nbsp;I have referenced the RateIt css.</p>\r\n<p>I have tried this in Chrome and IE.</p>\r\n<p>It seems so simple! &nbsp;I have the &lt;div class=&quot;rateit&quot;&gt;&lt;/div&gt; in place. &nbsp;</p>\r\n<p>Page showing the issue can be found here: https://seattle.codecamp.us/vote</p>\r\n<p>Rest of the page is a work in progress but thanks for the help!</p>\r\n<p>Chris</p>\r\n",
+    "PostedDate": "2012-02-26T16:17:35.227-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "801142",
+    "ThreadId": "345662",
+    "Html": "<p>Got a touch further. &nbsp;If I add this on the ready</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>&lt;script type=<span style=\"color: #a31515;\">\"text/javascript\"</span>&gt;\r\n    $(document).ready(<span style=\"color: blue;\">function</span> () {\r\n        $(<span style=\"color: #a31515;\">\"div.rateit\"</span>).each(<span style=\"color: blue;\">function</span> () {\r\n            $(<span style=\"color: blue;\">this</span>).rateit()\r\n        });\r\n    });\r\n&lt;/script&gt;\r\n</pre>\r\n</div>\r\nthen I get it the functionality. &nbsp;For some reason the rateit() that is called as part of including the file is not sufficient.</p>",
+    "PostedDate": "2012-02-26T17:49:59.977-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "801464",
+    "ThreadId": "345662",
+    "Html": "<div>Hi Chris,</div>\n<div></div>\n<div>Thanks for reporting the issue. I will have a look at it later today.</div>\n<div></div>\n<div>Gidon</div>\n<blockquote>\n<div>\n<div id=\"ThreadNotificationPostBody\">\n<p>&nbsp;</p>\n</div>\n</div>\n</blockquote>",
+    "PostedDate": "2012-02-26T22:12:32.453-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "801615",
+    "ThreadId": "345662",
+    "Html": "<p>Probably you have the RateIt script in the head of your page, it's advisable to put it on the bottom, to speed up loading.</p>\r\n<p>The call in the script that registers automatically all the .rateit items, doesn't wait for document.ready. So if it is in the head, it will find no occurence of elements with the rateit class.</p>\r\n<p>I will fix this, but as I said, its anyway advisable to place the RateIt script just before &lt;/body&gt;</p>",
+    "PostedDate": "2012-02-27T00:04:39.633-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "802132",
+    "ThreadId": "345662",
+    "Html": "<p>You nailed it. &nbsp;I read the documentation as place it before your &lt;body&gt; tag. &nbsp;Missed the /</p>\r\n<p>Thanks!</p>",
+    "PostedDate": "2012-02-27T10:18:20.403-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

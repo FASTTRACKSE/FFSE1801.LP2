@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-11-09T23:32:16.78-08:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "It would be nice if there was a way to completely and programmatically reset a RateIt instance back to its initial state. I currently have 'resetable' set to false, but it looks like the code that's fired when the reset button is clicked wouldn't even do what I want. I need things like 'readonly' and 'ispreset' set back to their default values. \n\nMy suggestion would be to do the event handling like jQuery itself. For example, provide a .reset() method that binds the event if you pass in a callback, or triggers the event if you call it with no parameters.\n\nRight now, the easiest way to completely reset RateIt is to remove the element from the DOM, create a new element on the fly, and then initialize a new RateIt instance on that newly-created element. While this isn't absolutely _terrible_, it seems like there should be an easier way to do it.\n\n```\nvar $exampleRateIt = $(\"#exampleRateIt\");\n\nif ($exampleRateIt.length) {\n    $exampleRateIt.remove();\n    $exampleRateIt = $(\"<div id='exampleRateIt'></div>\");\n    $(\"#exampleSibling\").after($exampleRateIt);\n}\n\n$exampleRateIt.rateit({\n    resetable: false,\n    step: 1,\n    min: 0,\n    max: 5\n});\n```",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "null",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-11-07T05:14:20.56-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Feature request: a .reset() method to clear out everything",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 1712
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 33994: added programmatic reset functionality",
+      "PostedDate": "2013-11-09T23:32:16.78-08:00",
+      "Id": 141097
+    },
+    {
+      "Message": "In version 1.0.14 it will be possible to call $('XXXXX').rateit('reset') to invoke the reset, which reverts to the initial state.",
+      "PostedDate": "2013-11-09T23:34:07.09-08:00",
+      "Id": 141098
+    }
+  ]
+}

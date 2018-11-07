@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "936713",
+    "ThreadId": "401945",
+    "Html": "\r\n<p>I found the current syntax for getting the value, <code>.rateit('value')</code> a bit clumsy, and not compatible with jQuery.</p>\r\n<p>Any chance to implement a <code>val()</code> method?</p>\r\n",
+    "PostedDate": "2012-11-05T06:20:31.097-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "937157",
+    "ThreadId": "401945",
+    "Html": "<p>On one hand I see what you mean, but...</p>\r\n<p>&nbsp;</p>\r\n<ul>\r\n<li>In order to use the val() method, I will need to change jQuery code. See for example : &nbsp;<a href=\"http://stackoverflow.com/questions/5895342/how-to-implement-jquery-val-for-a-span\">http://stackoverflow.com/questions/5895342/how-to-implement-jquery-val-for-a-span</a>&nbsp;. I agree with the commenters that it is a bad idea to hack into jQuery code.</li>\r\n<li>Or I have to make breaking changes to rateit, which will mean that instead of adding &lt;div class=\"rateit\"&gt;&lt;/div&gt; to the page, one will need to add an &lt;input ../&gt; item to the page (because those do work with val() ). I'm not sure that I want to do that.</li>\r\n<li>The way of getting the value in RateIt, is quit standard, look for example at <a href=\"http://api.jqueryui.com/slider/#option-value\">http://api.jqueryui.com/slider/#option-value</a>&nbsp; .&nbsp;</li>\r\n<li>The way of getting/setting a value in RateIt behaves the same as setting for example the min or max value. So within RateIt there is uniformity, which is also important.</li>\r\n</ul>\r\n<p>So those are my views. Feel free to comment on them.</p>",
+    "PostedDate": "2012-11-06T02:36:50.65-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

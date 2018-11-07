@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "The order of adding the script tags is important. First add the jQuery script, after that add the rateit script.",
+    "ClosedDate": "2014-03-16T00:08:52.53-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "I have added the rateit.min.js\ncss file \nand then simple div with class=\"rateit\"\nit not showing me any thing no stars nothing please help me",
+    "LastUpdatedDate": "2014-03-16T00:08:52.53-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-03-12T21:14:13.883-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Rati it is not working",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1837
+  },
+  "FileAttachments": [
+    {
+      "FileId": 825473,
+      "FileName": "HtmlPage1.html",
+      "DownloadUrl": ".\\825473"
+    }
+  ],
+  "Comments": []
+}

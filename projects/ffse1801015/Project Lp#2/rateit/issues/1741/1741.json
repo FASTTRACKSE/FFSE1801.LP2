@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-11-24T00:28:40.403-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Hi, \n\nWhen you use the up/down arrow keys after a rating happened, the rating will still change. How can this be prevented? This can cause unwanted changes to the rating when someone uses the arrow keys to scroll down the page.\n\nThanks\nChris",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "null",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-11-23T23:30:34.057-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Using arrow keys after a rating",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1741
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 34360: Blur the control after setting selection by mouse.",
+      "PostedDate": "2013-11-24T00:28:40.403-08:00",
+      "Id": 141100
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "No response from user in order to reproduce bug.",
+    "ClosedDate": "2016-01-16T01:09:12.637-08:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hi,\r\nI would like your help in solving a problem. When I change everything to match the settings for big stars in the example, I face a problem that stars images aren't aligned. I think this is probably because I am using rtl direction.\r\nthank you",
+    "LastUpdatedDate": "2016-01-16T01:09:12.637-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-09-15T12:42:28.77-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Can't reproduce"
+    },
+    "Summary": "display problem with having big stars on rtl page",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1863
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Could you show a test page?",
+      "PostedDate": "2015-05-09T23:46:08.733-07:00",
+      "Id": 184171
+    }
+  ]
+}

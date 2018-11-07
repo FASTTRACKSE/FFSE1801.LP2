@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "836831",
+    "ThreadId": "355894",
+    "Html": "\r\n<p>I love this plug in!&nbsp; This is my first time playing with jQuery and I&nbsp;got it to work!&nbsp; Thank you so much!</p>\r\n<p>Now... I still need to apply it.&nbsp; I need to add a comment box and&nbsp;collect the info, preferrably sending the results by email.</p>\r\n<p><a href=\"http://www.bspgc.com/Survey1.html\">http://www.bspgc.com/Survey1.html</a></p>\r\n<p>Thanks again for this awesome plug in!</p>\r\n<p>Shel</p>\r\n",
+    "PostedDate": "2012-05-15T11:17:25.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "837062",
+    "ThreadId": "355894",
+    "Html": "<p>Hi Shel,</p>\r\n<p>I'm happy you got it to work. The rateit plugin is client side only. So the handling of a comment box, and collecting the information is out of its scope.</p>\r\n<p>Perhaps head over to stackoverflow.com with specific questions.</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2012-05-16T01:20:02.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

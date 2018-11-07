@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1026646",
+    "ThreadId": "439373",
+    "Html": "I'm trying to use .on instead of .bind after an ajax call made with pagedlist.mvc but rateit never loads.  Has anyone tried to do this?  Once page updates via Ajax I don't get the stars showing. <br />\n&lt;script type =&quot;text/javascript&quot;&gt;\r\n    $('.rateit').on('rated', function (e) {\r\n        var ri = $(this);\r\n\r\n        var value = ri.rateit('value');\r\n        var skillID = ri.data('productskillid'); // \r\n\r\n        //maybe we want to disable voting?\r\n        ri.rateit('readonly', true);\r\n\r\n        $.ajax({\r\n            url: '/Controller/Action\r\n            data: { id: skillID, value: value },\r\n            type: 'POST',\r\n            error: function (jxhr, msg, err) {\r\n                $('#skill').append('&lt;p style=&quot;color:red&quot;&gt;' + msg + '&lt;/p&gt;');\r\n            }\r\n        });\r\n    });\r\n &lt;/script&gt;",
+    "PostedDate": "2013-04-06T14:00:23.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1026708",
+    "ThreadId": "439373",
+    "Html": "Hi,\r<br />\n<br />\nYour binding is not correct, at the moment you bind it only to existing items on the page, in order for the binding to also work on dynamically added items to the page (in your case after the paging happened) you will have to change it to:<br />\n<pre><code>&lt;script type =&quot;text/javascript&quot;&gt; \n        $('body').on('rated', '.rateit', function (e) { \n            /// your code\n         }); \n&lt;/script&gt;</code></pre>\n\nYou might want to change the selector from $('body') to something more specific, but which doesn't change, perhaps the container in which the pageable content sits.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2013-04-06T22:49:39.257-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

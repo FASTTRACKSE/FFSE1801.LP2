@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1128151",
+    "ThreadId": "470906",
+    "Html": "Hi, \r<br />\n<br />\nWhen you use the up/down arrow keys after a rating happened, the rating will still change. How can this be prevented? This can cause unwanted changes to the rating when someone uses the arrow keys to scroll down the page.\r<br />\n<br />\nThanks\r<br />\nChris<br />\n",
+    "PostedDate": "2013-11-23T02:54:04.213-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1128152",
+    "ThreadId": "470906",
+    "Html": "Btw, I currently solve the problem by giving focus to another element in the 'rated' event. I was just wondering if there are better solutions...<br />\n",
+    "PostedDate": "2013-11-23T03:04:28.51-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1128318",
+    "ThreadId": "470906",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"https://rateit.codeplex.com/workitem/1741\" rel=\"nofollow\">here</a> to go to the work item and continue the discussion.<br />\n",
+    "PostedDate": "2013-11-23T23:30:34.47-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1128319",
+    "ThreadId": "470906",
+    "Html": "A fix is available (version 1.0.16)<br />\n",
+    "PostedDate": "2013-11-23T23:33:06.413-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1130786",
+    "ThreadId": "470906",
+    "Html": "Thanks, great work! I will check it out. <br />\n",
+    "PostedDate": "2013-12-01T23:57:51.08-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

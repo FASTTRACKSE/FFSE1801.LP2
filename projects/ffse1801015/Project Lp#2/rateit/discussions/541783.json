@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1232449",
+    "ThreadId": "541783",
+    "Html": "Hi,<br />\n<br />\nI'm trying to get rateit working, but it doesn't seem to want to work on version 1.11.0<br />\n<br />\nIs there a list of working versions of jQuery that rateit will work on? I'd rather not have to go back to 1.6.3.<br />\n<br />\nEDIT:<br />\n<br />\nThe symptom I'm experiencing is that when I add the class &quot;rateit&quot; to a div or span, the stars don't appear. I then try to manually evoke rateit with $(&quot;.rateit&quot;).rateit() and get the error &quot;TypeError: Object [object Object] has no method 'rateit'&quot;<br />\n",
+    "PostedDate": "2014-04-09T10:19:58.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1232530",
+    "ThreadId": "541783",
+    "Html": "\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div></div>\r\n</blockquote>\r\n",
+    "PostedDate": "2014-04-09T12:59:04.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1232550",
+    "ThreadId": "541783",
+    "Html": "So, I've solved my problem.\r<br />\n<br />\nThere is NO ISSUE with any of the modern versions, it was an issue with how I was including the rateit.js code.\r<br />\n<br />\nFor future references rateit really does work with all versions 1.6.x +. (I tested them all in frustration today ;) )<br />\n",
+    "PostedDate": "2014-04-09T13:51:23.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1232563",
+    "ThreadId": "541783",
+    "Html": "Thanks for the tests :)<br />\n",
+    "PostedDate": "2014-04-09T14:32:32.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "FF 22 has been released and that fixed the issue.",
+    "ClosedDate": "2013-08-03T22:39:33.673-07:00",
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "Since updating from Firefox 20 to 21 the input-type \"range\" used as backing field will be displayed. The CSS-Statement \"display:none\" is being ignored. Chrome + Opera are working fine. \n\nYou can see an example for this issue at the [Example-Site of the RateIt-Project](http://www.radioactivethinking.com/rateit/example/example.htm). See examples 2a and 4; see also the attached screenshot.",
+    "LastUpdatedDate": "2013-08-03T22:39:33.673-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-05-20T01:20:41.623-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Input-type \"range\" as backing field ignores \"display: none\" in Firefox 21",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1556
+  },
+  "FileAttachments": [
+    {
+      "FileId": 825471,
+      "FileName": "RateIt-Screenshot_p32.png",
+      "DownloadUrl": ".\\825471"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Seems to be a bug on Firefox21. Found the following conversation: https://twitter.com/acdha/status/334430114135801856\r\n\r\nUntil the bug has been fixed, I temporarily solved the problem by using:\r\n\r\n```input[type=\"range\"] { visibility: hidden; width: 0; }```",
+      "PostedDate": "2013-05-20T02:11:41.153-07:00",
+      "Id": 141084
+    },
+    {
+      "Message": "Via Twitter I received another solution: Using input type \"number\" instead \"range\". FF21 doesn't seem to support input-type \"range\". This will probably be available with FF22.",
+      "PostedDate": "2013-05-20T04:25:44.3-07:00",
+      "Id": 141085
+    },
+    {
+      "Message": "Thanks for update. \r\n\r\nI'm not sure if I want to add a fix for one specific version of FF, what do you think?",
+      "PostedDate": "2013-05-21T01:00:01.89-07:00",
+      "Id": 141086
+    },
+    {
+      "Message": "Thanks for your reply.\r\n\r\nNo, I think it's not necessary. Both solutions are working (for me so far) and after all I read, it will be fixed in FF22. I guess, you would waste your time. ;-)",
+      "PostedDate": "2013-05-21T13:01:29.643-07:00",
+      "Id": 141087
+    }
+  ]
+}

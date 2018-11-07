@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1258351",
+    "ThreadId": "549261",
+    "Html": "Hi\r<br />\n<br />\nIs there a way to hide the delete button?\r<br />\n<br />\nBTW, excellent control!<br />\n",
+    "PostedDate": "2014-06-20T10:07:57.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1258360",
+    "ThreadId": "549261",
+    "Html": "nevermind, Id found it \r<br />\n<br />\ndata-rateit-resetable=&quot;false&quot;\r<br />\n<br />\nThank you, anyway<br />\n",
+    "PostedDate": "2014-06-20T10:33:43.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1258393",
+    "ThreadId": "549261",
+    "Html": "Great<br />\n",
+    "PostedDate": "2014-06-20T12:07:12.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

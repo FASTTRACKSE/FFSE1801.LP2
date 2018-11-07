@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "636183",
+    "ThreadId": "263615",
+    "Html": "\r\n<p>Hi:</p>\r\n<p>We are trying to use the plugin on an .Net .aspx page that successfully uses a few other jquery plugins. We are using jquery 1.61. The css file is loading, the js file is being called, but nothing is being displayed. I don't see anything in your docs that\r\n we are not doing. Any suggestions? Our current html in the .aspx file is straight from your page.</p>\r\n<p>&lt;div class=&quot;rateit&quot; data-rateit-value=&quot;4.5&quot; data-rateit-ispreset=&quot;true&quot; data-rateit-readonly=&quot;true&quot;&gt;&lt;/div&gt;</p>\r\n<p>TIA,</p>\r\n<p>Bill</p>\r\n",
+    "PostedDate": "2011-07-01T13:03:55.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636198",
+    "ThreadId": "263615",
+    "Html": "<p>Hi:</p>\r\n<p>FWIW, we found that the div had to have the \"id\" rate it- as in &lt;div id=\"rateit\" class....</p>\r\n<p>Hope this helps someone else.</p>\r\n<p>Best,</p>\r\n<p>Bill</p>",
+    "PostedDate": "2011-07-01T13:35:51.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636209",
+    "ThreadId": "263615",
+    "Html": "\r\n<div>\r\n<div style=\"text-align:left; direction:ltr\">Could you perhaps post a link to the page so I can have a look?</div>\r\n<div style=\"text-align:left; direction:ltr\"><br>\r\n</div>\r\n<div style=\"text-align:left; direction:ltr\">Could it be that the rateit div is added to the DOM after page ready?</div>\r\n<div style=\"text-align:left; direction:ltr\"><br>\r\n</div>\r\n<div style=\"text-align:left; direction:ltr\">Gidon</div>\r\n</div>\r\n<div><br>\r\nOn 1 ביול 2011, at 23:04, &quot;Bill_H&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: Bill_H</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Hi:</p>\r\n<p>We are trying to use the plugin on an .Net .aspx page that successfully uses a few other jquery plugins. We are using jquery 1.61. The css file is loading, the js file is being called, but nothing is being displayed. I don't see anything in your docs that\r\n we are not doing. Any suggestions? Our current html in the .aspx file is straight from your page.</p>\r\n<p></p>\r\n<div></div>\r\n<p></p>\r\n<p>TIA,</p>\r\n<p>Bill</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-07-01T13:47:02.083-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636215",
+    "ThreadId": "263615",
+    "Html": "\r\n<div>Great you worked it out. <br>\r\nI'll have a look at the issue, because it shouldn't work like that (it would prevent you from having multiple plugins on your page). How do you call the plugin?</div>\r\n<div><br>\r\n</div>\r\n<div><br>\r\nSent from my iPhone</div>\r\n<div><br>\r\nOn 1 ביול 2011, at 23:36, &quot;Bill_H&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: Bill_H</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Hi:</p>\r\n<p>FWIW, we found that the div had to have the &quot;id&quot; rate it- as in </p>\r\n<div id=\"rateit\">\r\n<p>Hope this helps someone else.</p>\r\n<p>Best,</p>\r\n<p>Bill</p>\r\n</div>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-07-01T13:52:42.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636217",
+    "ThreadId": "263615",
+    "Html": "<p>Gidon:</p>\r\n<p>We call it with</p>\r\n<p>$(document).ready(function() {</p>\r\n<p>var options = {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; readonly: true,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resetable: false}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $('#rateit').rateit(options);</p>\r\n<p>some other js functions...</p>\r\n<p>}</p>\r\n<p>I am going to test it with a second div Id's&nbsp; as</p>\r\n<p>$('#rateit2').rateit(options);</p>\r\n<p>I will let you know if it works.</p>\r\n<p>Best,</p>\r\n<p>Bill</p>",
+    "PostedDate": "2011-07-01T13:57:36.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636220",
+    "ThreadId": "263615",
+    "Html": "<p>Gidon:</p>\r\n<p>We have two plugins running on the .aspx page called as in the previous message. No problems at all.</p>\r\n<p>Best,</p>\r\n<p>Bill</p>",
+    "PostedDate": "2011-07-01T14:03:12.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636263",
+    "ThreadId": "263615",
+    "Html": "\r\n<div>1) You use the pound sign, so that points to the ID attribute.</div>\r\n<div><br>\r\n</div>\r\n<div>2) multiple items with the same ID will work, but is actually not allowed in HTML.\r\n</div>\r\n<div><br>\r\n</div>\r\n<div><br>\r\n<br>\r\nSent from my iPhone</div>\r\n<div><br>\r\nOn 2 ביול 2011, at 00:03, &quot;Bill_H&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: Bill_H</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Gidon:</p>\r\n<p>We have two plugins running on the .aspx page called as in the previous message. No problems at all.</p>\r\n<p>Best,</p>\r\n<p>Bill</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-07-01T16:12:01.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636496",
+    "ThreadId": "263615",
+    "Html": "<p>Gidon:</p>\r\n<p>I guess reading code on the iphone gets tough? :-) Read my 4:57PM message again. We are using different ids and they are using #. And it works just fine. Now we are working the star images into our sprite.</p>\r\n<p>Best,</p>\r\n<p>Bill</p>",
+    "PostedDate": "2011-07-02T15:35:13.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636542",
+    "ThreadId": "263615",
+    "Html": "\r\n<div>\r\n<div style=\"text-align:left; direction:ltr\">Haha. </div>\r\n<div style=\"text-align:left; direction:ltr\">Just for my info, will it be on a public site and if yes what is the URL?</div>\r\n<div style=\"text-align:left; direction:ltr\"><br>\r\n</div>\r\n<div style=\"text-align:left; direction:ltr\">Gidon </div>\r\n<br>\r\nSent from my iPhone</div>\r\n<div><br>\r\nOn 3 ביול 2011, at 01:35, &quot;Bill_H&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: Bill_H</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Gidon:</p>\r\n<p>I guess reading code on the iphone gets tough? :-) Read my 4:57PM message again. We are using different ids and they are using #. And it works just fine. Now we are working the star images into our sprite.</p>\r\n<p>Best,</p>\r\n<p>Bill</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-07-02T22:13:12.01-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

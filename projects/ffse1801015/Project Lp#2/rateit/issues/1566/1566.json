@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-06-13T01:46:50.49-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I want to use rateit plugin into gqgrid to display rating for each row. But it displays nothing.\n\nCan anybody help me with it?",
+    "LastUpdatedDate": "2013-06-13T01:46:50.49-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-06-04T23:19:00.883-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "rateit plugin does not work inside jquery grid",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1566
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Probably you have to call $('.rateit').rateit() after the grid has been loaded. It would be best to post a jsFiddle, so we can see the problem.",
+      "PostedDate": "2013-06-05T22:54:28.53-07:00",
+      "Id": 141088
+    },
+    {
+      "Message": "Alright, it works. Thank You.",
+      "PostedDate": "2013-06-10T04:03:07.877-07:00",
+      "Id": 141089
+    }
+  ]
+}

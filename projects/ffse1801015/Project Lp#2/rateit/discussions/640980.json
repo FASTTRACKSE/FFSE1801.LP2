@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1433257",
+    "ThreadId": "640980",
+    "Html": "Is there a way to echo a star value to a form field.  I have your rateit script working perfectly.  Nice easy script to use except can't figure out how to save the result\r<br />\n<br />\nI am using 2b from your example but wondering how i would be able to the value echo to a form field\r<br />\n<br />\nVisitor picks 4 stars<br />\n<pre><code>&lt;input type=&quot;text&quot; name=&quot;starresult&quot; value=&quot;4&quot;&gt;</code></pre>\n\nAny help would be greatly appreciated<br />\n",
+    "PostedDate": "2015-07-06T09:43:39.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1433697",
+    "ThreadId": "640980",
+    "Html": "If you are using example 2b, the value should be in your backingfield (in 2b, the right value is selected in the select box).<br />\n",
+    "PostedDate": "2015-07-09T02:52:19.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

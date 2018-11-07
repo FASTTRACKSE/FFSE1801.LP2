@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1367310",
+    "ThreadId": "588360",
+    "Html": "Hi,\r<br />\n<br />\nJust a suggestion: to prevent the debugger from kicking in and allow the plug-in to gracefully fail with IE 7 and below, I added the following line at the top of jquery.rateit.js:<br />\n<pre><code>if (typeof(JSON) == 'undefined') return false;\n</code></pre>\n\nLet me know if you have a better solution. Thanks for the great plugin!<br />\n",
+    "PostedDate": "2015-03-19T11:02:11.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "642155",
+    "ThreadId": "265113",
+    "Html": "\r\n<p>This must be something simple to do but I can't figure it out.</p>\r\n<p>After the user selects a rating how do I set that to the value of a hidden input? How do I make sure the hidden input value gets updated if the user changed their rating after?</p>\r\n<p>Thanks!!!</p>\r\n",
+    "PostedDate": "2011-07-14T00:31:35.64-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "642160",
+    "ThreadId": "265113",
+    "Html": "<p>This is the code I am trying and it is not working:</p>\r\n<p>&lt;div class=\"rateit\" id=\"rateit9\"&gt;&lt;/div&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\r\n<p>&lt;script type=\"text/javascript\"&gt;<br />$(document).ready(function() {<br />&nbsp;&nbsp;&nbsp; $(\"#rateit9\").bind('rated', function (event, value) {<br />&nbsp;&nbsp;&nbsp; document.getElementById(review_rating).value=$('#rateit9').rateit('value');<br />&nbsp;&nbsp;&nbsp; });<br />});<br />&lt;/script&gt;<br />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br />&lt;input type=\"hidden\" name=\"review_rating\" id=\"review_rating\" value=\"\"/&gt;&nbsp;&nbsp;</p>",
+    "PostedDate": "2011-07-14T00:36:57.293-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "642162",
+    "ThreadId": "265113",
+    "Html": "<p>Actually I got it working, I was just missing quotes around the ID name:</p>\r\n<p>&nbsp;</p>\r\n<p>document.getElementById(<strong>\"</strong>review_rating<strong>\"</strong>).value</p>",
+    "PostedDate": "2011-07-14T00:39:30.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "642300",
+    "ThreadId": "265113",
+    "Html": "<p>Actually RateIt supplies the functionality out of the box:</p>\r\n<div class=\"container\">\r\n<div class=\"line number1 index0 alt2\"><code class=\"xml plain\">&lt;</code><code class=\"xml keyword\">input</code> <code class=\"xml color1\">type</code><code class=\"xml plain\">=</code><code class=\"xml string\">\"hidden\"</code><code class=\"xml color1\"> id</code><code class=\"xml plain\">=</code><code class=\"xml string\">\"review_rating\"</code><code class=\"xml plain\">&gt;</code></div>\r\n<div class=\"line number2 index1 alt1\"><code class=\"xml plain\">&lt;</code><code class=\"xml keyword\">div</code> <code class=\"xml color1\">class</code><code class=\"xml plain\">=</code><code class=\"xml string\">\"rateit\"</code> <code class=\"xml color1\">data-rateit-backingfld</code><code class=\"xml plain\">=</code><code class=\"xml string\">\"#</code><code class=\"xml string\">review_rating</code><code class=\"xml string\">\" id=\"rateit9\"</code><code class=\"xml plain\">&gt;&lt;/</code><code class=\"xml keyword\">div</code><code class=\"xml plain\">&gt;</code></div>\r\n<div class=\"line number2 index1 alt1\"></div>\r\n<div class=\"line number2 index1 alt1\">No extra code needed.</div>\r\n</div>",
+    "PostedDate": "2011-07-14T06:09:09.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "899617",
+    "ThreadId": "265113",
+    "Html": "<p>Hey Guys.</p>\r\n<p>How can I implement this function in a while?</p>\r\n<p>The function showed just returns one value, I need to get all the mysql values and show the rate.</p>\r\n<p>Any suggestion?</p>\r\n<p>&nbsp;</p>\r\n<p>Tks</p>",
+    "PostedDate": "2012-08-15T10:15:18.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "901276",
+    "ThreadId": "265113",
+    "Html": "<p>Could you be a bit more specific?</p>\r\n<p>&nbsp;</p>\r\n<p>It does sound like you could use the backingfield property:</p>\r\n<p>&nbsp;</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">input</span> <span style=\"color: red;\">type</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"range\"</span> <span style=\"color: red;\">min</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"0\"</span> <span style=\"color: red;\">max</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"7\"</span> <span style=\"color: red;\">value</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"0\"</span> <span style=\"color: red;\">step</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"0.5\"</span> <span style=\"color: red;\">id</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"backing2\"</span><span style=\"color: blue;\">&gt;</span>\r\n<span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">class</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"rateit\"</span> <span style=\"color: red;\">data-rateit-backingfld</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"#backing2\"</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span>\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2012-08-19T06:03:03.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

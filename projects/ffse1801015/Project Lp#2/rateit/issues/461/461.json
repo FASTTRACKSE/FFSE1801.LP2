@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-01-01T00:36:10.573-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "I can use the plugin just fine in my Visual Studio 2010 development environment.\nWhen I Publish to a local IIS site on my Windows 7 machine, and run it, I don't see the stars.\nHow do I get this to work?",
+    "LastUpdatedDate": "2013-05-16T04:24:23.787-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2011-12-23T11:53:48.25-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Stars not rendering on IIS 7.5 / Windows 7",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 461
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The code is completely client side, so it does not matter if it runs IIS or any other environment. Check if all files are uploaded correctly, and use client side tooling (such as Chrome Development Tools) to check what is missing.",
+      "PostedDate": "2012-01-01T00:33:32.3-08:00",
+      "Id": 141063
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1291201",
+    "ThreadId": "561537",
+    "Html": "I need to set the value of an attribute to show 'x' amount of stars but need to run an event to my database to get the average and use that number?\r<br />\n<br />\nhere is this HTML with the 'data-rateit-value' attribute id like to modify dynamically.<br />\n<pre><code>&lt;div id=&quot;randomtest&quot; data-productid=&quot;randomtest&quot; class=&quot;rateit&quot; data-rateit-value=&quot;&quot;&gt;&lt;/div&gt;</code></pre>\n\ni tried this just to modify it without an event to query the database and it didnt set it? so need some advise before i go on to including the event.<br />\n<pre><code>$('#randomtest').attr( 'data-rateit-value','4');</code></pre>\n\nbut once im able to i will be able to set it dynamically like i have made a basic demo of below? if not some further guidance would be much appreciated.<br />\n<pre><code>$.ajax({\n    url: 'currentvalue.php',\n    data: { id: productID, value: value },\n    type: 'POST',\n\n    success: setCurrentValue\n});\n\nfunction setCurrentValue(data) {\n    $('#randomtest').attr( 'data-rateit-value'.append(data));\n}</code></pre>\n\nthanks for any help<br />\n",
+    "PostedDate": "2014-08-18T19:22:59.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1291216",
+    "ThreadId": "561537",
+    "Html": "Have a look at the online examples : <a href=\"http://www.radioactivethinking.com/rateit/example/example.htm\" rel=\"nofollow\">http://www.radioactivethinking.com/rateit/example/example.htm</a> Anyway to set a value in JS you would do: $('#abc').rateit('value', mynewvalue)<br />\n",
+    "PostedDate": "2014-08-18T21:25:10.37-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1291229",
+    "ThreadId": "561537",
+    "Html": "oops i forgot to come back and post that i sorted it.<br />\n<br />\nI am using this query to update when a rating is selected and when the page loads.<br />\n<pre><code>// show average star rating once rating has been click\n    $.ajax({\n        url: 'currentstars.php',\n        data: { id: productID, value: value },\n        type: 'POST',\n        \n        success: function(results) {\n            $('.rateit').rateit('value', (results));\n        }\n    });</code></pre>\n\nbut not for quizzing a few people on stackoverflow who didn't i think became as confused as i was as to why it wasn't working lol.<br />\n<br />\n<a href=\"http://stackoverflow.com/questions/25374623/set-attribute-value-dynamically-from-from-event/25375346#25375346\" rel=\"nofollow\">TEXT</a><br />\n<br />\nthanks for thanks reply.<br />\n",
+    "PostedDate": "2014-08-18T23:29:01.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

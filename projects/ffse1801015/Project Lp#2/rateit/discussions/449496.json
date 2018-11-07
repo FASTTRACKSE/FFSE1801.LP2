@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1066291",
+    "ThreadId": "449496",
+    "Html": "I am trying to get rateit to work in a twitter bootstrap popover. I need to reinitiate it when the popover shows but I am not having any luck with it.\r<br />\n<br />\nI created a fiddle: <a href=\"http://jsfiddle.net/mVSPR/4/\" rel=\"nofollow\">http://jsfiddle.net/mVSPR/4/</a>\r<br />\n<br />\nThe fiddle just shows the range input slider though - not sure how to get it working there either.\r<br />\n<br />\nCan anyone help me out?<br />\n",
+    "PostedDate": "2013-07-09T13:16:45.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1066418",
+    "ThreadId": "449496",
+    "Html": "Hi,\r<br />\n<br />\nYou cannot link to the sources in codeplex. They do not return css and js. Download the sources, put them on some server, and then everything will work.<br />\n",
+    "PostedDate": "2013-07-09T23:30:15.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1066644",
+    "ThreadId": "449496",
+    "Html": "Thanks gidon - first time using jsFiddle.<br />\n<br />\nI updated the files so you can see exactly what I have now.<br />\n<br />\n<a href=\"http://jsfiddle.net/mVSPR/5/\" rel=\"nofollow\">http://jsfiddle.net/mVSPR/5/</a><br />\n<br />\nThe rateit at the top is working fine, but once you click the button and get the popover, the rateit in the popover is not working. Any help would be appreciated.<br />\n",
+    "PostedDate": "2013-07-10T08:25:59.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1066699",
+    "ThreadId": "449496",
+    "Html": "Fixed it: <a href=\"http://jsfiddle.net/mVSPR/6/\" rel=\"nofollow\">http://jsfiddle.net/mVSPR/6/</a>\r<br />\n<br />\nThe thing is that when the popover  is initialized, it clones the source element (the add-review-form) and puts it into the popover markup. \r<br />\nAt this moment you have actually two 'add-review-forms' on your page.\r<br />\n<br />\nThe rateit bindings however are not cloned, so you end up with a half working rateit plugin.\r<br />\n<br />\nThe trick is , not to have rateit auto init the itself (I changed the div's class to rateit-popover), and then when the review button is clicked, and the popover is shown, only then we initialize it. Next time when the review button is clicked, it will happen again, but rateit is smart enough not to reinit itself once it is initialized.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2013-07-10T10:44:34.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1066710",
+    "ThreadId": "449496",
+    "Html": "Awesome - I figured it was something simple but just couldn't figure it out. I appreciate your help. Thanks!<br />\n",
+    "PostedDate": "2013-07-10T11:23:54.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

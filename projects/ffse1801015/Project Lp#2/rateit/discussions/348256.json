@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "809078",
+    "ThreadId": "348256",
+    "Html": "\r\n<p>Hi folks. first I say Great Work and thanks.</p>\r\n<p>I'm&nbsp;newbie in web&nbsp;programming&nbsp;(my&nbsp;specialty&nbsp;is desktop app) Im programming right now a web in ASP.NET MVC 3 with Razor engine.</p>\r\n<p>I need get the value of the rated. For example:</p>\r\n<p>in my view&nbsp;</p>\r\n<div>\r\n<pre>&lt;div class=&quot;rateit&quot; data-rateit-resetable=&quot;false&quot; data-rateit-step=&quot;1.0&quot; ????????what else?????????? &gt;<span>&lt;/</span><span>div</span><span>&gt;\\</span></pre>\r\n<pre>and in my controller:</pre>\r\n<pre><div style=\"color:black; background-color:white\"><pre>[HttpPost]\r\n<span style=\"color:blue\">public</span> ActionResult TicketRating(????????)\r\n{\r\n\t<span style=\"color:blue\">decimal</span> rate = ?????????;\r\n\t<span style=\"color:green\">//then save my Var rate in SQL.</span>\r\n\t<span style=\"color:blue\">return</span> View();\r\n}\r\n</pre>\r\n</div>\r\nThanks very much and Im sorry for my english.</pre>\r\n</div>\r\n",
+    "PostedDate": "2012-03-12T07:02:07.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "809081",
+    "ThreadId": "348256",
+    "Html": "<p>Ok, I get value this way: is the better????</p>\n<div style=\"color: black; background-color: white;\">\n<pre><span style=\"color: #0000ff;\"><div style=\"color: black; background-color: white;\"><pre style=\"color: black;\"><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">class</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"rateit\"</span> <span style=\"color: red;\">data-rateit-resetable</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"false\"</span> <span style=\"color: red;\">data-rateit-step</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"1.0\"</span> <span style=\"color: red;\">data-rateit-backingfld</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"#RateTime\"</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span>\n@Html.TextBox(\"RateTime\", \"\")</pre>\n<pre style=\"color: black;\">//-- controller --//</pre>\n<pre><div style=\"color: black; background-color: white;\"><pre>[HttpPost]\n<span style=\"color: blue;\">public</span> ActionResult TicketRating(<span style=\"color: blue;\">string</span> Feedback, <span style=\"color: #0000ff;\">int</span> RateTime)\n{\n<span style=\"color: blue;\"><span style=\"white-space: pre;\">\t</span>string</span> s = Feedback;\n<span style=\"color: blue;\"><span style=\"white-space: pre;\">\t</span>int</span> r = RateTime;\n<span style=\"color: blue;\"><span style=\"white-space: pre;\">\t</span>return</span> View();\n}\n</pre>\n</div>\n<br /></pre>\n</div>\n<span style=\"color: #0000ff;\"> </span></span></pre>\n</div>",
+    "PostedDate": "2012-03-12T07:17:33.2-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "809102",
+    "ThreadId": "348256",
+    "Html": "<p>That shows indeed one way of working with it (just change your @Html.TextBox() to @Html.Hidden() )</p>\r\n<p>On the example page, there is a ASP.NET webforms example, that uses ajax (without a backing field)</p>\r\n<p><a href=\"http://www.radioactivethinking.com/rateit/example/example.htm#ex_11\">http://www.radioactivethinking.com/rateit/example/example.htm#ex_11</a></p>\r\n<p>In that case, your action would have two parameters , id and value, and you would change the url in the Ajax method to your action. (@Url.Action())</p>",
+    "PostedDate": "2012-03-12T07:47:17.81-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

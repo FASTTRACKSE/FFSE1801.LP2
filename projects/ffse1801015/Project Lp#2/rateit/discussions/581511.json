@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1354515",
+    "ThreadId": "581511",
+    "Html": "I've got a WP blog using rateit where I assign each post a rating. I'm building a page in this blog that will contain a table showing a list of all my posts and I want to include their rating in this table.\r<br />\n<br />\nIdeally a shortcode that grabs the value from the DB I could throw in the table like so would be ideal:\r<br />\n<br />\nPost 1   -   [get_rateit_postid=&quot;1&quot;]\r<br />\nPost 2   -   [get_rateit_postid=&quot;2&quot;]\r<br />\n<br />\nWhat's the best way of doing this about 100 times on 1 page?<br />\n",
+    "PostedDate": "2015-02-20T19:35:04.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

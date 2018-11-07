@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1305833",
+    "ThreadId": "567759",
+    "Html": "Hello, I downloaded the file, added rateit.css in my css file folder; added  in my head :<br />\n<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://mysite.com/css/rateit.css&quot; media=&quot;screen&quot; /&gt;</code></pre>\n\nAdded jquery.rateit.js files; jquery.rateit.min.js and jquery.rateit.min.js.map in my js folder. I added in my body :<br />\n<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.rateit.js&quot;&gt;&lt;/script&gt; </code></pre>\n\nAnd I added the star image and delete my pictures folder.\r<br />\n<br />\nAnd finally, I added  in my footer or in my body, but it does not appear ..<br />\n<pre><code>&lt;div class=&quot;rateit&quot; data-rateit-value=&quot;2.5&quot; data-rateit-ispreset=&quot;true&quot; data-rateit-readonly=&quot;true&quot;&gt;&lt;/div&gt;</code></pre>\n\nThank for help..<br />\n",
+    "PostedDate": "2014-09-18T01:00:48.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1305841",
+    "ThreadId": "567759",
+    "Html": "It' s ok, I forgot to change the path of the images in the css ;)<br />\n",
+    "PostedDate": "2014-09-18T01:32:57.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

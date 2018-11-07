@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1231351",
+    "ThreadId": "541486",
+    "Html": "Hi,\r<br />\nlove your plugin, great work.\r<br />\nI was wondering though, if there is any way to change the width of a star to percentages of the parent element. For example: 40% for 2 stars (if you have 5 in total).\r<br />\nThis would be great for building a solid responsive design.\r<br />\nThx alot :)\r<br />\nandrej<br />\n",
+    "PostedDate": "2014-04-07T08:06:22.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231664",
+    "ThreadId": "541486",
+    "Html": "Hi Andrej,\r<br />\n<br />\nI'm looking into the whole issue of icon fonts and responsive design. It is possible to do it with the current version but it is pretty cumbersome. \r<br />\n<br />\nI'll be on vacation till the end of the month. Once I come back I'll start working on it.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2014-04-07T23:32:04.117-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231695",
+    "ThreadId": "541486",
+    "Html": "I would be glad to support your effort.\r<br />\n<br />\nI am about to build a solution and I am half way there for a 5-star rating. \r<br />\n<br />\nIs there any way to commit or share some code at codeplex? I only use github, so I don't have any experience with codeplex.\r<br />\n<br />\nCheers,\r<br />\n<br />\nandrej<br />\n",
+    "PostedDate": "2014-04-08T01:32:29.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

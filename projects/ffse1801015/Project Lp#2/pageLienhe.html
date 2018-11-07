@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project Lp#2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="pageLienhe.css"/>
+    <link rel="shortcut icon" href="images/tải xuống.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icon/fontawesome-free-5.4.2-web/css/all.css">
+    <link rel="stylesheet" href="aos-master/demo/css/styles.css" />
+    <link rel="stylesheet" href="aos-master/dist/aos.css" />
+    <script src="js/jquery-3.3.1.min.js">
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+    <script>
+        /*Scroll to top when arrow up clicked BEGIN*/
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if (height > 100) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
+        });
+        $(document).ready(function() {
+            $("#back2Top").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+
+        });
+        /*Scroll to top when arrow up clicked END*/
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    </script>
+    <i id="back2Top" title="Back to top" class="fa fa-arrow-up"></i>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="border:none">
+        <div id="menu">
+            <div id="container">
+                <div class="container-fluid container1" style="padding:0">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand pp" href="Lp2.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"  href="#" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="900">Tin tức</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageTintuc_Tintuc.html">Tin tức</a></li>
+                                <li><a href="pageTintuc_Camnang.html">Cẩm nang du lịch</a></li>
+                                <li><a href="pageTintuc_Kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="" href="pageLehoi&Sukien.html" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">Sự kiện & Lễ hội</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1100">Du lịch</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageDulich_Dulichtrongnuoc.html">Du lịch trong nước</a></li>
+                                <li><a href="pageDulich_Dulichnuocngoai.html">Du lịch nước ngoài</a></li>
+                                <li><a href="#">Du lịch tự chọn</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1200">Khuyến mại</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageKhuyenmai_thu.html">Khuyến mại Thu 2018</a></li>
+                                <li><a href="pageKhuyenmai_masterCard.html">Khuyến mại MasterCard</a></li>
+                                <li><a href="#">Mua tour trả chậm 0%</a></li>
+                                <li><a href="#">Khuyến mại Vietinbank</a></li>
+                                <li><a href="#">Khuyến mại VNPay-QRCode</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1300">Liên hệ</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageLienhe.html">Liên hệ</a></li>
+                                <li><a href="https://www.fasttrack.edu.vn/" target="_blank">Thông tin chủ đầu tư</a></li>
+                                <li><a href="CV/CV.html" target="_blank">Thông tin người phát triển</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <div id="trang" class="col-lg-12 col-xs-12">
+            <center><h1>Liên hệ</h1></center>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0">
+                <p class="ba">Để có thể đáp ứng được các yêu cầu và các ý kiến đóng góp của quý vị một cách nhanh chóng xin vui lòng liên hệ</p>
+                <form>
+                    <div class="col-lg-6 col-xs-12 nhap">
+                            <p class="mot">Loại thông tin <p class="hai">*</p></p>
+                        <select>
+                            <option value="dulich">Du lịch</option>
+                            <option value="chamsockh">Chăm sóc khách hàng</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 nhap">
+                        <p class="mot">Email <p class="hai">*</p></p>
+                        <input class="input" type="email">
+                    </div>
+                    <div class="col-lg-6 col-xs-12 nhap">
+                        <p class="mot">Họ tên <p class="hai">*</p></p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="col-lg-6 col-xs-12 nhap">
+                        <p class="mot">Điện thoại <p class="hai">*</p></p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="col-lg-6 col-xs-12 nhap">
+                        <p class="mot">Tên công ty</p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="col-lg-6 col-xs-12 nhap">
+                        <p class="mot">Số khách</p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="col-lg-12 col-xs-12 nhap">
+                        <p class="mot">Địa chỉ</p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="col-lg-12 col-xs-12 nhap">
+                        <p class="mot">Tiêu đề <p class="hai">*</p></p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="col-lg-12 col-xs-12 nhap">
+                        <p class="mot">Nội dung <p class="hai">*</p></p>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                    </div>
+                    <div class="col-lg-12 col-xs-12 nhap">
+                        <input class="submit" type="submit" value="Gửi">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="trang" class="col-lg-12 col-xs-12">
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0">
+                <div class="row">
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <p class="bon">HỒ CHÍ MINH: TRỤ SỞ 1</p>
+                        <div class="thongtin">
+                            <span class="fa fa-map-marker fa-lg"></span>
+                            <p class="nam">190 Pasteur, Quận 3, Tp. Hồ Chí Minh, Việt name</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-phone fa-lg"></span>
+                            <p class="nam">Tel: (84-28) 3822 8898</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-fax fa-lg"></span>
+                            <p class="nam">Fax: (84-28) 3829 9142</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-envelope fa-lg"></span>
+                            <p class="nam">Email: info@vietravel.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <p class="bon">HỒ CHÍ MINH: TRỤ SỞ 2</p>
+                        <div class="thongtin">
+                            <span class="fa fa-map-marker fa-lg"></span>
+                            <p class="nam">35 Trần Quốc Toản, Quận 3, Tp. Hồ Chí Minh, Việt Nam</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-phone fa-lg"></span>
+                            <p class="nam">Tel: (84-28) 3820 6777</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-fax fa-lg"></span>
+                            <p class="nam">Fax: (84-28) 3820 7666</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-envelope fa-lg"></span>
+                            <p class="nam">Email: info@vietravel.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <p class="bon">CHI NHÁNH HÀ NỘI</p>
+                        <div class="thongtin">
+                            <span class="fa fa-map-marker fa-lg"></span>
+                            <p class="nam">03 Hai Bà Trưng, Quận Hoàn Kiếm, Hà Nội</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-phone fa-lg"></span>
+                            <p class="nam">Tel: (84-24) 3933 1978</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-fax fa-lg"></span>
+                            <p class="nam">Fax: (84-24) 3933 1979</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-envelope fa-lg"></span>
+                            <p class="nam">Email: vtv.hanoi@vietravel.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <p class="bon">CHI NHÁNH ĐÀ NẴNG</p>
+                        <div class="thongtin">
+                            <span class="fa fa-map-marker fa-lg"></span>
+                            <p class="nam">58 Pasteur, Hải Châu, Đà Nẵng</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-phone fa-lg"></span>
+                            <p class="nam">Tel: (84-236) 3863 544</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-fax fa-lg"></span>
+                            <p class="nam">Fax: (84-236) 3863 571</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-envelope fa-lg"></span>
+                            <p class="nam">Email: vtv.danang@vietravel.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <p class="bon">CHI NHÁNH CẦN THƠ</p>
+                        <div class="thongtin">
+                            <span class="fa fa-map-marker fa-lg"></span>
+                            <p class="nam">5 Trần Văn Khéo, Cái Khế, Ninh Kiều, Cần Thơ</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-phone fa-lg"></span>
+                            <p class="nam">Tel: (84-292) 3763 085</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-fax fa-lg"></span>
+                            <p class="nam">Fax: (84-292) 3763 086</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-envelope fa-lg"></span>
+                            <p class="nam">Email: vtv.cantho@vietravel.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <p class="bon">CHI NHÁNH HẢI PHÒNG</p>
+                        <div class="thongtin">
+                            <span class="fa fa-map-marker fa-lg"></span>
+                            <p class="nam">04 Trần Hưng Đạo, P.Hoàng Văn Thụ, Q.Hồng Bàng, Hải Phòng</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-phone fa-lg"></span>
+                            <p class="nam">Tel: (84-225) 3842 888 – (84-225) 3686 662</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-fax fa-lg"></span>
+                            <p class="nam">Fax: (84-225) 3842 828</p>
+                        </div>
+                        <div class="thongtin">
+                            <span class="fa fa-envelope fa-lg"></span>
+                            <p class="nam">Email: vtv.haiphong@vietravel.com</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="bon" data-aos="zoom-out-down">KHU VỰC MIỀN NAM</p>
+                <div class="row" style="margin-bottom:30px">
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Phú Nhuận</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Phú Mỹ Hưng</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Quận 11</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Quận 10</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Quận 8</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Bình Dương</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Phú Quốc</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Văn Phòng Đăng Ký Du Lịch Châu Đốc</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Bạc Liêu</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Gò Vấp</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Quận 4</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Chợ Lớn</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Tân Định</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Đồng Nai</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Vũng Tàu</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Quầy Khai Thác D.Vụ Sân Bay Phú Quốc</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Rạch Giá</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Trung Tâm Du Lịch Lá Xanh</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Cộng Hòa</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Âu Cơ</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng Đăng Ký Du Lịch Thủ Đức</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Cà Mau</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Văn Phòng Đăng Ký Du Lịch Bà Rịa</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Long Xuyên</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Long An</p></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="bon" data-aos="zoom-out-down">KHU VỰC MIỀN TRUNG</p>
+                <div class="row" style="margin-bottom:30px">
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">VP Đăng Ký Du Lịch Liên Chiểu</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Quy Nhơn</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Đà Lạt</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Nha Trang</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Huế</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Buôn Ma Thuột</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Vinh</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Quảng Ngãi</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi nhánh Thanh Hóa</p></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="bon" data-aos="zoom-out-down">KHU VỰC MIỀN BẮC</p>
+                <div class="row" style="margin-bottom:30px">
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">VP Đăng Ký Du Lịch Số 1 - Hà Nội</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">VP Đăng Ký Du Lịch Số 4 - Hà Nội</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">VP Đăng Ký Du Lịch Số 2 - Hà Nội</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Chi Nhánh Quảng Ninh</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">VP Đăng Ký Du Lịch Số 3 - Hà Nội</p></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="bon" data-aos="zoom-out-down">NƯỚC NGOÀI</p>
+                <div class="row" style="margin-bottom:30px">
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Vietravel tại Mỹ</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Vietravel tại Pháp</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Vietravel tại Thái Lan</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Vietravel tại Campuchia - Indochina Heritage Trave</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Vietravel tại Úc</p></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="bon" data-aos="zoom-out-down">KHÁC</p>
+                <div class="row" style="margin-bottom:30px">
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Trung tâm nguồn nhân lực Việt Nam (VIMAC)</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Trung tâm vé và dịch vụ hành khách thế giới</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Trung tâm tư vấn du học Vietravel</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">VP TT nguồn nhân lực Việt Nam tại Hà Nội</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Xí nghiệp vận chuyển Xuyên Á</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Trung tâm dạy nghề Vietravel</p></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12" data-aos="zoom-out-down">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">VP TT nguồn nhân lực Việt Nam tại Tokyo</p></a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot"><p class="nam">Phòng quan hệ và dịch vụ khách hàng</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gioi_thieu">
+        <div class="col-lg-3 col-xs-12 gioi_thieu1">
+            <div>
+                <p class="mot">Liên hệ</p>
+                <p>190 Pasteur, Phường 6, Quận 3, Tp. HCM</p>
+                <p class="hai">Điện thoại: <p class="ba">(+84 28) 3822 8898</p></p>
+                <p class="hai">Fax: <p class="ba">(+84 28) 3822 8898</p></p>
+                <p class="hai">Email: <p class="ba">info@vietravel.com</p></p>
+                <p class="hai">Hotline: <p class="ba">1900 1839 (08h-23h)</p></p>
+                </div>
+            <div>
+                <ul>
+                    <li><a href="#">Vietravel toolbar</a></li>
+                    <li><a href="#">Chính sách riêng tư</a></li>
+                    <li><a href="#">Thỏa thuận sử dụng</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="mot">CHẤP NHẬN THANH TOÁN</p>
+                <div class="thanh_toan">
+                    <img src="images/123pay.png" class="col-lg-3 col-xs-3">
+                    <img src="images/visa.png" class="col-lg-3 col-xs-3">
+                    <img src="images/master.png" class="col-lg-3 col-xs-3">
+                    <img src="images/vnpay.jpg" class="col-lg-3 col-xs-3">
+                    <img src="images/jcb.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                </div>
+            </div>
+            <div>
+                <p class="mot">ĐƯỢC ĐIỀU HÀNH BỞI</p>
+                <img src="images/logo_Vietravel.png">
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-12 gioi_thieu1">
+            <div>
+                <p class="mot">KẾT NỐI VỚI CHÚNG TÔI</p>
+                <div class="cach_hinh">
+                    <img src="images/fb.png">
+                    <img src="images/gp.png">
+                    <img src="images/tw.png">
+                    <img src="images/yt.png">
+                </div>
+            </div>
+            <div>
+                <p class="mot">NEWSLETTER</p>
+                <div class="input">
+                    <input type="text" placeholder="Email của bạn">
+                    <a href="#"><img src="images/send.png"></a>
+                </div>
+            </div>
+            <div>
+                <p class="mot">TÌM KIẾM</p>
+                <div class="input">
+                    <input type="text" placeholder="Tour du lịch, Điểm đến...">
+                    <a href="#"><img src="images/search-s.png"></a>
+                </div>
+            </div>
+            <div>
+                <p class="mot">ỨNG DỤNG DI ĐỘNG</p>
+                <div class="hinh">
+                    <div style="display:inline;margin-right: 15px;">
+                        <a href="#"><img src="images/a.png"></a>
+                        <p>Android</p>
+                    </div>
+                    <div style="display:inline">
+                        <a href="#"><img src="images/i.png"></a>
+                        <p>iOS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 gioi_thieu1">
+        <div class="col-lg-4 col-xs-6">
+            <p class="mot">TRONG NƯỚC</p>
+            <a href="#"><p>Hà Nội</p></a>
+            <a href="#"><p>Hạ Long</p></a>
+            <a href="#"><p>Ninh Bình</p></a>
+            <a href="#"><p>Quảng Bình</p></a>
+            <a href="#"><p>Lào Cai</p></a>
+            <a href="#"><p>Đà Nẵng</p></a>
+            <a href="#"><p>Qui Nhơn</p></a>
+            <a href="#"><p>Nha Trang</p></a>
+            <a href="#"><p>Phan Thiết</p></a>
+            <a href="#"><p>Đà Lạt</p></a>
+            <a href="#"><p>Vũng Tàu</p></a>
+            <a href="#"><p>Cần Thơ</p></a>
+            <a href="#"><p>Phú Quốc</p></a>
+            <a href="#"><p>Cà Mau</p></a>
+            <a href="#"><p>Kiên Giang</p></a>
+        </div>
+        <div class="col-lg-4 col-xs-6">
+            <p class="mot">TRONG NƯỚC</p>
+            <a href="#"><p>Hà Nội</p></a>
+            <a href="#"><p>Hạ Long</p></a>
+            <a href="#"><p>Ninh Bình</p></a>
+            <a href="#"><p>Quảng Bình</p></a>
+            <a href="#"><p>Lào Cai</p></a>
+            <a href="#"><p>Đà Nẵng</p></a>
+            <a href="#"><p>Qui Nhơn</p></a>
+            <a href="#"><p>Nha Trang</p></a>
+            <a href="#"><p>Phan Thiết</p></a>
+            <a href="#"><p>Đà Lạt</p></a>
+            <a href="#"><p>Vũng Tàu</p></a>
+            <a href="#"><p>Cần Thơ</p></a>
+            <a href="#"><p>Phú Quốc</p></a>
+            <a href="#"><p>Cà Mau</p></a>
+            <a href="#"><p>Kiên Giang</p></a>
+        </div>
+        <div class="col-lg-4 col-xs-6">
+            <p class="mot">DÒNG TOUR</p>
+            <a href="#"><p>Hà Nội</p></a>
+            <a href="#"><p>Hạ Long</p></a>
+            <a href="#"><p>Ninh Bình</p></a>
+            <a href="#"><p>Quảng Bình</p></a>
+            <p class="mot">THÔNG TIN</p>
+            <a href="#"><p>Lào Cai</p></a>
+            <a href="#"><p>Đà Nẵng</p></a>
+            <a href="#"><p>Qui Nhơn</p></a>
+            <a href="#"><p>Nha Trang</p></a>
+            <a href="#"><p>Phan Thiết</p></a>
+            <a href="#"><p>Đà Lạt</p></a>
+            <a href="#"><p>Vũng Tàu</p></a>
+            <p class="mot">CHỨNG NHẬN</p>
+            <img src="images/_dmca_premi_badge_5.png" style="margin-bottom:15px;">
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-12 col-xs-12 gioi_thieu2">
+        <div class="chu">
+            <p>Bản quyền của Vietravel ® 2016. Bảo lưu mọi quyền. Ghi rõ nguồn "www.travel.com.vn" ® khi sử dụng lại thông tin từ website này</p>
+            <p>Số GPKD: 0300465937 do Sở Kế Hoạch và Đầu Tư Thành Phố Hồ Chí Minh cấp ngày 27/09/2010</p>
+            <p>Giấy phép số: 239/GP-TTĐT do Cục Quản Lý Phát Thanh, Truyền Hình và Thông Tin Điện Tử cấp ngày 31/12/2008</p>
+        </div>
+        <div class="logo">
+            <img src="images/xdgfkjghdf.png">
+            <img src="images/mxfdjhkgd.png">
+            <img src="images/dsxyhlkyl.png">
+            <img src="images/ewlxgfkgjfE.gif">
+        </div>
+    </div>
+</body>
+</html>

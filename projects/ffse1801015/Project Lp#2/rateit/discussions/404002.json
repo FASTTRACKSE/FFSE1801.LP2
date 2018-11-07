@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "944770",
+    "ThreadId": "404002",
+    "Html": "\r\n<p>When used with DataTables.net and you change to another page then RateIt doesn't rebind.</p>\r\n<p>Can RateIt be made to use on() or some other way so that it will constantly detect new objects having class rateit and transform them into rating?</p>\r\n",
+    "PostedDate": "2012-11-20T12:10:16.2-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "944868",
+    "ThreadId": "404002",
+    "Html": "\r\n<p>Similar issue here, when using RateIt with Meteor -&nbsp;https://github.com/dandv/meteor-jquery-rating-demo/blob/master/jquery-rateit-demo.js#L10</p>\r\n",
+    "PostedDate": "2012-11-20T16:51:18.08-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "945491",
+    "ThreadId": "404002",
+    "Html": "\r\n<p>The problem described is not a specific RateIt problem, more a generic problem. In order for RateIt to dynamically rebind it needs to be able to bind to some generic &quot;onpagechanged&quot; event, and that doesn't really exist.&nbsp;</p>\r\n<p>Another way, and few jQuery plugins implement this, is that RateIt would create a timer, and on every x ms would search for new rateit controls on the page and bind them. But I really don't like this: (1) it causes sometimes undesired black magic (2) what\r\n if each control works like that, it would mean many many timers on a page (3) it is against the jQuery standard.</p>\r\n<p>The correct solution lays with the implementor: you. I suppose DataTables.net triggers an event when a page changes (if not, that would be a bug at their side), you will have to handle that event and rebind RateIt on the new page.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-11-21T23:29:05.303-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

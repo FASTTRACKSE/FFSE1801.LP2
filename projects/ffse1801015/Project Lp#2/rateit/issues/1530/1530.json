@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "The two images are dropped straight into the /Content folder. Might be better to put these in a subfolder to avoid problems.",
+    "LastUpdatedDate": "2013-04-11T08:41:08.607-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-04-10T08:27:16.31-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "nuget package: put images in subfolder /content/rateit",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1530
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The same comment as [issue #1531](https://rateit.codeplex.com/workitem/1531)\r\n\r\nYou are right about the naming convention. \r\n\r\nI'm just a bit hesitant performing this change right now, since it is breaking change, and the low severity of the issue does not justify the breaking impact it has.\r\n\r\nI do think when other breaking changes come out, I will add this one as well.\r\n\r\nWhat is your opinion?",
+      "PostedDate": "2013-04-11T07:30:17.353-07:00",
+      "Id": 141079
+    },
+    {
+      "Message": "Actually, I think you can change this without impact.I would think that when the exisiting package gets uninstalled, it looks at the files for that original package and not the new package.\r\n\r\nBut might be easier to hold this off for v2.",
+      "PostedDate": "2013-04-11T08:02:39.76-07:00",
+      "Id": 141080
+    },
+    {
+      "Message": "You are right, but it might be that people reference those images from another place, and the upgrade will delete those images.\r\n\r\nI cannot say if people did it, I can only say that it might happen. \r\n\r\nSo like you say, we can hold this off for v2.\r\n\r\nThanks anyway for mentioning it, I appreciate it.",
+      "PostedDate": "2013-04-11T08:41:08.607-07:00",
+      "Id": 141081
+    }
+  ]
+}

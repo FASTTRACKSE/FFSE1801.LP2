@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1087628",
+    "ThreadId": "455255",
+    "Html": "I'm trying to create hover and on click stage to show tooltip values. facing difficulty to remove the tooltip value on mouseleave. value remains display on mouseleave. \r<br />\n<br />\nvar tooltipvalues = ['Bad', 'Poor', 'Average', 'Good', 'Excellent'];\r<br />\n $(&quot;#rateitHover&quot;).bind('over', function (event, value) {\r<br />\n $(&quot;.tooltip&quot;).text(tooltipvalues[value - 1]);\r<br />\n});\r<br />\n$(&quot;#rateitHover&quot;).bind('rated', function (event, value) { \r<br />\n$('.tooltip').text('Rated: ' + tooltipvalues[value - 1]);\r<br />\n});<br />\n",
+    "PostedDate": "2013-09-03T04:27:40.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090071",
+    "ThreadId": "455255",
+    "Html": "Just add:<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n$(<span style=\"color:#A31515;\">&quot;.rateit&quot;</span>).bind(<span style=\"color:#A31515;\">&#39;mouseleave&#39;</span>, <span style=\"color:Blue;\">function</span>() {$(<span style=\"color:#A31515;\">&#39;#hover5&#39;</span>).empty();});\r\n</pre></div>",
+    "PostedDate": "2013-09-09T01:01:32.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

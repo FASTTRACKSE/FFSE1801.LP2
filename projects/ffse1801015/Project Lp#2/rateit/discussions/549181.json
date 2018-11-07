@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1258119",
+    "ThreadId": "549181",
+    "Html": "Is it possible to have two or more images on the same page?  I want one rating to be a dollar sign and the other rating to be the default stars?  How would you do this?  Thanks...<br />\n",
+    "PostedDate": "2014-06-19T21:52:02.68-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1258387",
+    "ThreadId": "549181",
+    "Html": "Of course. Look at the example 7a: <a href=\"http://www.radioactivethinking.com/rateit/example/example.htm\">\r\nhttp://www.radioactivethinking.com/rateit/example/example.htm</a>\r\n<div><br>\r\n</div>\r\n<div>Basically you add to your special rateit an extra class, and give that class a different background image.\r\n</div>\r\n<div><br>\r\n</div>\r\n<div><br>\r\n</div>\r\n",
+    "PostedDate": "2014-06-20T11:46:34.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1258395",
+    "ThreadId": "549181",
+    "Html": "Thanks.  Worked Out well<br />\n",
+    "PostedDate": "2014-06-20T12:30:26.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

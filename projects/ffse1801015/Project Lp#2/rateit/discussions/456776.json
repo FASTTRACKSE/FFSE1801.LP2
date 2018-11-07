@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1092231",
+    "ThreadId": "456776",
+    "Html": "Hi,\r<br />\nI am using modified RateIt code with MODX extra Lexrating.\r<br />\nExample: <a href=\"http://www.ochutnavac.cz/supermarkety/tesco/833-tesco-havlickova-mlada-boleslav\" rel=\"nofollow\">HERE</a>\r<br />\n<br />\nThe vote is send via ajax after click. I need to modify the code to be able reset the rating (reset button dissappear after voting), or send the rating not after clicking on icon, but on form submit. <br />\n<pre><code> $('.rateit').bind('rated reset', function (e) {\n        var ri = $(this);\n        var value = ri.rateit('value');\n        var objID = ri.data('objectid');\n        var extended = ri.data('extended');\n        ri.rateit('readonly', false);\n        $.ajax({\n            url: 'assets/components/lexrating/connector.php',\n            data: {\n                action: 'web/count/set',\n                id: objID,\n                Count: value,\n                Extended: extended\n            },\n            type: 'POST',\n            cache: false,\n            success: function (data) {\n                var response = JSON.parse(data);\n                if (response.object.value) {\n                    ri.rateit('value', response.object.value);\n                    var readonly = (response.object.allowedToVote === true) ? false : true;\n                    ri.rateit('readonly', readonly);\n                    var counterHolder = '#count_' + ri.prop('id');  \n                    $(counterHolder).text(response.object['total.voters']); \n                    location.reload();\n                }\n            },\n            error: function (jxhr, msg, err) {\n                console.log('jxhr, msg, err', jxhr, msg, err)\n            }\n        });\n\n    });</code></pre>\n\n",
+    "PostedDate": "2013-09-13T03:24:04.003-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1109006",
+    "ThreadId": "456776",
+    "Html": "\r\n<div>Just remove the lines dealing with &quot;readonly&quot; from the code you posted. This should take care of that.\r\n<br>\r\n<br>\r\n</div>\r\n<blockquote type=\"cite\">\r\n<div></div>\r\n</blockquote>\r\n",
+    "PostedDate": "2013-10-17T18:05:45.05-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

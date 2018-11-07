@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1261132",
+    "ThreadId": "550102",
+    "Html": "hello,\r<br />\n<br />\nThank you for your great plugin. I'm using this plugin in two ways and on the same page.\r<br />\n<br />\nI have a news page the main Story has a very big vertical stars and the the oldest topics have horizontal stars which is the same of what you developed. so how I can display stars vertically but don't forget that I need to use horizontal as well.\r<br />\n<br />\n<br />\nI did all what I know but I didn't get it vertical. :)\r<br />\n<br />\nThank you.<br />\n",
+    "PostedDate": "2014-06-30T05:39:58.297-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1261494",
+    "ThreadId": "550102",
+    "Html": "Hi,\r<br />\n<br />\nI'm sorry but vertical stars are currently not supported.\r<br />\nI'll create an issue for it, and lets see if more people will vote on it. If we have more people wanting that feature, I'll develop it.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2014-07-01T03:46:10.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1261495",
+    "ThreadId": "550102",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"https://rateit.codeplex.com/workitem/1860\" rel=\"nofollow\">here</a> to go to the work item and continue the discussion.<br />\n",
+    "PostedDate": "2014-07-01T03:46:28.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

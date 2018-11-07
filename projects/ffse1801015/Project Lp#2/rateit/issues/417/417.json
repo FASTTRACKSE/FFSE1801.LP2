@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-03-31T01:27:59.94-07:00",
+    "CommentCount": 5,
+    "Custom": "",
+    "Description": "If I use the example.htm provided in the download and I change jquery/1.6.2 by jquery/1.7, a bug appears :\nin this example :\n \n<div class=\"rateit\" id=\"rateit5\" data-rateit-min=\"2\">\n</div>\n<div>\n    <span id=\"value5\"></span>\n    <span id=\"hover5\"></span>\n</div>\n \n<script type=\"text/javascript\">\n    $(\"#rateit5\").bind('rated', function (event, value) { $('#value5').text('You\\'ve rated it: ' + value); });\n    $(\"#rateit5\").bind('reset', function () { $('#value5').text('Rating reset'); });\n    $(\"#rateit5\").bind('hover', function (event, value) { $('#hover5').text('Hovering over: ' + value); });\n</script>           \n \nThe value of the rate is not displayed anymore in #hover5, only 'undefined' ( nevertheless, other features seems to work : stars are displayed etc...)\nThis bug appears with jquery 1.7 and 1.7.1 not with 1.6.x : how to solve the problem while using jquery 1.7.x ?",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2011-11-23T15:44:33.193-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bug for hover event with jQuery 1.7",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 417
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks for reporting the bug.\r\n\r\nI found the problem: triggering/handling of the hover event doesn't work.\r\n\r\nI filed a bug with the jquery team: http://bugs.jquery.com/ticket/10882\r\n\r\nA quick fix would be to rename the hover event inside RateIt. Though I would first want to await their answer before performing such a move.\r\n\r\nGidon\r\n\r\n ",
+      "PostedDate": "2011-11-24T00:57:37.823-08:00",
+      "Id": 141058
+    },
+    {
+      "Message": "Thank you for your reactivity :)",
+      "PostedDate": "2011-11-25T00:42:19.117-08:00",
+      "Id": 141059
+    },
+    {
+      "Message": "Update: the jQuery team accepted the bug report, and it will be fixed in the next release.\r\n",
+      "PostedDate": "2011-11-25T04:05:38.55-08:00",
+      "Id": 141060
+    },
+    {
+      "Message": "Resolved with changeset 16115.",
+      "PostedDate": "2012-03-31T01:27:59.94-07:00",
+      "Id": 141061
+    },
+    {
+      "Message": "The 'hover' event got an extra name: 'over' . Because the bug leading to this is not fixed yet in jQuery.",
+      "PostedDate": "2012-03-31T01:32:00.07-07:00",
+      "Id": 141062
+    }
+  ]
+}

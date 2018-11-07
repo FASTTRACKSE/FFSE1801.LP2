@@ -1,0 +1,567 @@
+[
+  {
+    "Id": "235593",
+    "Title": "Feedback",
+    "LatestDate": "2010-11-22T07:29:43.963-08:00"
+  },
+  {
+    "Id": "237756",
+    "Title": "how to add hints to stars?",
+    "LatestDate": "2011-01-08T19:06:37.65-08:00"
+  },
+  {
+    "Id": "240598",
+    "Title": "$(\"#rateit9\").rateit is not a function",
+    "LatestDate": "2011-06-11T01:40:47.55-07:00"
+  },
+  {
+    "Id": "248715",
+    "Title": "Select box progressive enhancement with half stars",
+    "LatestDate": "2011-03-07T06:35:08.617-08:00"
+  },
+  {
+    "Id": "248924",
+    "Title": "Asp.Net?",
+    "LatestDate": "2011-03-09T06:25:48.533-08:00"
+  },
+  {
+    "Id": "249121",
+    "Title": "Basic installation question",
+    "LatestDate": "2011-03-12T09:14:20.843-08:00"
+  },
+  {
+    "Id": "251561",
+    "Title": "Show hover tip on right side",
+    "LatestDate": "2011-03-29T00:12:39.7-07:00"
+  },
+  {
+    "Id": "256889",
+    "Title": "preset mean values",
+    "LatestDate": "2011-06-11T23:21:24.023-07:00"
+  },
+  {
+    "Id": "257634",
+    "Title": "jquery data-camel-casing = camelCasing",
+    "LatestDate": "2011-05-15T01:28:31.067-07:00"
+  },
+  {
+    "Id": "260266",
+    "Title": "Plugin won't work in a fancybox modal",
+    "LatestDate": "2011-06-06T23:25:39.807-07:00"
+  },
+  {
+    "Id": "263609",
+    "Title": "IE6, IE7, FF2 CSS improvements",
+    "LatestDate": "2011-07-01T13:48:42.04-07:00"
+  },
+  {
+    "Id": "263615",
+    "Title": "Plugin in .aspx page",
+    "LatestDate": "2011-07-02T22:13:12.01-07:00"
+  },
+  {
+    "Id": "264454",
+    "Title": "Spacing between stars",
+    "LatestDate": "2011-07-08T11:40:31.957-07:00"
+  },
+  {
+    "Id": "265012",
+    "Title": "jQuery 1.6.2",
+    "LatestDate": "2011-07-14T08:17:54.743-07:00"
+  },
+  {
+    "Id": "265113",
+    "Title": "How to set value of hidden input after choosing rating?",
+    "LatestDate": "2012-08-19T06:03:03.493-07:00"
+  },
+  {
+    "Id": "265289",
+    "Title": "Problems with Chrome 15th July",
+    "LatestDate": "2011-07-15T17:27:48.353-07:00"
+  },
+  {
+    "Id": "267031",
+    "Title": "writing value on the star items",
+    "LatestDate": "2011-07-29T09:26:48.383-07:00"
+  },
+  {
+    "Id": "274100",
+    "Title": "No files with nuget package",
+    "LatestDate": "2011-09-30T09:09:55.863-07:00"
+  },
+  {
+    "Id": "280604",
+    "Title": "Bug with jquery 1.7",
+    "LatestDate": "2012-02-24T03:03:00.88-08:00"
+  },
+  {
+    "Id": "282578",
+    "Title": "Initial value",
+    "LatestDate": "2011-12-11T16:06:33.403-08:00"
+  },
+  {
+    "Id": "345662",
+    "Title": "Cannot get RateIt to Show Up",
+    "LatestDate": "2012-02-27T10:18:20.403-08:00"
+  },
+  {
+    "Id": "348256",
+    "Title": "I dont know how get value in Razor",
+    "LatestDate": "2012-03-12T07:47:17.81-07:00"
+  },
+  {
+    "Id": "350571",
+    "Title": "Cannot get RateIt to work",
+    "LatestDate": "2012-04-02T09:31:36.417-07:00"
+  },
+  {
+    "Id": "350924",
+    "Title": "Using step: 1, rateit still allows half-point ratings",
+    "LatestDate": "2012-10-22T03:31:51.227-07:00"
+  },
+  {
+    "Id": "351975",
+    "Title": "Custom  Selectors in MVC",
+    "LatestDate": "2012-04-11T18:31:36.943-07:00"
+  },
+  {
+    "Id": "355894",
+    "Title": "Is it possible to email results of RatiIt?",
+    "LatestDate": "2012-05-16T01:20:02.687-07:00"
+  },
+  {
+    "Id": "358039",
+    "Title": "rating set dynamically using Jquery",
+    "LatestDate": "2012-06-02T23:48:42.523-07:00"
+  },
+  {
+    "Id": "358661",
+    "Title": "jquery reset rating",
+    "LatestDate": "2012-06-08T08:15:28.473-07:00"
+  },
+  {
+    "Id": "362055",
+    "Title": "Disable rating with Progressive enhacement",
+    "LatestDate": "2012-07-08T07:32:45.91-07:00"
+  },
+  {
+    "Id": "389224",
+    "Title": "Setting initial value issue",
+    "LatestDate": "2012-07-30T09:34:10.943-07:00"
+  },
+  {
+    "Id": "389482",
+    "Title": "Set readonly attribute at server side",
+    "LatestDate": "2012-07-30T07:17:19.677-07:00"
+  },
+  {
+    "Id": "389607",
+    "Title": "Triggering rated even",
+    "LatestDate": "2012-07-30T23:44:25.053-07:00"
+  },
+  {
+    "Id": "390600",
+    "Title": "Setting a value to a predefined readonly starrating div withouth reloading the page",
+    "LatestDate": "2012-08-19T06:08:08.067-07:00"
+  },
+  {
+    "Id": "394095",
+    "Title": "Problem embedding <div class='rateit> on JS TABLE.append();",
+    "LatestDate": "2012-09-02T08:21:01.307-07:00"
+  },
+  {
+    "Id": "399417",
+    "Title": "Readonly mode with backing range field",
+    "LatestDate": "2012-10-17T05:08:25.513-07:00"
+  },
+  {
+    "Id": "399748",
+    "Title": "half values for stars",
+    "LatestDate": "2012-10-17T08:40:11.063-07:00"
+  },
+  {
+    "Id": "399838",
+    "Title": "Custom Image instead of stars",
+    "LatestDate": "2012-10-18T03:10:01.68-07:00"
+  },
+  {
+    "Id": "400057",
+    "Title": "Need some help with BigStars.",
+    "LatestDate": "2012-10-31T05:39:51.88-07:00"
+  },
+  {
+    "Id": "401485",
+    "Title": "Need some help with over",
+    "LatestDate": "2013-09-09T00:59:56.69-07:00"
+  },
+  {
+    "Id": "401944",
+    "Title": "Repackaged for meteor; thanks for this plugin!",
+    "LatestDate": "2012-11-06T02:30:40.37-08:00"
+  },
+  {
+    "Id": "401945",
+    "Title": ".val() to get the value?",
+    "LatestDate": "2012-11-06T02:36:50.65-08:00"
+  },
+  {
+    "Id": "402051",
+    "Title": "RateIt Symfony2 and Google Maps",
+    "LatestDate": "2014-09-02T10:50:17.703-07:00"
+  },
+  {
+    "Id": "402288",
+    "Title": "Programmatically set colour?",
+    "LatestDate": "2012-11-07T12:02:54.05-08:00"
+  },
+  {
+    "Id": "403255",
+    "Title": " data-role=\"page\" in JQuery Mobile (resolved)",
+    "LatestDate": "2012-11-14T16:16:49.983-08:00"
+  },
+  {
+    "Id": "403512",
+    "Title": "How can set dafault value to stars",
+    "LatestDate": "2012-11-16T11:41:21.22-08:00"
+  },
+  {
+    "Id": "404002",
+    "Title": "Rating disappear",
+    "LatestDate": "2012-11-21T23:29:05.303-08:00"
+  },
+  {
+    "Id": "406110",
+    "Title": "License",
+    "LatestDate": "2012-12-11T17:48:21.427-08:00"
+  },
+  {
+    "Id": "432011",
+    "Title": "On creating dynamic listview star ratings are not displayed",
+    "LatestDate": "2013-02-23T22:32:15.79-08:00"
+  },
+  {
+    "Id": "432176",
+    "Title": "Don't understand how to post a value",
+    "LatestDate": "2013-02-06T04:35:21.237-08:00"
+  },
+  {
+    "Id": "432508",
+    "Title": "Jquery 1.8.0",
+    "LatestDate": "2013-02-10T07:44:13.167-08:00"
+  },
+  {
+    "Id": "433329",
+    "Title": "Populating a hidden radio input",
+    "LatestDate": "2013-02-17T03:34:24.037-08:00"
+  },
+  {
+    "Id": "433437",
+    "Title": "Working great at load, rateit() not working afterwards.",
+    "LatestDate": "2013-02-17T22:14:35.54-08:00"
+  },
+  {
+    "Id": "435533",
+    "Title": "Cant get the value in div class=\"rateit\" readonly mode  after ajax call",
+    "LatestDate": "2013-03-06T01:57:10.503-08:00"
+  },
+  {
+    "Id": "439082",
+    "Title": "Block double voting",
+    "LatestDate": "2013-04-05T15:40:11.477-07:00"
+  },
+  {
+    "Id": "439373",
+    "Title": "rateit with pagedlist.mvc unobtrusive-ajax",
+    "LatestDate": "2013-04-06T22:49:39.257-07:00"
+  },
+  {
+    "Id": "442490",
+    "Title": "Simple setup, don't think my binding calls are working...",
+    "LatestDate": "2013-05-03T11:54:50.287-07:00"
+  },
+  {
+    "Id": "445098",
+    "Title": "How do I calculate avarage rating or store the rating score to server?",
+    "LatestDate": "2013-06-07T07:46:29.35-07:00"
+  },
+  {
+    "Id": "447361",
+    "Title": "Getting TypeError: $(...).rateit is not a function with Jquery Dialog",
+    "LatestDate": "2013-06-18T03:32:17.413-07:00"
+  },
+  {
+    "Id": "449496",
+    "Title": "Using Rateit with twitter bootstrap popover",
+    "LatestDate": "2013-07-10T11:23:54.84-07:00"
+  },
+  {
+    "Id": "449729",
+    "Title": "Setting Value Larger Than # of Stars",
+    "LatestDate": "2013-07-18T21:01:52.92-07:00"
+  },
+  {
+    "Id": "450234",
+    "Title": "Suggestion: use span instead of div",
+    "LatestDate": "2013-08-03T10:02:52.107-07:00"
+  },
+  {
+    "Id": "451856",
+    "Title": "How to connect RateIt to a json file?",
+    "LatestDate": "2013-07-30T15:12:02.057-07:00"
+  },
+  {
+    "Id": "452084",
+    "Title": "RateIt knockout binding handler",
+    "LatestDate": "2014-09-22T16:54:03.69-07:00"
+  },
+  {
+    "Id": "453873",
+    "Title": "Feature request: a .reset() method to clear out everything",
+    "LatestDate": "2013-11-12T10:44:36.923-08:00"
+  },
+  {
+    "Id": "454571",
+    "Title": "Maintaining the Selected Star Rating after we switch to another page and come back to the same page",
+    "LatestDate": "2013-08-26T11:46:05.36-07:00"
+  },
+  {
+    "Id": "455255",
+    "Title": "custom tooltip value not removed on mouseleave",
+    "LatestDate": "2013-09-09T01:01:32.91-07:00"
+  },
+  {
+    "Id": "456157",
+    "Title": "Why does my rating automatically repeat itself?",
+    "LatestDate": "2013-09-08T23:55:43.66-07:00"
+  },
+  {
+    "Id": "456170",
+    "Title": "how to resize?",
+    "LatestDate": "2013-11-07T05:10:32.553-08:00"
+  },
+  {
+    "Id": "456776",
+    "Title": "Modify AJAX to be able reset rating",
+    "LatestDate": "2013-10-17T18:05:45.05-07:00"
+  },
+  {
+    "Id": "459055",
+    "Title": "How apply ratings on retrieval",
+    "LatestDate": "2013-10-17T18:03:05.053-07:00"
+  },
+  {
+    "Id": "462643",
+    "Title": "Change star colour depending on rating.",
+    "LatestDate": "2013-10-17T17:56:54.833-07:00"
+  },
+  {
+    "Id": "465366",
+    "Title": "rateit and jquery mobile - problem with data-role=none",
+    "LatestDate": "2013-11-13T01:33:39.157-08:00"
+  },
+  {
+    "Id": "470376",
+    "Title": "Problem with loop",
+    "LatestDate": "2013-11-23T23:23:10.607-08:00"
+  },
+  {
+    "Id": "470808",
+    "Title": "Backing field mulitplier",
+    "LatestDate": "2013-11-23T23:22:50.013-08:00"
+  },
+  {
+    "Id": "470906",
+    "Title": "Using arrow keys after a rating",
+    "LatestDate": "2013-12-01T23:57:51.08-08:00"
+  },
+  {
+    "Id": "472829",
+    "Title": "getting an error \"no method 'apply'\"",
+    "LatestDate": "2013-12-11T02:16:44.347-08:00"
+  },
+  {
+    "Id": "473797",
+    "Title": "Dynamics list from DB, stars disappear when change page",
+    "LatestDate": "2013-12-22T06:38:56.157-08:00"
+  },
+  {
+    "Id": "473814",
+    "Title": "How to insert rateit rating value into database ?",
+    "LatestDate": "2014-01-25T10:55:38.83-08:00"
+  },
+  {
+    "Id": "474393",
+    "Title": "RateIt works perfectly with direct HTML not after ajax",
+    "LatestDate": "2013-12-18T06:29:46.51-08:00"
+  },
+  {
+    "Id": "526166",
+    "Title": "Confirmation before do a rate",
+    "LatestDate": "2014-01-27T00:08:04.957-08:00"
+  },
+  {
+    "Id": "534762",
+    "Title": "Problem when running Rateit with JQuery Mobile",
+    "LatestDate": "2014-02-24T08:33:49.57-08:00"
+  },
+  {
+    "Id": "539023",
+    "Title": "Got a long number",
+    "LatestDate": "2014-09-07T05:13:15.54-07:00"
+  },
+  {
+    "Id": "539898",
+    "Title": "CSS for bigger stars (mobile)",
+    "LatestDate": "2014-04-08T08:09:07.613-07:00"
+  },
+  {
+    "Id": "539901",
+    "Title": "Can't get stars to show up...",
+    "LatestDate": "2014-04-07T07:59:51.247-07:00"
+  },
+  {
+    "Id": "540218",
+    "Title": "How to make only one 'star' to be highlighted?",
+    "LatestDate": "2014-04-07T07:59:19.843-07:00"
+  },
+  {
+    "Id": "541486",
+    "Title": "change width to percentages instead of pixels",
+    "LatestDate": "2014-04-08T01:32:29.647-07:00"
+  },
+  {
+    "Id": "541489",
+    "Title": "Use Icon Fonts instead of Images",
+    "LatestDate": "2014-04-08T03:43:50.3-07:00"
+  },
+  {
+    "Id": "541783",
+    "Title": "Compatible jQuery Versions",
+    "LatestDate": "2014-04-09T14:32:32.647-07:00"
+  },
+  {
+    "Id": "542661",
+    "Title": "Select element with steps",
+    "LatestDate": "2014-04-29T00:04:11.687-07:00"
+  },
+  {
+    "Id": "549181",
+    "Title": "Multiple Images On One Page",
+    "LatestDate": "2014-06-20T12:30:26.497-07:00"
+  },
+  {
+    "Id": "549261",
+    "Title": "Hiding the delete button",
+    "LatestDate": "2014-06-20T12:07:12.327-07:00"
+  },
+  {
+    "Id": "550102",
+    "Title": "Vertical stars",
+    "LatestDate": "2014-07-01T03:46:28.62-07:00"
+  },
+  {
+    "Id": "551573",
+    "Title": "CDN",
+    "LatestDate": "2014-07-15T10:39:08.103-07:00"
+  },
+  {
+    "Id": "551632",
+    "Title": "RateIt - I can't get it to work, like at all (please help)",
+    "LatestDate": "2014-07-16T03:59:13.45-07:00"
+  },
+  {
+    "Id": "552301",
+    "Title": "BeforeRate; Getting RateIt \"BeforeRated\" to work with PhoneGap",
+    "LatestDate": "2014-08-14T03:25:30.143-07:00"
+  },
+  {
+    "Id": "554369",
+    "Title": "value 0 submitted to database",
+    "LatestDate": "2014-07-28T01:12:47.323-07:00"
+  },
+  {
+    "Id": "561459",
+    "Title": "ajax to get the productid when the page loads?",
+    "LatestDate": "2014-08-18T07:45:08.34-07:00"
+  },
+  {
+    "Id": "561537",
+    "Title": "Dynamically set ''data-rateit-value'' ",
+    "LatestDate": "2014-08-18T23:29:01.097-07:00"
+  },
+  {
+    "Id": "565184",
+    "Title": "How to know if rated?",
+    "LatestDate": "2014-09-04T14:02:38.887-07:00"
+  },
+  {
+    "Id": "566522",
+    "Title": "Jquery click event problem on mobile",
+    "LatestDate": "2014-09-06T23:40:44.977-07:00"
+  },
+  {
+    "Id": "567496",
+    "Title": "big stars with rtl issue",
+    "LatestDate": "2014-09-15T12:45:07.813-07:00"
+  },
+  {
+    "Id": "567759",
+    "Title": "Need help integrate RATEIT ",
+    "LatestDate": "2014-09-18T01:32:57.557-07:00"
+  },
+  {
+    "Id": "569168",
+    "Title": "Readonly Mode is not Working",
+    "LatestDate": "2014-10-06T17:24:31.02-07:00"
+  },
+  {
+    "Id": "570483",
+    "Title": "No keyboard support",
+    "LatestDate": "2014-10-29T08:34:41.307-07:00"
+  },
+  {
+    "Id": "572873",
+    "Title": "for AJAX does not display a star rating",
+    "LatestDate": "2016-10-23T22:18:23.59-07:00"
+  },
+  {
+    "Id": "578914",
+    "Title": "RateIt Increasing HTML header size",
+    "LatestDate": "2015-03-03T03:04:04.167-08:00"
+  },
+  {
+    "Id": "579770",
+    "Title": "integration issue - trouble saving value to database",
+    "LatestDate": "2015-02-08T16:42:35.833-08:00"
+  },
+  {
+    "Id": "581511",
+    "Title": "Displaying ratings of multiple posts on 1 page?",
+    "LatestDate": "2015-02-20T19:35:04.103-08:00"
+  },
+  {
+    "Id": "588360",
+    "Title": "Debugger kicking in with IE 5 and 7",
+    "LatestDate": "2015-03-19T11:02:11.843-07:00"
+  },
+  {
+    "Id": "590880",
+    "Title": "How to save the Rating?",
+    "LatestDate": "2015-03-24T07:05:19.257-07:00"
+  },
+  {
+    "Id": "640980",
+    "Title": "echo to form field",
+    "LatestDate": "2015-07-09T02:52:19.333-07:00"
+  },
+  {
+    "Id": "644597",
+    "Title": "Problem with appending rating to a php variable",
+    "LatestDate": "2015-09-15T23:34:11.78-07:00"
+  },
+  {
+    "Id": "650040",
+    "Title": "How do you set a rating starting from a negative value?",
+    "LatestDate": "2016-02-12T01:24:59.1-08:00"
+  }
+]

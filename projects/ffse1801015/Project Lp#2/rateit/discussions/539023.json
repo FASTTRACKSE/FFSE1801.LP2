@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1222854",
+    "ThreadId": "539023",
+    "Html": "Hi, I'm using this fantastic plugin, but I've just found a little error if step 0.1 is used: i've made a video for make me explain better...<br />\n<br />\n<a href=\"http://www.youtube.com/watch?v=zeyFBDYb4RE\" rel=\"nofollow\">http://www.youtube.com/watch?v=zeyFBDYb4RE</a><br />\n<br />\nI'm not familiar in js: anybody know how to print only 1 decimal after the dot ?<br />\n<br />\nRegards,<br />\nDario<br />\n",
+    "PostedDate": "2014-03-14T11:10:49.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1223068",
+    "ThreadId": "539023",
+    "Html": "I've solved using .toFixed()<br />\n",
+    "PostedDate": "2014-03-15T06:22:44.06-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1223183",
+    "ThreadId": "539023",
+    "Html": "Great.<br />\n",
+    "PostedDate": "2014-03-15T23:52:59.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1301417",
+    "ThreadId": "539023",
+    "Html": "Hello i got this issue to, trying to use 0.1 step.... can you share the solution Dudo1985? Thanks <br />\n",
+    "PostedDate": "2014-09-06T08:49:54.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1301970",
+    "ThreadId": "539023",
+    "Html": "I used .toFixed\r<br />\n<br />\n<a href=\"http://www.w3schools.com/jsref/jsref_tofixed.asp\" rel=\"nofollow\">http://www.w3schools.com/jsref/jsref_tofixed.asp</a>\r<br />\n<br />\nBest,\r<br />\nDario<br />\n",
+    "PostedDate": "2014-09-07T05:13:15.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

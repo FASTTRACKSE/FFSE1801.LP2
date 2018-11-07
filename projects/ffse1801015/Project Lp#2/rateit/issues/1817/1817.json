@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2014-02-11T01:41:47.987-08:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "If you setup a change listener on the backingfld, plug in rateit with it pointing to the backingfld, and you select a star, the value of the backingfld is changed, but the change listener never triggers.\n\nI recommend, after setting the backingfld value, you also manaully trigger a change, e.g.\n\n```\n$(itemdata('backingfld')).val(value);\n$(itemdata('backingfld')).trigger('change');\n```\n\nI've made this addition to rateit locally and it's working much better.",
+    "LastUpdatedDate": "2014-02-11T01:56:47.107-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-02-10T15:31:40.07-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Trigger change on backingfld when value changes",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1817
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 35939: Trigger change event on backingfield",
+      "PostedDate": "2014-02-11T01:41:47.987-08:00",
+      "Id": 141117
+    },
+    {
+      "Message": "Thanks for posting the bug report. As you can see, I've updated the project.",
+      "PostedDate": "2014-02-11T01:56:47.107-08:00",
+      "Id": 141118
+    }
+  ]
+}

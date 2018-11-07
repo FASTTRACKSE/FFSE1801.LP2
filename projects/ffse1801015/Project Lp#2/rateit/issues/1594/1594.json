@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Integration problem",
+    "ClosedDate": "2013-06-18T00:05:25.537-07:00",
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "I am using Rating Plugin on a page which also contains Jquery Dialog. While retrieving value it is giving following error: Error: TypeError: $(...).rateit is not a function.\n\nI have observed that if i remove dialog from page then rating plugin works fine.\n\nCan anybody suggest solution for this?",
+    "LastUpdatedDate": "2013-06-18T00:05:25.537-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-06-17T21:57:28.777-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Getting TypeError: $(...).rateit is not a function with Jquery Dialog",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1594
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

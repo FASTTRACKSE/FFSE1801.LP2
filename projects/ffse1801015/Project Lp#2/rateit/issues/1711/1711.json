@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-11-07T05:12:41.5-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Looks like two elements don't receive the new size after doing this: _rateit-selected_ and _rateit-hover_ and cause image repetition in the _y_ direction. I put some code in to do this after the _init_ section and everything is working as expected.",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "null",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-11-07T05:10:32.503-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Resize",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1711
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 33904: Fixed extra artificats when changing starwidth/height",
+      "PostedDate": "2013-11-07T05:12:41.5-08:00",
+      "Id": 141096
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed with jQuery 1.5.1",
+    "ClosedDate": "2011-03-01T11:00:08.967-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "The sample worked with 1.4.4 but not with 1.5.\nhttp://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js\n \nIvan",
+    "LastUpdatedDate": "2013-05-16T04:24:24.717-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2011-02-16T19:11:56.97-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Not working with jQuery 1.5",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 210
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi Ivan,\r\n\r\nSorry for the late reaction, didn't see your post until now.\r\n\r\nThis was caused by known issue in jQuery in conjunction with IE. It was fixed in jQuery 1.5.1\r\n\r\nGidon",
+      "PostedDate": "2011-03-01T10:56:33.02-08:00",
+      "Id": 141049
+    }
+  ]
+}

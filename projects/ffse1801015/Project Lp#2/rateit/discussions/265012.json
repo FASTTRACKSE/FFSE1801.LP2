@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "641736",
+    "ThreadId": "265012",
+    "Html": "\r\n<p>Just a friendly heads up, your wonderful RateIt plugin (the latest version 1.0.1) doesn't seem to work with the version 1.6.2 of jQuery. Stars don't show and/or don't seem to have any width, and values don't set correctly if you try to hard-set the widths\r\n with CSS and then give a rating.</p>\r\n<p>Apologies if you already knew this or that didn't make sense.</p>\r\n<p>Works fine with 1.6.1.</p>\r\n",
+    "PostedDate": "2011-07-13T08:27:25.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "641805",
+    "ThreadId": "265012",
+    "Html": "\r\n<div>I'll have a look later on, but to my best knowledge, the samples page runs on jQuery 1.6.2</div>\r\n<div><br>\r\n</div>\r\n<div>Gidon<br>\r\n<br>\r\nSent from my iPhone</div>\r\n<div><br>\r\nOn 13 ביול 2011, at 18:27, &quot;rocktronica&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: rocktronica</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Just a friendly heads up, your wonderful RateIt plugin (the latest version 1.0.1) doesn't seem to work with the version 1.6.2 of jQuery. Stars don't show and/or don't seem to have any width, and values don't set correctly if you try to hard-set the widths\r\n with CSS and then give a rating.</p>\r\n<p>Apologies if you already knew this or that didn't make sense.</p>\r\n<p>Works fine with 1.6.1.</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-07-13T10:03:38.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "641902",
+    "ThreadId": "265012",
+    "Html": "<p>Indeed, my sample use 1.6.1, and on 1.6.2 some of the samples don't work.&nbsp;</p>\r\n<p>I'll dive in to it tomorrow.</p>",
+    "PostedDate": "2011-07-13T13:07:51.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "641918",
+    "ThreadId": "265012",
+    "Html": "<p>Let me know if you need help testing or anything.</p>",
+    "PostedDate": "2011-07-13T13:28:52.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "641921",
+    "ThreadId": "265012",
+    "Html": "<p>Uploaded a fixed version. Had to break compatibility with anything older than 1.6.x.</p>",
+    "PostedDate": "2011-07-13T13:37:06.16-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "642389",
+    "ThreadId": "265012",
+    "Html": "<p>Works, thanks!</p>",
+    "PostedDate": "2011-07-14T08:17:54.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

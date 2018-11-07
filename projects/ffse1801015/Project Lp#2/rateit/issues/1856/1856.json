@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "No response from reporter to inquiry",
+    "ClosedDate": "2014-06-02T00:44:22.963-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I recently updated from version v1.0.9 to v1.0.21. Now when I click a star it send two events the usual \"rated\" event then followed immediately by a \"reset\" event. So it sets the stars and immediately clears it. I switched back to 1.0.9 and all works as before. Here's what the element looks like.\n\n<span \ndata-rateit-resetable=\"\" \ndata-rateit-value=\"2\" \ndata-rateit-ispreset=\"true\" \ndata-post_id=\"8\" \nclass=\"rateit\">\n</span>\n\nand the handler\n\n\t$('.rateit').on('rated reset', function(e){\n\t\tconsole.log( e );\n\t\t$this = $(this);\n\t\t$.post( $this.data('ajax'), { \n\t\t\taction: \"rate_pro\", \n\t\t\tpost_id: $this.data('post_id'), \n\t\t\trating: $this.rateit('value'), \n\t\t\t_wpnonce: $this.data('nonce')\n\t\t\t}, \n\t\t\tfunction(data){}, \n\t\t\t'text');\n\t});\n\nI've tried removeing the reset from the \"on\" above but it still clears the stars.",
+    "LastUpdatedDate": "2014-06-02T00:44:22.963-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-04-08T08:57:31.993-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Can't reproduce"
+    },
+    "Summary": "Double Events",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1856
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks for posting the issue. I'll have a look at it in another two weeks when I'll be back in the office. ",
+      "PostedDate": "2014-04-08T09:51:23.05-07:00",
+      "Id": 141132
+    },
+    {
+      "Message": "Hi,\n\nI cannot reproduce your bug.\n\nThis jsfiddle does exactly like you wrote: http://jsfiddle.net/7vvWv/1/  , but when I look at the console, only the rated event is raised, and not the reset. \n\n\nGidon",
+      "PostedDate": "2014-04-28T23:34:02.423-07:00",
+      "Id": 145043
+    }
+  ]
+}

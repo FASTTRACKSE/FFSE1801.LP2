@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1089902",
+    "ThreadId": "456157",
+    "Html": "I just installed this plugin for a mobile bootstrap site I am building, but when I insert the rateit class to my html, it duplicates the plugin.\r<br />\n<br />\n Any ideas on why this would be happening? \r<br />\n<br />\nA simple &lt;span class=&quot;rateit&gt;&lt;/span&gt; line turns into this when inspected on my browser<br />\n&lt;!-- Star Rating --&gt;\r\n<pre><code>&lt;span class=&quot;rateit&quot;&gt;&lt;button id=&quot;rateit-reset-2&quot; class=&quot;rateit-reset&quot; aria-controls=&quot;rateit-range-2&quot; aria-label=&quot;reset rating&quot;&gt;&lt;/button&gt;&lt;span id=&quot;rateit-range-2&quot; class=&quot;rateit-range&quot; aria-valuenow=&quot;1.5&quot; aria-valuemax=&quot;5&quot; aria-valuemin=&quot;0&quot; aria-owns=&quot;rateit-reset-2&quot; aria-label=&quot;rating&quot; role=&quot;slider&quot; tabindex=&quot;0&quot; style=&quot;width: 80px; height: 16px;&quot; aria-readonly=&quot;false&quot;&gt;&lt;span class=&quot;rateit-selected&quot; style=&quot;height: 16px; width: 24px; display: block;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;rateit-hover&quot; style=&quot;height: 16px; width: 0px; display: none;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id=&quot;rateit-reset-2&quot; class=&quot;rateit-reset&quot; aria-controls=&quot;rateit-range-2&quot; aria-label=&quot;reset rating&quot;&gt;&lt;/button&gt;&lt;span id=&quot;rateit-range-2&quot; class=&quot;rateit-range&quot; aria-valuenow=&quot;1.5&quot; aria-valuemax=&quot;5&quot; aria-valuemin=&quot;0&quot; aria-owns=&quot;rateit-reset-2&quot; aria-label=&quot;rating&quot; role=&quot;slider&quot; tabindex=&quot;0&quot; style=&quot;width: 80px; height: 16px;&quot; aria-readonly=&quot;false&quot;&gt;&lt;span class=&quot;rateit-selected&quot; style=&quot;height: 16px; width: 24px; display: block;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;rateit-hover&quot; style=&quot;height: 16px; width: 0px; display: none;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;\n  &lt;!-- End Rating --&gt;</code></pre>\n\n```<br />\n",
+    "PostedDate": "2013-09-08T10:34:41.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090042",
+    "ThreadId": "456157",
+    "Html": "What I guess that happens, is that rateit gets initialized before bootstrap starts doing funky stuff on the page.\r<br />\n<br />\nMy suggestion is to take over the initialization of rateit (change the &quot;rateit&quot; class name to something else, so it doesn't auto-initialize), and then after bootstrap gets initialized call $('.NEWCLASSNAME').rateit();<br />\n",
+    "PostedDate": "2013-09-08T23:55:43.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

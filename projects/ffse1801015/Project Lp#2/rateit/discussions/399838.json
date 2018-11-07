@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "928526",
+    "ThreadId": "399838",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Thank you for your great plugin and wonderful support.</p>\r\n<p>I want to use custom image instead of stars and I can not sort it out. my rating image is a simple rounded corner rectangle . I created a gif file which is 36*32 and has 3 vertically aligned elements.</p>\r\n<p>1-empty (black)</p>\r\n<p>2-hover over(yellow)</p>\r\n<p>3- selected (red)</p>\r\n<p>I can not reproduce my image correctly in the output.</p>\r\n<p>Appreciate your help.</p>\r\n<p>Golnaz</p>\r\n",
+    "PostedDate": "2012-10-17T21:32:23.803-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "928531",
+    "ThreadId": "399838",
+    "Html": "<p>I think the starwidth and starheigth has to be set . I did not know that they has a default value of 16 !</p>",
+    "PostedDate": "2012-10-17T22:11:15.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "928576",
+    "ThreadId": "399838",
+    "Html": "Correct. Does it work for you now?",
+    "PostedDate": "2012-10-18T00:09:46.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "928650",
+    "ThreadId": "399838",
+    "Html": "<p>Yes , it works ! thank you !</p>",
+    "PostedDate": "2012-10-18T03:10:01.68-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

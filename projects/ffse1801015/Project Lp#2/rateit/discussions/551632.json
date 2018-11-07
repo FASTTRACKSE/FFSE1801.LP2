@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1266012",
+    "ThreadId": "551632",
+    "Html": "This thing looks perfect for us, but I just can't get it to work.\r<br />\n<br />\nI've followed the simple instructions at the top of the Documentation tab:<br />\n<ul>\n<li>Using jQuery 1.7.1</li>\n<li>Placed jquery.rateit.js in my /js folder, and loading it into my page with script tag</li>\n<li>Placed rateit.css in my /css folder, and loading it (referencing it) with standard link tag</li>\n<li>Placed a div in my code with class=&quot;rateit&quot;</li>\n<li>\nPlaced the images in the root, and also in /js file (But where are these supposed to go?)<br />\n</li>\n</ul>\nNothing appears in the div - nothing at all.\r<br />\n<br />\nWhat are the full list of dependencies?  Because I see all kinds of other files, including a whole library of shCore.js - are those also required?\r<br />\n<br />\nThanks in advance for any help - hoping we can use this nice-looking plug-in...<br />\n",
+    "PostedDate": "2014-07-15T12:55:29.49-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1266047",
+    "ThreadId": "551632",
+    "Html": "Ok I did figure it out.  Turns out, the star.gif and delete.gif files have to be in the same folder as the CSS files (a bit unusual, but now that I know I can change it).\r<br />\n<br />\nSuggestion:  put that in the instructions... :-)<br />\n",
+    "PostedDate": "2014-07-15T14:48:00.95-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1266197",
+    "ThreadId": "551632",
+    "Html": "Great it worked out.<br />\n",
+    "PostedDate": "2014-07-16T03:59:13.45-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

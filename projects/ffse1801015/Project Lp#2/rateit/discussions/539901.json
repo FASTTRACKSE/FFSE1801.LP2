@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1225762",
+    "ThreadId": "539901",
+    "Html": "Hello,\r<br />\n<br />\nI have everything working correctly, but without stars.  Instead of stars I'm getting a horizontal rating bar.  One exactly like whats shown in example 2a. when you click &quot;toggle backing field visibility.&quot;  I'm relatively new to this so any advice would be helpful. a<br />\n",
+    "PostedDate": "2014-03-23T11:45:30.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231344",
+    "ThreadId": "539901",
+    "Html": "Please post a JSFiddle, or a link to a page that demonstrates the problem.<br />\n",
+    "PostedDate": "2014-04-07T07:59:51.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

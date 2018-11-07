@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "No response from OP",
+    "ClosedDate": "2014-04-28T23:35:31.037-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Hello,\nI'm working on a website with some friends and i really like this plugin but there is a problem.\nEverytime i load the site i see duplicates until i move my mouse over the stars :(\nI tried fiddling around with the JS but no luck.. \nI was wondering if anyone is aware of this bug and if there's something that can be done.\n\nThanks  :)",
+    "LastUpdatedDate": "2014-04-28T23:35:31.037-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-03-05T03:58:53.13-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Duplicates bug",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1833
+  },
+  "FileAttachments": [
+    {
+      "FileId": 825472,
+      "FileName": "Untitled.png",
+      "DownloadUrl": ".\\825472"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Can you post a jsfiddle, or a link to a demo? ",
+      "PostedDate": "2014-03-05T04:46:19.22-08:00",
+      "Id": 141127
+    }
+  ]
+}

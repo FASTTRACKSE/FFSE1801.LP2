@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "623232",
+    "ThreadId": "260266",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>I've tried embedding the div into an HTML fragment (on the same page) that gets loaded up as a modal window via fancybox. Although the stars do show up, mousing over them has no effect, although strangely enough the cancel mouse-over works. Has anybody ever\r\n tried using this with a modal window a-la fancybox?</p>\r\n",
+    "PostedDate": "2011-06-05T14:38:07.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "623437",
+    "ThreadId": "260266",
+    "Html": "<p>Could you post your code, perhaps in jsfiddle?</p>",
+    "PostedDate": "2011-06-06T05:21:22.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "623442",
+    "ThreadId": "260266",
+    "Html": "<p>Sure</p>\n<p>http://jsfiddle.net/5WbyW/1/</p>",
+    "PostedDate": "2011-06-06T05:30:36.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "623484",
+    "ThreadId": "260266",
+    "Html": "<p>how does it work? when do I get the fancybox?</p>",
+    "PostedDate": "2011-06-06T06:34:55.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "623504",
+    "ThreadId": "260266",
+    "Html": "<p>Sorry my snafu. Use&nbsp;http://jsfiddle.net/5WbyW/7/ and click anywhere on the map</p>",
+    "PostedDate": "2011-06-06T07:07:22.003-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "623644",
+    "ThreadId": "260266",
+    "Html": "<p>nothing happens when i click on the map (chrome 11, ie9)</p>",
+    "PostedDate": "2011-06-06T11:25:46.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "623928",
+    "ThreadId": "260266",
+    "Html": "<p>In JsFiddle it didn't work, but locally it did.</p>\r\n<p>I found the problem, and have a solution for you.<br />The problem is that fancybox, takes the html of your div, and then creates a new element. So any javascript binding are only on the original div, and not in your fancybox,</p>\r\n<p>So part one of your solution is in your \"submitGarage\" function:</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>    <span style=\"color: blue;\">function</span> submitGarage(location) {\r\n        jQuery(document).ready(<span style=\"color: blue;\">function</span>() {\r\n            $.fancybox($(<span style=\"color: #a31515;\">\"#garage_form_container\"</span>).html(), {\r\n                <span style=\"color: #a31515;\">'autoDimensions'</span> : <span style=\"color: blue;\">true</span>,\r\n                <span style=\"color: #a31515;\">'width'</span> : <span style=\"color: #a31515;\">'auto'</span>,\r\n                <span style=\"color: #a31515;\">'height'</span> : <span style=\"color: #a31515;\">'auto'</span>,\r\n                <span style=\"color: #a31515;\">'transitionIn'</span> : <span style=\"color: #a31515;\">'none'</span>,\r\n                <span style=\"color: #a31515;\">'transitionOut'</span> : <span style=\"color: #a31515;\">'none'</span>,\r\n                onComplete: <span style=\"color: blue;\">function</span>(e) { $(<span style=\"color: #a31515;\">'.rateit'</span>).rateit();  } //new, when the fancybox is loaded init the rateit plugin\r\n            });\r\n        });\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n<p>Now the problem is that when doing so, also the original rateit plugin is rebound, so next time you'll get two rateit plugins, and then 3 etc. etc.</p>\r\n<p>So what we have to do is a simple trick, taking &nbsp;the original div out of the dom:</p>\r\n<p>Replace&nbsp;</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">style</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"display: none;\"</span> <span style=\"color: red;\">id</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"garage_form_container\"</span><span style=\"color: blue;\">&gt;</span>\r\n....\r\n<span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span>\r\n\r\n</pre>\r\n</div>\r\n</p>\r\n<p>with:</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">script</span> <span style=\"color: red;\">type</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"text/html\"</span> <span style=\"color: red;\">id</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"garage_form_container\"</span><span style=\"color: blue;\">&gt;</span>\r\n....\r\n<span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">script</span><span style=\"color: blue;\">&gt;</span>\r\n</pre>\r\n</div>\r\n</p>\r\n<p>this is perfectly legal.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre style=\"color: black;\"><span style=\"color: #0000ff;\"><br /></span></pre>\r\n<pre><span style=\"color: #0000ff;\"><br /></span></pre>\r\n<pre><span style=\"color: #0000ff;\"><br /></span></pre>\r\n</div>",
+    "PostedDate": "2011-06-06T23:25:39.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

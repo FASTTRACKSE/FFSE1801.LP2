@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!-- alternative styles -->
+    <link href="content/bigstars.css" rel="stylesheet" type="text/css">
+    <link href="content/antenna.css" rel="stylesheet" type="text/css">
+    <link href="content/svg.css" rel="stylesheet" type="text/css">
+    <!-- syntax highlighter -->
+    <link href="sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="sh/shCoreDefault.css" rel="stylesheet" type="text/css">
+
+    <script src="~/Scripts/jquery.rateit.min.js"></script>
+    <link href="~/Content/rateit.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="rateit">
+        
+</div>
+</body>
+</html>

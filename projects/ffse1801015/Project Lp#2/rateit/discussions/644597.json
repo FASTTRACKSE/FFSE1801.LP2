@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1443198",
+    "ThreadId": "644597",
+    "Html": "Hello,\r<br />\n<br />\nI've been trying to send the data from jquery to php in order to save rating to database.\r<br />\nHowever I am still unable to do this and even asking other people about the solution we couldn't find a satisfactory one.\r<br />\nPlease tell me if this is how you'd do this.<br />\n<pre><code> &lt;form action=&quot;&quot; name=&quot;review&quot; id=&quot;review&quot; method =&quot;post&quot;&gt;\n  Rating: \n&lt;input type=&quot;range&quot; value=&quot;0&quot; step=&quot;0.5&quot; id=&quot;rating&quot;&gt;\n&lt;div id=&quot;stars&quot; class=&quot;rateit&quot; onclick=&quot;&quot; data-rateit-backingfld=&quot;#rating&quot; data-rateit-resetable=&quot;false&quot;  data-rateit-ispreset=&quot;true&quot;\n    data-rateit-min=&quot;0&quot; data-rateit-max=&quot;10&quot;&gt;\n&lt;/div&gt;\n&lt;input type=&quot;submit&quot; name=&quot;submitcomment&quot; id=&quot;submit&quot;  value=&quot;Comment!&quot;&gt;\n&lt;/form&gt;</code></pre>\n\nNext is my jquery/ajax code:<br />\n<pre><code>$(document).ready(function () {\n              $('#submit').click(function () {\n\n                  var value = alert($('#stars').rateit('value'));\n\n                  $.ajax({\n                      url: 'itemreview.php',\n                      type: &quot;POST&quot;,\n                      data: { value: value },\n                      success: function (data) {\n                          alert(&quot;Got it!&quot;+ value);\n                      }\n                  });\n              });\n          });</code></pre>\n\nAnd finally, php:<br />\n<pre><code>if(isset($_POST['submitcomment'])) {\n    $userrating = $_POST['stars'];\n               \n               echo &quot;Posted!&quot;;\n               echo $userrating;\n}\n</code></pre>\n\nI just can't get the value from <br />\n<pre><code>$('#stars').rateit('value')</code></pre>\n\ninto my $userrating.\r<br />\n<br />\nI've pasted my code with alert as it displays the value in the alert window. However I am unable to insert it into my $userrating.\r<br />\n<br />\nSome people have suggested doing this: <br />\n<pre><code>data: {&quot;value&quot;:value},</code></pre>\n\nor <br />\n<pre><code>data: {value: value},</code></pre>\n\nbut nothing seems to work. Would you suggest me something that would work in this instance?\r<br />\n<br />\nThank you for your help<br />\n",
+    "PostedDate": "2015-09-04T07:17:18.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1444575",
+    "ThreadId": "644597",
+    "Html": "Hi David,\r<br />\n<br />\nIt seems like your PHP code is expecting a field named &quot;stars&quot; , yet your AJAX submission sends a field named &quot;value&quot;.\r<br />\n<br />\nso change:<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n data: { value: value },\r\n</pre></div>to<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n data: { stars: value },\r\n</pre></div>Gidon<br />\n",
+    "PostedDate": "2015-09-15T23:34:11.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1108951",
+    "ThreadId": "462643",
+    "Html": "Hi\r<br />\n<br />\nFirstly, great plugin. Thanks for sharing it.\r<br />\n<br />\nI would like to be able to have the colour of the stars change depending on the rating.\r<br />\nE.g. 1-5 Stars = Red, 5-8 Stars = Orange, 8-10 Stars = Green.\r<br />\n<br />\nWould this be achievable?\r<br />\n<br />\nThanks<br />\n",
+    "PostedDate": "2013-10-17T12:47:09.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1109003",
+    "ThreadId": "462643",
+    "Html": "\r\n<div>No problem at all. Just swap out the gif image file with a new one. This one should, instead of containing just one star per line, contain the 10 colored stars per line. This does the trick. In the samples , the idea behind it is similar to the one showing\r\n the antenna &quot;reception&quot; vertical bars. </div>\r\n",
+    "PostedDate": "2013-10-17T17:56:54.833-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

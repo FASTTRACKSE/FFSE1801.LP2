@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "928067",
+    "ThreadId": "399748",
+    "Html": "\r\n<p>Hi ,</p>\r\n<p>I am trying to use the plugin but I could not modify it to have half values for starts . What I need is 10 stars with values from (0.5 to 5) so I need the first star with value of 0.5 and I dont want the half values to be shown with half colored stars. Is\r\n there any solution for this?</p>\r\n<p>Thanks,</p>\r\n<p>Golnaz</p>\r\n",
+    "PostedDate": "2012-10-17T07:53:27.363-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "928080",
+    "ThreadId": "399748",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Setting the value of a star is not supported. I guess the easiest solution would be to set the min value at 0, max value at 10, and step size at 1.</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">div</span> <span style=\"color:red\">class</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;rateit&quot;</span> <span style=\"color:red\">data-rateit-min</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;0&quot;</span> <span style=\"color:red\">data-rateit-max</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;10&quot;</span> <span style=\"color:red\">data-rateit-step</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;1&quot;</span><span style=\"color:blue\">&gt;</span><span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">div</span><span style=\"color:blue\">&gt;</span>\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n<p>Than when you get a value in your code, simply divide it by 2.</p>\r\n<p>regards,</p>\r\n<p>Gidon</p>\r\n",
+    "PostedDate": "2012-10-17T08:19:18.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "928086",
+    "ThreadId": "399748",
+    "Html": "<p>Thank you for your response.</p>\r\n<p>can you show how to implement this division for the example 5 \"javascript interaction\"&nbsp; to show what I want on hover over . and also how to remove the \"null\" from showing in this example.</p>\r\n<p>Thank you,</p>\r\n<p>Golnaz</p>",
+    "PostedDate": "2012-10-17T08:28:23.047-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "928091",
+    "ThreadId": "399748",
+    "Html": "<p>See itin action over here:&nbsp;<a href=\"http://jsbin.com/ugahut/1/edit\">http://jsbin.com/ugahut/1/edit</a></p>",
+    "PostedDate": "2012-10-17T08:35:38.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "928093",
+    "ThreadId": "399748",
+    "Html": "<p>&nbsp;</p>\r\n<p>That was a great help !!</p>\r\n<p>Thank you.</p>",
+    "PostedDate": "2012-10-17T08:39:27.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "928094",
+    "ThreadId": "399748",
+    "Html": "<p>You're welcome.</p>",
+    "PostedDate": "2012-10-17T08:40:11.063-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

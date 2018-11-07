@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "996590",
+    "ThreadId": "432011",
+    "Html": "I am trying to create a dynamic listview, where each item in the list will contain star rating. If I create a static listview everything works fine, but on creating dyanmic listview we cannot see any star rating. How can I fix this issue.\r<br />\nLet me know if you need more inputs.<br />\n",
+    "PostedDate": "2013-02-05T03:49:15.2-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "996636",
+    "ThreadId": "432011",
+    "Html": "Hi,\r<br />\n<br />\nIn order to &quot;activate&quot; the rateit control for items that have been added to the dom after domready, you'll simply need to call<br />\n<pre><code> $('.rateit').rateit().</code></pre>\n\nafter you've loaded your listview.<br />\n",
+    "PostedDate": "2013-02-05T05:20:13.923-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "996652",
+    "ThreadId": "432011",
+    "Html": "Thanks a lot.... it worked for me :-)<br />\n",
+    "PostedDate": "2013-02-05T05:44:56.95-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "999313",
+    "ThreadId": "432011",
+    "Html": "I've spent the day trying to make this work and don't seem to be getting the hang of it.\r<br />\nI have a div id=comment1 with ratings in it that works fine.\r<br />\n<br />\nThen I create additional divs using ajax that are inserted between the first div.  The originals still work and the new ones show up, but clicking a star submits nothing.\r<br />\n<br />\nAt the end of my ajax call, after it posts the new div, I've tried rebinding with <br />\n<pre><code>$('#comment1 .rateit').rateit();\n$('#comment2 .rateit').rateit();\n$('.rateit').rateit();</code></pre>\n\nBut none of them seem to do the trick.<br />\n<pre><code>&lt;div id=comment1&gt;\n\n     star rating - works\n     star rating - works\n\n&lt;div id=comment2&gt;\n\n     new star rating - appears but doesn't work\n\n&lt;/div id=comment2&gt;\n&lt;/div id=comment1&gt;</code></pre>\n\n",
+    "PostedDate": "2013-02-10T14:22:25.723-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "999413",
+    "ThreadId": "432011",
+    "Html": "I've made a js fiddle that emulates your situation : <a href=\"http://jsfiddle.net/ZPnc9/1/\" rel=\"nofollow\">http://jsfiddle.net/ZPnc9/1/</a> . With me it works. \r<br />\n<br />\nIf the JSFiddle is not according to your situation, edit it, and show me what you are doing.<br />\n",
+    "PostedDate": "2013-02-10T22:25:03.663-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1003633",
+    "ThreadId": "432011",
+    "Html": "I've updated the js fiddle to be similar to what I'm doing.  In this case, clicking the button will add multiple comments.  Voting on each should update the &quot;server response&quot; div.  (In reality I'm doing a bunch of processing and database manipulation).  The first comment works, but the new comments just look pretty.  I've a sneaking suspicion that I'm not binding correctly.\r<br />\n<br />\nSorry for the delay, I was out of the office.<br />\n",
+    "PostedDate": "2013-02-19T12:33:55.36-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1003801",
+    "ThreadId": "432011",
+    "Html": "Is this what you want:\r<br />\n<a href=\"www.example.com\" rel=\"nofollow\">http://jsfiddle.net/ZPnc9/13/</a><br />\n",
+    "PostedDate": "2013-02-19T22:19:48.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1003948",
+    "ThreadId": "432011",
+    "Html": "The fiddle link isn't working.<br />\n",
+    "PostedDate": "2013-02-20T04:02:30.673-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1003951",
+    "ThreadId": "432011",
+    "Html": "<a href=\"http://jsfiddle.net/ZPnc9/13/\" rel=\"nofollow\">http://jsfiddle.net/ZPnc9/13/</a>\r<br />\nThe href was different from text itself. <br />\n",
+    "PostedDate": "2013-02-20T04:16:10.59-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1004958",
+    "ThreadId": "432011",
+    "Html": "Thanks for your help!  Now to get my other scripts to cooperate with it.  ;-)<br />\n",
+    "PostedDate": "2013-02-21T16:27:43.347-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1005818",
+    "ThreadId": "432011",
+    "Html": "I'm happy I could help.<br />\n",
+    "PostedDate": "2013-02-23T22:32:15.79-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

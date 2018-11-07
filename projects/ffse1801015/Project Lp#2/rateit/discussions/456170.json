@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1089945",
+    "ThreadId": "456170",
+    "Html": "I know the plugin doesn't support resizing now but I'd like to 1) suggest that this be a new feature and 2) like suggestions on how to accomplish this task with the current version.\r<br />\n<br />\nI've setup standard sized images to use with rateit: 16px, 32px, 48px, 64px. Depending on the end user's screen size I use the largest size possible and I'd like to resize certain rateit elements on the page as the window resizes to a lower width.<br />\n",
+    "PostedDate": "2013-09-08T14:10:31.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090023",
+    "ThreadId": "456170",
+    "Html": "Hi Joey,\r<br />\n<br />\nI actually think it might not be much of a problem, even with the current code.\r<br />\n<br />\nI believe these are the step you have to perform:<br />\n<ol>\n<li>OnLoad or OnResize add the correct to each of the rate it element , for example &quot;.small&quot;, for 16px, and &quot;.huge&quot; for 64px. These classes match up with classes in your style sheet that match the right pictures.</li>\n<li>\nOnResize: call $('.rateit').rateit('starwidth', XX), and $('.rateit').rateit('starheight', XX), where XX is the new number of pixels (so 64 not '64px').<br />\n</li>\n</ol>\nAnd this should be enough.\r<br />\n<br />\nI did a very basic check on step 2, and saw that it resize correctly, so I see no problem with implementing the solution.\r<br />\n<br />\nPerhaps in the future I will add a demo to the examples page showcasing the resize.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2013-09-08T23:14:56.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090340",
+    "ThreadId": "456170",
+    "Html": "Thanks gidon, looks like two elements don't receive the new size after doing this: <em>rateit-selected</em> and <em>rateit-hover</em> and cause image repetition in the <em>y</em> direction. I put some code in to do this after the <em>init</em> section and everything is working as expected.<br />\n",
+    "PostedDate": "2013-09-09T12:57:09.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090447",
+    "ThreadId": "456170",
+    "Html": "\r\n<div>\r\n<div style=\"text-align:left; direction:ltr\">That's good to hear. Could you be so kind to post the code? So I can integrate it into the plugin?</div>\r\n</div>\r\n<div style=\"text-align:left; direction:ltr\"><br>\r\n</div>\r\n<div style=\"text-align:left; direction:ltr\">Btw it's always nice to see people using the plugin in ways I didn't expect.\r\n</div>\r\n<blockquote type=\"cite\" style=\"\">\r\n<div></div>\r\n</blockquote>\r\n",
+    "PostedDate": "2013-09-09T22:18:05.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1091544",
+    "ThreadId": "456170",
+    "Html": "I just threw these two lines in after the <em>init</em> code block to get those two elements to size. I'm using version 1.0.9 with some modifications, but this is still an issue for latest too. Threw together this <a href=\"http://jsfiddle.net/StrandedPirate/m8fNV/\" rel=\"nofollow\">jsfiddle</a> test for this. Just resize the page to see the affect.<br />\n<pre><code>            //init rateit plugin\n            if (!itemdata('init')) {\n                ...\n            }\n\n            item.find('.rateit-selected').height(itemdata('starheight'));\n            item.find('.rateit-hover').height(itemdata('starheight'));</code></pre>\n\n",
+    "PostedDate": "2013-09-11T22:56:42.187-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1119700",
+    "ThreadId": "456170",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"https://rateit.codeplex.com/workitem/1711\" rel=\"nofollow\">here</a> to go to the work item and continue the discussion.<br />\n",
+    "PostedDate": "2013-11-07T05:10:32.553-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

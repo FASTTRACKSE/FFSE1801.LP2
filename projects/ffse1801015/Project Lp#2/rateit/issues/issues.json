@@ -1,0 +1,194 @@
+[
+  {
+    "Id": 210,
+    "Title": "Not working with jQuery 1.5"
+  },
+  {
+    "Id": 289,
+    "Title": "Stars not showing in IE 9"
+  },
+  {
+    "Id": 397,
+    "Title": "IE7: selected/hover stars don't overlay correctly when in text-align: right; container"
+  },
+  {
+    "Id": 417,
+    "Title": "Bug for hover event with jQuery 1.7"
+  },
+  {
+    "Id": 461,
+    "Title": "Stars not rendering on IIS 7.5 / Windows 7"
+  },
+  {
+    "Id": 523,
+    "Title": "RateIt does not work with jQuery 1.7.2"
+  },
+  {
+    "Id": 634,
+    "Title": "Setting value to 0 doesn't work"
+  },
+  {
+    "Id": 729,
+    "Title": "Setting initial value issue"
+  },
+  {
+    "Id": 1142,
+    "Title": "Readonly mode with backingfield is broken"
+  },
+  {
+    "Id": 1144,
+    "Title": "stars shown , less than options"
+  },
+  {
+    "Id": 1145,
+    "Title": "jQuery Mobile support"
+  },
+  {
+    "Id": 1203,
+    "Title": "Dynamically changing a property causes events to be re-registered"
+  },
+  {
+    "Id": 1530,
+    "Title": "nuget package: put images in subfolder /content/rateit"
+  },
+  {
+    "Id": 1531,
+    "Title": "rename rateit.css to jquery.rateit.css"
+  },
+  {
+    "Id": 1556,
+    "Title": "Input-type \"range\" as backing field ignores \"display: none\" in Firefox 21"
+  },
+  {
+    "Id": 1566,
+    "Title": "rateit plugin does not work inside jquery grid"
+  },
+  {
+    "Id": 1594,
+    "Title": "Getting TypeError: $(...).rateit is not a function with Jquery Dialog"
+  },
+  {
+    "Id": 1639,
+    "Title": "Firefox showing too many stars"
+  },
+  {
+    "Id": 1648,
+    "Title": "Need to check for window.console before using it"
+  },
+  {
+    "Id": 1680,
+    "Title": "The comment in jquery.rateit.min.js creates a problem when this file is compressed together other .js files"
+  },
+  {
+    "Id": 1711,
+    "Title": "Resize"
+  },
+  {
+    "Id": 1712,
+    "Title": "Feature request: a .reset() method to clear out everything"
+  },
+  {
+    "Id": 1728,
+    "Title": "please include simple fix for jquery mobile"
+  },
+  {
+    "Id": 1741,
+    "Title": "Using arrow keys after a rating"
+  },
+  {
+    "Id": 1747,
+    "Title": "Initialization fail with data-rateit-value=0"
+  },
+  {
+    "Id": 1797,
+    "Title": "Using Unicode characters instead of GIFs?"
+  },
+  {
+    "Id": 1801,
+    "Title": "Confirmation before do a rate"
+  },
+  {
+    "Id": 1817,
+    "Title": "Trigger change on backingfld when value changes"
+  },
+  {
+    "Id": 1828,
+    "Title": "Progressive enhancement (using select) displays incorrect amount of stars"
+  },
+  {
+    "Id": 1829,
+    "Title": "Use UNIX-style (LF-only) line endings"
+  },
+  {
+    "Id": 1831,
+    "Title": "CSS clipping issue when Chrome is zoomed"
+  },
+  {
+    "Id": 1833,
+    "Title": "Duplicates bug"
+  },
+  {
+    "Id": 1837,
+    "Title": "Rati it is not working"
+  },
+  {
+    "Id": 1838,
+    "Title": "Hover icon displayed on load"
+  },
+  {
+    "Id": 1856,
+    "Title": "Double Events"
+  },
+  {
+    "Id": 1857,
+    "Title": "stringify error in chrome and some other browser "
+  },
+  {
+    "Id": 1858,
+    "Title": "jQuery 2.1.0 not working"
+  },
+  {
+    "Id": 1859,
+    "Title": "RateIt Stars disappear when clicking into another form field and pressing return"
+  },
+  {
+    "Id": 1860,
+    "Title": "Support vertical direction"
+  },
+  {
+    "Id": 1861,
+    "Title": "value 0"
+  },
+  {
+    "Id": 1862,
+    "Title": "RateIt.....in  web grid ...whenever ....ONly Page Load ()..it wil other Wise...not showing Rating Stars..."
+  },
+  {
+    "Id": 1863,
+    "Title": "display problem with having big stars on rtl page"
+  },
+  {
+    "Id": 1864,
+    "Title": "Rating Stars do not print. "
+  },
+  {
+    "Id": 1865,
+    "Title": "Hovering over is not working with ng-repeat (angularjs)"
+  },
+  {
+    "Id": 1866,
+    "Title": "Use SVGs instead of images"
+  },
+  {
+    "Id": 1867,
+    "Title": "Installing the plugins"
+  },
+  {
+    "Id": 1868,
+    "Title": "infinite scroll problem"
+  },
+  {
+    "Id": 1869,
+    "Title": " AJAX Paging in KENDO Grid removes star rating "
+  }
+]

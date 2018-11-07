@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "818913",
+    "ThreadId": "350924",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Thanks for the wonderful plugin. However, I am having an issue when building the rating starts by javascript invocation. Setting the property, &quot;step&quot;, still results in half-star selections, which I do not want; I only wish to allow the user to select whole-point\r\n values. When I select a half-star, it does not show the textual description of the value being selected. I am using jQuery 1.7.1. As per the docs, it's a simple thing that I am setting up the rateit plugin:</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>$(<span style=\"color:#a31515\">'.company_rating'</span>).rateit({ min: 1, max: 5, step: 1 });\r\n</pre>\r\n</div>\r\n<p></p>\r\n<p>Is this a jQuery thing, or a rateit thing? Thanks!!</p>\r\n",
+    "PostedDate": "2012-04-02T12:37:13.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "818914",
+    "ThreadId": "350924",
+    "Html": "I will have a look at it tomorrow.",
+    "PostedDate": "2012-04-02T12:39:55.037-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "818918",
+    "ThreadId": "350924",
+    "Html": "<p>Thanks, gidon!</p>\r\n<p>I also just noticed this error when trying to use any kind of backing field:&nbsp;</p>\r\n<p><span>Uncaught TypeError: Cannot read property 'nodeName' of undefined</span></p>\r\n<p><span>And I just confirmed that setting options via the data-rateit- attributes in the DIV element allow me to only rate on a whole-point scale, eg:</span></p>\r\n<p><span>data-rateit-step=\"1\"</span></p>\r\n<p>Thanks again!!</p>",
+    "PostedDate": "2012-04-02T12:52:01.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "819205",
+    "ThreadId": "350924",
+    "Html": "\r\n<div dir=\"ltr\">What browser are you using? I cannot reproduce your bug.<br>\r\n</div>\r\n",
+    "PostedDate": "2012-04-03T05:26:06.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "930333",
+    "ThreadId": "350924",
+    "Html": "<p>The same problem occurs also to my project</p>",
+    "PostedDate": "2012-10-22T02:25:24.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "930357",
+    "ThreadId": "350924",
+    "Html": "<p>Could you give me a link?</p>",
+    "PostedDate": "2012-10-22T03:31:51.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

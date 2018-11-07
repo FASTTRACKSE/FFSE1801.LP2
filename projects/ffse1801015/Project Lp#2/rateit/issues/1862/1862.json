@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not a bug in RateIt. The solution for this problem is in the link in the issue description.",
+    "ClosedDate": "2015-05-09T23:48:05.567-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "\r\nThe Details Question....exist here in url...\r\n\r\nhttp://forums.asp.net/p/2005904/5768410.aspx?Web+grid+rating+Using+rate+it+Jquery+Plugin+In+First+Page+it+s+Showing+Rating+Perfectly+When+Goto+next+Page+It+will+not+Show+rating+\r\n\r\n\r\nHow to show .....Rateit.... star rating....Whenever user Click on.... Any Event....if Page Not load Entirely...How to show the  \"Rate It \"....Controls...are Ajaxified..",
+    "LastUpdatedDate": "2015-05-09T23:48:05.567-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-09-04T07:44:56.637-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Not a bug"
+    },
+    "Summary": "RateIt.....in  web grid ...whenever ....ONly Page Load ()..it wil other Wise...not showing Rating Stars...",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1862
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

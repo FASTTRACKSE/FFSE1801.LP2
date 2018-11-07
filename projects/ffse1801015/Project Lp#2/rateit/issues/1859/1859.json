@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 5,
+    "Custom": null,
+    "Description": "\r\nThis began after updating to 1.0.9\r\n\r\nI have a form with 5 RateIt Fields and always from the first one the yellow stars turn grey the moment I click into any textfield in the form and then press return. The Form is not submitted as it was with 1.0.9\r\n\r\nI tried adding \r\n<div class=\"rateit\">\r\n</div>\r\nas the first rating div, now this one turned grey.\r\n\r\nIn firebug i saw aria-valuenow=\"5\" to turn to \"0\" the moment I pressed return.\r\n\r\n",
+    "LastUpdatedDate": "2014-05-28T01:12:34.28-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-05-26T03:30:39.58-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RateIt Stars disappear when clicking into another form field and pressing return",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1859
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That sounds strange. Could you give me a  link to the form you're talking about.  Or recreate the issue with a JSFiddle?",
+      "PostedDate": "2014-05-26T06:09:25.957-07:00",
+      "Id": 147915
+    },
+    {
+      "Message": "http://jsfiddle.net/V2Pyh/1/\n\nor:\n\n```\n<form>\n<input />\n<div class=\"rateit\">\n</div>\n<div class=\"rateit\">\n</div>\n</form>\n```\n\n1. pick stars in first div\n2. pick stars in sec div\n3. click into text field\n4. press return\n\n=>selected stars in first div turn grey\n\n",
+      "PostedDate": "2014-05-26T23:42:43.853-07:00",
+      "Id": 147973
+    },
+    {
+      "Message": "Fixed in changeset 8abdefc0cd61158a8ca173985cbb77830e11d805",
+      "PostedDate": "2014-05-27T05:34:38.993-07:00",
+      "Id": 148001
+    },
+    {
+      "Message": "Thanks for the jsFiddle, that helped a lot. \nThe bug has been fixed.",
+      "PostedDate": "2014-05-27T05:43:22.92-07:00",
+      "Id": 148005
+    },
+    {
+      "Message": "working fine, thanks a lot :)",
+      "PostedDate": "2014-05-28T01:12:34.28-07:00",
+      "Id": 148112
+    }
+  ]
+}

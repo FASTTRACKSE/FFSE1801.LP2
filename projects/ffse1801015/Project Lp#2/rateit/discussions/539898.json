@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1225749",
+    "ThreadId": "539898",
+    "Html": "A great plugin!  I'm relatively new to web development and trying to implement a rating feature in a .aspx page. \r<br />\n<br />\nI've managed to successful do this and it looks/functions great using the 7a) example posted here (<a href=\"http://www.radioactivethinking.com/rateit/example/example.htm\" rel=\"nofollow\">http://www.radioactivethinking.com/rateit/example/example.htm</a>) on a desktop/laptop however on a mobile browser, the stars are still relatively small.  Is there a relatively easy way to increase their size when viewing on a browser?\r<br />\n<br />\nBhav\r<br />\n<br />\n<br />\nMy CSS looks something like this:<br />\n<pre><code>....\n....\ndiv.bigstars div.rateit-range\n{\n    background: url(star-white32.png);\n    height: 32px;\n}\n \ndiv.bigstars div.rateit-hover\n{\n    background: url(star-gold32.png);\n}\n \ndiv.bigstars div.rateit-selected\n{\n    background: url(star-red32.png);\n}\n \ndiv.bigstars div.rateit-reset\n{\n    background: url(star-black32.png);\n    width: 32px;\n    height: 32px;\n}\n \ndiv.bigstars div.rateit-reset:hover\n{\n    background: url(star-white32.png);\n}\n\n@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {\nform {\n    margin: 0 auto;\n    width: 90%;\n}\n\nbody,\ninput {\n    font-size: 170%;\n}\n}</code></pre>\n\n",
+    "PostedDate": "2014-03-23T10:55:47.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231345",
+    "ThreadId": "539898",
+    "Html": "With a media query you would be able to tackle the CSS part of the resizing issue. \r<br />\nYet you should still call RateIt and tell it that the size of the stars have changed (see example 12)\r<br />\n<br />\nThere are many 3rd party libs that give you media query support in JS (see for example <a href=\"http://wicky.nillia.ms/enquire.js/\" rel=\"nofollow\">http://wicky.nillia.ms/enquire.js/</a>), so that you can get a callback when a certain media query is matched.<br />\n",
+    "PostedDate": "2014-04-07T08:03:08.43-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231911",
+    "ThreadId": "539898",
+    "Html": "<strong>gidon wrote:</strong><br />\n<blockquote>\nWith a media query you would be able to tackle the CSS part of the resizing issue. <br />\nYet you should still call RateIt and tell it that the size of the stars have changed (see example 12)<br />\n<br />\nThere are many 3rd party libs that give you media query support in JS (see for example <a href=\"http://wicky.nillia.ms/enquire.js/\" rel=\"nofollow\">http://wicky.nillia.ms/enquire.js/</a>), so that you can get a callback when a certain media query is matched.<br />\n</blockquote>\nThank you. I'll try this.<br />\n",
+    "PostedDate": "2014-04-08T08:09:07.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

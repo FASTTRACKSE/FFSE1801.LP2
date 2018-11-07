@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "936711",
+    "ThreadId": "401944",
+    "Html": "\r\n<p>Hi Gidon,</p>\r\n<p>Just wanted to say thanks for the plugin. I've repackaged it for <a href=\"http://meteor.com/\">\r\nmeteor</a>, the new awesome JavaScript framework -&nbsp;<a href=\"https://atmosphere.meteor.com/package/jquery-rateit\">https://atmosphere.meteor.com/package/jquery-rateit</a></p>\r\n<p>I've also <a href=\"http://stackoverflow.com/questions/4542883/jquery-star-rating/13176213#13176213\">\r\ncompared it to many other existing jQuery star rating plugins on StackOverflow</a>.</p>\r\n",
+    "PostedDate": "2012-11-05T06:18:55.283-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "937156",
+    "ThreadId": "401944",
+    "Html": "<p>Thanks for the nice words.</p>",
+    "PostedDate": "2012-11-06T02:30:40.37-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

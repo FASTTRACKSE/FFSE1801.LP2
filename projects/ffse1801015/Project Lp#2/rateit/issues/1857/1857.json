@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 6,
+    "Custom": null,
+    "Description": "The line:\r\n```\r\nitemdata('init', JSON.parse(JSON.stringify(item.data()))); //cheap way to create a clone\r\n```\r\nGives a \"Failed to read the 'selectionDirection' property from 'HTMLInputElement': The input element's type ('hidden') does not support selection.\" error in chrome and some mobile browsers.\r\nThe problem arises when instantiating from code in like this:\r\n\r\n```\r\nvar evaluationDiv = $('<div></div>');\r\n    var evaluationinput = $('<input name=\"Evaluations[' + cnt + '].Score\" type=\"hidden\"  id=\"ev' + cnt + '\"  value=\"' + score + '\" />');\r\n    var rdiv = $('<div id=\"rateDiv_' + cnt + '\"></div>');\r\n    rdiv.rateit({ max: 5, resetable: false, step: 1, backingfld: evaluationinput });\r\n    evaluationDiv.append(evaluationinput);\r\n    evaluationDiv.append(rdiv);\r\n```\r\nit is related to this:\r\n[http://stackoverflow.com/questions/23073216/why-cant-you-stringify-a-jquery-object](http://stackoverflow.com/questions/23073216/why-cant-you-stringify-a-jquery-object)\r\n\r\nReplacing with:\r\n```\r\nitemdata('init', $(item.html()));\r\n```\r\nSeems to solve the problem in all browsers\r\n\r\n",
+    "LastUpdatedDate": "2014-07-16T04:02:55.72-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-04-22T13:17:14.8-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "stringify error in chrome and some other browser ",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 1857
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I see your mistake. \n\nThe backingfld property in the options object should  be a string (the selector to find the backingfield), and not the element itself.\n\nThe stringify function just is the first place that throws an exception because of this mistake, it is ok by itself (because it stringifies the data object of the element, and no actual element).\n\n\r\n\r** Closed by gidon 04/28/2014 11:25PM",
+      "PostedDate": "2014-04-28T23:25:02.1-07:00",
+      "Id": 145052
+    },
+    {
+      "Message": "Well it is hardly a mistake, since it's not really documented what type backingfld should be :)\r\n\r\nParsing the selector of the backingfield, here \"#ev\"+cnt, was the first I did, and since it has not been added to the document yet it fails - so it makes sense to parse the object I just created - and it also works fine, except in Chrome etc.\r\n\r\nIf I want a function that returns a form element with a rateit element I can place somewhere, it is detached until returning. It is very common to create controls, elements etc. and then adding them after - and that doesn't work right now. \r\n\r\nGreat plugin by the way! :)",
+      "PostedDate": "2014-04-29T01:12:15.477-07:00",
+      "Id": 145059
+    },
+    {
+      "Message": "I agree with this. This used to work in an older version of rateit. It's convenient to attach after creating the element without the need for a selector.",
+      "PostedDate": "2014-07-15T03:19:09.99-07:00",
+      "Id": 152432
+    },
+    {
+      "Message": "I understand the problem. I would like to fix it. But I am currently swamped at work. \nIf you want you can try fixing it and sending me a pull request. (I moved to git a whole ago)",
+      "PostedDate": "2014-07-15T10:40:46.857-07:00",
+      "Id": 152477
+    },
+    {
+      "Message": "Is this the right repo?:\nhttps://github.com/dandv/meteor-jquery-rateit\n\nAs the version seems older? 1.0.20 vs 1.0.22",
+      "PostedDate": "2014-07-15T11:28:34.417-07:00",
+      "Id": 152482
+    },
+    {
+      "Message": "Nope, the git repo is still hosted here at codeplex. Click on the tab SourceCode, and you'll find how to clone and fork, and send pull-requests.\n",
+      "PostedDate": "2014-07-16T04:02:55.72-07:00",
+      "Id": 152559
+    }
+  ]
+}

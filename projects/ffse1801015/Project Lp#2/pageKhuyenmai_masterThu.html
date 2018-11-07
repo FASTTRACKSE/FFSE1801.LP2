@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project Lp#2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="pageKhuyenmai.css"/>
+    <link rel="shortcut icon" href="images/tải xuống.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icon/fontawesome-free-5.4.2-web/css/all.css">
+    <script src="js/jquery-3.3.1.min.js">
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="rateit/sourceCode/rateit/src/rateit.css" rel="stylesheet" type="text/css">
+    <script src="rateit/sourceCode/rateit/src/jquery.rateit.js" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="border:none">
+        <div id="menu">
+            <div id="container">
+                <div class="container-fluid container1" style="padding:0">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand pp" href="Lp2.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"  href="#">Tin tức</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageTintuc_Tintuc.html">Tin tức</a></li>
+                                <li><a href="pageTintuc_Camnang.html">Cẩm nang du lịch</a></li>
+                                <li><a href="pageTintuc_Kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Du lịch</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageDulich_Dulichtrongnuoc.html">Du lịch trong nước</a></li>
+                                <li><a href="#">Du lịch nước ngoài</a></li>
+                                <li><a href="#">Du lịch tự chọn</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Khuyến mại</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#">Khuyến mại Thu 2018</a></li>
+                                <li><a href="#">Khuyến mại MasterCard</a></li>
+                                <li><a href="#">Mua tour trả chậm 0%</a></li>
+                                <li><a href="#">Khuyến mại Vietinbank</a></li>
+                                <li><a href="#">Khuyến mại VNPay-QRCode</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="" href="pageLienhe.html">Liên hệ</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="slide1">
+            <script src="js/jssor.slider.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 900,
+              // $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            cursor: grabbing;
+        }
+
+        /*@keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }*/
+        
+        /*jssor slider bullet skin 032 css*/
+        /*.jssorb032 {position:absolute;}*/
+        .jssorb032 .i {position:absolute;cursor:pointer;}
+        .jssorb032 .i .b {fill:#fff;fill-opacity:0.1;
+        					stroke:#000;stroke-width:1200;height: 10px;width: 10px;
+        					stroke-miterlimit:10;stroke-opacity:0.25;}
+        .jssorb032 .i:hover .b {fill:#fefefe;fill-opacity:.6;stroke:#fff;	
+        						stroke-opacity:.35;}
+        .jssorb032 .iav .b {fill:#fefefe;fill-opacity:1;stroke:#fff;
+        						stroke-opacity:.35;}
+        .jssorb032 .i.idn {opacity:.3;}
+        
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fefefe;stroke-width:1000;
+        				stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="
+        cursor: pointer;
+    	position:relative;
+    	margin:0 auto;top:0px;left:0px;width:900px;height:435px;
+    	overflow:hidden;visibility:hidden;z-index: 1">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="	
+        	position:absolute;
+        	top:0px;left:0px;width:100%;height:100%;
+        	text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:10px;height:10px;
+            " src="../svg/loading/static-svg/spin.svg" />
+        </div>
+        <div data-u="slides" style="
+        	cursor:grab;position:relative;
+        	top:0px;left:0px;width:900px;height:435px;	
+        	overflow:hidden;z-index: 1">
+            <div>
+                <img data-u="image" src="images/sl_181015_Switzerland_1920x570.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/mountain-peak-stars-sky-night-light-snow.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/43753410_817251248630772_6309530777159729152_n.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/bo-hinh-nen-may-tinh-4k-cuc-dep-3.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/103068.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/hinh-nen-phong-canh-4k-18.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/662e474ef4fbb229cea1deba23640530.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/sl_181025_ngay-hoi-fukushima_1920x570.jpg">
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="
+        	position:absolute;
+        	bottom:25px;right:20px;"
+        	data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="
+            		width:20px;height:20px;">
+                <svg viewBox="0 0 16000 16000" style="
+                	position:absolute;
+                	top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="
+        	width:40px;height:80px;top:0px;left:25px;" 
+        	data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewBox="0 0 16000 16000" style="
+            	position:absolute;
+            	top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="
+        	width:40px;height:80px;top:0px;right:25px;" 
+        	data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewBox="0 0 16000 16000" style="
+            	position:absolute;
+            	top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+    </div>
+    <div id="slide2">
+    </div>
+    <div id="wrapper">
+        <div id="danh_muc">
+            <div class="row">
+            <div class="col-lg-3 col-sm-6 col-xs-6 muc">
+                <div class="border1 border">
+                    <center><img src="images/i-c1.png " height="65" width="65"></center>
+                    <div class="tieu_de">
+                        <center><p>TÌM TOUR</p>
+                    </div>
+                    <center><b class="mot">TRONG NƯỚC</b>
+                </div>
+            </div>
+            <div class="muc col-lg-3 col-sm-6 col-xs-6">
+                <div class="border2 border">
+                    <center><img src="images/i-c2.png" height="65" width="65">
+                    <div class="tieu_de">
+                        <center><p>TÌM TOUR</p>
+                    </div>
+                    <center><b class="hai">TRONG NƯỚC</b>
+                </div>
+            </div>
+            <div class="muc col-lg-3 col-sm-6 col-xs-6">
+                <div class="border3 border">
+                    <center><img src="images/i-c3.png" height="65" width="65"></center>
+                    <div class="tieu_de">
+                        <center><p>DU LỊCH</p>
+                    </div>
+                    <center><b class="ba">TRONG NƯỚC</b>
+                </div>
+            </div>
+            <div class="muc col-lg-3 col-sm-6 col-xs-6">    
+                <div class="border4 border">
+                    <center><img src="images/i-c4.png" height="65" width="65"></center>
+                    <div class="tieu_de">
+                        <center><p>TÌM KIẾM</p>
+                    </div>
+                    <center><b class="bon">TRONG NƯỚC</b>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="trang" class="col-lg-12 col-xs-12">
+            <div  class="col-lg-8 col-xs-12">
+                <h1>THỂ LỆ CHƯƠNG TRÌNH KHUYẾN MÃI 'CÀ THẺ TRÚNG VÀNG - NGẬP TRÀN QUÀ TẶNG'</h1>
+                <div style="border-bottom: 1px solid lightgray;padding-bottom: 10px;">
+                    <span class="fa fa-calendar"></span>
+                    <p class="mot">09/08/2018</p>
+                </div>
+                <p class="hai">Dành cho khách hàng là chủ thẻ Mastercard mua các Tour theo lịch khởi hành cố định tại các VPGD <a href="#" class="hai">Vietravel</a> trên toàn quốc.</p>
+                <p style="display:inline">1. Thời gian chương trình Khuyến Mãi:  <p class="ba">Từ 10/8/2018 đến 31/10/2018.</p></p>
+                <p>2. Đối tượng:</p>
+                <p>Các khuyến mãi trên áp dụng cho khách hàng là chủ thẻ Mastercard mua các Tour theo lịch khởi hành cố định tại các VPGD Vietravel trên toàn quốc.</p>
+                <p>3. Hình thức:</p>
+                <p><p class="ba">- Thanh toán online:</p> Giảm ngay 500.000đ khi thanh toán bằng thẻ Mastercard mua các <a href="pageDulich_Dulichnuocngoai.html" class="hai">tour nước ngoài</a> qua cổng thanh toán trực tiếp trên website <a href="#" class="hai">www.travel.com.vn</a></p>
+                <p><p class="ba">- Thanh toán offline:</p> Nhận ngay phiếu cào trúng quà tặng hấp dẫn khi Khách hàng thanh toán bằng thẻ MasterCard từ 5 triệu đồng trở lên mua tất cả các tour tại Vietravel trên toàn quốc.</p>
+                <p>Giải thưởng: 12 chỉ vàng SJC hàng tuần cùng hàng ngàn quà tặng hấp dẫn như tai nghe Apple Airpods, Loa di động Jamo, Bếp nướng điện, Ấm đun siêu tốc, Bàn ủi mini, Bình nước Lock&Lock hoặc túi <a href="Lp2.html" class="hai">du lịch</a> thời trang.</p>
+                <p>4. Các Điều Kiện và Điều Khoản Khác:</p>
+                <p>a. Chủ thẻ không bắt buộc phải đi trong tour;</p>
+                <p>b. Áp dụng cho các giao dịch có ngày thanh toán từ 10/8/2018 – 31/10/2018 và tour khởi hành từ 10/8/2018;</p>
+                <p>c. Mỗi khách hàng/chủ thẻ Mastercard chỉ được nhận ưu đãi 1 lần/tour trong suốt chương trình;</p>
+                <p>d. Vietravel được quyền thu hồi khoản tiền giải thưởng/quà tặng trong trường hợp khách hàng hủy tour;</p>
+                <p>e. Số lượng thẻ cào được tặng tương ứng với số lượng thẻ Mastercard được phép thanh toán trong 1 tour nhưng không được vượt quá số tiêu chuẩn là 3.</p>
+                <p>f. Vietravel bảo lưu quyền không chấp nhận hoặc từ chối người tham gia có dấu hiệu vi phạm các quy định chương trình (căn cứ theo Điều khoản sử dụng dịch vụ hoặc có bất kì hành vi nào mà bên tổ chức cho rằng là không phù hợp hoặc không thể chấp nhận)</p>
+                <p>g. Vietravel bảo lưu toàn quyền điều chỉnh hoặc kết thúc chương trình tại bất kỳ thời điểm nào mà không cần thông báo trước hoặc chịu trách nhiệm bồi thường bằng tiền mặt hoặc tài sản;n</p>
+                <p>h. Vietravel bảo lưu quyền hủy bỏ, sửa đổi và/hoặc điều chỉnh toàn bộ hoặc một phần bất kì các điều kiện và điều khoản của chương trình tại bất kỳ thời điểm nào mà không cần thông báo trước cho người tham gia;</p>
+                <p>i. Tổng số lượng giao dịch được khuyến mãi trong chương trình: 1517 giao dịch.</p>
+                <p>j. Cách thức trúng thưởng: Khách hàng cào ngẫu nhiên trúng 100% một sản phẩm bất kỳ trong bộ quà tặng cho đến khi hết quà.</p>
+                <p>k. Chương trình có thể kết thúc sớm hơn dự kiến khi đã hết quà tặng. Vietravel có quyền thay đổi hoặc bổ sung loại quà tặng trong bảng quà mà không cần thông báo trước cho người tham gia.</p>
+                <p>l. Người tham gia cào trúng thưởng quà tặng gì thì được nhận đúng quà tặng đó, không được phép chuyển đổi sang các quà tặng khác hoặc quy đổi thành tiền mặt dưới bất kỳ hình thức nào.</p>
+                <p>m. Phương thức xác định khách hàng trúng thưởng:</p>
+                <p>- Khách hàng nhận ngay 01 phiếu cào may mắn sau khi hoàn tất thủ tục thanh toán bằng thẻ Mastercard.</p>
+                <p>- Phiếu cào có tỷ lệ trúng thưởng là 100%; giải thưởng là một sản phẩm bất kỳ trong bộ sản phẩm quà tặng du lịch của chương trình bao gồm 1317 phần quà.</p>
+                <p>n. Trong mọi trường hợp khiếu nại, quyết định của Vietravel là quyết định cuối cùng</p>
+                <p class="ba">Để biết thêm thông tin về chương trình, vui lòng liên hệ tổng đài 19001839/ hotline 0938.301.234 hoặc quầy Dịch Vụ Khách Hàng - 190 Pasteur, Phường 6, Quận 3, Tp.HCM.</p>
+                <h1>CHÚC MỪNG CÁC KHÁCH HÀNG ĐÃ TRÚNG THƯỞNG 01 CHỈ VÀNG SJC TỪ VIETRAVEL & MASTERCARD - VẪN CÒN RẤT NHIỀU PHẦN QUÀ HẤP DẪN ĐANG CHỜ ĐÓN DU KHÁCH</h1>
+                <img src="images/kh-Mastercard2.jpg">
+                <img src="images/kh-Mastercard1.jpg">
+                <img src="images/kh-Mastercard4.jpg">
+                <img src="images/kh-Mastercard5.jpg">
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+                        <h2>Tin mới</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/vietravel-day-HN_0.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Ngày hội Tư vấn - Khuyến mại du lịch 'Vietravel’s day' diễn ra tại Hà Nội từ 7-11/11</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/khai-truong-chi-nhanh-soc-trang.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Vietravel mở 03 Chi nhánh mới tại Tây Nam Bộ</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/0_3000-khach-quoc-te.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Vietravel đón 3.000 khách tàu biển quốc tế tham quan TP.HCM</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/0_Fukushima.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Đến Nhật ngắm hoa anh đào với giá tốt nhất thị trường tại Ngày Hội Fukushima</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/0_Vietravel-trao-hoc-bong-sinh-vien.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Vietravel Quy Nhơn trao học bổng cho sinh viên nghèo có thành tích xuất sắc</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+                        <h2>Tin ngẫu nhiên</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/0_3000-khach-quoc-te.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Vietravel đón 3.000 khách tàu biển quốc tế tham quan TP.HCM</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/Xuat-phat_960-1.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Vietravel đồng hành cùng chương trình 'Trao yêu thương - Nhận hạnh phúc' Mottainai mùa VI-2018</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/uu-dai-vang0.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Ưu đãi tháng vàng dành cho khách đoàn (19/09/2018 - 19/10/2018)</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/trung-thu-cho-em0.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Vietravel mở 03 Chi nhánh mới tại Tây Nam Bộ</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <img src="images/le-hoi-mua-sam0_2.jpg">
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 chu">
+                                <a href="#" class="mot">Rộn ràng lễ hội mua sắm cuối năm</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-lg-12 col-xs-12">
+                <h1 class="mot">TIN KHÁC</h1>
+                <div class="row" style="margin-bottom:30px">
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Ngày hội Tư vấn - Khuyến mại du lịch 'Vietravel’s day' diễn ra tại Hà ...</a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Vietravel đón 3.000 khách tàu biển quốc tế tham quan TP.HCM</a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Vietravel Quy Nhơn trao học bổng cho sinh viên nghèo có thành tích xuấ ...</a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Bắt đầu sôi động thị trường du lịch Tết</a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Hội thảo giới thiệu du lịch tỉnh Gyeonggi - Gyeonggi Tourism Roadshow</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Vietravel mở 03 Chi nhánh mới tại Tây Nam Bộ</a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Đến Nhật ngắm hoa anh đào với giá tốt nhất thị trường tại Ngày Hội Fuk ...</a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Khởi tranh Giải Bóng đá Truyền thống ngành Du lịch tỉnh Quảng Ngãi - C ...</a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Vietravel tổ chức lớp bồi dưỡng, nâng cao kiến thức đội ngũ Hướng Vẫn ...</a>
+                        </div>
+                        <div class="thongtin1">
+                            <img src="images/circle2.png">
+                            <a href="#" class="mot">Vietravel tưng bừng tổ chức các hoạt động mừng Ngày Phụ Nữ Việt Nam (2 ...</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="gioi_thieu">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gioi_thieu1">
+            <div>
+                <p class="mot">Liên hệ</p>
+                <p>190 Pasteur, Phường 6, Quận 3, Tp. HCM</p>
+                <p class="hai">Điện thoại: <p class="ba">(+84 28) 3822 8898</p></p>
+                <p class="hai">Fax: <p class="ba">(+84 28) 3822 8898</p></p>
+                <p class="hai">Email: <p class="ba">info@vietravel.com</p></p>
+                <p class="hai">Hotline: <p class="ba">1900 1839 (08h-23h)</p></p>
+                </div>
+            <div>
+                <ul>
+                    <li><a href="#">Vietravel toolbar</a></li>
+                    <li><a href="#">Chính sách riêng tư</a></li>
+                    <li><a href="#">Thỏa thuận sử dụng</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="mot">CHẤP NHẬN THANH TOÁN</p>
+                <div class="thanh_toan">
+                    <img src="images/123pay.png" class="col-lg-3 col-xs-3">
+                    <img src="images/visa.png" class="col-lg-3 col-xs-3">
+                    <img src="images/master.png" class="col-lg-3 col-xs-3">
+                    <img src="images/vnpay.jpg" class="col-lg-3 col-xs-3">
+                    <img src="images/jcb.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                </div>
+            </div>
+            <div>
+                <p class="mot">ĐƯỢC ĐIỀU HÀNH BỞI</p>
+                <img src="images/logo_Vietravel.png">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gioi_thieu1">
+            <div>
+                <p class="mot">KẾT NỐI VỚI CHÚNG TÔI</p>
+                <div class="cach_hinh">
+                    <img src="images/fb.png">
+                    <img src="images/gp.png">
+                    <img src="images/tw.png">
+                    <img src="images/yt.png">
+                </div>
+            </div>
+            <div>
+                <p class="mot">NEWSLETTER</p>
+                <div class="input">
+                    <input type="text" placeholder="Email của bạn">
+                    <a href="#"><img src="images/send.png"></a>
+                </div>
+            </div>
+            <div>
+                <p class="mot">TÌM KIẾM</p>
+                <div class="input">
+                    <input type="text" placeholder="Tour du lịch, Điểm đến...">
+                    <a href="#"><img src="images/search-s.png"></a>
+                </div>
+            </div>
+            <div>
+                <p class="mot">ỨNG DỤNG DI ĐỘNG</p>
+                <div class="hinh">
+                    <div style="display:inline;float: left;margin-right: 15px;">
+                        <a href="#"><img src="images/a.png"></a>
+                        <p>Android</p>
+                    </div>
+                    <div style="display:inline">
+                        <a href="#"><img src="images/i.png"></a>
+                        <p>iOS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gioi_thieu1">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <p class="mot">TRONG NƯỚC</p>
+                <a href="#"><p>Hà Nội</p></a>
+                <a href="#"><p>Hạ Long</p></a>
+                <a href="#"><p>Ninh Bình</p></a>
+                <a href="#"><p>Quảng Bình</p></a>
+                <a href="#"><p>Lào Cai</p></a>
+                <a href="#"><p>Đà Nẵng</p></a>
+                <a href="#"><p>Qui Nhơn</p></a>
+                <a href="#"><p>Nha Trang</p></a>
+                <a href="#"><p>Phan Thiết</p></a>
+                <a href="#"><p>Đà Lạt</p></a>
+                <a href="#"><p>Vũng Tàu</p></a>
+                <a href="#"><p>Cần Thơ</p></a>
+                <a href="#"><p>Phú Quốc</p></a>
+                <a href="#"><p>Cà Mau</p></a>
+                <a href="#"><p>Kiên Giang</p></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <p class="mot">TRONG NƯỚC</p>
+                <a href="#"><p>Hà Nội</p></a>
+                <a href="#"><p>Hạ Long</p></a>
+                <a href="#"><p>Ninh Bình</p></a>
+                <a href="#"><p>Quảng Bình</p></a>
+                <a href="#"><p>Lào Cai</p></a>
+                <a href="#"><p>Đà Nẵng</p></a>
+                <a href="#"><p>Qui Nhơn</p></a>
+                <a href="#"><p>Nha Trang</p></a>
+                <a href="#"><p>Phan Thiết</p></a>
+                <a href="#"><p>Đà Lạt</p></a>
+                <a href="#"><p>Vũng Tàu</p></a>
+                <a href="#"><p>Cần Thơ</p></a>
+                <a href="#"><p>Phú Quốc</p></a>
+                <a href="#"><p>Cà Mau</p></a>
+                <a href="#"><p>Kiên Giang</p></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <p class="mot">DÒNG TOUR</p>
+                <a href="#"><p>Hà Nội</p></a>
+                <a href="#"><p>Hạ Long</p></a>
+                <a href="#"><p>Ninh Bình</p></a>
+                <a href="#"><p>Quảng Bình</p></a>
+                <p class="mot">THÔNG TIN</p>
+                <a href="#"><p>Lào Cai</p></a>
+                <a href="#"><p>Đà Nẵng</p></a>
+                <a href="#"><p>Qui Nhơn</p></a>
+                <a href="#"><p>Nha Trang</p></a>
+                <a href="#"><p>Phan Thiết</p></a>
+                <a href="#"><p>Đà Lạt</p></a>
+                <a href="#"><p>Vũng Tàu</p></a>
+                <p class="mot">CHỨNG NHẬN</p>
+                <img src="images/_dmca_premi_badge_5.png" style="margin-bottom:15px;">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 gioi_thieu2">
+        <div class="chu">
+            <p>Bản quyền của Vietravel ® 2016. Bảo lưu mọi quyền. Ghi rõ nguồn "www.travel.com.vn" ® khi sử dụng lại thông tin từ website này</p>
+            <p>Số GPKD: 0300465937 do Sở Kế Hoạch và Đầu Tư Thành Phố Hồ Chí Minh cấp ngày 27/09/2010</p>
+            <p>Giấy phép số: 239/GP-TTĐT do Cục Quản Lý Phát Thanh, Truyền Hình và Thông Tin Điện Tử cấp ngày 31/12/2008</p>
+        </div>
+        <div class="logo">
+            <img src="images/xdgfkjghdf.png">
+            <img src="images/mxfdjhkgd.png">
+            <img src="images/dsxyhlkyl.png">
+            <img src="images/ewlxgfkgjfE.gif">
+        </div>
+    </div>
+</body>
+</html>

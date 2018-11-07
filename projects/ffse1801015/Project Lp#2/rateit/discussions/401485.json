@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "935014",
+    "ThreadId": "401485",
+    "Html": "\r\n<p>Hi Gidon,</p>\r\n<p>Thanks for this great plugin.</p>\r\n<p>I just want to do when user mouse over the stars show the rating value, when they clicked they said &quot;you have rated on (some value)&quot; its all done in your java script example.</p>\r\n<p>But what i really need is after&nbsp; rated... again the user mouse over the star they hide the message &quot;you have rated on (some value)&quot; and show the star value and when they leave the mouse over the star they show text &quot;you have rated on (some value)&quot; .</p>\r\n<p>Thanks,</p>\r\n",
+    "PostedDate": "2012-10-31T14:34:20.43-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "937160",
+    "ThreadId": "401485",
+    "Html": "<p>Could you create a jsfiddle/jsbin, and I will try to adjust it according to your requirements.</p>",
+    "PostedDate": "2012-11-06T02:38:20.967-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "938966",
+    "ThreadId": "401485",
+    "Html": "\r\n<p>Thanks for your reply,</p>\r\n<p>I didn't use jsfiddle/jsbin before, but try to place html, css, js and attached star images. I really appreciate, if you can you do any thing with that!<br>\r\n<br>\r\nhere is link: http://jsfiddle.net/GF9Bb/3/</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2012-11-08T22:37:25.29-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "939888",
+    "ThreadId": "401485",
+    "Html": "\r\n<p>Is this what you want:&nbsp;<span style=\"text-decoration:line-through\">http://jsfiddle.net/GF9Bb/4/</span> http://jsfiddle.net/GF9Bb/5/</p>\r\n",
+    "PostedDate": "2012-11-11T06:48:56.383-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "939891",
+    "ThreadId": "401485",
+    "Html": "<p><strong>Thank you</strong> Gidon, that's really what i need!</p>",
+    "PostedDate": "2012-11-11T07:19:12.317-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1087639",
+    "ThreadId": "401485",
+    "Html": "<strong>andymaray wrote:</strong><br />\n<blockquote>\nThanks for your reply, I didn't use jsfiddle/jsbin before, but try to place html, css, js and attached star images. I really appreciate, if you can you do any thing with that!  here is link: <a href=\"http://jsfiddle.net/GF9Bb/3/\" rel=\"nofollow\">http://jsfiddle.net/GF9Bb/3/</a> Thanks<br />\n</blockquote>\ncould you add script here to remove the tooltip value on mousleave from the #hover5.  thanks in advance.<br />\n",
+    "PostedDate": "2013-09-03T04:43:52.003-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090070",
+    "ThreadId": "401485",
+    "Html": "Just add <br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n$(<span style=\"color:#A31515;\">&quot;.rateit&quot;</span>).bind(<span style=\"color:#A31515;\">&#39;mouseleave&#39;</span>, <span style=\"color:Blue;\">function</span>() {$(<span style=\"color:#A31515;\">&#39;#hover5&#39;</span>).empty();});\r\n</pre></div>",
+    "PostedDate": "2013-09-09T00:59:56.69-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

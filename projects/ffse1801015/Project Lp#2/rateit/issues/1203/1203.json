@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-10-31T06:13:31.26-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I am using the rateit-plugin in an application that allows a user to rate four categories by assigning a maximum of four stars across the categories. (E.g giving two stars in the first category only leaves two stars free to be assigned to the other three categories). To do this we use the following code\n\n$('.rateit').bind('rated reset', function (event, value) {\n    DoUpdate();\n});\n\nInside the DoUpdate-method some calculation is performed to get the current values. Next, each of the four categories has their maximum adjusted by calling\n\n$(this).rateit('max', newMaximum);\n\nThis seems to work but also results in the registration of another click-event on the reset-button, even if one is already present. This grows exponentially (one handler clicked becomes two who both fire becoming four who fire becoming eight and so on) and even after some normale usage clicking and resetting ratings it quickly causes the browser to freeze and peg CPU usage at maximum while the events are being processed.\n\nI am currently using a workaround by calling $('.rateit-reset').unbind('click') before adjusting the max-value but this is obviously not the desired effect.",
+    "LastUpdatedDate": "2013-05-16T04:24:21.96-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2012-10-26T04:50:32.55-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Dynamically changing a property causes events to be re-registered",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1203
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I will have a look at it and have a fix out there as soon as possible, which will be somewhere the coming week.",
+      "PostedDate": "2012-10-27T05:15:08.99-07:00",
+      "Id": 141077
+    },
+    {
+      "Message": "Resolved with changeset 23592: Only once register reset button",
+      "PostedDate": "2012-10-31T06:13:31.26-07:00",
+      "Id": 141078
+    }
+  ]
+}

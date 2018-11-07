@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1049185",
+    "ThreadId": "445098",
+    "Html": "Stars are there. Hover. You've Rated 5. Perfect. But not able to store it to database and show average rating of the post!<br />\nPlease help.<br />\n",
+    "PostedDate": "2013-05-27T07:38:10.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1049462",
+    "ThreadId": "445098",
+    "Html": "RateIt is a client side component. Storage in the DB and showing an average rating is out of its scope.\r<br />\nYou can bind to its 'rated' event in order to send the data to the DB once a person rated.<br />\n",
+    "PostedDate": "2013-05-28T01:40:10.737-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1051551",
+    "ThreadId": "445098",
+    "Html": "foreach (var item in Model)<br />\n{ %&gt;<br />\n&lt;tr&gt;<br />\n<pre><code>&lt;td class=&quot;bordered\n        &lt;% if (item is ImagePost)\n                    Response.Write(&quot;&lt;a href=\\&quot;/&quot; + item.PostID + &quot;\\&quot;&gt;&lt;img width=\\&quot;420\\&quot; height=\\&quot;315\\&quot; alt=\\&quot;&quot; +      item.Title + &quot;\\&quot; src=\\&quot;/Image/&quot; + item.PostID + &quot;\\&quot; / &lt;/a&gt;&quot;);\n\n               else if (item is TextPost)\n                    Response.Write((item as TextPost).Text);\n\n                else if (item is YouTubeVideoPost)\n                    Response.Write(string.Format(&quot;&lt;iframe width=\\&quot;420\\&quot; height=\\&quot;315\\&quot; src=\\&quot;http://www.youtube.com/embed/{0}?rel=0\\&quot; frameborder=\\&quot;0\\&quot; allowfullscreen&gt;&lt;/iframe&gt;&quot;, (item as YouTubeVideoPost).VideoStringId));                 %&gt;\n  &lt;/td&gt;</code></pre>\n\n&lt;/tr&gt;<br />\n&lt;tr&gt;<br />\n<pre><code>&lt;td class=&quot;spacingBelow&quot;&gt;\n     &lt;h2&gt;&lt;% Response.Write(&quot;&lt;a href=\\&quot;/&quot; + item.PostID + &quot;\\&quot;&gt;&quot; + item.Title + &quot;&lt;/a&gt;&quot;); %&gt;&lt;/h2&gt;\n\n           &lt;div class=&quot;rateit&quot; id=&quot;rateit5&quot; data-rateit-min=&quot;2&quot;&gt;&lt;/div&gt;\n           &lt;div&gt;&lt;span id=&quot;value5&quot;&gt;&lt;/span&gt;&lt;span id=&quot;hover5&quot;&gt;&lt;/span&gt;&lt;/div&gt;\n&lt;script type=&quot;text/javascript&quot;&gt;\n$(&quot;#rateit5&quot;).bind('rated', function (event, value) { $('#value5').text('You\\'ve rated it: ' + value); });\n$(&quot;#rateit5&quot;).bind('reset', function () { $('#value5').text('Rating reset'); });\n$(&quot;#rateit5&quot;).bind('over', function (event, value) { $('#hover5').text('Hovering over: ' + value); });\n&lt;/script&gt;\n</code></pre>\n\n&lt;-- ------------- Here I can display the stars for each above post, clicking, hover is working great. But I don't know how to save it to backifld and get value from it. And every time I open the page I want the rating be preset already. If 5 times 4 stars clicked so 20/5 = 4 stars should be already set value somehow. <br />\nI'm afraid it looks like a dumb question. It's in MVC3. -------------------------------------&gt;<br />\n          <br />\n   &lt;/td&gt;<br />\n&lt;/tr&gt;<br />\n",
+    "PostedDate": "2013-06-01T09:20:33.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1051678",
+    "ThreadId": "445098",
+    "Html": "Somehow you have to get the database value of the average rating for the post , and add it your div. I assume it is the property <code>Rating</code> which sits on your model.<br />\n<br />\nSomething like: <br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n<span style=\"background-color:Yellow;\">&lt;%</span> <span style=\"color:Blue;\">if</span> (item.Rating != <span style=\"color:Blue;\">null</span>) { <span style=\"background-color:Yellow;\">%&gt;</span>\n   <span style=\"color:Blue;\">&lt;</span><span style=\"color:#A31515;\">div</span> <span style=\"color:Red;\">class</span><span style=\"color:Blue;\">=</span><span style=\"color:Blue;\">&quot;rateit&quot;</span> <span style=\"color:Red;\">data-postid</span><span style=\"color:Blue;\">=</span><span style=\"color:Blue;\">&quot;&lt;%= item.PostID %&gt;&quot;</span> <span style=\"color:Red;\">data-rateit-value</span><span style=\"color:Blue;\">=</span><span style=\"color:Blue;\">&quot;&lt;%= item.Rating %&gt;&quot;</span> <span style=\"color:Red;\">data-rateit-ispreset</span><span style=\"color:Blue;\">=</span><span style=\"color:Blue;\">&quot;true&quot;</span><span style=\"color:Blue;\">&gt;</span><span style=\"color:Blue;\">&lt;/</span><span style=\"color:#A31515;\">div</span><span style=\"color:Blue;\">&gt;</span>\n<span style=\"background-color:Yellow;\">&lt;%</span> } <span style=\"color:Blue;\">else</span> { <span style=\"background-color:Yellow;\">%&gt;</span>\n   <span style=\"color:Blue;\">&lt;</span><span style=\"color:#A31515;\">div</span> <span style=\"color:Red;\">class</span><span style=\"color:Blue;\">=</span><span style=\"color:Blue;\">&quot;rateit&quot;</span> <span style=\"color:Red;\">data-postid</span><span style=\"color:Blue;\">=</span><span style=\"color:Blue;\">&quot;&lt;%= item.PostID %&gt;&quot;</span><span style=\"color:Blue;\">&gt;</span><span style=\"color:Blue;\">&lt;/</span><span style=\"color:#A31515;\">div</span><span style=\"color:Blue;\">&gt;</span>\n<span style=\"background-color:Yellow;\">&lt;%</span> } <span style=\"background-color:Yellow;\">%&gt;</span>\r\n</pre></div>As  you can see I removed the ID attribute from the <code>div</code>, because we have more than one rating element on the page.<br />\n<br />\nThe javascipt has sit in the in the of the page, and might look something like:<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n$(<span style=\"color:#A31515;\">&#39;.rateit&#39;</span>).bind(<span style=\"color:#A31515;\">&#39;rated&#39;</span>, <span style=\"color:Blue;\">function</span>() { \n   <span style=\"color:Blue;\">var</span> el = $(<span style=\"color:Blue;\">this</span>);\n   el.rateit(<span style=\"color:#A31515;\">&#39;readonly&#39;</span>, <span style=\"color:Blue;\">true</span>); <span style=\"color:Green;\">//make it readonly after voting.</span>\n   \n   <span style=\"color:Blue;\">var</span> postid =  el.data(<span style=\"color:#A31515;\">&#39;postid&#39;</span>);\n   <span style=\"color:Blue;\">var</span> value = el.rateit(<span style=\"color:#A31515;\">&#39;value&#39;</span>);\n\n  <span style=\"color:Green;\">//now we send the value to the server</span>\n  $.ajax({\n    url: <span style=\"color:#A31515;\">&#39;posts/rate&#39;</span>, <span style=\"color:Green;\">//your action that receives two values, the id of the post, and the rating</span>\n    data: { id: postid, rating: value } \n   });\n});\n\r\n</pre></div>Your action might look something like this in pseudo code.<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n\n<span style=\"color:Blue;\">public</span> ActionResult Rate (<span style=\"color:Blue;\">int</span> id, <span style=\"color:Blue;\">int</span> rating) {\n  <span style=\"color:Blue;\">var</span> db = GetMyDataBase();\n  <span style=\"color:Blue;\">var</span> post  db.Posts.FirstOrDefault(p =&gt; p.PostID == id);\n  post.Rating =   ((post.TotalRatings * post.Rating) + rating) / (post.TotalRatings + 1);\n  post.TotalRatings = post.TotalRatings + 1;\n  db.Save();\n\n  <span style=\"color:Blue;\">return</span> <span style=\"color:Blue;\">null</span>;\n}\n\r\n</pre></div>",
+    "PostedDate": "2013-06-01T23:26:32.64-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1053959",
+    "ThreadId": "445098",
+    "Html": "I was waiting to say big thanks from long time, but unfortunately, not get it done yet :) So please wait for my thanks!<br />\n",
+    "PostedDate": "2013-06-07T03:28:09.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1054066",
+    "ThreadId": "445098",
+    "Html": "Can any one please post example MVC projects, using this plugin? Thanks in advance :)<br />\n",
+    "PostedDate": "2013-06-07T07:46:29.35-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

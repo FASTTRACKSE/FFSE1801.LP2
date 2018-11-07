@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1235464",
+    "ThreadId": "542661",
+    "Html": "I would like to use progressive enhancement from my select element to rateit. But I also want to use &quot;step&quot;. Is it possible to combine the two?\r<br />\n<br />\nBasically, I want a rating from 1-10, but only want to show 5 stars. Here's what I have, but it always uses full stars.<br />\n<pre><code>&lt;select id=&quot;Rating&quot; step=&quot;.5&quot;&gt;\n    &lt;option value=&quot;&quot;&gt;&lt;/option&gt;\n    &lt;option&gt;1&lt;/option&gt;\n    &lt;option&gt;2&lt;/option&gt;\n    &lt;option&gt;3&lt;/option&gt;\n    &lt;option&gt;4&lt;/option&gt;\n    &lt;option&gt;5&lt;/option&gt;\n    &lt;option&gt;6&lt;/option&gt;\n    &lt;option&gt;7&lt;/option&gt;\n    &lt;option&gt;8&lt;/option&gt;\n    &lt;option&gt;9&lt;/option&gt;\n    &lt;option&gt;10&lt;/option&gt;\n&lt;/select&gt;\n&lt;div class=&quot;rateit&quot; data-rateit-backingfld=&quot;#Rating&quot; data-rateit-step=&quot;.5&quot;&gt;&lt;/div&gt;</code></pre>\n\nThanks.<br />\n",
+    "PostedDate": "2014-04-18T09:50:34.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1239132",
+    "ThreadId": "542661",
+    "Html": "Hi,\r<br />\n<br />\nUnfortunately, it is not supported. \r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2014-04-29T00:04:11.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

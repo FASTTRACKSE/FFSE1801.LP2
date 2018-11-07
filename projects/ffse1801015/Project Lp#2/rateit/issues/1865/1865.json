@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Pointed to angularjs fork of rateit. No response from user.",
+    "ClosedDate": "2016-01-16T01:08:46.007-08:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "It's all up there in the heading :). \r\n \r\nIf you put RATEIT withing ng-repeat\r\n\r\n```\r\n<div ng-repeat=\"x in records\">\r\n<div class=\"rateit\" id=\"rateit5\" data-rateit-min=\"2\">\r\n</div>\r\n<div>\r\n    <span id=\"value5\"></span>\r\n    <span id=\"hover5\"></span>\r\n</div>\r\n \r\n<script type=\"text/javascript\">\r\n    $(\"#rateit5\").bind('rated', function (event, value) { $('#value5').text('You\\'ve rated it: ' + value); });\r\n    $(\"#rateit5\").bind('reset', function () { $('#value5').text('Rating reset'); });\r\n    $(\"#rateit5\").bind('over', function (event, value) { $('#hover5').text('Hovering over: ' + value); });\r\n</script>    \r\n</div>\r\n```\r\n\r\nthe over functionality is not triggered/not working.\r\n \r\nIf you need more information just ask me. It would be great if you could fix it.\r\n\r\n\r\nIt took me quite some time but here it comes\r\n__UPDATE THIS IS HOW TO HOVER _ALMOST_ WORKS IN NG-REPEAT__\r\n\r\nhtml view\r\n```\r\n <div ng-repeat=\"x in records\">\r\n            <div class=\"rateit\" id=\"myRating{{x.ID}}\" data-rateit-min=\"0\" ng-mouseover=\"gimmeHoverValue(x.ID)\">\r\n                 <i >{{yourCurrentHoverVote[x.ID]}}</i>\r\n            </div>\r\n</div>\r\n```\r\n\r\njavascript controller\r\n\r\n//init stuff\r\n```\r\n$scope.yourCurrentHoverVote= [];\r\n```\r\n\r\n//function \r\n```\r\n    $scope.gimmeHoverValue = function(myID) {\r\n             $(\"#myRating\" + myID).bind('hover', function (event, value) {\r\n                 //alert(\"XX \" + value);\r\n                 $scope.yourCurrentHoverVote[myID] = value;\r\n            });\r\n```\r\n\r\n ALMOST MEANS if you mouseover from LEFT to RIGHT it is working perfectly\r\nIf you mouseover from RIGHT to LEFT (Stars 5,4,3,2,1) the value is not updated until I move with my mouse to the right.....\r\n\r\nTT I dont get it.\r\n\r\n\r\n__MY HOPEFULLY LAST FUCKING UPDATE__\r\n\r\n```\r\n $scope.$apply(function () {\r\n                     $scope.yourCurrentVote[myID] = value;\r\n                 });\r\n```\r\n\r\nTO resolve my last mentioned issue force angular to update your screen, AngularJs is a really bitchy bitch, so if you increment it does update if you decrement it doesnt. lol thats funny.\r\n\r\nGood Night",
+    "LastUpdatedDate": "2016-01-16T01:08:46.007-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2015-05-11T09:30:28.177-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "No response"
+    },
+    "Summary": "Hovering over is not working with ng-repeat (angularjs)",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1865
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "By the way except this issue everything else is working perfectly with Angularjs (dynamic ids etc). \nI tried many others and they were quite awful especially dealing with the customization.\n\nSo really nice job for this :) Thank you",
+      "PostedDate": "2015-05-11T10:19:28.333-07:00",
+      "Id": 184219
+    },
+    {
+      "Message": "There is a \"fork\" of rateit which is build for Angular : https://github.com/akempes/angular-rateit\nSee if that works for you, and let me know if it does.",
+      "PostedDate": "2015-05-18T21:43:23.993-07:00",
+      "Id": 184528
+    }
+  ]
+}

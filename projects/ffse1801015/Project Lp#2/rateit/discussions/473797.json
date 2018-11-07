@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "1136021",
+    "ThreadId": "473797",
+    "Html": "I have created a dynamic listview from a DB.<br />\n<br />\n<a href=\"http://www.brainandbytes.com/mobileapp/genere.php\" rel=\"nofollow\">CLICK HERE TO SEE THE PAGE</a><br />\n<br />\nUsing the buttons you can go show the next page, jump to the last, etc.<br />\n<br />\nIf you refresh the page you will see the stars, if you use the buttons the stars disappear.<br />\n<br />\nI try to put this code before &lt;/body&gt; without success:<br />\n<pre><code>  &lt;script&gt;\n            $(&quot;#listview&quot;).listview(&quot;refresh&quot;);\n            $('.rateit').rateit();\n            $('.star').rating();\n  &lt;/script&gt;\n</code></pre>\n\nCan someone help me?<br />\nThanks.<br />\n",
+    "PostedDate": "2013-12-14T17:49:46.083-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1136050",
+    "ThreadId": "473797",
+    "Html": "Your pages are loaded via Ajax, so your rateit init script is not called.\r<br />\n<br />\nYou have to register to the jquery mobile page change events, and in that callback call to rateit.\r<br />\n<br />\n<a href=\"http://api.jquerymobile.com/pagechange/\" rel=\"nofollow\">http://api.jquerymobile.com/pagechange/</a><br />\n",
+    "PostedDate": "2013-12-15T00:39:24.23-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1136117",
+    "ThreadId": "473797",
+    "Html": "Thanks, after some tests I find this solution:<br />\n<pre><code>  &lt;script&gt;\n    $(document).on('pagechange', function(e, data){    \n      $('.rateit').rateit();\n        });\n  &lt;/script&gt;\n</code></pre>\n\nI hope this can help others programmers that like me have no good feeling with Jquery :D\r<br />\n<br />\nTY<br />\n",
+    "PostedDate": "2013-12-15T07:44:15.177-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1136713",
+    "ThreadId": "473797",
+    "Html": "Anyway I find another little problem.\r<br />\n<br />\nThe script solve the problem if I refresh the page but not automaticaly when the page is show.\r<br />\n<br />\nI had try tu use <strong>window.location.reload();</strong> but it doesn't work.\r<br />\n<br />\nYou can see that when the page is load there is no stars, if you refresh stars are on....\r<br />\n<br />\nSome ideas?\r<br />\n<br />\nty<br />\n",
+    "PostedDate": "2013-12-16T07:22:17.287-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1137507",
+    "ThreadId": "473797",
+    "Html": "Could you show me the &quot;non-working&quot; demo again?<br />\n",
+    "PostedDate": "2013-12-18T06:30:37.757-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1137945",
+    "ThreadId": "473797",
+    "Html": "Ciao, yes, I have change the filenames...<br />\n<br />\nYou can start from here:<br />\n<br />\n<a href=\"http://www.brainandbytes.com/mobileapp/ricerca.php\" rel=\"nofollow\">TEXT</a><br />\n<br />\nThis is a search page. Select what you want (doesn't matter, don't work for now) and click CERCA (or click CERCA directly).<br />\n<br />\nHow you can see the stars aren't show. Refresh the page and you will see its.<br />\n",
+    "PostedDate": "2013-12-18T16:12:04.477-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1140572",
+    "ThreadId": "473797",
+    "Html": "Have you understood why?<br />\n",
+    "PostedDate": "2013-12-21T11:33:01.48-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1140646",
+    "ThreadId": "473797",
+    "Html": "The page doesn't work.<br />\n",
+    "PostedDate": "2013-12-22T05:27:15.927-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1140654",
+    "ThreadId": "473797",
+    "Html": "SORRY, you are right.<br />\n<br />\nThis because I am developing always new upgrade... <br />\n<br />\nCheck this: <a href=\"http://www.brainandbytes.com/mobileapp/ricerca.php?s=accetto\" rel=\"nofollow\">TEXT</a><br />\n<br />\n<strong>Anyway in the meantime I found a solution</strong>, I have put all the HTML and Jquery code inside PHP variables, at the end I print $variable...<br />\n<br />\nIn this way seems to work, so I think the problem can be connect to the DOM...<br />\n<br />\nThanks for your time!<br />\n",
+    "PostedDate": "2013-12-22T06:07:52.023-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1140662",
+    "ThreadId": "473797",
+    "Html": "<ol>\n<li>I guess changing the event to &quot;pagebeforeshow&quot; , might make the flicker go away.</li>\n<li>Furthermore, just as an explanation: you need to init rateit twice. <br />\n   Once when the page loads for the first time. You could just move the call $('.rateit').rateit(); (which is now inside your 'load' event handler) to the bottom off the page, so it kicks in as fast as possible. The other one, is when jQuery mobile changes the content of the page. I guess here you could better change it to using &quot;pagebeforeshow&quot;, so it won't flicker. </li>\n</ol>\n",
+    "PostedDate": "2013-12-22T06:38:56.157-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

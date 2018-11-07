@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-10-20T02:56:40.77-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "When you have a backingfield, it will only look if that field is \"disabled\". If it is disabled it will set rateit to be \"readonly\", if it is not disabled it will set rateit to \"not readonly\", no matter what you define anywhere else.",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2012-10-17T05:08:09.94-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Readonly mode with backingfield is broken",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1142
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 23318: Fixed readonly mode with backingfield bug.",
+      "PostedDate": "2012-10-20T02:56:40.77-07:00",
+      "Id": 141073
+    }
+  ]
+}

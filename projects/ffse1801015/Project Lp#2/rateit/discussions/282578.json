@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "710604",
+    "ThreadId": "282578",
+    "Html": "\r\n<p>When my rateit controls is initially diapled I can see a few pixels are selected on the left despite the fact my initial value is &quot;0&quot;. Here's a screenshot to demonstrate:</p>\r\n<p><a href=\"http://screencast.com/t/0xEycwXY\">http://screencast.com/t/0xEycwXY</a></p>\r\n<p>and here's is my HTML code:</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">input</span> <span style=\"color:red\">type</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;hidden&quot;</span> <span style=\"color:red\">id</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;sample&quot;/</span><span style=\"color:blue\">&gt;</span>\r\n<span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">div</span> <span style=\"color:red\">class</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;rateit bigstars&quot;</span> <span style=\"color:red\">data-rateit-backingfld</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;#sample&quot;</span> <span style=\"color:red\">data-rateit-starwidth</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;32&quot;</span> <span style=\"color:red\">data-rateit-starheight</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;32&quot;</span> <span style=\"color:red\">data-rateit-resetable</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;false&quot;</span> <span style=\"color:red\">data-rateit-ispreset</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;false&quot;</span> <span style=\"color:red\">data-rateit-step</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;1&quot;</span> <span style=\"color:red\">data-rateit-value</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;0&quot;</span> <span style=\"color:red\">data-rateit-min</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;0&quot;</span> <span style=\"color:red\">data-rateit-max</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;5&quot;</span><span style=\"color:blue\">&gt;</span><span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">div</span><span style=\"color:blue\">&gt;</span>\r\n\r\nWhat causes this behavior?</pre>\r\n</div>\r\n",
+    "PostedDate": "2011-12-11T13:04:50.81-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710606",
+    "ThreadId": "282578",
+    "Html": "<p>I tried jQuery 1.6.2 and 1.7.1 and I observe the same problem.</p>",
+    "PostedDate": "2011-12-11T13:10:52.533-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710609",
+    "ThreadId": "282578",
+    "Html": "<p>I removed the \"data-rateid-value\" attribute and I observe the same problem</p>",
+    "PostedDate": "2011-12-11T13:24:27.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710643",
+    "ThreadId": "282578",
+    "Html": "<p>Nevermind: I figured it out. It was a conflict with a style in my own CSS that was causing this problem. Sorry for the false alarm!</p>",
+    "PostedDate": "2011-12-11T15:33:31.797-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710650",
+    "ThreadId": "282578",
+    "Html": "\r\n<div>\r\n<div style=\"text-align:left; direction:ltr\">Happy to hear it worked out for you. And anyway thanks for reporting the &quot;bug&quot; even though it was false alarm.\r\n</div>\r\n<div style=\"text-align:left; direction:ltr\"><br>\r\n</div>\r\n<div style=\"text-align:left; direction:ltr\">Gidon</div>\r\n<br>\r\nSent from my iPhone</div>\r\n<div><br>\r\nOn 11 בדצמ 2011, at 17:33, &quot;Jericho&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: Jericho</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Nevermind: I figured it out. It was a conflict with a style in my own CSS that was causing this problem. Sorry for the false alarm!</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-12-11T16:06:33.403-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "I created a Fiddle using jQuery.rateit and jQuery 2.1.0, and it works fine.\nSee http://jsfiddle.net/gidon/4S8G7/1/\n",
+    "ClosedDate": "2014-05-26T06:08:00.25-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "The documentation says that it needs jQuery 1.6 or greater.  When I upgraded to jQuery 2.1.0 the pluggin stopped working.\r\n\r\nExample:\r\n\r\n```\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n<head>\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>ThrowAway</title>\r\n</head>\r\n<body>\r\n    <div>\r\n        @{\r\n    ViewBag.Title = \"ThrowAway\";\r\n}\r\n\r\n<h2>ThrowAway</h2>\r\n\r\n<link href=\"/Scripts/RateIt/rateit.css\" rel=\"stylesheet\"/>\r\n\r\n  <script src=\"/Scripts/jquery-2.1.0.min.js\"></script>\r\n@*<script src=\"/Scripts/jquery-1.6.3.min.js\"></script>*@\r\n\r\n<script src=\"/Scripts/RateIt/jquery.rateit.js\"></script>\r\n\r\n<div class=\"rateit avg\" data-rateit-readonly=\"true\" data-rateit-value=\"4.0\" style=\"width:50px; height:50px;\"></div>\r\n\r\n<script>\r\n  $('.rateit').rateit();\r\n</script>\r\n\r\n    </div>\r\n</body>\r\n</html>\r\n\r\n```",
+    "LastUpdatedDate": "2014-05-26T11:43:46.97-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-05-25T18:58:47.61-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Not a bug"
+    },
+    "Summary": "jQuery 2.1.0 not working",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1858
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This is correct, in my project I was reference an old version of Rate It, thanks for the reply.",
+      "PostedDate": "2014-05-26T11:43:46.97-07:00",
+      "Id": 147939
+    }
+  ]
+}

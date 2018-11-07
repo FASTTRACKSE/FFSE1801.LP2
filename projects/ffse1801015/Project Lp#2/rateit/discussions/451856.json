@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1074665",
+    "ThreadId": "451856",
+    "Html": "Hi, \r<br />\nI was wondering if there as a tutorial or guide on how we can save user ratings and add them up them with the help connecting RateIt + json file + jQuery.\r<br />\n<br />\nIs this possible yet?\r<br />\n<br />\nThanks for any advice!<br />\n",
+    "PostedDate": "2013-07-30T05:40:37.007-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1074775",
+    "ThreadId": "451856",
+    "Html": "\r\n<p>You'll need some server side technology in order to save the results on your server.\r\n<br>\r\nThat part is really outside the scope, and you will be able to find many resources on the web dealing with data storage on the server.<br>\r\nThere is although a small example showing how to send a rating to the server. You can find it at the bottom of the examples page.</p>\r\n",
+    "PostedDate": "2013-07-30T09:37:55.38-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1074871",
+    "ThreadId": "451856",
+    "Html": "gidon, thank you so much for the rich response and helping me learn more.<br />\n",
+    "PostedDate": "2013-07-30T15:12:02.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "843771",
+    "ThreadId": "358039",
+    "Html": "\r\n<p>&lt;script type=&quot;text/javascript&quot;&gt;<br>\r\n$(document).ready(function(){<br>\r\n<span>&nbsp;</span>$(&quot;#rating&quot;).append('&lt;div id=&quot;rating_sub&quot; class=&quot;rateit&quot; data-rateit-value=&quot;3.5&quot; data-rateit-ispreset=&quot;true&quot; data-rateit-readonly=&quot;true&quot;&gt;&lt;/div&gt;');<span>\r\n</span></p>\r\n<p><span>&nbsp;</span><span>&nbsp;</span>});</p>\r\n<p>&nbsp;</p>\r\n<p>This does not work as expected.Pls.advise.</p>\r\n",
+    "PostedDate": "2012-06-01T21:26:31.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "843810",
+    "ThreadId": "358039",
+    "Html": "<p>From first sight I would say you forgot to call rateit on the newly created element:</p>\r\n<p>&nbsp;</p>\r\n<p><span>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>$(<span style=\"color: #a31515;\">\"#rating\"</span>).append(<span style=\"color: #a31515;\">'&lt;div id=\"rating_sub\" class=\"rateit\" data-rateit-value=\"3.5\" data-rateit-ispreset=\"true\" data-rateit-readonly=\"true\"&gt;&lt;/div&gt;'</span>).rateit();\r\n</pre>\r\n</div>\r\n</span></p>\r\n<p>I this doesn't work out for you, please give me some info, like a link to the page, or a <a href=\"http://jsfiddle.net/\">jsfiddle</a>.</p>",
+    "PostedDate": "2012-06-02T00:39:49.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "843919",
+    "ThreadId": "358039",
+    "Html": "<p>How can I disable mouser over and mouse click events on the star?</p>",
+    "PostedDate": "2012-06-02T14:40:29.637-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "843967",
+    "ThreadId": "358039",
+    "Html": "\r\n<p>I am setting the value dynamically from Javascript using&nbsp;</p>\r\n<p><span style=\"background-color:white\">$(</span><span style=\"color:#a31515\">&quot;#rating&quot;</span><span style=\"background-color:white\">).append(</span><span style=\"color:#a31515\">'&lt;div id=&quot;rating_sub&quot; class=&quot;rateit&quot; data-rateit-value=&quot;3.5&quot; data-rateit-ispreset=&quot;true&quot;\r\n data-rateit-readonly=&quot;true&quot;&gt;&lt;/div&gt;'</span><span style=\"background-color:white\">).rateit(</span><span style=\"color:#a31515\">'value'</span><span style=\"background-color:white\">,</span><span style=\"color:#a31515\">'4'</span><span style=\"background-color:white\">);</span></p>\r\n<p>I want to diasble mouse over and mouse click events on the star for rating once it is set.</p>\r\n<pre>How can I achieve it?</pre>\r\n",
+    "PostedDate": "2012-06-02T20:54:13.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "843985",
+    "ThreadId": "358039",
+    "Html": "<p>See&nbsp;<a href=\"http://www.radioactivethinking.com/rateit/example/example.htm#ex_11\">http://www.radioactivethinking.com/rateit/example/example.htm#ex_11</a></p>\r\n<p>You can make any rateit control readonly by doing:&nbsp;\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>$(SELECTOR).rateit(<span style=\"color: #a31515;\">'readonly'</span>,<span style=\"color: blue;\">true</span>);\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2012-06-02T23:48:42.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

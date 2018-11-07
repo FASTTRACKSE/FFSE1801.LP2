@@ -1,0 +1,427 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(images/tree-nature-forest-grass-light-wood-722681-pxhere.com.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 5px;
+    background-color: black;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow-: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: gray;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    -webkit-box-shadow-: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: black;
+}
+body::-webkit-resizer {
+    width: 300;
+    height: 1px;
+    background-color: rgb(250, 10, 10);
+}
+
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #09EA64;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    transition: 1s;
+    background-color: #D9AB39;
+    color: #000;
+}
+
+
+#menu{
+    background-color: #3f3f3f;
+    width: auto;
+}
+#container .container1 img{
+    margin-top: -25px;
+}
+#container #myNavbar>ul>li>a{
+    font-size: 18px;
+    font-weight: bold;
+}
+#container #myNavbar>ul>li>ul>li>a{
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 20px;
+}
+#container ul li:hover{
+    background-color: #222222;
+    transition: 0.5s;
+}
+#container ul li a:hover{
+    color: rgb(253, 118, 7);
+    transition: 0.5s;
+}
+#menu #container .submenu{
+    background-color: #222222;
+    left: 0px;
+    top: 49px;
+    width: 270px;
+}
+#menu #container .submenu a{
+    color: white;
+}
+#menu #container .submenu a:hover{
+    color: rgb(253, 118, 7);
+    background-color: rgb(78, 70, 70);
+    transition: 0.5s;
+}
+
+#wrapper{
+    margin: auto;
+    margin-top: 5%;
+    width: 86%;
+    opacity: 1;
+}
+#slide1{
+    padding-left: 0;
+    margin-top: 50px;
+}
+#danh_muc{
+    margin: 3% 18% 3% 18%;
+    height: 15%;
+}
+.muc{ 
+    padding: 0 5px 0 0;
+}
+.muc a{
+    color: #000;
+}
+.muc a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.border{
+    background-color: aliceblue;
+    border: 1px solid gray;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.border img{
+    margin: 12% 31%;
+    max-height: 100%;
+    max-width: 100%;
+}
+.border1 b{
+    color: #015196;
+}
+.border1:hover{
+    border: 2px solid #015196;
+}
+.border2 b{
+    color: #f0433a;
+}
+.border2:hover{
+    border: 2px solid #f0433a;
+}
+.border3 b{
+    color: #f2a30f;
+}
+.border3:hover{
+    border: 2px solid #f2a30f;
+}
+.border4 b{
+    color: #008c72;
+}
+.border4:hover{
+    border: 2px solid #008c72;
+}
+.tieu_de{
+    margin: 0 15px 15px 15px;
+    border-bottom: 2px dashed;
+}
+
+
+#title{
+    height: auto;
+    width: auto;
+    background-color: white;
+}
+#title .img{
+    padding: 10px 7%;
+    margin-bottom: 3%;
+}
+#title .img img{
+    height: 300px;
+    max-width: 100%;
+}
+#title .img a{
+    color: rgb(252, 113, 0);
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+#title .img a:hover{
+    text-decoration: none;
+}
+#title .img p{
+    font-size: 16px;
+}
+#title .img p.mot{
+    border-bottom: 1px solid lightgray;
+}
+
+#trang{
+    background-color: #ebeae5;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+#trang button{
+    text-align: left;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#trang h1{
+    margin-bottom: 26px;
+}
+
+#trang i{
+    top: 0px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+#trang span{
+    top: 0px;
+    padding: 5px;
+    color: rgb(252, 113, 0);
+}
+#trang button{
+    padding: 0;
+}
+#trang button.mot{
+    background-color: rgb(252, 113, 0);
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#trang .img1{
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+#trang .img1 img{
+    height: 270px;
+    width: 100%;
+    padding: 10px;
+}
+#trang .img1 a.mot{
+    margin-bottom: 20px;
+    color: rgb(252, 113, 0);
+    font-weight: bold;
+    font-size: 23px;
+    text-decoration: none;
+}
+#trang a:hover.hai{
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+}
+#trang a:hover.mot{
+    
+    color: rgb(83, 81, 81);
+}
+
+
+#trang .img1 p.mot{
+    display: inline;
+    padding: 0 0 15px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#trang .img1 p.hai{
+    margin: 15px;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(252, 113, 0);
+    font-weight: bold;
+}
+#trang .img1 p.ba{
+    display: inline;
+    font-size: 17px;
+    color: rgb(240, 1, 1);
+    text-decoration: none;
+}
+#trang .img1 p.bon{
+    display: inline;
+    padding: 15px;
+}
+#trang .img1 p.nam{
+    color:rgb(252, 113, 0);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+#trang .img2{
+    padding: 10px;
+    padding-top: 0;
+}
+#trang .img2 img{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+#trang .phan_trang li a{
+    color: #000;
+}
+#trang .phan_trang li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 123, 0);
+}
+
+
+
+
+.gioi_thieu1 a{
+    color: #000;
+}
+.gioi_thieu1 a:hover{
+    color: rgb(255, 136, 0);
+    text-decoration: none;
+}
+#gioi_thieu .thanh_toan img{
+    margin-bottom: 15px;
+}
+.gioi_thieu1{
+    background-color: #caddda;
+}
+.gioi_thieu1 p.mot{
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+    margin-top: 15px;
+}
+.gioi_thieu1 p.hai{
+    display: inline;
+    color: black;
+    font-weight: bold;
+}
+.gioi_thieu1 ul li{
+    list-style:  rgb(255, 136, 0);
+}
+.gioi_thieu1 ul{
+    margin: 20px 0 25px 0;
+}
+.gioi_thieu1 p.ba{
+    display: inline;
+    color: black;
+}
+.gioi_thieu1 .cach_hinh img{
+    margin-right: 15px;
+}
+.gioi_thieu1 .input input{
+    height: 30px;
+    width: 250px;
+    padding: 10px;
+}
+.gioi_thieu1 .input img{
+    background-color: #212121;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+.gioi_thieu1 .hinh{
+    display: inline;
+}
+.gioi_thieu2{
+    background-color: white;
+    position: relative;
+}
+.gioi_thieu2 .chu{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.gioi_thieu2 .logo{
+    position: relative;
+    height: 160px;
+}
+.gioi_thieu2 img{
+    position: absolute;
+    margin: 20px 47% 0 46%;
+}
+
+
+
+
+@media only screen and (min-width: 1025px){
+    #menu #container li:hover .submenu{
+        display: inline;
+        background-color: #222222;
+    }
+    #container{
+        background-color:#414040;
+        margin:0 13% ;
+    }
+    #slide2{
+        display: none;
+    }
+    .gioi_thieu1{
+        background-color: #cecfcf;
+        height: 500px;
+    }
+    #trang button.mot{
+        width: 100px;
+    }
+    #trang .img1 .right{
+        border-left: 1px solid lightgray;
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #container ul li a:hover{
+        background-color: #0a0a0a;
+        transition: 0.5s;
+    }
+    #container{
+        background-color:#414040;
+        margin:0 1% ;
+    }
+    #container div #myNavbar{
+        padding: 0 40px 0 40px;;
+    }
+    #container{
+        background-color:#414040;
+        margin:0 5% ;
+    }
+    #danh_muc{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .border{
+        margin-bottom: 15px;
+    }
+    #slide2{
+        display: block;
+    }
+}

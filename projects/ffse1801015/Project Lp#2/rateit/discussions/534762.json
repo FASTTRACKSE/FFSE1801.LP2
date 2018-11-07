@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1213595",
+    "ThreadId": "534762",
+    "Html": "Help!\r<br />\n<br />\nI'm running into a problem running Rateit with JQuery Mobile and generating the page using perl. When i write the html to the screen using perl, the ratings do not appear until I do a refresh of the page (yeah, that old chestnut once again). If I take the html i just printed using perl and save it in a simple .htm file then that url works fine without any refresh required).\r<br />\n<br />\nThe test htm file url is <a href=\"http://www.homeducate.me/test.htm\" rel=\"nofollow\">http://www.homeducate.me/test.htm</a> (it works perfectly)\r<br />\nWhen I execute the perl program (and generate the same output) it doesn't display the stars properly until I refresh the page. You can test that by going to <a href=\"http:///www.homeducate.me/m.index.htm\" rel=\"nofollow\">http:///www.homeducate.me/m.index.htm</a> log in as '<a href=\"mailto:test@test.com\" rel=\"nofollow\">test@test.com</a>' and password 'test' and then click on 'My Tutors'. You will see the page display with no ratings, until you refresh the page.\r<br />\n<br />\nHope you can help me!\r<br />\n<br />\nThanks.\r<br />\n<br />\nScotsman<br />\n",
+    "PostedDate": "2014-02-24T03:36:38.903-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1213701",
+    "ThreadId": "534762",
+    "Html": "Hi,\r<br />\n<br />\nYour problem is similar to <a href=\"https://rateit.codeplex.com/discussions/473797\" rel=\"nofollow\">https://rateit.codeplex.com/discussions/473797</a> . \r<br />\n<br />\nI guess for you the solution would be to add the rateit plugin already on your main page, and also add the following script:<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n&lt;script&gt;\n    $(document).on(<span style=\"color:#A31515;\">&#39;pagechange&#39;</span>, <span style=\"color:Blue;\">function</span>(e, data){    \n      $(<span style=\"color:#A31515;\">&#39;.rateit&#39;</span>).rateit();\n     });\n&lt;/script&gt;\r\n</pre></div>",
+    "PostedDate": "2014-02-24T06:30:54.403-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1213805",
+    "ThreadId": "534762",
+    "Html": "Thank you so much for your help. Adding the CSS and plug in script lines to the opening page of my site seems to have done the trick (without even having to add the script above)! Thanks for your kind assistance. Much appreciated!<br />\n",
+    "PostedDate": "2014-02-24T08:33:49.57-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

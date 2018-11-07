@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "612785",
+    "ThreadId": "257634",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>It seems like the latest updates to jquery html5 data attributes get will not work with the data-rateit-... values? We went through all of our code to update all html5 data objects, including our copy of rateit, when we updated to 1.6.1.&nbsp;</p>\r\n<p>Regards,<br>\r\nPatrick&nbsp;</p>\r\n",
+    "PostedDate": "2011-05-14T11:23:32.123-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "612901",
+    "ThreadId": "257634",
+    "Html": "<p>Hi Patrick,</p>\r\n<p>RateIt has been tested on 1.6 and 1.6.1, and works great.&nbsp;</p>\r\n<p>The changes to jQuery don't affect RateIt.</p>\r\n<p>The camelcasing only affect when getting all the data on an object:</p>\r\n<p>var obj = $('#rateit').data() =&gt; here we now have obj.rateitValue&nbsp;</p>\r\n<p>But our reading/write via $('#rateit').data('rateit-value') is still valid, and works as before.</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2011-05-15T01:28:31.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

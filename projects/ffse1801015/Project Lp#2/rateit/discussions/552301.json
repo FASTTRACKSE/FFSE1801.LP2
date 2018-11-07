@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "1274724",
+    "ThreadId": "552301",
+    "Html": "Hi,\r<br />\n<br />\nI love this Plugin and have been using it with great success for my research project to ask our App users how their hayfever symptoms are (out of 5) and posting the data along with the users GPS co-ordinates to our server for analysis.\r<br />\n<br />\nNow we would like to ask our users if they took any hayfever medication on the day and record their response and the rating as well as the GPS data, so that we can more accurately analyse the data sets. I was planing on using the RateIt &quot;BeforeRated&quot; event and the phonegap command &quot;navigator.notification.confirm&quot;.\r<br />\n<br />\nUnfortunately, I just can't seem to get these two commands to work together. I am sure I missing something but can't work out what!\r<br />\n<br />\nPollen season is fast approaching so I would really REALLY appreciate any help with this!\r<br />\n<br />\nThanks in advance!\r<br />\nEd.<br />\n<pre><code>&lt;script src=&quot;js/jquery.rateit.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;         \n&lt;script type =&quot;text/javascript&quot;&gt;\n\nfunction onConfirm(buttonIndex) {\n    window.drugs = buttonIndex;\n}\n\n//we bind only to the rateit controls within the products div\n     $('#products .rateit').on('beforerated', function (e) {\n\nif (value &gt; 0) {\nnavigator.notification.confirm('Did you take any hayfever medication today?', onConfirm, 'Medication', ['Yes','No']) \n}\n     \n         var ri = $(this);\n         var value = ri.rateit('value');\n         var productID = ri.data('productid');\n         var latitude = window.latitude;\n         var longitude = window.longitude;\n         var accuracy = window.accuracy;\n         var pos_time = window.pos_time;\n         var device_platform = window.device.platform;\n     var device_uuid = window.device.uuid;        \n     var drugs = window.drugs;         \n         ri.rateit('readonly', true);\n\n$.ajax({\n url: 'http://www.website.com/app_sync/survey.php', //your server side script\n data: { id: productID, value: value, latitude: latitude, longitude: longitude, accuracy: accuracy, pos_time: pos_time, device_platform: device_platform, device_uuid: device_uuid, drugs: drugs}, \n  type: 'POST',\n  success: function (data) {\n      navigator.notification.alert(data, null, 'Thanks!', 'OK')\n  },\n  error: function (jxhr, msg, err) {\n      navigator.notification.alert(msg, null, 'Something\\'s gone wrong!', 'OK')\n  }\n});\n});\n        &lt;/script&gt;</code></pre>\n\n",
+    "PostedDate": "2014-07-21T04:53:29.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1274731",
+    "ThreadId": "552301",
+    "Html": "If I understand correctly:\r<br />\n<br />\nOnce a user presses a rating, you ask him/her a question, once the question has been answered you want to send both the rating and the answer to your server.\r<br />\n<br />\nIn this case you code should look something like this:<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n\n$(<span style=\"color:#A31515;\">&#39;#products .rateit&#39;</span>).on(<span style=\"color:#A31515;\">&#39;beforerated&#39;</span>, <span style=\"color:Blue;\">function</span> (e, rating) {\n\n     <span style=\"color:Blue;\">var</span> ri = $(<span style=\"color:Blue;\">this</span>);\n     <span style=\"color:Blue;\">var</span> productID = ri.data(<span style=\"color:#A31515;\">&#39;productid&#39;</span>);\n     <span style=\"color:Blue;\">var</span> pos_time = window.pos_time;\n     <span style=\"color:Green;\">//....</span>\n\n     <span style=\"color:Green;\">//this function is called by Phonegap once the answer to the question has been received.</span>\n     <span style=\"color:Blue;\">var</span> onConfirmCallback = <span style=\"color:Blue;\">function</span>(buttonIndex) {\n         <span style=\"color:Blue;\">var</span> value = rating;\n         <span style=\"color:Blue;\">var</span> tookDrugs = buttonIndex == 1;\n\n         $.ajax({\n            <span style=\"color:Green;\">//....</span>\n         });         \n\n      }\n\n     <span style=\"color:Blue;\">if</span> (value &gt; 0) {\n        navigator.notification.confirm(<span style=\"color:#A31515;\">&#39;Did you take any hayfever medication today?&#39;</span>, onConfirmCallback , <span style=\"color:#A31515;\">&#39;Medication&#39;</span>, [<span style=\"color:#A31515;\">&#39;Yes&#39;</span>,<span style=\"color:#A31515;\">&#39;No&#39;</span>]) ; <span style=\"color:Green;\">//non-blocking</span>\n        ri.rateit(<span style=\"color:#A31515;\">&#39;readonly&#39;</span>, <span style=\"color:Blue;\">true</span>);\n     }     \n}\n\n\r\n</pre></div>",
+    "PostedDate": "2014-07-21T05:44:34.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1274747",
+    "ThreadId": "552301",
+    "Html": "Dear Gidon,<br />\n<br />\nThank you so much for taking the time to help me. You are absolutely correct. Once a user presses a rating, we want to ask the user a question, once the question has been answered we want to send both the rating and the answer to our server.<br />\n<br />\nI have tried the suggestion you have made but unfortunately it does not seem to work as expected. The rating is not recorded and the &quot;navigator.notification.confirm&quot; function is not called. Have I missed something?<br />\n<pre><code>         &lt;script type =&quot;text/javascript&quot;&gt;\n$('#products .rateit').on('beforerated', function (e, rating) {\n\n     var ri = $(this);\n     var productID = ri.data('productid');\n     var latitude = window.latitude;\n     var longitude = window.longitude;\n     var accuracy = window.accuracy;\n     var pos_time = window.pos_time;\n     var device_platform = window.device.platform;\n     var device_uuid = window.device.uuid;        \n\n     //this function is called by Phonegap once the answer to the question has been received.\n     var onConfirmCallback = function(buttonIndex) {\n     var value = rating;\n     var tookDrugs = buttonIndex == 1;\n\n $.ajax({\n   url: 'http://www.website.com/app_sync/survey.php', //your server side script\n   data: { id: productID, value: value, latitude: latitude, longitude: longitude, accuracy: accuracy, pos_time: pos_time, device_platform: device_platform, device_uuid: device_uuid}, //our data\n   type: 'POST',\n   success: function (data) {\n     navigator.notification.alert(data, null, 'Thanks!', 'OK')\n                            },\n   error: function (jxhr, msg, err) {\n     navigator.notification.alert(msg, null, 'Something\\'s gone wrong!', 'OK')\n                                    }\n                    });\n      }\n\n     if (value &gt; 0) {\n        navigator.notification.confirm('Did you take any hayfever medication today?', onConfirmCallback , 'Medication', ['Yes','No']) ; //non-blocking\n        ri.rateit('readonly', true);\n     }     \n});\n        &lt;/script&gt;\n</code></pre>\n\n",
+    "PostedDate": "2014-07-21T06:35:33.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1275565",
+    "ThreadId": "552301",
+    "Html": "If the confirm function is not called then the ratingg for sure won't be recorded; since the rating is recorded bY the callback of the confirm function. \r<br />\nSo you have to find out why the confirm function is not called. \r<br />\nTry to put a basic alert before and see if that is being called. \r<br />\nIs the rateit being put in readonly mode? If not then it seems like the whole script is not being called. <br />\n",
+    "PostedDate": "2014-07-23T10:07:40.343-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1288383",
+    "ThreadId": "552301",
+    "Html": "Dear Gidon,\r<br />\n<br />\nI am still struggling with this! I really really need some help.\r<br />\n<br />\nI have tried to add some console logs and the basic alert exactly as you have suggested. \r<br />\n<br />\nThe script seems to stop at\r<br />\n&quot;var onConfirmCallback = function(buttonIndex) {&quot; \r<br />\n<br />\n<br />\nPlease Gidon! Please Help!\r<br />\n<br />\nEd.<br />\n",
+    "PostedDate": "2014-08-09T04:40:27.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1289318",
+    "ThreadId": "552301",
+    "Html": "\r\n<div>\r\n<div style=\"direction:ltr\">Does it display the confirmation dialog, or even that doesn't work?</div>\r\n</div>\r\n<blockquote type=\"cite\" style=\"\">\r\n<div></div>\r\n</blockquote>\r\n",
+    "PostedDate": "2014-08-12T08:40:50.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1289488",
+    "ThreadId": "552301",
+    "Html": "No nothing happens at all. With the original version posted first the dialog was displayed but only after the vote was sent. With this version the icon lights up but nothing else happens.<br />\n",
+    "PostedDate": "2014-08-12T15:45:56.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1289959",
+    "ThreadId": "552301",
+    "Html": "\r\n<div dir=\"ltr\">It's kind of impossible to debug it from here. I suggest to ask a friend to look at your code.</div>\r\n",
+    "PostedDate": "2014-08-14T03:25:30.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

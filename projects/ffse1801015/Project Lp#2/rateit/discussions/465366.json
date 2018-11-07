@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1117504",
+    "ThreadId": "465366",
+    "Html": "Hi!<br />\n<br />\n<strong>Edit: I found the problem, just crazy but now its working. there was data-enhanchment=&quot;false&quot; missing in the div. I leave the question if someone needs it:</strong><br />\n<br />\n<br />\n<br />\nI am really stuck here. I am using jquery mobile with the rateit plugin. Following scripts<br />\n<br />\njquery-1.7.1.min.js<br />\njquery.mobile-1.3.2.min.js<br />\n<br />\nBetween them the mobileinit event like this<br />\n<pre><code>    &lt;script type=&quot;text/javascript&quot;&gt;\n        $(document).bind(&quot;mobileinit&quot;, function(){\n            $.extend( $.mobile , {\n                ignoreContentEnabled : true\n            });\n        });\n    &lt;/script&gt;</code></pre>\n\nAnd inside body the rateitplugin js<br />\n<pre><code>&lt;script src=&quot;assets/jquery.rateit.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code></pre>\n\nI have setup several pages with JQM with a simple page navigation which leads to the different page ids<br />\n<br />\n&lt;div data-role=&quot;page&quot; id=&quot;one&quot;&gt;<br />\n&lt;div data-role=&quot;page&quot; id=&quot;two&quot;&gt;<br />\n<br />\nand the english versions<br />\n<br />\n&lt;div data-role=&quot;page&quot; id=&quot;one-en&quot;&gt;<br />\n&lt;div data-role=&quot;page&quot; id=&quot;two-en&quot;&gt;<br />\n<br />\nOn page one I have the jquery rateit plugin active with the big stars:<br />\n<pre><code>&lt;div class=&quot;rateit bigstars&quot; id=&quot;rateitcontainer&quot; data-rateit-step=&quot;1&quot; data-rateit-starwidth=&quot;128&quot; data-rateit-starheight=&quot;128&quot; data-rateit-resetable=&quot;false&quot; data-role=&quot;none&quot;&gt;&lt;/div&gt;</code></pre>\n\nOn the first page I have also the link to the english version:<br />\n<pre><code>&lt;p&gt;&lt;a href=&quot;#one-en&quot;&gt;&lt;img src=&quot;assets/images/gb.png&quot; alt=&quot;gb&quot; title=&quot;in english&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</code></pre>\n\nIf I click this link, the JQM makes the rating div with the JQM style, despite the data-role=&quot;none&quot; attribut.<br />\n<br />\nI also asked this at the jquery forum: <a href=\"http://forum.jquery.com/topic/problem-with-rateit-plugin-and-jqm-data-role-none-is-ignored\" rel=\"nofollow\">http://forum.jquery.com/topic/problem-with-rateit-plugin-and-jqm-data-role-none-is-ignored</a><br />\n",
+    "PostedDate": "2013-11-04T23:34:21.197-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1119709",
+    "ThreadId": "465366",
+    "Html": "Thats good to hear.<br />\n",
+    "PostedDate": "2013-11-07T05:30:23.07-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1122464",
+    "ThreadId": "465366",
+    "Html": "That's an easy one.  To remove jquery formatting you add attribute data-role = &quot;none&quot;,  however in this case under the covers the rateit.js creates a button to handle events and so on. So just look in the source .js file for the text &lt;button  and add data-role=&quot;none&quot; after it.  Once you launch your app and refresh the browser the visible button above the star rating panel will disappear.\r<br />\n<br />\nhave fun!<br />\n",
+    "PostedDate": "2013-11-12T10:39:45.033-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1122810",
+    "ThreadId": "465366",
+    "Html": "Thanks for the help. I've uploaded a new version (1.0.15)<br />\n",
+    "PostedDate": "2013-11-13T01:33:39.157-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

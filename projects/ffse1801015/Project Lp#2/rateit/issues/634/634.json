@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-06-08T07:47:59.527-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "$(SELECTOR).rateit('value', 0);\ndoesn't work, it will only accept a string representation of '0'.\n \nSetting it to any other numerical value does work correctly.",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2012-06-08T07:22:50.44-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Setting value to 0 doesn't work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 634
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks!  Also, if it could accept a Null or include a equivalent Reset, that would be nice.  I can certainly code that a value of 0 is equivalent to a null or No Rating, but not sure if that is the same for everyone.  The default is null so it would be nice to set it back to that.",
+      "PostedDate": "2012-06-08T07:33:49.17-07:00",
+      "Id": 141070
+    },
+    {
+      "Message": "Resolved with changeset 19216.",
+      "PostedDate": "2012-06-08T07:47:59.527-07:00",
+      "Id": 141071
+    }
+  ]
+}

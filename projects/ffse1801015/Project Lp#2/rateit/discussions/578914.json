@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1347119",
+    "ThreadId": "578914",
+    "Html": "I have RateIt implemented, and on the surface it works well. However, it seems to be increasing the HTML header size massively, which is causing access problems. Is there some way I can alleviate this? The page in question is:\r<br />\n<a href=\"http://friendlywater.co.uk/water-softener-reviews\" rel=\"nofollow\">http://friendlywater.co.uk/water-softener-reviews</a>\r<br />\n<br />\nThanks in advance.<br />\n",
+    "PostedDate": "2015-01-29T06:42:38.99-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1352883",
+    "ThreadId": "578914",
+    "Html": "Hi,\r<br />\n<br />\nI'm not sure what you mean.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2015-02-15T04:46:52.603-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1359252",
+    "ThreadId": "578914",
+    "Html": "Thanks, it was caused by a different plugin.<br />\n",
+    "PostedDate": "2015-03-03T03:04:04.167-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

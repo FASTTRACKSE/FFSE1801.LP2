@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "609502",
+    "ThreadId": "256889",
+    "Html": "\r\n<p>Before my (logged in) users rate an item, I want them to see the mean rating, using the same rating-element but a different color (gold for mean ratings, red for rated (and hover)).</p>\r\n<p>Looking at your examples and the code, it seems like this feature is not implemented in RateIT. But then again - I dont' really have a lot of experience with coding and might just have missed something. I was expecting some kind of flag indicating, if data-rateit-value\r\n was the mean value or set by the user .</p>\r\n<p>Any hints? How would I implement this? Thanks for your help!</p>\r\n",
+    "PostedDate": "2011-05-09T05:52:47.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "609541",
+    "ThreadId": "256889",
+    "Html": "<p>No it is implemented. data-rateit-value is the initial value (set by the user).</p>\r\n<p>Although without changing the plugin, one can accomplish your requirements. Perhaps somewhere this week I will add an example that shows how to do it.</p>",
+    "PostedDate": "2011-05-09T07:02:06.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "609564",
+    "ThreadId": "256889",
+    "Html": "<p>Alright, an example would be great!</p>",
+    "PostedDate": "2011-05-09T07:33:40.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "625836",
+    "ThreadId": "256889",
+    "Html": "<p>Indeed, please provide an example. According to me, it is currently not possible to have a&nbsp;data-rateit-value unless it is also readonly.</p>",
+    "PostedDate": "2011-06-10T02:13:47.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "626307",
+    "ThreadId": "256889",
+    "Html": "<p>Good news, I've added the <strong>ispreset</strong>&nbsp;value to RateIt . Setting it to true, will show the fourth type of star, when the user makes a selection, the <strong>ispreset </strong>is set to false.&nbsp;</p>\r\n<p>I've updated the (online) examples to reflect this.</p>",
+    "PostedDate": "2011-06-11T02:15:36.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "626355",
+    "ThreadId": "256889",
+    "Html": "<p>Thanks gidon! However, I got it working with the following syntax (don't know why it did not work the first time):</p>\r\n<p>&lt;div class=\"rateit\" data-rateit-value=\"2.76\" data-rateit-step=\"1\" data-rateit-resetable=\"false\" &gt;</p>\r\n<p>Thanks for this great star rating applet, it was exactly what I needed. I am implementing it in phpGraphy, I will tell you once it gets released.</p>",
+    "PostedDate": "2011-06-11T06:19:48.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "626511",
+    "ThreadId": "256889",
+    "Html": "<p>That would be nice!</p>",
+    "PostedDate": "2011-06-11T23:21:24.023-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

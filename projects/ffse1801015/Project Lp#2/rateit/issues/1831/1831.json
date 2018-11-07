@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 4,
+    "Custom": "",
+    "Description": "This issue seems to affect Chrome only as I could not repro on IE11.\nChrome Version 33.0.1750.117 m\n\nWhen using the zoom feature in Chrome, a portion of the next star becomes visible.  For example, a 5 star configuration zoomed at 110% will show the left portion of a sixth star.\n\nThis can be seen on the [samples page](http://www.radioactivethinking.com/rateit/example/example.htm).",
+    "LastUpdatedDate": "2016-01-27T00:13:31.937-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-02-27T09:49:50.797-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "CSS clipping issue when Chrome is zoomed",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 1831
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That's an annoying bug. I will have a look into it.",
+      "PostedDate": "2014-03-04T07:32:07.267-08:00",
+      "Id": 141126
+    },
+    {
+      "Message": "Any luck on this issue? Thanks.",
+      "PostedDate": "2016-01-14T06:27:38.287-08:00",
+      "Id": 195345
+    },
+    {
+      "Message": "No, I haven't. But feel free to fork and send me a pull request.",
+      "PostedDate": "2016-01-16T01:11:12.443-08:00",
+      "Id": 195486
+    },
+    {
+      "Message": "I shall try to give it a shot. but it seems really tricky :)\nIt is quite strange though that it only occurs on chrome and not other browsers.",
+      "PostedDate": "2016-01-27T00:13:31.937-08:00",
+      "Id": 195859
+    }
+  ]
+}

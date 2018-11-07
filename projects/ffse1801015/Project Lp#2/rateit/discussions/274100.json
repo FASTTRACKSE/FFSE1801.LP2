@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "677631",
+    "ThreadId": "274100",
+    "Html": "<p>Hi,</p>\n<p>I'm using all the new versions of my nuget page and now for the first time the rateit package. When I install the package I won't get any files on my system. Only the nuget packages.config is adjusted.<br />I'm developing a MVC 3 internet application. I also tryed to create a new application with the package but then I get the same problem. <br /><br />Can somebody help me with this problem?</p>\n<p>&nbsp;</p>",
+    "PostedDate": "2011-09-28T04:20:18.867-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "677698",
+    "ThreadId": "274100",
+    "Html": "\r\n<div dir=\"ltr\">What is the project you try to add it to (MVC, Webforms etc)? Which VS edition?\r\n<div>I'll try to reproduce your bug, in the meantime you can download the files at\r\n<a href=\"http://rateit.codeplex.com/releases/view/55958\">http://rateit.codeplex.com/releases/view/55958</a></div>\r\n<div><br>\r\n</div>\r\n<div>Thanks for submitting your problem.</div>\r\n<div><br>\r\n</div>\r\n<div>Gidon</div>\r\n<div><br>\r\n<br>\r\n<div>On Wed, Sep 28, 2011 at 2:20 PM, LockTar <span dir=\"ltr\">&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br>\r\n<blockquote style=\"margin:0 0 0 .8ex; border-left:1px #ccc solid; padding-left:1ex\">\r\n<div>\r\n<p>From: LockTar</p>\r\n<div>\r\n<p>Hi,</p>\r\n<p>I'm using all the new versions of my nuget page and now for the first time the rateit package. When I install the package I won't get any files on my system. Only the nuget packages.config is adjusted.<br>\r\nCan somebody help me with this problem?</p>\r\n<p></p>\r\n</div>\r\n<div>\r\n<p>Read the <a href=\"http://rateit.codeplex.com/discussions/274100#post677631\" target=\"_blank\">\r\nfull discussion online</a>.</p>\r\n<p>To add a post to this discussion, reply to this email (<a href=\"mailto:rateit@discussions.codeplex.com?subject=[rateit:274100]\" target=\"_blank\">rateit@discussions.codeplex.com</a>)</p>\r\n<p>To start a new discussion for this project, email <a href=\"mailto:rateit@discussions.codeplex.com\" target=\"_blank\">\r\nrateit@discussions.codeplex.com</a></p>\r\n<p>You are receiving this email because you subscribed to this discussion on CodePlex. You can\r\n<a href=\"https://rateit.codeplex.com/subscriptions/thread/project/edit\" target=\"_blank\">\r\nunsubscribe or change your settings</a> on codePlex.com.</p>\r\n<p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at\r\n<a href=\"http://codeplex.com\" target=\"_blank\">codeplex.com</a></p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n</div>\r\n<br>\r\n</div>\r\n</div>\r\n",
+    "PostedDate": "2011-09-28T06:57:59.2-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "678017",
+    "ThreadId": "274100",
+    "Html": "<p>Hi Gidon,</p>\n<p>I'm developing a new&nbsp;MVC 3 Internet Application in Visual Studio 2010 Ultimate. I have all the latest updates for framework 4, mvc 3, Nuget&nbsp;and VS. My OS is Windows 7 Enterprise&nbsp;x64.</p>\n<p>Thanks</p>",
+    "PostedDate": "2011-09-28T23:58:16.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "678031",
+    "ThreadId": "274100",
+    "Html": "<p>Like you said, somehow the package didn't contain any files. I repacked it, and updated the package version (now version 1.2.1), so it should pop up in your nuget &nbsp;\"package update list\"</p>\r\n<p>Once again, thanks for reporting the bug!</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2011-09-29T00:32:28.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "678706",
+    "ThreadId": "274100",
+    "Html": "<p>Thanks Gidon. That fixed the problem!</p>",
+    "PostedDate": "2011-09-30T09:09:55.863-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

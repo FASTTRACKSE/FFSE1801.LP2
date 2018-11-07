@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "845822",
+    "ThreadId": "358661",
+    "Html": "\r\n<p>Trying to reset the rating with jquery.</p>\r\n<p>&lt;input type=&quot;hidden&quot; value=&quot;&quot; name=&quot;rating&quot; id=&quot;rating&quot;&gt;<br>\r\n&lt;div class=&quot;rateit&quot; id=&quot;editrate&quot; data-rateit-backingfld=&quot;#rating&quot; data-rateit-resetable=&quot;false&quot;&nbsp; data-rateit-starwidth=&quot;32&quot; data-rateit-starheight=&quot;32&quot;&gt;</p>\r\n<p>I've tried the following without luck.</p>\r\n<p>$('#editrate').rateit('value', null);</p>\r\n<p>$('#editrate').rateit('value', 0);</p>\r\n<p>Is there any way to reset rateit without the user doing it manually?</p>\r\n",
+    "PostedDate": "2012-06-06T18:52:11.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "846394",
+    "ThreadId": "358661",
+    "Html": "<p>Hi ,</p>\r\n<p>I see you found a bug... For now the workaround is:</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>$(<span style=\"color: #a31515;\">'#editrate'</span>).rateit(<span style=\"color: #a31515;\">'value'</span>, <span style=\"color: #a31515;\">'0'</span>);\r\n</pre>\r\n</div>\r\n<p>So enter a string instead of a number. This is only when setting it to zero, the other numbers do work correctly.</p>\r\n<p>I will try to fix it ASAP.</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2012-06-07T23:34:40.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "846602",
+    "ThreadId": "358661",
+    "Html": "<p>I created a workitem :&nbsp;<a href=\"http://rateit.codeplex.com/workitem/634\">http://rateit.codeplex.com/workitem/634</a></p>",
+    "PostedDate": "2012-06-08T07:23:49.563-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "846607",
+    "ThreadId": "358661",
+    "Html": "<p>Thanks!&nbsp; Also, if it could accept a Null or include a equivalent Reset, that would be nice.&nbsp; I can certainly code that a value of 0 is equivalent to a null or No Rating, but not sure if that is the same for everyone.&nbsp; The default is null so it would be nice to set it back to that.</p>",
+    "PostedDate": "2012-06-08T07:32:53.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "846633",
+    "ThreadId": "358661",
+    "Html": "<p>Done, just download 1.0.5, and use:</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>$(SELECTOR).rateit(<span style=\"color: #a31515;\">'value'</span>, <span style=\"color: blue;\">null</span>);\r\n</pre>\r\n</div>\r\n</p>\r\n<p>The default value is not exactly null, it defaults to the \"min\" value. Whether that is correct is another issue, which if need arises, I'm more than willing to discuss.</p>\r\n<p>Anyway I do think you are right that setting the value to null is a nice way to resetting the value (since one can change the min value, so that 0 is not always the 'start' value)</p>\r\n<p>Have a nice day,</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2012-06-08T08:15:28.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

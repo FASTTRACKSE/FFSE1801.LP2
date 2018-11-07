@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1265815",
+    "ThreadId": "551573",
+    "Html": "Are the rating files available on a CDN that I can use?<br />\n",
+    "PostedDate": "2014-07-15T03:04:32.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1265968",
+    "ThreadId": "551573",
+    "Html": "No, but I will look into hosting it on cdnjs.<br />\n",
+    "PostedDate": "2014-07-15T10:39:08.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

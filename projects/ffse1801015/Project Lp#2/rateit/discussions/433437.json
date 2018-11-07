@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1002440",
+    "ThreadId": "433437",
+    "Html": "Hi There,<br />\n<br />\nGreat plugin.  I am using rateit in a custom wordpress theme, and am having a problem using the rateit() function.<br />\n<br />\nI've created a number of rateit objects at load time like:<br />\n<pre><code>&lt;div class=&quot;rateit&quot; id=&quot;resRatingAverage&quot; data-rateit-value=&quot;0&quot; data-rateit-ispreset=&quot;true&quot; data-rateit-readonly=&quot;true&quot;&gt;&lt;/div&gt;</code></pre>\n\nThis works great.  However, when trying to do something like:<br />\n<pre><code>$('#resRatingAverage').rateit('value', 3);</code></pre>\n\nI am getting: TypeError: Object [object Object] has no method 'rateit'<br />\n<br />\nThe same happens if I try to dynamicially create a start rating like: <br />\n<pre><code>$('#newDiv').rateit();</code></pre>\n\nThis is strange as I know the function works, as the star ratings created at load time work perfectly.  I've been able to get what I am trying to accomplish done in fiddles, and even via js console on your demo page.  I'm hoping I am just missing something, but also fear there may be a conflict as this project has a lot of JS stuff I didn't write.<br />\n<br />\nAny thoughts would be greatly appreciated.<br />\n",
+    "PostedDate": "2013-02-17T09:28:39.217-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1002507",
+    "ThreadId": "433437",
+    "Html": "So that was frustrating....\r<br />\n<br />\nAs I got further in to debugging this, I found that jQuery was being very carelessly included, in different versions throughout this WP template. (I'm kind of mystified as to how all the other scripts weren't breaking, or that any jQuery worked at all with this arrangement.)\r<br />\n<br />\nIf anyone else runs into this problem (Using this or other jQuery plugins in wordpress themes or plugins), make sure and figure out where and how jQuery is being included.\r<br />\n<br />\nWhen including jQuery and other libraries into WP, you should ONLY be using the wp_register_script(), and wp_enqueue_script() plugins.\r<br />\n<br />\nYou learn something new everyday. <em>facepalm</em>.\r<br />\n<br />\nFixed now and working great.  Thanks again.<br />\n",
+    "PostedDate": "2013-02-17T13:20:16.613-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1002625",
+    "ThreadId": "433437",
+    "Html": "I started reading your first post by mail, and the first thing that came to mind is that another jQuery is being loaded after RateIt was loaded.\r<br />\n<br />\nI guess other scripts didn't break because they were called only once perhaps (their initializtion).\r<br />\n<br />\nGreat it works for you now.<br />\n",
+    "PostedDate": "2013-02-17T22:14:35.54-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1039148",
+    "ThreadId": "442490",
+    "Html": "Trying this plugin out on a site. The star rating is functioning on the site, I can hover and select a star no problem. But when I do select a star, nothing happens. Ultimately I want to send the number value to a hidden field so it can be submitted with the rest of the form. But for now I was just trying to get an alert on click. I'm no javascript wizard so any help would be great, thanks!<br />\n<br />\nusing jQuery 1.8.3<br />\n<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;/js/star_rating/jquery.rateit.min.js&quot;&gt;&lt;/script&gt;\n\n&lt;script type=&quot;text/javascript&quot;&gt;\n    $('.rateit').bind('rated', function() { alert('rating: ' + $(this).rateit('value')); });\n&lt;/script&gt;\n\n&lt;li&gt;&lt;label for=&quot;rating&quot;&gt;How many stars?&lt;/label&gt;\n    &lt;select id=&quot;rating&quot;&gt;\n    &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;\n    &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;\n    &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;\n    &lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;\n    &lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;\n    &lt;/select&gt;\n    &lt;div class=&quot;rateit&quot; id=&quot;rateit&quot; data-rateit-backingfld=&quot;#rating&quot; data-rateit-step=&quot;1&quot; data-rateit-starwidth=&quot;26&quot; data-rateit-starheight=&quot;23&quot; data-rateit-resetable=&quot;false&quot;&gt;&lt;/div&gt;\n\n</code></pre>\n\n",
+    "PostedDate": "2013-05-03T11:54:50.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

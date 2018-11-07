@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "893266",
+    "ThreadId": "389607",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I noticed that 'rated' event is not being triggered by setting initial value and clicking on &quot;delete&quot; control that clears it / sets it to zero.&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>-Alex<span style=\"white-space:pre\"> </span></p>\r\n",
+    "PostedDate": "2012-07-30T13:24:43.923-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "893446",
+    "ThreadId": "389607",
+    "Html": "<p>You should also bind to the <em>reset</em>&nbsp;event. This event is raised when clicking on the \"reset/delete\" button.</p>\r\n<p>I created this event, so that you can differentiate between a 0 rating and a resetted rating.</p>",
+    "PostedDate": "2012-07-30T23:44:25.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

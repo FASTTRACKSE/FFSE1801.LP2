@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1197397",
+    "ThreadId": "526166",
+    "Html": "Is that possible configure or customize the code to open some <strong>confirmation</strong> dialog <strong>before</strong> do a <strong>rate</strong>?\r<br />\n<br />\n<strong>My code for rate is below:</strong><br />\n<pre><code>    $('.ratingContainer .rateit')\n    .rateit({ max:5, step: 1 , min:0 })\n    .bind('rated reset', function (e) \n    {\n\n         var ri = $(this);\n         var voteValue = ri.rateit('value');\n         var localID = ri.data('productid');\n         var localName = ri.data('productname');\n\n         ri.rateit('readonly', false);\n\n         $.ajax({\n             url: 'rate.php',\n             data: { localID: localID, voteValue: voteValue, localName: localName },\n             type: 'POST',\n             success: function (data) {\n                $('#responseRate'+localID).show();\n             }               \n         });\n    });</code></pre>\n\n",
+    "PostedDate": "2014-01-25T10:50:48.327-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1197880",
+    "ThreadId": "526166",
+    "Html": "Hi,\r<br />\n<br />\nI understand the feature. It's currently not supported.\r<br />\n<br />\nI'll try to find some time the coming days to implement it. \r<br />\n<br />\nI guess the way to go would be to add two events:\r<br />\n<br />\nbeforerated and beforereset\r<br />\n<br />\nIn these events you will be able to show your window. \r<br />\nCalling preventDefault on them will cancel the rated or reset event.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2014-01-26T01:02:38.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1197882",
+    "ThreadId": "526166",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"https://rateit.codeplex.com/workitem/1801\" rel=\"nofollow\">here</a> to go to the work item and continue the discussion.<br />\n",
+    "PostedDate": "2014-01-26T01:03:31.47-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1198081",
+    "ThreadId": "526166",
+    "Html": "The feature is included in rateit version 1.0.19 which is available for download.\r<br />\n<br />\nThe online examples will be updated later on today.<br />\n",
+    "PostedDate": "2014-01-26T06:22:08.893-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1198092",
+    "ThreadId": "526166",
+    "Html": "<strong>gidon wrote:</strong><br />\n<blockquote>\nThe feature is included in rateit version 1.0.19 which is available for download.<br />\n<br />\nThe online examples will be updated later on today.<br />\n</blockquote>\nGidon,\r<br />\n<br />\nYou did an excelent job including this feature so fast and working so well, as excpected for many user i guess.\r<br />\n<br />\nI already test and implemented on my code and works amazing.\r<br />\n<br />\nCongratulations and thank you for consider my question and develop as a feature.\r<br />\n<br />\nBest,\r<br />\nMaicol<br />\n",
+    "PostedDate": "2014-01-26T06:53:11.847-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1198750",
+    "ThreadId": "526166",
+    "Html": "Thanks for the review, and thanks for suggesting this great feature. Didn't think about it myself, but it is a very useful feature (which cannot be found in the other rating plugins to my best knowledge).<br />\n",
+    "PostedDate": "2014-01-27T00:08:04.957-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

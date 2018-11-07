@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "892837",
+    "ThreadId": "389482",
+    "Html": "\r\n<p>Hi, first of all great plugin! It saved me a lot of work. Have a bit trouble at start trying to get it working with AJAX but got it working.</p>\r\n<p>Now I'm building a movie website where users can register, after that users can post comments, rate movies, etc</p>\r\n<p>Now how would I set the readonly attribute via PHP server side? Because I need to check if the user has already rated a movie (update/reset rate will be for the near future :) )</p>\r\n<p>Thanks in advance.</p>\r\n<p>&nbsp;</p>\r\n<p>Though of changing<span> style attribute display to none (&lt;<span>div</span><span>&nbsp;<span>class</span>=&quot;<span>rateit-reset</span>&quot;</span><span>&nbsp;<span>style</span>=&quot;<span>display: none;</span>&quot;</span><span>&gt;</span>&lt;/<span>div</span>&gt;)\r\n because you do this in your example page.<br>\r\n</span></p>\r\n<p><span><br>\r\n</span></p>\r\n",
+    "PostedDate": "2012-07-29T18:00:42.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "892937",
+    "ThreadId": "389482",
+    "Html": "\r\n<p>&nbsp;</p>\r\n<p><span>I don't really know PHP, but since we are talking about a client side technology, the resides on the client side.</span></p>\r\n<div>I guess that you are looping in php over a recordset with movies, and next to each movie want to place a rateit control.</div>\r\n<div>Currently I guess you are simply writing:</div>\r\n<div>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">div</span> <span style=\"color:red\">class</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;rateit&quot;</span> <span style=\"color:blue\">/&gt;</span>\n</pre>\r\n</div>\r\n</div>\r\n<p>You should replace this with something like this (I don't know PHP , so I'm not sure if this is the correct syntax):</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>&lt;div <span style=\"color:blue\">class</span>=<span style=\"color:#a31515\">&quot;rateit&quot;</span> &lt;?php <span style=\"color:blue\">echo</span> ($hasvoted == <span style=\"color:#a31515\">'true'</span> ? <span style=\"color:#a31515\">'data-rateit-readonly=&quot;true&quot; data-rateit-value=&quot;'</span> . $ratevalue .<span style=\"color:#a31515\">'&quot;'</span>) ?&gt; /&gt;\n</pre>\r\n</div>\r\n<p></p>\r\n",
+    "PostedDate": "2012-07-30T02:20:33.677-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "892965",
+    "ThreadId": "389482",
+    "Html": "<p>Just what I needed thanks!</p>",
+    "PostedDate": "2012-07-30T04:08:09.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "893057",
+    "ThreadId": "389482",
+    "Html": "<p>Great.&nbsp;</p>\r\n<p>you could also add the data-rateit-<strong>ispreset=\"true\"</strong>&nbsp;attribute. This gives the star an orange color (if you use the default stars), and gives the user an indication that he already voted on that one.</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2012-07-30T07:17:19.677-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

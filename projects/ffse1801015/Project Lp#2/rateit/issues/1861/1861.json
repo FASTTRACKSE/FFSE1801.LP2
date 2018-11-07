@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When clicking on the first few pixels of the rate it box, the items is being rated 0.\r\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nHi,\r\n\r\nI've been using rateit for a few days now,thanks!\r\n\r\nI just noticed there are a bunch of 0 values being submitted to my database.\r\n\r\nI want the possible values should be only 1,2,3,4,5 and I want users to be able to update their rating but not delete, so this is why I am using data-rateit-resetable=\"false\" which from the documentation seems to not display reset button:\r\n> HTML: data-rateit-resetable, JS: resetable =  when not readonly, whether to show the reset button (default: true)\r\n\r\nThis is my HTML:\r\n> <div class=\"rateit bigstars\" id=\"rateit-poemdetail\"  data-rateit-starwidth=\"32\" data-rateit-starheight=\"32\" data-rateit-step=\"1\" data-rateit-resetable=\"false\"></div>\r\n\r\nThis is my javascript:\r\n> $('#rating_wrapper .rateit').bind('rated reset', function (e) {\r\n\r\n\r\nWhat am I doing wrong? Is it including reset in my Javascript? \r\nHow are users submitting a rating of 0, I'm not able to duplicate this?\r\n\r\nThanks!",
+    "LastUpdatedDate": "2014-07-28T07:46:03.323-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-07-28T01:12:47.2-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "value 0",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 1861
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

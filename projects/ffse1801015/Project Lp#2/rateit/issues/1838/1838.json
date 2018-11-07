@@ -1,0 +1,101 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "I could reproduce your problem, and found out that your problem is in your rateit.big.css file.\n\nIt should look as follows:\n\n\n.bigstars .rateit-range\n{\n\theight: 32px;\n}\n\n\n/* star rating plugin */\n.bigstars .rateit-range,\n.bigstars .rateit-hover,\n.bigstars .rateit-selected,\n.bigstars button.rateit-reset,\n.bigstars button.rateit-reset:hover\n{\n\t/*local fallback\n\tbackground: url('star.gif');\n\t*/\n\tbackground-image: url('rateit-stars.png');\n}\n\n.bigstars button.rateit-reset,\n.bigstars button.rateit-reset:hover {\n      width: 32px;\n      height:32px;\n}\n\n.bigstars button.rateit-reset:hover /*grey no-entry*/ { background-position: 0  0;     }\n.bigstars button.rateit-reset        /*red no-entry*/ { background-position: 0 -32px;  }\n.bigstars .rateit-range              /*grey star*/ { background-position: 0 -64px;  }\n.bigstars .rateit-selected          /*green star*/ { background-position: 0 -96px;  }\n.bigstars .rateit-hover             /*amber star*/ { background-position: 0 -128px; }\n.bigstars .rateit-preset              /*red star*/ { background-position: 0 -160px; }\n/*red star??*/",
+    "ClosedDate": "2014-03-16T00:05:30.71-07:00",
+    "CommentCount": 10,
+    "Custom": "",
+    "Description": "Hi,\n\nLove the plug-in, top work!\n\nI've been playing with it (for a feature on my website, https://toepoke.co.uk and came across an issue.  It _may well_ be something I'm doing wrong but can't figure out what it is.  Anyway I have a workaround which I've added below.\n\nI've attached a zip file which reproduces the problem.\n\nIn essence I'm:\n - Using a separate sprite file (rateit-stars.png) holding both the stars and the reset images.\n - I'm using big stars (32px)\n - I'm using the progressive version against a SELECT dropdown\n\nIf you open the \"_ratings.html\" file (I'm using Chrome) you'll find the first star is yellow (hover image) and the remaining two are red (presets)\n\nNaturally on load these should all be red (presets).  I've worked around the issue by hiding the the \".rateit-hover\" class after initializing your plug-in.\n\nThe workaround is near the bottom of the \"_ratings.html\" file:\n\".find(\".rateit-hover\").hide()\"\n\nI believe the issue is in the template being used, so changing:\n\n\"<{{element}} class=\"rateit-hover\" style=\"height:'\"\nto\n\"<{{element}} class=\"rateit-hover\" style=\"__display: none;__ height:'\"\n\nshould resolve the issue (assuming it is an issue, and not something I'm missing).\n\nMany thanks,\nFranz.",
+    "LastUpdatedDate": "2014-08-13T02:35:28.087-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-03-13T05:57:08.697-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Hover icon displayed on load",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1838
+  },
+  "FileAttachments": [
+    {
+      "FileId": 825474,
+      "FileName": "ratings.zip",
+      "DownloadUrl": ".\\825474"
+    },
+    {
+      "FileId": 890935,
+      "FileName": "error.png",
+      "DownloadUrl": ".\\890935"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "To make it clearer: \r\n\r\nThe dimensions for the rateit-reset button should be separated from the rest, otherwise it causes the \"hover\" div to also be 32px wide in the beginning.\r\n\r\n",
+      "PostedDate": "2014-03-16T00:07:24.753-07:00",
+      "Id": 141128
+    },
+    {
+      "Message": "Many thanks @gidon :-)\r\n\r\nSorry to be a pain, but I don't suppose you have 5 minutes to look at this one do you?\r\n\r\nhttp://stackoverflow.com/questions/22527536/rateit-plugin-not-showing-all-5-stars\r\n\r\nI'm sure it's a css issue again and I can't tell you how many times I've looked at and still can't see where I'm going wrong!\r\n\r\nMany thanks,Franz.\r\n\r\n",
+      "PostedDate": "2014-03-20T03:46:51.863-07:00",
+      "Id": 141129
+    },
+    {
+      "Message": "Hi,\r\n\r\nMe again.  Please disregard the last comment.  I figured out what it was ... I was being stupid!\r\n\r\nThanks again, and keep up the good work; it's a thankless task, trust me I know!\r\n\r\nFranz.",
+      "PostedDate": "2014-03-20T11:06:19.19-07:00",
+      "Id": 141130
+    },
+    {
+      "Message": "I saw the solution on stackoverflow, those mistakes happen to all of us. \r\n\r\nAnd thanks for the kind words. \r\n\r\nGidon",
+      "PostedDate": "2014-03-20T12:27:33.647-07:00",
+      "Id": 141131
+    },
+    {
+      "Message": "Hi, I've the same Franz problem, but I can't figure it out :/\nHow can I crop the whitespace between the little stars?\n\nRegards,\nDario",
+      "PostedDate": "2014-08-12T00:48:13.36-07:00",
+      "Id": 155195
+    },
+    {
+      "Message": "Hi Dario,\n\nIn my case it was the sprite file I'd built up - see the following post to my own question on stack overflow:\n\nhttp://stackoverflow.com/questions/22527536/rateit-plugin-not-showing-all-5-stars\n\nHope this helps,\nFranz.",
+      "PostedDate": "2014-08-12T02:10:45.223-07:00",
+      "Id": 155204
+    },
+    {
+      "Message": "Hi Franz, \r\n\r\nThank for your answer.\r\nYes, I saw that link and I've already tried to build an horizontal and diagonal sprite, but with no result.\r\nI use this to build sprite png http://instantsprite.com/\r\n\r\nWhat is the width of your sprite image? Sorry but I'm a noob with CSS",
+      "PostedDate": "2014-08-12T02:45:35.673-07:00",
+      "Id": 155209
+    },
+    {
+      "Message": "Hi,\n\nIf it helps, these are the sprite files I built up:\n\nhttps://toe-poke.appspot.com/themes/default/images/png/big-stars.png\nhttps://toe-poke.appspot.com/themes/default/images/png/small-stars.png\n\nHope this helps.",
+      "PostedDate": "2014-08-12T04:13:13.27-07:00",
+      "Id": 155214
+    },
+    {
+      "Message": "Aaahh, ok, you built two different sprite :)\n\nYes, it works in that way, thank you! \n\nJust curious: is it possibile to make it work with only 1 file?\n\nHave a nice day!",
+      "PostedDate": "2014-08-12T04:43:45.323-07:00",
+      "Id": 155217
+    },
+    {
+      "Message": "Hi,\n\nNot possible to do both big and small in the same file.  That's the underlying problem I was facing.\n\nHope this helps,\nFranz.",
+      "PostedDate": "2014-08-13T02:35:28.087-07:00",
+      "Id": 155326
+    }
+  ]
+}

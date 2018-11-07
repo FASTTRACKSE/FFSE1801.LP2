@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1069141",
+    "ThreadId": "450234",
+    "Html": "This is a minor pinch point for me. I would like to use rateit inside a span, however a div inside of a span is not technically valid. I know I could change my markup out for div's, and I probably will. However I just wanted to suggest that a future release might use a more flexible markup like a span rather than a div. In the long run it would achieve the same effect but would not suffer from this small shortcoming. \r<br />\n<br />\nThanks<br />\n",
+    "PostedDate": "2013-07-16T11:28:08.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1070287",
+    "ThreadId": "450234",
+    "Html": "\r\n<div><font face=\"Verdana\"><span style=\"font-size:15px\">You are right. Perhaps in the next update I'll make it configurable. I don't want to break current setups that perhaps use div in their style selection.\r\n</span></font></div>\r\n<blockquote type=\"cite\">\r\n<div></div>\r\n</blockquote>\r\n",
+    "PostedDate": "2013-07-18T20:58:02.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1070523",
+    "ThreadId": "450234",
+    "Html": "That would be awesome. Thanks for listening. Hope to see it come to fruition. <br />\n",
+    "PostedDate": "2013-07-19T08:30:46.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076309",
+    "ThreadId": "450234",
+    "Html": "Hi,\r<br />\n<br />\nJust updated RateIt. Now you can use a <code>span</code> element, and RateIt will render all the necessary elements as <code>span</code>'s\r<br />\n<br />\nSo instead of <br />\n<pre><code>&lt;div class=&quot;rateit&quot;&gt;&lt;/div&gt;</code></pre>\n\nwrite <br />\n<pre><code>&lt;span class=&quot;rateit&quot;&gt;/span&gt;</code></pre>\n\n",
+    "PostedDate": "2013-08-03T08:58:14.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076324",
+    "ThreadId": "450234",
+    "Html": "Awesome news! I will update my code to reflect these changes. Thanks for updating this.<br />\n",
+    "PostedDate": "2013-08-03T10:02:52.107-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

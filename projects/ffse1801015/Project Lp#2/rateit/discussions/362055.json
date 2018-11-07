@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "857717",
+    "ThreadId": "362055",
+    "Html": "\r\n<p>First off, congratulate you for your work. Easy to implement and functional.</p>\r\n<p>&nbsp;</p>\r\n<p>I am using it in an ASP.NET WebForms application to &quot;decorate&quot; a server-side drop-down list with a custom star icon and it works flawlessly.</p>\r\n<p>&nbsp;</p>\r\n<p>I'd like to ask for a couple of features:</p>\r\n<p>disable the control (no hover, no selection) when the backing control is disabled, just show the non-selected icon for all of them and prevent changing it</p>\r\n<p>An example to rate with one and only one of the icons. In my case I am rating by color, so if a higher color is selected, lower (and upper) values are not selected.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks again for your plugin</p>\r\n",
+    "PostedDate": "2012-07-05T02:21:37.677-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "857913",
+    "ThreadId": "362055",
+    "Html": "<p>Hi,</p>\r\n<p>Thanks for you kind words.</p>\r\n<p>About your questions:</p>\r\n<p>- I guess you only want to check if the backingfield is disabled when the rateit control is instantiated? This would be a good feature to add.&nbsp;</p>\r\n<p>- Good you maybe show me an image on how this should look like?</p>\r\n<p>bye,</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2012-07-05T08:18:52.047-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "858216",
+    "ThreadId": "362055",
+    "Html": "<p>Hi,</p>\r\n<p>Answers for your answers ;-)</p>\r\n<ul>\r\n<li>in my case, checking whether the select control is disabled once (when the rating is instantiated) is sufficient, as I do not disable my select client side. But do you think it would be difficult to add a method that disables the rating? That way we could support those guys that could disable selects via script.</li>\r\n</ul>\r\n<ul>\r\n<li>here is how it looks like now when the third option is selected (note how the previous two options appear selected as well):&nbsp;<img src=\"https://sites.google.com/site/danielgonnet/rateit.PNG\" alt=\"\" /> .And here is how I would like it to look (note how the previous two options do not appear selected):&nbsp;<img src=\"https://sites.google.com/site/danielgonnet/uistars.PNG\" alt=\"\" />.<br />Furthermore when we hover one value I would like only that value to be highlighted, not the previous ones. This is how it look like now when we hover the fourth value:&nbsp;<img src=\"https://sites.google.com/site/danielgonnet/rateit.hover.PNG\" alt=\"\" /> and this is how I would prefer to look like when hovering the same value:&nbsp;<img src=\"https://sites.google.com/site/danielgonnet/uistars.hover.PNG\" alt=\"\" /></li>\r\n</ul>\r\n<p>I hope this clarifies the features I would love <em>rateit </em>to have.</p>\r\n<p>&nbsp;</p>\r\n<p>Many thanks in advance</p>",
+    "PostedDate": "2012-07-06T00:32:05.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "858388",
+    "ThreadId": "362055",
+    "Html": "<p>I've updated RateIt with your first request. You can find the updated package also in NuGet or download it from this website.</p>\r\n<p>Now about your second request, I understand what you want to do (don't really understand the UX part of it).</p>\r\n<p>This is what you need to do:</p>\r\n<p>Create 11 images:</p>\r\n<p>1 - none selected (the background)<br />5 - where each time one different one is in the hover state.<br />5 - where each time one different one is in the rated state.&nbsp;</p>\r\n<p>In order to save make the images as small as possible, the 10 hover/rated images can be transparent, besides the one that is in the hover/rated state.</p>\r\n<p>Now in javascript we add one line of code:</p>\r\n<p><span style=\"font-family: monospace;\">&nbsp;</span></p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>$(<span style=\"color: #a31515;\">\".rateit\"</span>).bind(<span style=\"color: #a31515;\">'over'</span>, <span style=\"color: blue;\">function</span> (e, v) { $(<span style=\"color: blue;\">this</span>).removeClass(<span style=\"color: #a31515;\">'r1 r2 r3 r4 r5'</span>); <span style=\"color: blue;\">if</span> (v) { $(<span style=\"color: blue;\">this</span>).addClass(<span style=\"color: #a31515;\">'r'</span> + v); }});\r\n\r\n\r\n</pre>\r\n</div>\r\n<p>This will give us the ability to change the image in css based on the rating.</p>\r\n<p>Now at the end of your css file, you will add something like this:</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: #a31515;\">div.rateit div.rateit-hover.r1</span>\r\n{\r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(hover1.png) left</span>;\r\n}                                 \r\n                                  \r\n<span style=\"color: #a31515;\">div.rateit div.rateit-hover.r2    </span>\r\n{                                 \r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(hover2.png) left</span>;\r\n}                                 \r\n                                  \r\n<span style=\"color: #a31515;\">div.rateit div.rateit-hover.r3    </span>\r\n{                                 \r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(hover3.png) left</span>;\r\n}                                 \r\n                                  \r\n<span style=\"color: #a31515;\">div.rateit div.rateit-hover.r4    </span>\r\n{                                 \r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(hover4.png) left</span>;\r\n}                                 \r\n                                  \r\n                                  \r\n<span style=\"color: #a31515;\">div.rateit div.rateit-hover.r5    </span>\r\n{                                 \r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(hover5.png) left</span>;\r\n}\r\n\r\n<span style=\"color: #a31515;\">div.rateit div.rateit-selected.r1</span>\r\n{\r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(selected1.png) left</span>;\r\n}                                 \r\n                                  \r\n<span style=\"color: #a31515;\">div.rateit div.rateit-selected.r2    </span>\r\n{                                 \r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(selected2.png) left</span>;\r\n}                                 \r\n                                  \r\n<span style=\"color: #a31515;\">div.rateit div.rateit-selected.r3    </span>\r\n{                                 \r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(selected3.png) left</span>;\r\n}                                 \r\n                                  \r\n<span style=\"color: #a31515;\">div.rateit div.rateit-selected.r4    </span>\r\n{                                 \r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(selected4.png) left</span>;\r\n}                                 \r\n                                  \r\n                                  \r\n<span style=\"color: #a31515;\">div.rateit div.rateit-selected.r5    </span>\r\n{                                 \r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">url(selected5.png) left</span>;\r\n}\r\n\r\n</pre>\r\n</div>\r\n</p>\r\n<p>And that should be it.</p>\r\n<p>If you allow me to post it on the sample page, you could send me the eleven pictures, and I'll create a working sample.</p>\r\n<p>Else, if you need anymore help, just ask.</p>\r\n<p>Good luck,</p>\r\n<p>Gidon</p>",
+    "PostedDate": "2012-07-06T08:21:00.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "858852",
+    "ThreadId": "362055",
+    "Html": "<p>Wicked!</p>\r\n<p>Thank you so much for adding such feature, Looking forward to checking it!</p>\r\n<p>I will also give a spin to your idea to implement the second. I cannot see why it could not work</p>\r\n<p>&nbsp;</p>\r\n<p>Cheers</p>",
+    "PostedDate": "2012-07-08T07:32:45.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

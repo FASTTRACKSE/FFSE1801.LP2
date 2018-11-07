@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "The answer \"update to jQuery 1.6.1\" was accepted as the correct answer on Stackoverflow.\r\nThe problem is jQuery/IE9 specific, and not a problem in RateIt.",
+    "ClosedDate": "2011-05-31T23:11:53.507-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I am having that problem that the RateIt stars are not showing in IE 9.\n \nMy Website is: www.vinderhimlen.dk\n \nI have also created a stackoverflow question: http://stackoverflow.com/questions/6160673/jquery-rateit-plugin-bug-stars-not-showing-in-ie\n \nBest regards,\nAsker",
+    "LastUpdatedDate": "2013-05-16T04:24:24.553-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2011-05-31T08:23:56.317-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Stars not showing in IE 9",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 289
+  },
+  "FileAttachments": [
+    {
+      "FileId": 825469,
+      "FileName": "IE9.PNG",
+      "DownloadUrl": ".\\825469"
+    },
+    {
+      "FileId": 825470,
+      "FileName": "firefox4.PNG",
+      "DownloadUrl": ".\\825470"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Here is how it should look like",
+      "PostedDate": "2011-05-31T08:24:58.29-07:00",
+      "Id": 141050
+    },
+    {
+      "Message": "I've answered in stackoverflow .\r\n\r\nIt seems to be a IE9 vs jQuery problem, which apparently should be fixed in jQuery 1.5.1 . \r\nAlthough you do reference jQuery 1.5.1 in your code (the google cdn version). Later on you also reference jQuery 1.5 (the one with the bug).\r\n\r\nHope that fixes it.",
+      "PostedDate": "2011-05-31T09:11:51.473-07:00",
+      "Id": 141051
+    }
+  ]
+}

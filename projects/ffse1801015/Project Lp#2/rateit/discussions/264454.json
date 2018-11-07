@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "639579",
+    "ThreadId": "264454",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>How can I increase the spacing between each star?</p>\r\n<p>Regards,</p>\r\n<p>Dev.</p>\r\n",
+    "PostedDate": "2011-07-08T10:46:55.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "639616",
+    "ThreadId": "264454",
+    "Html": "\r\n<div>You have to change the stars image and simply add more whitespace to the sides. In addition you'll have to change the starWidth setting in the plugin.</div>\r\n<div><br>\r\n</div>\r\n<div>Gidon<br>\r\n<br>\r\nSent from my iPhone</div>\r\n<div><br>\r\nOn 8 ביול 2011, at 20:47, &quot;devc&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: devc</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Hi,</p>\r\n<p>How can I increase the spacing between each star?</p>\r\n<p>Regards,</p>\r\n<p>Dev.</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-07-08T11:40:31.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

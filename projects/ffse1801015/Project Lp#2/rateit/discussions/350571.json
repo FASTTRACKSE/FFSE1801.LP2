@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "817441",
+    "ThreadId": "350571",
+    "Html": "\r\n<p>Greetings, I have an html website and I have seriously tried almost everything to get it work but the starts are statics, no effect on hovering, nothing happens on click. I'm trying to setup the AJAX one cause I need the votes to get saved and disable re-voting\r\n again from a single user.</p>\r\n<p>I copied the example code to my website for testing so when it's working I'll change few things to adapt my design.</p>\r\n<p>This is the website I'm testing the RateIt plugin.&nbsp;<a href=\"http://development.operatehealth.com/rating-system/rateit/indextest.html\">http://development.operatehealth.com/rating-system/rateit/indextest.html</a></p>\r\n<p>I need you to help me fix this issue and guide me to setup my server receive and send rating data to the plugin, please.</p>\r\n<p>Thanks in Advance.</p>\r\n",
+    "PostedDate": "2012-03-29T16:09:57.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "817550",
+    "ThreadId": "350571",
+    "Html": "I'll try to have a look at it later today.",
+    "PostedDate": "2012-03-29T23:27:04.983-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "817710",
+    "ThreadId": "350571",
+    "Html": "<p>Alright, thank you.</p>",
+    "PostedDate": "2012-03-30T05:57:16.063-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "818082",
+    "ThreadId": "350571",
+    "Html": "<p>1) Download the latest version of RateIt (1.0.4)</p>\r\n<p>2) Copy &amp; Paste the sample code , NOT the HTML the browser created in the sample page.</p>\r\n<p>&nbsp;</p>\r\n<div class=\"line number1 index0 alt2\"><span style=\"font-family: monospace;\">\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">id</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"products\"</span><span style=\"color: blue;\">&gt;</span>\r\n   <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">style</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"float:right; width:350px; border:1px solid #ccc; padding:1em;\"</span><span style=\"color: blue;\">&gt;</span>\r\n     <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">strong</span><span style=\"color: blue;\">&gt;</span>Server response:<span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">strong</span><span style=\"color: blue;\">&gt;</span>\r\n     <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">ul</span> <span style=\"color: red;\">id</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"response\"</span><span style=\"color: blue;\">&gt;</span>\r\n      \r\n     <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">ul</span><span style=\"color: blue;\">&gt;</span>\r\n     <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span>\r\n     <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">ul</span><span style=\"color: blue;\">&gt;</span>\r\n         <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">li</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">h4</span><span style=\"color: blue;\">&gt;</span>Product X (id: 312)<span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">h4</span><span style=\"color: blue;\">&gt;</span>\r\n         RateIt: <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">data-productid</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"312\"</span> <span style=\"color: red;\">class</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"rateit\"</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span>\r\n         <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">li</span><span style=\"color: blue;\">&gt;</span>\r\n         <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">li</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">h4</span><span style=\"color: blue;\">&gt;</span>Product Y (id: 423)<span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">h4</span><span style=\"color: blue;\">&gt;</span>\r\n         RateIt: <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">data-productid</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"423\"</span> <span style=\"color: red;\">class</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"rateit\"</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">li</span><span style=\"color: blue;\">&gt;</span>\r\n         <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">li</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">h4</span><span style=\"color: blue;\">&gt;</span>Product Z (id: 653)<span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">h4</span><span style=\"color: blue;\">&gt;</span>\r\n         RateIt: <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">data-productid</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"653\"</span> <span style=\"color: red;\">class</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"rateit\"</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span>\r\n         <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">li</span><span style=\"color: blue;\">&gt;</span>\r\n     <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">ul</span><span style=\"color: blue;\">&gt;</span>\r\n <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span>\r\n</pre>\r\n</div>\r\n<br /></span></div>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-03-31T01:51:23.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "818852",
+    "ThreadId": "350571",
+    "Html": "<p>Thank you a lot, however I had to setup a rating system immediately so I got a new one, thanks for the help though, sorry to bother you.</p>\r\n<p>&nbsp;</p>\r\n<p>Regards.</p>",
+    "PostedDate": "2012-04-02T09:31:36.417-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

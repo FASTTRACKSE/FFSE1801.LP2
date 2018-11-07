@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-08-03T08:37:33.243-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I recently implemented RateIt in a project I'm devloping. I really like it so far but I do have one issue. We have some ratings where the high scores are 3 and 4 respectively. Out default in the database for not-yet-rated was 6. I have the max set up to 3 and 4 with rate it but in FF (and IE 7 - noo too concerned about this one) it will still show 6 stars even though the max is 3 and 4. When you click to rate it will max and 3 and 4, but still displays 6 and 6 even though the max is 3 and 4",
+    "LastUpdatedDate": "2013-08-03T08:37:33.243-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-08-02T05:11:52.37-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Firefox showing too many stars",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1639
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I am not sure if it is browser dependent. I think all browsers simply display the value even if it is higher than the max. \r\n\r\nI'll fix it.",
+      "PostedDate": "2013-08-03T08:14:57.273-07:00",
+      "Id": 141090
+    },
+    {
+      "Message": "Resolved with changeset 31470: - Value respects min/max\n- Support rendering as inline",
+      "PostedDate": "2013-08-03T08:37:33.243-07:00",
+      "Id": 141091
+    }
+  ]
+}

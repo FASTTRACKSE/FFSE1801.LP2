@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "941901",
+    "ThreadId": "403255",
+    "Html": "\r\n<p>I have following code in test.jsp page. it works when page is opened via the address bar of browser. When it is called by another page using &lt;a href=&quot;test.jsp&quot;&gt;&lt;/a&gt;, it won't show any star. it&nbsp;will work only if I change &quot;page&quot; to something\r\n else in this situation, &nbsp;Anybody know the reason?</p>\r\n<p><span>&lt;</span><span>div</span><span> </span><span>data-role</span><span>=</span><span>&quot;page&quot;</span><span>\r\n</span>id<span>=</span><span>&quot;detail&quot;</span><span> </span><span>data-theme</span><span>=</span><span>&quot;d&quot;</span><span>\r\n</span><span>data-position</span><span>=</span><span>&quot;fixed&quot;</span><span>&gt;</span><span>&nbsp;&nbsp;</span></p>\r\n<p><span>&lt;</span><span>div</span><span> </span>class<span>=</span><span>&quot;rateit&quot;</span><span>\r\n</span><span>data-role</span><span>=</span><span>&quot;none&quot;</span><span> </span><span>data-rateit-value</span><span>=</span><span>&quot;4.5&quot;</span><span>\r\n</span><span>data-rateit-ispreset</span><span>=</span><span>&quot;true&quot;</span><span> </span>\r\n<span>data-rateit-readonly</span><span>=</span><span>&quot;true&quot;</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span><span><span>\r\n</span></span></p>\r\n<p><span>&nbsp;</span>&lt;/div&gt;</p>\r\n<p><span>&nbsp;</span></p>\r\n<p>I use JQM 1.2.0 and JQuery 1.8.2</p>\r\n<p><span>Issue resolved. in case you need to know, all the js files need to be included in calling page even itself doesn't use it.</span></p>\r\n",
+    "PostedDate": "2012-11-14T16:16:49.983-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

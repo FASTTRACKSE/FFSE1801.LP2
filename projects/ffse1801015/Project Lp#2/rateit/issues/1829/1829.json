@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2014-03-16T00:37:14.563-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "I'm also developing on Windows, but most open-source projects use LF-only line endings. Would be nice if RateIt did the same.\n\nWhile repackaging the latest version for Meteor, my build process converted rateit.css to UNIX line endings, which results in this misleading GitHub diff: https://github.com/dandv/meteor-jquery-rateit/commit/c83897aabbddf990430c3515a69336853cf175c5",
+    "LastUpdatedDate": "2014-03-16T00:37:14.563-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-02-25T08:20:18.427-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Use UNIX-style (LF-only) line endings",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1829
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I will change it for the next release.",
+      "PostedDate": "2014-03-04T07:33:12.843-08:00",
+      "Id": 141124
+    },
+    {
+      "Message": "Resolved with changeset 36409: When using SELECT box backingfield one can now override the min value (not take it from the backingfield)\n\nSaved everything with Unix LF line ending.",
+      "PostedDate": "2014-03-16T00:37:14.563-07:00",
+      "Id": 141125
+    }
+  ]
+}

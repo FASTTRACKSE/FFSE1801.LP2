@@ -1,0 +1,385 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(images/tree-nature-forest-grass-light-wood-722681-pxhere.com.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 6px;
+    background-color: black;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow-: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: gray;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    -webkit-box-shadow-: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: black;
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #09EA64;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    transition: 1s;
+    background-color: #D9AB39;
+    color: #000;
+}
+
+#menu{
+    background-color: #3f3f3f;
+    width: auto;
+}
+#container .container1 img{
+    margin-top: -25px;
+}
+#container #myNavbar>ul>li>a{
+    font-size: 18px;
+    font-weight: bold;
+}
+#container #myNavbar>ul>li>ul>li>a{
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 20px;
+}
+#container ul li:hover{
+    background-color: #222222;
+    transition: 0.5s;
+}
+#container ul li a:hover{
+    color: rgb(253, 118, 7);
+    transition: 0.5s;
+}
+#menu #container .submenu{
+    background-color: #222222;
+    left: 0px;
+    top: 49px;
+    width: 270px;
+}
+#menu #container .submenu a{
+    color: white;
+}
+#menu #container .submenu a:hover{
+    color: rgb(253, 118, 7);
+    background-color: rgb(78, 70, 70);
+    transition: 0.5s;
+}
+
+#wrapper{
+    margin: auto;
+    width: 86%;
+    margin-top: 70px;
+    opacity: 1;
+}
+#slide1{
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+
+#trang{
+    background-color: #ebeae5;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+#trang .rateit{
+    color: rgb(255, 238, 0);
+    width: 100px;
+}
+#trang button{
+    text-align: left;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#trang h1{
+    margin-bottom: 5px;
+}
+#trang i{
+    margin-right: 5px;
+}
+#trang span{
+    top: 3px;
+    margin-left: 5px;
+    color: lightslategray;
+    margin-right: 5px;
+}
+#trang button{
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#trang .img1{
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0 15px 0 15px;
+}
+#trang .img1 .the{
+    margin-bottom: 15px;
+}
+#trang img{
+    margin: 0 15px 7px 5px;
+    height: 15px;
+    width: 15px;
+}
+#trang .img1 a.mot{
+    color: #333;
+    font-size: 23px;
+    text-decoration: none;
+}
+#trang a:hover.mot{
+    color: rgb(255, 115, 0);
+}
+#trang a:hover.hai{
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+}
+#trang select{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 19px;
+}
+#trang input.input{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 19px;
+    opacity: 0.8;
+}
+#trang input.submit{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 102, 0);
+    border: none;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+#trang textarea{
+    resize: none;
+    width: 100%;
+}
+#trang .nhap{
+    margin-top: 20px;
+}
+#trang .thongtin{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+#trang .thongtin1{
+    margin-bottom: 3px;
+    margin-left: 15px;
+}
+
+#trang .img1 p.mot{
+    display: inline;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#trang .img1 p.hai{
+    display: inline;
+    color: red;
+}
+#trang .img1 p.ba{
+    text-align: center;
+    font-size: 23px;
+    margin: 30px;
+    font-weight: bold;
+}
+#trang .img1 p.bon{
+    margin: 25px 25px 20px 25px;
+    font-weight: bold;
+    font-size: 19px;
+    
+}
+#trang .img1 p.nam{
+    /* margin-bottom: 10px; */
+    display: inline;
+    font-size: 13px;
+    line-height: 5px;
+}
+#trang .img1 button.mot{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 15px;
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(252, 113, 0);
+    height: 35px;
+    width: 150px;
+}
+
+
+#trang .img2{
+    padding: 10px;
+    padding-top: 0;
+}
+#trang .img2 img{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+#trang .phan_trang li a{
+    color: #000;
+}
+#trang .phan_trang li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 123, 0);
+}
+#trang .nhap textarea{
+    padding: 10px;
+    font-size: 19px;
+    opacity: 0.8;
+}
+
+
+
+
+.gioi_thieu1 a{
+    color: #000;
+}
+.gioi_thieu1 a:hover{
+    color: rgb(255, 136, 0);
+    text-decoration: none;
+}
+#gioi_thieu .thanh_toan img{
+    margin-bottom: 15px;
+}
+.gioi_thieu1{
+    background-color: #caddda;
+}
+.gioi_thieu1 p.mot{
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+    margin-top: 15px;
+}
+.gioi_thieu1 p.hai{
+    display: inline;
+    color: black;
+    font-weight: bold;
+}
+.gioi_thieu1 ul li{
+    list-style:  rgb(255, 136, 0);
+}
+.gioi_thieu1 ul{
+    margin: 20px 0 25px 0;
+}
+.gioi_thieu1 p.ba{
+    display: inline;
+    color: black;
+}
+.gioi_thieu1 .cach_hinh img{
+    margin-right: 15px;
+}
+.gioi_thieu1 .input input{
+    height: 30px;
+    width: 250px;
+    padding: 10px;
+}
+.gioi_thieu1 .input img{
+    background-color: #212121;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+.gioi_thieu1 .hinh{
+    display: inline;
+}
+.gioi_thieu2{
+    background-color: white;
+    position: relative;
+}
+.gioi_thieu2 .chu{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.gioi_thieu2 .logo{
+    position: relative;
+    height: 160px;
+}
+.gioi_thieu2 img{
+    position: absolute;
+    margin: 20px 47% 0 46%;
+}
+
+
+
+
+@media only screen and (min-width: 1025px){
+    #menu #container li:hover .submenu{
+        display: inline;
+        background-color: #222222;
+    }
+    #container{
+        background-color:#414040;
+        margin:0 13% ;
+    }
+    #slide2{
+        display: none;
+    }
+    .gioi_thieu1{
+        background-color: #cecfcf;
+        height: 500px;
+    }
+    #trang .img1 .right{
+        margin-top: 15%;
+        border-left: 1px solid lightslategray;
+    }
+    #trang input.submit{
+        width: 5%;
+        margin: 0 47% 30px 47%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #container ul li a:hover{
+        background-color: #0a0a0a;
+        transition: 0.5s;
+    }
+    #container{
+        background-color:#414040;
+        margin:0 1% ;
+    }
+    #container div #myNavbar{
+        padding: 0 40px 0 40px;;
+    }
+    #container{
+        background-color:#414040;
+        margin:0 5% ;
+    }
+    #danh_muc{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .border{
+        margin-bottom: 15px;
+    }
+    #slide2{
+        display: block;
+    }
+}

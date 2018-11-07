@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1315928",
+    "ThreadId": "570483",
+    "Html": "Hello,\r<br />\n<br />\nI've implemented the plugin on my website, the ARIA tags are working very well but I cannot navigate with the keyboard.\r<br />\n<br />\nI use the &lt;select&gt; method, but in the navigator the are replaced with a &lt;div id=&quot;rateit-range-2&quot;&gt;.\r<br />\n<br />\nIt doesn't work neither on the example page : <a href=\"http://www.radioactivethinking.com/rateit/example/example.htm\" rel=\"nofollow\">http://www.radioactivethinking.com/rateit/example/example.htm</a>\r<br />\n<br />\nI'm trying to make all my website keyboard accessible, it's not easy, that's why rateit interests me.\r<br />\n<br />\nThanks in advance.<br />\n",
+    "PostedDate": "2014-10-23T01:32:32.397-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1316956",
+    "ThreadId": "570483",
+    "Html": "<strong>Wonderfoule wrote:</strong><br />\n<blockquote>\nHello,<br />\n<br />\nI've implemented the plugin on my website, the ARIA tags are working very well but I cannot navigate with the keyboard.<br />\n<br />\nI use the &lt;select&gt; method, but in the navigator the are replaced with a &lt;div id=&quot;rateit-range-2&quot;&gt;.<br />\n<br />\nIt doesn't work neither on the example page : <a href=\"http://www.radioactivethinking.com/rateit/example/example.htm\" rel=\"nofollow\">http://www.radioactivethinking.com/rateit/example/example.htm</a><br />\n<br />\nI'm trying to make all my website keyboard accessible, it's not easy, that's why rateit interests me.<br />\n<br />\nThanks in advance.<br />\n</blockquote>\nHello, noboby can help me ?<br />\n",
+    "PostedDate": "2014-10-28T01:47:14.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1317283",
+    "ThreadId": "570483",
+    "Html": "Hi,\r<br />\n<br />\nI checked it and it does work fine. You'll have to &quot;tab&quot; through the screen until you reach the rating control, and then use the arrow keys.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2014-10-29T02:50:56.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1317314",
+    "ThreadId": "570483",
+    "Html": "<strong>gidon wrote:</strong><br />\n<blockquote>\nHi,<br />\n<br />\nI checked it and it does work fine. You'll have to &quot;tab&quot; through the screen until you reach the rating control, and then use the arrow keys.<br />\n<br />\nGidon<br />\n</blockquote>\nThank for your Help Gidon, but I tried with OSX Chrome, Firefox and Safari, and Windows IE 9, with no result.\r<br />\nOne last thing : could you test my work on this page : <a href=\"http://www.roquefort-societe.com/les-recettes/creme-brulee-roquefort-lavande\" rel=\"nofollow\">http://www.roquefort-societe.com/les-recettes/creme-brulee-roquefort-lavande</a> ?\r<br />\n<br />\nMarc<br />\n",
+    "PostedDate": "2014-10-29T05:01:05.243-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1317370",
+    "ThreadId": "570483",
+    "Html": "I see the issue. It actually does rate, but only one step.\r<br />\n<br />\nWhat happens is that each keyboard action results in a rated event. You catch this event, and set the rateit component to readonly, this prevents further rating.\r<br />\n<br />\nSo what has to happen is some extra work from your site to make this work.\r<br />\nYou might want to catch the &quot;blur&quot; event of the rateit control (instead of the &quot;rated&quot; event), and only then send the rating, and set it to readonly.\r<br />\n<br />\nHope that helps.<br />\n",
+    "PostedDate": "2014-10-29T08:34:41.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

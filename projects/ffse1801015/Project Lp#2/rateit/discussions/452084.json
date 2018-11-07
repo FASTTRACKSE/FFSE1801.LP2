@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1075511",
+    "ThreadId": "452084",
+    "Html": "I thought I would share a custom binding handler I created to make using RateIt with knockout observables much easier.<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\nko.bindingHandlers.rateit = {\n    init: <span style=\"color:Blue;\">function</span> (element, valueAccessor) {\n        <span style=\"color:Blue;\">var</span> local = ko.toJS(valueAccessor()),\n            options = {};\n\n        <span style=\"color:Blue;\">if</span>(<span style=\"color:Blue;\">typeof</span> local === <span style=\"color:#A31515;\">&#39;number&#39;</span>) {\n            local = {\n                value: local\n            };\n        }\n\n        ko.utils.extend(options, ko.bindingHandlers.rateit.options);\n        ko.utils.extend(options, local);\n\n        $(element).rateit(options);\n        <span style=\"color:Green;\">//register an event handler to update the viewmodel when the view is updated.</span>\n        $(element).bind(<span style=\"color:#A31515;\">&#39;rated&#39;</span>, <span style=\"color:Blue;\">function</span> (event, value) {\n            <span style=\"color:Blue;\">var</span> floa = parseFloat(value.toFixed(1));\n            <span style=\"color:Blue;\">var</span> observable = valueAccessor();\n            <span style=\"color:Blue;\">if</span>(ko.isObservable(observable)) {\n                observable(floa);\n            } <span style=\"color:Blue;\">else</span> {\n                <span style=\"color:Blue;\">if</span>(observable.value !== undefined &amp;&amp; ko.isObservable(observable.value)) {\n                    observable.value(floa);\n                }\n            }\n        });\n    },\n    update: <span style=\"color:Blue;\">function</span>(element, valueAccessor) {\n        <span style=\"color:Blue;\">var</span> local = ko.toJS(valueAccessor());\n        \n        <span style=\"color:Blue;\">if</span> (<span style=\"color:Blue;\">typeof</span> local === <span style=\"color:#A31515;\">&#39;number&#39;</span>) {\n            local = {\n                value: local\n            };\n        }\n        <span style=\"color:Blue;\">if</span> (local.value !== undefined) {\n            <span style=\"color:Blue;\">var</span> floa = parseFloat(local.value.toFixed(1));\n            $(element).rateit(<span style=\"color:#A31515;\">&#39;value&#39;</span>, floa);\n        }\n        \n    },\n    options: {\n        <span style=\"color:Green;\">//this section is to allow users to override the rateit defaults on a per site basis.</span>\n        <span style=\"color:Green;\">//override by adding ko.bindingHandlers.rateit.options = { ... }</span>\n    }\n};\r\n</pre></div>You can use the binding handler one of two ways. (Rating is an observable)<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n<span style=\"color:Blue;\">&lt;</span><span style=\"color:#A31515;\">div</span> <span style=\"color:Red;\">data-bind</span><span style=\"color:Blue;\">=</span><span style=\"color:Blue;\">&quot;rateit: { value: Rating, max: 10, step: 0.1, readonly: true }&quot;</span><span style=\"color:Blue;\">&gt;</span><span style=\"color:Blue;\">&lt;/</span><span style=\"color:#A31515;\">div</span><span style=\"color:Blue;\">&gt;</span>\r\n</pre></div>Or<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n<span style=\"color:Blue;\">&lt;</span><span style=\"color:#A31515;\">div</span> <span style=\"color:Red;\">data-bind</span><span style=\"color:Blue;\">=</span><span style=\"color:Blue;\">&quot;rateit: Rating&quot;</span><span style=\"color:Blue;\">&gt;</span><span style=\"color:Blue;\">&lt;/</span><span style=\"color:#A31515;\">div</span><span style=\"color:Blue;\">&gt;</span>\r\n</pre></div>The second method will use the RateIt defaults unless you override the options on the binding handler. For example if I wanted to always use a 10 star rater on my site I would add<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\nko.bindingHandlers.rateit.options = {\n    max: 10\n}\r\n</pre></div>anywhere after the binding handler was declared, or just simply add it to the options section in the bindinghandler itself.<br />\n",
+    "PostedDate": "2013-08-01T04:15:01.06-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076248",
+    "ThreadId": "452084",
+    "Html": "Thanks.\r<br />\nDo you mind me adding it to the source control and download of the project?<br />\n",
+    "PostedDate": "2013-08-03T00:20:22.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076301",
+    "ThreadId": "452084",
+    "Html": "Feel free, knockout seems to be pretty popular these days. I threw it together pretty quickly so I can't guarantee there are no bugs, but it seems to work pretty well for what I have been using it for. Let me know if you have any questions on it.<br />\n",
+    "PostedDate": "2013-08-03T08:16:26.837-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1307201",
+    "ThreadId": "452084",
+    "Html": "Nice work OriginalMoose. Thanks for sharing!<br />\n",
+    "PostedDate": "2014-09-22T16:54:03.69-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

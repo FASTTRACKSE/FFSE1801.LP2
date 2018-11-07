@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1134171",
+    "ThreadId": "472829",
+    "Html": "Hi,<br />\n<br />\nI am useing rateIt with my backbone project.<br />\nWhen i click to rate i use to get an error <br />\n<br />\n&quot;Uncaught TypeError: Object rateAnswer has no method 'apply' &quot;<br />\n<br />\nrateAnswer is my buit in function which i called as <br />\n<pre><code>$('#products  .rateit').bind('rated reset', 'rateAnswer');\n\nrateAnswer : function(){\n\n                    var ri = $(this),\n                    appCollectObj = new appCollection();\n\n                    var value = ri.rateit('value');\n                    var questionId = ri.data('productid');\n             \n                    //maybe we want to disable voting?\n                    ri.rateit('readonly', true);\n\n                    appCollectObj.fetch({\n                        data: $.param({questionId : questionId, value : value}),\n                        success: function(model, response) {\n                                $('#response').append('&lt;li&gt;' + data + '&lt;/li&gt;');\n                                },\n                        error: function() {\n                                $('#response').append('&lt;li style=&quot;color:red&quot;&gt;' + msg + '&lt;/li&gt;');\n                                }\n                    });\n        }\n\n    });</code></pre>\n\nAnd HTML<br />\n<pre><code>&lt;div id=&quot;products&quot;&gt;\n            &lt;ul&gt;\n              &lt;li&gt;\n               RateIt: &lt;div data-productid=&quot;&lt;%= elem.id %&gt;&quot; class=&quot;rateit&quot;&gt;&lt;/div&gt;\n              &lt;/li&gt;\n            &lt;/ul&gt;\n            &lt;ul id=&quot;response&quot;&gt;&lt;/ul&gt;\n          &lt;/div&gt;</code></pre>\n\nPlease help <br />\n",
+    "PostedDate": "2013-12-10T23:56:42.793-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1134209",
+    "ThreadId": "472829",
+    "Html": "Hi,\r<br />\n<br />\nIt's a simple javascript error:\r<br />\n<br />\nchange:\r<br />\n$('#products  .rateit').bind('rated reset', 'rateAnswer');\r<br />\n<br />\ninto:\r<br />\n<br />\n$('#products  .rateit').bind('rated reset', rateAnswer);<br />\n",
+    "PostedDate": "2013-12-11T01:56:14.977-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1134212",
+    "ThreadId": "472829",
+    "Html": "thanks my bad .. passed string instead of function <br />\n",
+    "PostedDate": "2013-12-11T02:16:44.347-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

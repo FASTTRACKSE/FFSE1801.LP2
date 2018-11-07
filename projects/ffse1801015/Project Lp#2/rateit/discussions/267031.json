@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "649429",
+    "ThreadId": "267031",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I replaced stars with the circles and i want to write the value on the circle. lets say 1 to 10. how can we achieve this?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2011-07-29T01:41:59.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "649610",
+    "ThreadId": "267031",
+    "Html": "\r\n<div>In the examples I've an example of a bar graph rating. This uses one wide image instead of one star that repeats horizontally. That would be the way to go for any rating in which the individual steps are different.\r\n<br>\r\n<br>\r\nSent from my iPhone</div>\r\n<div><br>\r\nOn 29 ביול 2011, at 11:42, &quot;tamimmakki&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: tamimmakki</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Hi,</p>\r\n<p>I replaced stars with the circles and i want to write the value on the circle. lets say 1 to 10. how can we achieve this?</p>\r\n<p></p>\r\n<p>Thanks</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-07-29T09:26:48.383-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

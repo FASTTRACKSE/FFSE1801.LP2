@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-07-28T02:55:01.65-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Hi,\n \nI working on incorporating your plugin and noticed the following issue:\n \nwhen i call \n \n$('#my-rating').rateit({ 'readonly': true,\n'value': 3}); \n \nfor this \n \n<div id=\"my-rating\"></div>\n \nthe plugin does not set the value. I believe the issue is on line 83:\n \n                itemdata('value', itemdata('value') || options.min);\n \nwhen it's supposed to be \n \n                itemdata('value', itemdata('value') || options.value);\n \nThanks\n \n-Alex",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "null",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2012-07-28T02:51:27.75-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Setting initial value issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 729
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 20848.",
+      "PostedDate": "2012-07-28T02:55:01.65-07:00",
+      "Id": 141072
+    }
+  ]
+}

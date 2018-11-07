@@ -1,0 +1,85 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-12-22T05:33:27.953-08:00",
+    "CommentCount": 9,
+    "Custom": "",
+    "Description": "Hi,\n\nI use RateIt with a negative/positive range ( min: -5, max: 5 ). Everything works fine except when I need to initialized with the value 0. The attribute data-rateit-value=0 seems to be ignored...\n\nThanks for support",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "null",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-12-04T00:05:25.993-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Initialization fail with data-rateit-value=0",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1747
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks for the bug report. I'm on it.",
+      "PostedDate": "2013-12-10T00:50:09.45-08:00",
+      "Id": 141101
+    },
+    {
+      "Message": "Hi,\r\n\r\nI've created a jsfiddle: http://jsfiddle.net/gidon/d5wna/I don't see the problem you are talking about.\r\n\r\nGidon",
+      "PostedDate": "2013-12-10T01:00:20.04-08:00",
+      "Id": 141102
+    },
+    {
+      "Message": "Hi,\r\n\r\nThanks for looking at it! I just update your test case with my exact issue. Please see here: http://jsfiddle.net/d5wna/1/",
+      "PostedDate": "2013-12-12T13:30:22.897-08:00",
+      "Id": 141103
+    },
+    {
+      "Message": "Resolved with changeset 34834: Check for isNaN instead of conditional-OR",
+      "PostedDate": "2013-12-15T00:27:00.677-08:00",
+      "Id": 141104
+    },
+    {
+      "Message": "I fixed the bug. __Note that your JSFiddle still doesn't work, because I didn't upload the updated version to my website yet.__",
+      "PostedDate": "2013-12-15T00:34:01.27-08:00",
+      "Id": 141105
+    },
+    {
+      "Message": "This is better:\r\n\r\n```                itemdata('min', isNaN(itemdata('min')) ? options.min : itemdata('min'));                itemdata('max', isNaN(itemdata('max')) ? options.max : itemdata('max'));\r\n\r\n```isn't it? ;)",
+      "PostedDate": "2013-12-16T05:02:49.13-08:00",
+      "Id": 141106
+    },
+    {
+      "Message": "\n\n** Closed by gidon 15.12.2013 00:27",
+      "PostedDate": "2013-12-16T05:03:13.43-08:00",
+      "Id": 141107
+    },
+    {
+      "Message": "Resolved with changeset 35024: Fixed a bug introduced by prev fix.",
+      "PostedDate": "2013-12-22T05:33:27.953-08:00",
+      "Id": 141108
+    },
+    {
+      "Message": "Thanks again",
+      "PostedDate": "2013-12-22T05:35:17.317-08:00",
+      "Id": 141109
+    }
+  ]
+}

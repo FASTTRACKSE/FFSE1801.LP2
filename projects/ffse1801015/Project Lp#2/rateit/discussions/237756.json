@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "533500",
+    "ThreadId": "237756",
+    "Html": "\r\n<p>thanks! Very good plugin, easy to use.</p>\r\n<p>is it possible to add hints to stars in next version?</p>\r\n<p>&nbsp;</p>\r\n<p>Best rgds</p>\r\n<p>spongesbobplitpants</p>\r\n",
+    "PostedDate": "2010-12-09T08:59:08.72-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "542459",
+    "ThreadId": "237756",
+    "Html": "\r\n<p>Thank you. I was on holidays, so didn't see your message until now.&nbsp;</p>\r\n<p>With hints you mean tool tips? Should they be numerical (like the numerical value) or should they be some custom text?</p>\r\n<p>I could also expose another event &quot;hover&quot;, during which one could get the current &quot;hover&quot; value, and show your own tooltip. This is probably the most flexible solution.</p>\r\n",
+    "PostedDate": "2010-12-31T00:39:51.783-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "543118",
+    "ThreadId": "237756",
+    "Html": "&#65279;\r\n<div><font face=\"Verdana\" color=\"#0000ff\" size=\"2\">Thank you for your reply.</font></div>\r\n<div><font color=\"#0000ff\" size=\"2\">It is great to add new feature to your script, although I modified your script to show hints(custom text and number), I still look forward to your new version, wish it a powerful plugin.</font></div>\r\n<div><font color=\"#0000ff\" size=\"2\"></font></div>\r\n<div><font color=\"#0000ff\" size=\"2\">Best rgds</font></div>\r\n<div><font face=\"Verdana\" size=\"2\"></font></div>\r\n<div align=\"left\">\r\n<div align=\"left\"><font face=\"Verdana\" size=\"2\">\r\n<hr size=\"2\" style=\"width:122px; height:2px\">\r\n</font></div>\r\n<div><font color=\"#c0c0c0\"><font face=\"Verdana\" size=\"2\"><span>generalsystem.info</span></font></div>\r\n<div><font face=\"Verdana\" size=\"2\">2011-01-03</font></font></div>\r\n</div>\r\n<div><font face=\"Verdana\" size=\"2\">\r\n<hr>\r\n</font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>发件人：</strong> gidon</font></font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>发送时间：</strong> 2010-12-31 16:40:41</font></font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>收件人：</strong> generalsystem.info</font></font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>抄送：</strong> </font></font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>主题：</strong> Re: how to add hints to stars? [rateit:237756]</font></font></div>\r\n<div><font face=\"Verdana\" size=\"2\"></font></div>\r\n<div><font face=\"Verdana\" size=\"2\">\r\n<p>From: gidon</p>\r\n<div id=\"x_x_ThreadNotificationPostBody\">\r\n<p>Thank you. I was on holidays, so didn't see your message until now. </p>\r\n<p>With hints you mean tool tips? Should they be numerical (like the numerical value) or should they be some custom text?</p>\r\n<p>I could also expose another event &quot;hover&quot;, during which one could get the current &quot;hover&quot; value, and show your own tooltip. This is probably the most flexible solution.</p>\r\n</div>\r\n</font></div>\r\n",
+    "PostedDate": "2011-01-03T04:42:58.99-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "543167",
+    "ThreadId": "237756",
+    "Html": "\r\n<p>I've uploaded a new version, which includes the hover event, which enables the option to add tooltips.</p>\r\n<p>Look at example #10 to see a sample implementation.</p>\r\n",
+    "PostedDate": "2011-01-03T06:35:18.38-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "546109",
+    "ThreadId": "237756",
+    "Html": "&#65279;\r\n<div><font face=\"Verdana\" color=\"#0000ff\" size=\"2\">Many thanks,Dude.</font></div>\r\n<div><font face=\"Verdana\" size=\"2\"></font></div>\r\n<div align=\"left\">\r\n<div align=\"left\"><font face=\"Verdana\" size=\"2\">\r\n<hr size=\"2\" style=\"width:122px; height:2px\">\r\n</font></div>\r\n<div><font color=\"#c0c0c0\"><font face=\"Verdana\" size=\"2\"><span>generalsystem.info</span></font></div>\r\n<div><font face=\"Verdana\" size=\"2\">2011-01-09</font></font></div>\r\n</div>\r\n<div><font face=\"Verdana\" size=\"2\">\r\n<hr>\r\n</font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>发件人：</strong> gidon</font></font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>发送时间：</strong> 2011-01-03 22:35:29</font></font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>收件人：</strong> generalsystem.info</font></font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>抄送：</strong> </font></font></div>\r\n<div><font face=\"Verdana\"><font size=\"2\"><strong>主题：</strong> Re: how to add hints to stars? [rateit:237756]</font></font></div>\r\n<div><font face=\"Verdana\" size=\"2\"></font></div>\r\n<div><font face=\"Verdana\" size=\"2\">\r\n<p>From: gidon</p>\r\n<div id=\"x_x_ThreadNotificationPostBody\">\r\n<p>I've uploaded a new version, which includes the hover event, which enables the option to add tooltips.</p>\r\n<p>Look at example #10 to see a sample implementation.</p>\r\n</div>\r\n</font></div>\r\n",
+    "PostedDate": "2011-01-08T19:06:37.65-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

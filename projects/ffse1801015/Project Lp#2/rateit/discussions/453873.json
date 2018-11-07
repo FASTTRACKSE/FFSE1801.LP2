@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1082374",
+    "ThreadId": "453873",
+    "Html": "It would be nice if there was a way to completely and programmatically reset a RateIt instance back to its initial state. I currently have 'resetable' set to false, but it looks like the code that's fired when the reset button is clicked wouldn't even do what I want. I need things like 'readonly' and 'ispreset' set back to their default values. \r<br />\n<br />\nMy suggestion would be to do the event handling like jQuery itself. For example, provide a .reset() method that binds the event if you pass in a callback, or triggers the event if you call it with no parameters.\r<br />\n<br />\nRight now, the easiest way to completely reset RateIt is to remove the element from the DOM, create a new element on the fly, and then initialize a new RateIt instance on that newly-created element. While this isn't absolutely <em>terrible</em>, it seems like there should be an easier way to do it.<br />\n<pre><code>var $exampleRateIt = $(&quot;#exampleRateIt&quot;);\n\nif ($exampleRateIt.length) {\n    $exampleRateIt.remove();\n    $exampleRateIt = $(&quot;&lt;div id='exampleRateIt'&gt;&lt;/div&gt;&quot;);\n    $(&quot;#exampleSibling&quot;).after($exampleRateIt);\n}\n\n$exampleRateIt.rateit({\n    resetable: false,\n    step: 1,\n    min: 0,\n    max: 5\n});</code></pre>\n\n",
+    "PostedDate": "2013-08-19T14:52:24.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1082495",
+    "ThreadId": "453873",
+    "Html": "You're right. The fact that it doesn't return to the initial state is a bug.\r<br />\nHaving the option to programmatically reset the control would indeed be a nice feature.\r<br />\n<br />\nI'll put it on the list for the next release. I hope I will get it out it the next week or so.\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2013-08-19T22:40:07.85-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1119701",
+    "ThreadId": "453873",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"https://rateit.codeplex.com/workitem/1712\" rel=\"nofollow\">here</a> to go to the work item and continue the discussion.<br />\n",
+    "PostedDate": "2013-11-07T05:14:20.47-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1120925",
+    "ThreadId": "453873",
+    "Html": "In version 1.0.14 it will be possible to call $('XXXXX').rateit('reset') to invoke the reset, which reverts to the initial state.<br />\n",
+    "PostedDate": "2013-11-09T23:35:00.513-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1122465",
+    "ThreadId": "453873",
+    "Html": "Hi gidon, sorry to hijack your thread but when you make your next release please add the attribute data-role=&quot;none&quot; when you create your internal &lt;button element in your js code. This will ensure that your library works well with jquery mobile. thanks.<br />\n",
+    "PostedDate": "2013-11-12T10:44:36.923-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

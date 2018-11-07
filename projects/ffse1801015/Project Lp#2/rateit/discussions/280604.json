@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "702440",
+    "ThreadId": "280604",
+    "Html": "\r\n<p>If I use the example.htm provided in the download and I change jquery/1.6.2 by jquery/1.7, a bug appears :</p>\r\n<p>in this example :</p>\r\n<div>\r\n<div><code>&lt;</code><code>div</code> <code>class</code><code>=</code><code>&quot;rateit&quot;</code>\r\n<code>id</code><code>=</code><code>&quot;rateit5&quot;</code> <code>data-rateit-min</code><code>=</code><code>&quot;2&quot;</code><code>&gt;</code></div>\r\n<div><code>&lt;/</code><code>div</code><code>&gt;</code></div>\r\n<div><code>&lt;</code><code>div</code><code>&gt;</code></div>\r\n<div><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>&lt;</code><code>span</code> <code>\r\nid</code><code>=</code><code>&quot;value5&quot;</code><code>&gt;&lt;/</code><code>span</code><code>&gt;</code></div>\r\n<div><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>&lt;</code><code>span</code> <code>\r\nid</code><code>=</code><code>&quot;hover5&quot;</code><code>&gt;&lt;/</code><code>span</code><code>&gt;</code></div>\r\n<div><code>&lt;/</code><code>div</code><code>&gt;</code></div>\r\n<div>&nbsp;</div>\r\n<div><code>&lt;</code><code>script</code> <code>type</code><code>=</code><code>&quot;text/javascript&quot;</code><code>&gt;</code></div>\r\n<div><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$(&quot;#rateit5&quot;).bind('rated', function (event, value) { $('#value5').text('You\\'ve rated it: ' &#43; value); });</code></div>\r\n<div><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$(&quot;#rateit5&quot;).bind('reset', function () { $('#value5').text('Rating reset'); });</code></div>\r\n<div><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$(&quot;#rateit5&quot;).bind('hover', function (event, value) { $('#hover5').text('Hovering over: ' &#43; value); });</code></div>\r\n<div><code>&lt;/</code><code>script</code><code>&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</code></div>\r\n<div></div>\r\n<div>The value of the rate is not displayed anymore in #hover5, only 'undefined' ( nevertheless, other features seems to work : stars are displayed etc...)</div>\r\n<div>This bug appears with jquery 1.7 and 1.7.1 not with 1.6.x : how to solve the problem while using jquery 1.7.x ?</div>\r\n</div>\r\n",
+    "PostedDate": "2011-11-23T08:58:37.11-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "702747",
+    "ThreadId": "280604",
+    "Html": "\r\n<div>Thanks for the report. I will have a look at it later today. </div>\r\n<div><br>\r\n</div>\r\n<div>Gidon<br>\r\n</div>\r\n<div><br>\r\nOn 23 בנוב 2011, at 18:58, &quot;ericdupo&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: ericdupo</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>If I use the example.htm provided in the download and I change jquery/1.6.2 by jquery/1.7, a bug appears :</p>\r\n<p>in this example :</p>\r\n<div>\r\n<div><code>&lt;</code><code>div</code> <code>class</code><code>=</code><code>&quot;rateit&quot;</code>\r\n<code>id</code><code>=</code><code>&quot;rateit5&quot;</code> <code>data-rateit-min</code><code>=</code><code>&quot;2&quot;</code><code>&gt;</code></div>\r\n<div><code>&lt;/</code><code>div</code><code>&gt;</code></div>\r\n<div><code>&lt;</code><code>div</code><code>&gt;</code></div>\r\n<div><code></code><code>&lt;</code><code>span</code> <code>id</code><code>=</code><code>&quot;value5&quot;</code><code>&gt;&lt;/</code><code>span</code><code>&gt;</code></div>\r\n<div><code></code><code>&lt;</code><code>span</code> <code>id</code><code>=</code><code>&quot;hover5&quot;</code><code>&gt;&lt;/</code><code>span</code><code>&gt;</code></div>\r\n<div><code>&lt;/</code><code>div</code><code>&gt;</code></div>\r\n<div></div>\r\n<div><code>&lt;</code><code>script</code> <code>type</code><code>=</code><code>&quot;text/javascript&quot;</code><code>&gt;</code></div>\r\n<div><code></code><code>$(&quot;#rateit5&quot;).bind('rated', function (event, value) { $('#value5').text('You\\'ve rated it: ' &#43; value); });</code></div>\r\n<div><code></code><code>$(&quot;#rateit5&quot;).bind('reset', function () { $('#value5').text('Rating reset'); });</code></div>\r\n<div><code></code><code>$(&quot;#rateit5&quot;).bind('hover', function (event, value) { $('#hover5').text('Hovering over: ' &#43; value); });</code></div>\r\n<div><code>&lt;/</code><code>script</code><code>&gt; </code></div>\r\n<div></div>\r\n<div>The value of the rate is not displayed anymore in #hover5, only 'undefined' ( nevertheless, other features seems to work : stars are displayed etc...)</div>\r\n<div>This bug appears with jquery 1.7 and 1.7.1 not with 1.6.x : how to solve the problem while using jquery 1.7.x ?</div>\r\n</div>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2011-11-23T21:28:43.567-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "798678",
+    "ThreadId": "280604",
+    "Html": "<p>Hi Gidon,</p>\r\n<p>&nbsp; &nbsp;do u have fix this bug?</p>",
+    "PostedDate": "2012-02-23T18:43:05.663-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "799305",
+    "ThreadId": "280604",
+    "Html": "<p>Please have a look at the issue tracker:&nbsp;<a href=\"http://rateit.codeplex.com/workitem/417\">http://rateit.codeplex.com/workitem/417</a></p>\r\n<p>This is a jQuery bug, and should be fixed with version 1.7.2</p>",
+    "PostedDate": "2012-02-24T03:03:00.88-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

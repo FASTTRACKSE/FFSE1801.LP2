@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "937130",
+    "ThreadId": "402051",
+    "Html": "\r\n<p>Hello !</p>\r\n<p>&nbsp;</p>\r\n<p>This plugin is really great ! I've just discovered it and i'm trying to add it in my website.</p>\r\n<p>I have two questions.</p>\r\n<p>First when i create a form type with RateIt in Symfony2, it works great but the change of stars when hovering is slow, have you an idea why (It's not slow outside the type Symfony2) ?</p>\r\n<p>Secondly, i want to insert a RateIt readonly in a InfoWindow of a Google Map,(API v3) but it doesn't appear. Should i do differently than in a normal page ?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>\r\n<p>&nbsp;</p>\r\n<p>Anonymousy</p>\r\n",
+    "PostedDate": "2012-11-06T01:21:45.43-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "937159",
+    "ThreadId": "402051",
+    "Html": "<p>If you could show me a sample page(s), where you show both problems, I might give a good answer.</p>",
+    "PostedDate": "2012-11-06T02:37:49.013-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "937218",
+    "ThreadId": "402051",
+    "Html": "<p>&nbsp;</p>\r\n<p>I can't give you that, but i can give you my code.</p>\r\n<p>&nbsp;</p>\r\n<p>Here is my code for the Google Maps InfoWindow :</p>\r\n<hr />\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span> <span style=\"color: red;\">id</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"gmap-div\"</span> <span style=\"color: red;\">style</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"width: 400px; height: 300px; margin-bottom: 20px;\"</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span> \r\n            \r\n            <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">script</span> <span style=\"color: red;\">type</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"text/javascript\"</span> <span style=\"color: red;\">src</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"http://maps.google.com/maps/api/js?sensor=false\"</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">script</span><span style=\"color: blue;\">&gt;</span>\r\n            <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">script</span> <span style=\"color: red;\">type</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"text/javascript\"</span><span style=\"color: blue;\">&gt;</span>\r\n                \r\n            <span style=\"color: blue;\">var</span> geocoder;\r\n            <span style=\"color: blue;\">var</span> map;\r\n                \r\n            <span style=\"color: blue;\">function</span> codeAddress(address) {\r\n                \r\n                <span style=\"color: green;\">// Geocodage de l'adresse</span>\r\n                geocoder = <span style=\"color: blue;\">new</span> google.maps.Geocoder();\r\n                geocoder.geocode( { <span style=\"color: #a31515;\">'address'</span>: address}, <span style=\"color: blue;\">function</span>(results, status) {\r\n                  <span style=\"color: blue;\">if</span> (status == google.maps.GeocoderStatus.OK) {                 \r\n                  \r\n                    <span style=\"color: green;\">// Cr�ation carte centr�e sur adresse</span>\r\n                    map = <span style=\"color: blue;\">new</span> google.maps.Map(document.getElementById(<span style=\"color: #a31515;\">'gmap-div'</span>), {\r\n                      zoom: 17,                                 <span style=\"color: green;\">// zoom de d�part</span>\r\n                      center: results[0].geometry.location,     <span style=\"color: green;\">// centre de la map</span>\r\n                      mapTypeId: google.maps.MapTypeId.ROADMAP, <span style=\"color: green;\">// type de map</span>\r\n                      streetViewControl: <span style=\"color: blue;\">false</span>,                 <span style=\"color: green;\">// d�sactiver contr�le StreetView</span>\r\n                      panControl: <span style=\"color: blue;\">false</span>                         <span style=\"color: green;\">// masquer contr�les de d�placement</span>\r\n                    });\r\n                                        \r\n                    <span style=\"color: green;\">// Cr�ation du marker</span>\r\n                    <span style=\"color: blue;\">var</span> markerRouge = <span style=\"color: blue;\">new</span> google.maps.MarkerImage(<span style=\"color: #a31515;\">\"{{ asset('img/marker_rouge.png') }}\"</span>);                    \r\n                    <span style=\"color: blue;\">var</span> marker = <span style=\"color: blue;\">new</span> google.maps.Marker({\r\n                        map: map,\r\n                        position: results[0].geometry.location,\r\n                        icon : markerRouge\r\n                    });\r\n                    \r\n                    <span style=\"color: green;\">// Cr�ation info-bulle</span>\r\n                    <span style=\"color: blue;\">var</span> contenuInfoBulle = <span style=\"color: #a31515;\">'&lt;h4&gt;{{ etab.nom }}&lt;/h4&gt;'</span> +\t\r\n                        <span style=\"color: #a31515;\">'&lt;div class=\"rateit\" data-rateit-value=\"{{ etab.noteMoyenne }}\" data-rateit-ispreset=\"true\" data-rateit-readonly=\"true\" title=\"{{ etab.noteMoyenne }}\"&gt;&lt;/div&gt;'</span>;\r\n                    <span style=\"color: blue;\">var</span> infoBulle = <span style=\"color: blue;\">new</span> google.maps.InfoWindow({\r\n                            content: contenuInfoBulle\r\n                    })\r\n                    google.maps.event.addListener(marker, <span style=\"color: #a31515;\">'click'</span>, <span style=\"color: blue;\">function</span>() {\r\n                            infoBulle.open(map, marker);\r\n                    });\r\n                    \r\n                  } <span style=\"color: blue;\">else</span> {\r\n                    alert(<span style=\"color: #a31515;\">\"Geocode was not successful for the following reason: \"</span> + status);\r\n                  }\r\n                });\r\n              }\r\n\r\n            $(<span style=\"color: blue;\">function</span>() {\r\n              codeAddress(<span style=\"color: #a31515;\">\"{{ etab.adresse }}\"</span>);\r\n            });\t\r\n            <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">script</span><span style=\"color: blue;\">&gt;</span><br /><hr />&nbsp;</pre>\r\n</div>\r\n<p>And here is my code for the Symfony2 type :</p>\r\n<p>&nbsp;</p>\r\n<hr />\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: green;\">// NotationType.php</span>\r\n\r\n<span style=\"color: blue;\">use</span> Symfony\\Component\\Form\\AbstractType;\r\n<span style=\"color: blue;\">use</span> Symfony\\Component\\Form\\FormViewInterface;\r\n<span style=\"color: blue;\">use</span> Symfony\\Component\\Form\\FormInterface;\r\n<span style=\"color: blue;\">use</span> Symfony\\Component\\OptionsResolver\\OptionsResolverInterface;\r\n\r\n<span style=\"color: blue;\">class</span> NotationType <span style=\"color: blue;\">extends</span> AbstractType\r\n{\r\n    <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">function</span> setDefaultOptions(OptionsResolverInterface $resolver)\r\n    {\r\n        $resolver-&gt;setDefaults(<span style=\"color: blue;\">array</span>(\r\n            <span style=\"color: #a31515;\">'max'</span> =&gt; 5\r\n        ));\r\n    }\r\n\r\n    <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">function</span> getParent()\r\n    {\r\n        <span style=\"color: blue;\">return</span> <span style=\"color: #a31515;\">'integer'</span>;\r\n    }\r\n\r\n    <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">function</span> getName()\r\n    {\r\n        <span style=\"color: blue;\">return</span> <span style=\"color: #a31515;\">'notation'</span>;\r\n    }\r\n}<br /><br /><hr /><div style=\"color: black; background-color: white;\"><pre>{# fields.html.twig #}\r\n{% block notation_widget %}\r\n    {% spaceless %}\r\n        {{ block('hidden_widget') }}\r\n        <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">div</span>  <span style=\"color: red;\">id</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"notation_{{id}}\"</span> <span style=\"color: red;\">class</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"rateit\"</span> <span style=\"color: red;\">data-rateit-resetable</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"false\" {% if value is not empty %}data-rateit-value=\"{{ value }}\"</span> <span style=\"color: red;\">data-rateit-ispreset</span><span style=\"color: blue;\">=</span><span style=\"color: blue;\">\"true\"{% endif %} {#data-rateit-max=\"{{ max }}\"#} data-rateit-backingfld=\"#{{ id }}\"</span><span style=\"color: blue;\">&gt;</span><span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">div</span><span style=\"color: blue;\">&gt;</span>        \r\n    {% endspaceless %}\r\n{% endblock %}\r\n</pre>\r\n</div>\r\n&nbsp;</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-11-06T04:55:55.743-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "937744",
+    "ThreadId": "402051",
+    "Html": "<p>The Google Maps thing is quit easy to fix. After you add the rateit div to the dom, you will have to call $('.rateit').rateit() to initialize it.</p>\r\n<p>The other issue is harder. I cannot really give you an answer without seeing the actual page in order to check it.</p>",
+    "PostedDate": "2012-11-07T00:49:09.473-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "939101",
+    "ThreadId": "402051",
+    "Html": "<p>Thanks for your awser,</p>\r\n<p>&nbsp;</p>\r\n<p>I add $('.rateit').rateit() ti my code but i have an error \"TypeError: jQuery(\".rateit\").rateit is not a function\". What am i missing ?</p>\r\n<p>&nbsp;</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>google.maps.event.addListener(marker, <span style=\"color: #a31515;\">'click'</span>, <span style=\"color: blue;\">function</span>() {\r\n    infoBulle.open(map, marker);   \r\n    $(<span style=\"color: #a31515;\">'.rateit'</span>).rateit();\r\n});\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2012-11-09T05:47:52.337-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "939886",
+    "ThreadId": "402051",
+    "Html": "<p>It seems like somewhere you didn't add rateit.min.js .</p>",
+    "PostedDate": "2012-11-11T06:43:41.037-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1298243",
+    "ThreadId": "402051",
+    "Html": "Did you manage to get the Google Maps code working? I'm having exactly the same issue :(\r<br />\nI have the css &amp; js loaded. Confirmed by the develop dashboard.\r<br />\nI'm using your approach above with the jquery in the google maps listener.\r<br />\nBut no stars appear for me! :(<br />\n",
+    "PostedDate": "2014-09-02T10:43:56.837-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1298245",
+    "ThreadId": "402051",
+    "Html": "Oh i'm such a wally. I had the $('.rateit').rateit(); in front of the marker open command. Stupid me.\r<br />\nAll working beautifully now :)<br />\n",
+    "PostedDate": "2014-09-02T10:50:17.703-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

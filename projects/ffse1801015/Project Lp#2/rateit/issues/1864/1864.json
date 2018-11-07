@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Closed, because at the moment there is no (quick) fix available",
+    "ClosedDate": "2015-05-09T23:45:41.733-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Nothing prints where the stars should print.  The stars render perfectly in the browser, both IE and Chrome. But when I print preview, send directly to the printer, to XPS, or print using JavaScript window.print(), no stars are rendered, and no errors are thrown.",
+    "LastUpdatedDate": "2015-05-09T23:45:41.877-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2015-04-30T11:50:29.09-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Can't fix"
+    },
+    "Summary": "Rating Stars do not print. ",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1864
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I understand the problem, which lies at the very basics of RateIt's design. RateIt uses background images divs' to create the stars.\nBackgrounds are not printed.\n\nThere is this one property: -webkit-print-color-adjust: exact;  which do cause the backgrounds to be printed. \nSadly this is only available in webkit browsers, and MDN (https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-print-color-adjust) warns not to use it.\n\nSo currently without changing the whole RateIt plugin, I do not have a solution for it.",
+      "PostedDate": "2015-05-09T23:44:30.217-07:00",
+      "Id": 184170
+    }
+  ]
+}

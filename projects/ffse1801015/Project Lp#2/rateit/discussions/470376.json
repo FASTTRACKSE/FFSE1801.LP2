@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1126266",
+    "ThreadId": "470376",
+    "Html": "Hi,\r<br />\nThanks for this great plugin :).\r<br />\nI'm trying to set a rateIt plug for occurence in a loop.\r<br />\nBut this only works for the first one, I mean each rateIt appear perfectly but I can only get the value of the first one.\r<br />\n<br />\nCan you help me for this?\r<br />\n<br />\nThanks !<br />\n",
+    "PostedDate": "2013-11-18T15:02:16.427-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1128317",
+    "ThreadId": "470376",
+    "Html": "Could you post your code, or make a small JSFiddle mockup.<br />\n",
+    "PostedDate": "2013-11-23T23:23:10.607-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

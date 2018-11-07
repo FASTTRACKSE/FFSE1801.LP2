@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "576616",
+    "ThreadId": "248715",
+    "Html": "\r\n<p>Hi, I'm using the select box progressive enhancement approach with rateit. This works fine as long as the ratings are whole numbers (ie 1-5 stars) but not if I allow for half star ratings.<br>\r\n<br>\r\nSo if I create a select box with values 1-5 and then a div with a rateit class and the appropriate data-rateit-backingfld value, it works fine. But if I then add &quot;half star&quot; values (eg value=&quot;0.5&quot;,value=&quot;1.5&quot; etc) to the select box, the rateit plugin stops\r\n functioning. (It displays but the mouseover does not work).</p>\r\n<p></p>\r\n<pre></pre>\r\n<p></p>\r\n<p>Any ideas why this may be the case?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks.</p>\r\n",
+    "PostedDate": "2011-03-07T06:13:04.453-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "576617",
+    "ThreadId": "248715",
+    "Html": "<p>I'll have a look at it.</p>",
+    "PostedDate": "2011-03-07T06:15:19.077-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "576627",
+    "ThreadId": "248715",
+    "Html": "<p>Fixed. You can download version 0.99.1, or get the latest jquery.rateit.js from the Source code.</p>\r\n<p>The problem was that when getting the values from the selectbox, it used parseInt(), instead of Number() or parseFloat().</p>",
+    "PostedDate": "2011-03-07T06:31:03.64-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "576630",
+    "ThreadId": "248715",
+    "Html": "<p>Awesome, thank you very much for your extremely swift response.</p>",
+    "PostedDate": "2011-03-07T06:33:19.35-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "576632",
+    "ThreadId": "248715",
+    "Html": "<p>You're welcome, and thanks for taking the time to report the problem.</p>",
+    "PostedDate": "2011-03-07T06:35:08.617-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

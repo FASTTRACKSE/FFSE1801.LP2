@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-03-31T01:27:58.667-07:00",
+    "CommentCount": 6,
+    "Custom": "",
+    "Description": "The issue is bug http://bugs.jquery.com/ticket/5571 that was fixed in jQuery 1.7.2.\n \nThe fix is to re-work the itemdata function, something like this:\n      var itemdata = function (key, value) { \n\t  \tvar k = 'rateit' + capitaliseFirstLetter(key);\n\t\t\n\t\tif( arguments.length === 1 ) {\n\t\t\treturn item.data(k);\n\t\t} else {\n\t\t\titem.data(k, value);\n\t\t\treturn value;\n\t\t}\n\t  };",
+    "LastUpdatedDate": "2017-11-27T13:56:25.097-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2012-03-29T02:39:48.433-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RateIt does not work with jQuery 1.7.2",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 523
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks for reporting the issue. I hope to have a look at it later today.",
+      "PostedDate": "2012-03-29T23:24:35.803-07:00",
+      "Id": 141064
+    },
+    {
+      "Message": "Resolved with changeset 16115.",
+      "PostedDate": "2012-03-31T01:27:58.667-07:00",
+      "Id": 141065
+    },
+    {
+      "Message": "Hi\r\nChangeset 16115 did not solve the issue with jQuery 1.7.2.\r\nBut the rework suggested by tristantzara works like a charm.",
+      "PostedDate": "2012-06-01T13:52:18.713-07:00",
+      "Id": 141066
+    },
+    {
+      "Message": "Hi,\r\n\r\nThanks for reporting the issue. Could you tell me please what doesn't work?\r\n\r\nBecause on the sample page: http://www.radioactivethinking.com/rateit/example/example.htm , which works on jQuery 1.7.2 & the latest rateit (1.0.4),  everything seems to work fine.\r\n\r\nthanks,\r\nGidon",
+      "PostedDate": "2012-06-02T00:35:12.99-07:00",
+      "Id": 141067
+    },
+    {
+      "Message": "Hello Gidon,\r\n\r\ni've made more test after reading your answer and actually everything works fine with changeset 16115. i think my browser cache has played me a nasty trick in spite of multipe page refresh :/\r\n\r\nRegard,\r\nBubka",
+      "PostedDate": "2012-06-02T14:10:54.797-07:00",
+      "Id": 141068
+    },
+    {
+      "Message": "I'm happy to hear that.",
+      "PostedDate": "2012-06-03T00:31:21.633-07:00",
+      "Id": 141069
+    }
+  ]
+}

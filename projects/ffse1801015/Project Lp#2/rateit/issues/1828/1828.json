@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2014-03-16T00:37:16.143-07:00",
+    "CommentCount": 6,
+    "Custom": "",
+    "Description": "2b) Progressive enhancement (using select) example does not work as intended (I believe).\n\nThere are 4 options in the select list but only 3 stars available.\n\nI have experienced the same issue with some code that I am working on at the moment.\n\nI have a select field which has 5 options ranging from a rating of 1 to 5 however only 4 stars appear.\n\n```\n            <select id=\"example\"> \n                <option value=\"1\">Bad</option>\n                <option value=\"2\">Poor</option>\n                <option value=\"3\">Average</option>\n                <option value=\"4\">Good</option>\n                <option value=\"5\">Excellent</option>\n            </select>   \n```\n\nTo make it work (semi) correctly you need to add another option in (generally 0 or 6).\n\nI believe this is the line that causes the issue\n\n```\nrange.width(itemdata('starwidth') * (itemdata('max') - itemdata('min'))).height(itemdata('starheight'));\n```\n\nif itemdata('max') = 5 and  itemdata('min') = 1 then the calculation would be 5 - 1 which equals 4 and not 5 as expected. Hence only 4 stars appear.\n\nIn the example given on the site itemdata('max') = 3 and  itemdata('min') = 0  means the calculation would be 3 - 0 which equals 3.\n\nI haven't dug around enough to understand what is required to fix and whether there is a use case for fixing but thought I would raise it an issue anyway.",
+    "LastUpdatedDate": "2014-04-09T16:56:19.343-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2014-02-23T18:58:50.453-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Progressive enhancement (using select) displays incorrect amount of stars",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1828
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi,\r\n\r\nI've thought about this issue many times, but came to the conclusion that the current implementation is ok.The reason for the current implementation is that when 0 stars are chosen, and you want to get the value of the rateit plugin, it has to return a numerical value, in your case it will return 1, since that is the lowest possible value. So 0 stars in your case is 1/\"Bad\". I know that the problem with this implementation is , that one cannot give a 0 star rating (you cannot click on 0 stars, and the reset button logically doesn't rate an item to 0. So the first select option is for \"default\" value use only.\r\n\r\nIf I would implement this like you said, then what will be the value of 0 stars? I guess it will be explicitly set, and I didn't like that, since the whole plugin works kind of implicitly. And everywhere in the plugin we use the min value parameter implicitly, and in your proposal there would be a \"virtual\" min value, which would cause confusion.\r\n\r\nSorry for the rant, just wanted to show you my thoughts on the issue. It is an open discussion, and I'm all open to persuasion.\r\n\r\nGidon \r\n\r\n\r\n\r\n\r\n\r\n",
+      "PostedDate": "2014-02-24T06:50:13.933-08:00",
+      "Id": 141119
+    },
+    {
+      "Message": "Hi Gidon,For my use case the issue isn't so much to do with 0 but rather that we didn't have a 0 value available as an option since we don't won't to allow users to select it (meaning additional client side validation). \r\n\r\nOriginally, I had used the range control which was fine... but backwards compatibility means values being entered weren't within the required range when displayed on a out of date browser. Hence the change to a select control.\r\n\r\nI am taking a look at the code at the moment and it would appear that the values could be sourced elsewhere, say from span/div that already has the min/max settings and with the addition of an attribute of data-rateit-override I can determine the correct values to use.\r\n\r\nHowever, it auto selects the first star which whilst theoretically correct, probably doesn't provide for the best UI experience.\r\n\r\n\r\n\r\n",
+      "PostedDate": "2014-02-24T20:45:36.257-08:00",
+      "Id": 141120
+    },
+    {
+      "Message": "I am a bit busy the next week or so, I will certainly look into an override parameter. Guess by somewhere next week I should have a version containing this fix.",
+      "PostedDate": "2014-03-04T07:34:46.98-08:00",
+      "Id": 141121
+    },
+    {
+      "Message": "Resolved with changeset 36409: When using SELECT box backingfield one can now override the min value (not take it from the backingfield)\n\nSaved everything with Unix LF line ending.",
+      "PostedDate": "2014-03-16T00:37:16.143-07:00",
+      "Id": 141122
+    },
+    {
+      "Message": "I fixed it in version 1.0.21\r\n\r\nJust add to your rateit div the data-rateit-min attribute, and set your min value. \r\n\r\n",
+      "PostedDate": "2014-03-16T00:37:49.58-07:00",
+      "Id": 141123
+    },
+    {
+      "Message": "Thanks a bunch for this change gidon.",
+      "PostedDate": "2014-04-09T16:56:19.343-07:00",
+      "Id": 141269
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "I was a bit to soon with my remark.\n\nThis is the way that source mapping comments are made. \nI suggest you either alter your bundling code, or strip the sourcemapping code from rateit manually.",
+    "ClosedDate": "2013-11-07T04:46:01.913-08:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Hi\nThis comment in jquery.rateit.min.js creates a problem when this file is compressed together other .js files\n//@ sourceMappingURL=jquery.rateit.min.js.map\nall jquery plugin are blocked\ninstead if you use this mode all is ok\n/* @ sourceMappingURL=jquery.rateit.min.js.map */\n\nCan you change this comment?\nthanks\n\nbyeeeee",
+    "LastUpdatedDate": "2013-11-07T04:46:01.913-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-10-15T11:26:45.547-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "The comment in jquery.rateit.min.js creates a problem when this file is compressed together other .js files",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1680
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "this editor has removed the asterisks aboveyou should use the multi line comments",
+      "PostedDate": "2013-10-15T11:31:20.127-07:00",
+      "Id": 141094
+    },
+    {
+      "Message": "Thank you for reporting the issue. I will update it with the next release.",
+      "PostedDate": "2013-10-21T07:52:25.04-07:00",
+      "Id": 141095
+    }
+  ]
+}

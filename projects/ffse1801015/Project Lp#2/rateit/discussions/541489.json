@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1231365",
+    "ThreadId": "541489",
+    "Html": "Hi again,\r<br />\nIs there any way to use icon fonts instead of images?\r<br />\nWe want to be able to change size and color at any time, that is why icon fonts seem a great solution. However there is no real repeatability possible (via css) with icon fonts...\r<br />\nHave thought about this?\r<br />\nThx and cheers,\r<br />\nAndrej<br />\n",
+    "PostedDate": "2014-04-07T08:32:30.063-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231453",
+    "ThreadId": "541489",
+    "Html": "You can use icons fonts through SVG, see example 7c\r<br />\n<a href=\"http://www.radioactivethinking.com/rateit/example/example.htm#ex_7c\" rel=\"nofollow\">http://www.radioactivethinking.com/rateit/example/example.htm#ex_7c</a><br />\n",
+    "PostedDate": "2014-04-07T10:50:26.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231696",
+    "ThreadId": "541489",
+    "Html": "I see what you mean.\r<br />\n<br />\nBut for practical purposes real icon fonts enable you to change color and size of the icon. This means it scales perfectly on all devices and you can customize your colors any time with css. No need to change the svg.\r<br />\n<br />\nI posted on the other thread, so I will have a solution ready the next couple of days. <br />\n",
+    "PostedDate": "2014-04-08T01:37:13.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231750",
+    "ThreadId": "541489",
+    "Html": "When I started this project in CodePlex they didn't support Git yet. \r<br />\nI believe the way the you can add code is to use the &quot;Upload Path&quot; button in the source control section.\r<br />\n<br />\nThank you for contributing!\r<br />\n<br />\nGidon<br />\n",
+    "PostedDate": "2014-04-08T03:41:03.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231753",
+    "ThreadId": "541489",
+    "Html": "I just posted a request to change the source control from TFS to Git, but I guess this will take some time, till then you can use the Upload Patch function.<br />\n",
+    "PostedDate": "2014-04-08T03:43:50.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

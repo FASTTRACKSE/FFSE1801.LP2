@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1226959",
+    "ThreadId": "540218",
+    "Html": "Hello, I would like to use RateIt plugin to allow user for choosing one of three values.\r<br />\nEach value should be represented with a different icon.\r<br />\nWhen value 1 is selected then only the first icon should be highlighted and the rest should remain gray. And when value 3 is selected then only the third icon should be highlighted.\r<br />\nWhat should I do to achieve such effect with RateIt?<br />\n",
+    "PostedDate": "2014-03-26T08:41:22.533-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1231341",
+    "ThreadId": "540218",
+    "Html": "RateIt doesn't support that out of the box.\r<br />\n<br />\nYet, if you only support whole stars (step = 1), then the CSS rule would probably do the trick.<br />\n<div style=\"color:Black;background-color:White;\"><pre>\r\n<span style=\"color:#A31515;\">.rateit .rateit-selected </span>{\n<span style=\"color:Red;\">background-position</span>: <span style=\"color:Blue;\">right -16px</span>;\n<span style=\"color:Red;\">background-repeat</span>: <span style=\"color:Blue;\">no-repeat</span>;\n}\r\n</pre></div>",
+    "PostedDate": "2014-04-07T07:59:19.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

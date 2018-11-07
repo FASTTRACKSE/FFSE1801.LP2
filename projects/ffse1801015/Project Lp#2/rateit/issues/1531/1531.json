@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Following the naming of the js file, I would suggest renaming rateit.css to jquery.rateit.css",
+    "LastUpdatedDate": "2013-04-11T08:00:15.6-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-04-10T08:28:10.573-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "rename rateit.css to jquery.rateit.css",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1531
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "You are right about the naming convention. \r\n\r\nI'm just a bit hesitant performing this change right now, since it is breaking change, and the low severity of the issue does not justify the breaking impact it has.\r\n\r\nI do think when other breaking changes come out, I will add this one as well.\r\n\r\nWhat is your opinion?",
+      "PostedDate": "2013-04-11T07:27:17.033-07:00",
+      "Id": 141082
+    },
+    {
+      "Message": "Totally agree. This can wait for v2.",
+      "PostedDate": "2013-04-11T08:00:15.6-07:00",
+      "Id": 141083
+    }
+  ]
+}

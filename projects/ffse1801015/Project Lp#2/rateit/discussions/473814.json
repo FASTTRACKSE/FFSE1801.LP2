@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1136063",
+    "ThreadId": "473814",
+    "Html": "i am trying to insert rating value into my database , but i am not able to insert the value of rating into database .<br />\n",
+    "PostedDate": "2013-12-15T02:22:12.383-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1197401",
+    "ThreadId": "473814",
+    "Html": "Hi neildhakal,<br />\n<br />\nWell, after do a rate, you need to call a PHP file with some parameters to write on your database.<br />\n<br />\nHere the sample code:<br />\n<br />\n<strong>JS FILE</strong><br />\n<pre><code>$('.ratingContainer .rateit')\n.rateit({ max:5, step: 1 , min:0 })\n.bind('rated reset', function (e) \n{\n\n     var ri = $(this);\n     var voteValue = ri.rateit('value');\n     var localID = ri.data('productid');\n     var localName = ri.data('productname');\n\n     ri.rateit('readonly', false);\n\n     $.ajax({\n         url: 'rate.php',\n         data: { localID: localID, voteValue: voteValue, localName: localName },\n         type: 'POST',\n         success: function (data) {\n            $('#responseRate'+localID).show();\n         }               \n     });\n});\n</code></pre>\n\n<strong>RATE.PHP file:</strong><br />\n<pre><code>&lt;?php include 'db.php'; ?&gt;\n&lt;?php\nif(!empty($_POST['localID']) &amp;&amp; !empty($_POST['voteValue']) &amp;&amp; !empty($_POST['localName'])){\n\n    $localID = $_POST['localID'];\n    $voteValue = $_POST['voteValue'];\n    $localName = $_POST['localName'];\n\n    $insert = &quot;insert into vote (voteValue,localID,localName) values ('{$voteValue}','{$localID}','{$localName}')&quot;;\n    mysql_query(&quot;SET NAMES utf8&quot;);\n    $result = mysql_query($insert);\n\n    if($result){\n        echo &quot;success&quot;; \n    } else {\n        echo &quot;error&quot;;\n    }\n\n} else {\n    echo &quot;error&quot;;   \n}\n\nexit;</code></pre>\n\n?&gt;<br />\n",
+    "PostedDate": "2014-01-25T10:55:38.83-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

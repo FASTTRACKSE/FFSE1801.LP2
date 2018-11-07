@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1067210",
+    "ThreadId": "449729",
+    "Html": "Is it possible to set the value of the rateit higher than the number of stars?  I know this sounds weird at first, but imagine you had server-side data that you were displaying via rate-it.  This data  has ratings with values between 1 and 100, but on the client side you only want to show a 5-star representation.  This could be worked around by converting the 100 point scale to a 5 point scale, but I wondered if there was an easier way built into the plugin.\r<br />\n<br />\nThis would also make it possible to toggle between a &quot;star rating&quot; mode where your star-rating is saved on a 100-point scale (3 stars = 60 points) and a backing textbox input field where you could manually enter a number.  From the example, however, it looks like the backing field has to match the exact value of the number of stars, though.\r<br />\n<br />\nThanks,\r<br />\nDaniel<br />\n",
+    "PostedDate": "2013-07-11T12:41:47.177-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1070288",
+    "ThreadId": "449729",
+    "Html": "\r\n<div>It is indeed not possible. Although you could create it yourself: don't configure rateit with a backing field, manage it yourself by binding to the rate event.</div>\r\n<div>On each rating you set the value of the backing field using some multiplier.\r\n<br>\r\n<br>\r\nSent from my iPhone</div>\r\n<div><br>\r\n</div>\r\n",
+    "PostedDate": "2013-07-18T21:01:52.92-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

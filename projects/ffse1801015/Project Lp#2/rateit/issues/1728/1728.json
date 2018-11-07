@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2013-11-13T01:29:15.26-08:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "please update your source .js file to include the data-role=\"none\" attribute when you construct your internal <button . This will keep a fantom button from appearing above your control when used with jquery mobile.\n\nThanks! Great control!",
+    "LastUpdatedDate": "2013-11-13T01:29:15.26-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "rateit",
+    "ReportedDate": "2013-11-12T10:47:04.097-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "please include simple fix for jquery mobile",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1728
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 34099: Added data-role on button",
+      "PostedDate": "2013-11-13T01:29:15.26-08:00",
+      "Id": 141099
+    }
+  ]
+}

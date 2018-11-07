@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project Lp#2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="pageDulich.css"/>
+    <link rel="shortcut icon" href="images/tải xuống.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icon/fontawesome-free-5.4.2-web/css/all.css">
+    <link rel="stylesheet" href="aos-master/demo/css/styles.css" />
+    <link rel="stylesheet" href="aos-master/dist/aos.css" />
+    <script src="js/jquery-3.3.1.min.js">
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+    <script>
+        /*Scroll to top when arrow up clicked BEGIN*/
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if (height > 100) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
+        });
+        $(document).ready(function() {
+            $("#back2Top").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+
+        });
+        /*Scroll to top when arrow up clicked END*/
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    </script>
+    <i id="back2Top" title="Back to top" class="fa fa-arrow-up"></i>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="border:none">
+        <div id="menu">
+            <div id="container">
+                <div class="container-fluid container1" style="padding:0">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand pp" href="Lp2.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"  href="#" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="900">Tin tức</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageTintuc_Tintuc.html">Tin tức</a></li>
+                                <li><a href="pageTintuc_Camnang.html">Cẩm nang du lịch</a></li>
+                                <li><a href="pageTintuc_Kinhnghiem.html">Kinh nghiệm du lịch</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="" href="pageLehoi&Sukien.html" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">Sự kiện & Lễ hội</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1100">Du lịch</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageDulich_Dulichtrongnuoc.html">Du lịch trong nước</a></li>
+                                <li><a href="pageDulich_Dulichnuocngoai.html">Du lịch nước ngoài</a></li>
+                                <li><a href="#">Du lịch tự chọn</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1200">Khuyến mại</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageKhuyenmai_thu.html">Khuyến mại Thu 2018</a></li>
+                                <li><a href="pageKhuyenmai_masterCard.html">Khuyến mại MasterCard</a></li>
+                                <li><a href="#">Mua tour trả chậm 0%</a></li>
+                                <li><a href="#">Khuyến mại Vietinbank</a></li>
+                                <li><a href="#">Khuyến mại VNPay-QRCode</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1300">Liên hệ</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="pageLienhe.html">Liên hệ</a></li>
+                                <li><a href="https://www.fasttrack.edu.vn/" target="_blank">Thông tin chủ đầu tư</a></li>
+                                <li><a href="CV/CV.html" target="_blank">Thông tin người phát triển</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="slide1" data-aos="zoom-in-down">
+            <script src="js/jssor.slider.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 900,
+              // $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            cursor: grabbing;
+        }
+
+        /*@keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }*/
+        
+        /*jssor slider bullet skin 032 css*/
+        /*.jssorb032 {position:absolute;}*/
+        .jssorb032 .i {position:absolute;cursor:pointer;}
+        .jssorb032 .i .b {fill:#fff;fill-opacity:0.1;
+        					stroke:#000;stroke-width:1200;height: 10px;width: 10px;
+        					stroke-miterlimit:10;stroke-opacity:0.25;}
+        .jssorb032 .i:hover .b {fill:#fefefe;fill-opacity:.6;stroke:#fff;	
+        						stroke-opacity:.35;}
+        .jssorb032 .iav .b {fill:#fefefe;fill-opacity:1;stroke:#fff;
+        						stroke-opacity:.35;}
+        .jssorb032 .i.idn {opacity:.3;}
+        
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fefefe;stroke-width:1000;
+        				stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="
+        cursor: pointer;
+    	position:relative;
+    	margin:0 auto;top:0px;left:0px;width:900px;height:435px;
+    	overflow:hidden;visibility:hidden;z-index: 1">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="	
+        	position:absolute;
+        	top:0px;left:0px;width:100%;height:100%;
+        	text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:10px;height:10px;
+            " src="../svg/loading/static-svg/spin.svg" />
+        </div>
+        <div data-u="slides" style="
+        	cursor:grab;position:relative;
+        	top:0px;left:0px;width:900px;height:435px;	
+        	overflow:hidden;z-index: 1">
+            <div>
+                <img data-u="image" src="images/sl_181015_Switzerland_1920x570.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/mountain-peak-stars-sky-night-light-snow.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/43753410_817251248630772_6309530777159729152_n.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/bo-hinh-nen-may-tinh-4k-cuc-dep-3.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/103068.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/hinh-nen-phong-canh-4k-18.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/662e474ef4fbb229cea1deba23640530.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb032" style="
+        	position:absolute;
+        	bottom:25px;right:20px;"
+        	data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="
+            		width:20px;height:20px;">
+                <svg viewBox="0 0 16000 16000" style="
+                	position:absolute;
+                	top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="
+        	width:40px;height:80px;top:0px;left:25px;" 
+        	data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewBox="0 0 16000 16000" style="
+            	position:absolute;
+            	top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="
+        	width:40px;height:80px;top:0px;right:25px;" 
+        	data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewBox="0 0 16000 16000" style="
+            	position:absolute;
+            	top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+    </div>
+    <div id="slide2">  
+    </div>
+    <div id="wrapper">
+        <div id="danh_muc">
+            <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-sm-3 col-xs-6 muc">
+                <div class="border1 border" data-aos="zoom-out-up">
+                    <center><img src="images/i-c1.png " height="65" width="65"></center>
+                    <div class="tieu_de">
+                        <center><p>TÌM TOUR</p>
+                    </div>
+                    <center><b class="mot">TRONG NƯỚC</b>
+                </div>
+            </div>
+            <div class="muc col-lg-3 col-md-3 col-sm-3 col-sm-6 col-sm-6 col-xs-6">
+                <div class="border2 border" data-aos="zoom-out-up">
+                    <center><img src="images/i-c2.png" height="65" width="65">
+                    <div class="tieu_de">
+                        <center><p>TÌM TOUR</p>
+                    </div>
+                    <center><b class="hai">TRONG NƯỚC</b>
+                </div>
+            </div>
+            <div class="muc col-lg-3 col-md-3 col-sm-3 col-sm-6 col-sm-6 col-xs-6">
+                <div class="border3 border" data-aos="zoom-out-up">
+                    <center><img src="images/i-c3.png" height="65" width="65"></center>
+                    <div class="tieu_de">
+                        <center><p>DU LỊCH</p>
+                    </div>
+                    <center><b class="ba">TRONG NƯỚC</b>
+                </div>
+            </div>
+            <div class="muc col-lg-3 col-md-3 col-sm-3 col-sm-6 col-sm-6 col-xs-6">    
+                <div class="border4 border" data-aos="zoom-out-up">
+                    <center><img src="images/i-c4.png" height="65" width="65"></center>
+                    <div class="tieu_de">
+                        <center><p>TÌM KIẾM</p>
+                    </div>
+                    <center><b class="bon">TRONG NƯỚC</b>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="title">
+        <div class="col-lg-12 col-xs-12 img" style="background-color: #ffffff" data-aos="fade-down-right">
+            <div class="col-lg-4 col-xs-12" style="padding:0">
+                <img src="images/19570895728_c5f223d218_b.jpg">
+            </div>
+            <div class="col-lg-8 col-xs-12">
+                <h4><a href="#">Du lịch trong nước</a></h4>
+                <p class="mot"></p>
+                <p>Du lịch trong nước luôn là lựa chọn tuyệt vời. Đường bờ biển dài hơn 3260km, những khu bảo tồn thiên nhiên tuyệt vời, những thành phố nhộn nhịp, những di tích lịch sử hào hùng, nền văn hóa độc đáo và hấp dẫn, cùng một danh sách dài những món ăn ngon nhất thế giới, Việt Nam có tất cả những điều đó. Với lịch trình dày, khởi hành đúng thời gian cam kết, Vietravel là công ty lữ hành uy tín nhất hiện nay tại Việt Nam, luôn sẵn sàng phục vụ du khách mọi lúc, mọi nơi, đảm bảo tính chuyên nghiệp và chất lượng dịch vụ tốt nhất thị trường.</p>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="trang" class="col-lg-12 col-xs-12">
+            <center><h1>Danh sách tour du lịch trong nước</h1></center>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Đà Lạt - Rừng Lá Phong - Đồi Chè Cầu Đất - Chuyến Tàu Cổ - Mùa Hoa Dã Quỳ (Khách sạn 3* cao cấp. Tour Tiêu Chuẩn) - Chương trình mới">
+                    <img src="images/W020180814617731727078.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Đà Lạt - Rừng Lá Phong - Đồi Chè Cầu Đất - Chuyến Tàu Cổ - Mùa Hoa Dã Quỳ (Khách sạn 3* cao cấp. Tour Tiêu Chuẩn) - Chương trình mới">
+                    <h4><a href="#" class="mot">Đà Lạt - Rừng Lá Phong - Đồi Chè Cầu Đất - Chuyến Tàu Cổ - Mùa Hoa Dã Quỳ (Khách sạn 3* cao cấp. Tour Tiêu Chuẩn) - Chương trình mới</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 4</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 01/11/2018 07:40</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 1</p>
+                    </div>
+                    </div>
+                    <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p>
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">2,790,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Ninh Chữ - Vườn Nho - Đảo Bình Hưng - Thưởng thức Tôm Hùm (Khách Sạn 3*. Tour Tiết Kiệm)">
+                    <img src="images/du-lich-Ninh-Thuan-4.png"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Ninh Chữ - Vườn Nho - Đảo Bình Hưng - Thưởng thức Tôm Hùm (Khách Sạn 3*. Tour Tiết Kiệm)">
+                    <h4><a href="#" class="mot">Ninh Chữ - Vườn Nho - Đảo Bình Hưng - Thưởng thức Tôm Hùm (Khách Sạn 3*. Tour Tiết Kiệm)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 3</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 02/11/2018 06:00</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 6</p>
+                    </div>
+                    </div>
+                    <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p>
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">5,590,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Miền Tây - Châu Đốc - Rừng Tràm Trà Sư - Hà Tiên - Rạch Giá - Cần Thơ (Khách sạn 2*& 3*, Tour Tiết Kiệm)">
+                    <img src="images/images2039790_7.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Miền Tây - Châu Đốc - Rừng Tràm Trà Sư - Hà Tiên - Rạch Giá - Cần Thơ (Khách sạn 2*& 3*, Tour Tiết Kiệm)">
+                    <h4><a href="#" class="mot">Miền Tây - Châu Đốc - Rừng Tràm Trà Sư - Hà Tiên - Rạch Giá - Cần Thơ (Khách sạn 2*& 3*, Tour Tiết Kiệm)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 4</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 03/11/2018 05:30</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 5</p>
+                    </div>
+                    </div>
+                    <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p>
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">3,290,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Miền Tây - Mỹ Tho - Thới Sơn - Bến Tre - Cần Thơ (Khách sạn 4 sao , Tour Tiêu Chuẩn)">
+                    <img src="images/đờn-ca-tài-tử.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Miền Tây - Mỹ Tho - Thới Sơn - Bến Tre - Cần Thơ (Khách sạn 4 sao , Tour Tiêu Chuẩn)">
+                    <h4><a href="#" class="mot">Miền Tây - Mỹ Tho - Thới Sơn - Bến Tre - Cần Thơ (Khách sạn 4 sao , Tour Tiêu Chuẩn)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 2</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 03/11/2018 05:45</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 5</p>
+                    </div>
+                    </div>
+                    <!-- <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p> -->
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">299,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Huế - La Vang - Động Phong Nha & Thiên Đường - Bà Nà - Hội An - Đà Nẵng (Khách sạn 4&5* trọn tour. Tour Tiêu Chuẩn)">
+                    <img src="images/20180826135522.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Huế - La Vang - Động Phong Nha & Thiên Đường - Bà Nà - Hội An - Đà Nẵng (Khách sạn 4&5* trọn tour. Tour Tiêu Chuẩn)">
+                    <h4><a href="#" class="mot">Huế - La Vang - Động Phong Nha & Thiên Đường - Bà Nà - Hội An - Đà Nẵng (Khách sạn 4&5* trọn tour. Tour Tiêu Chuẩn)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 5</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 03/11/2018 06:50</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 5</p>
+                    </div>
+                    </div>
+                    <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p>
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">6,790,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Hà Nội - Lào Cai - Sapa - Chinh phục nóc nhà Đông Dương Fansipan - Yên Tử - Hạ Long - Bái Đính - Tràng An (Tour Tiết Kiệm)">
+                    <img src="images/tfd_180307063438_731882.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Hà Nội - Lào Cai - Sapa - Chinh phục nóc nhà Đông Dương Fansipan - Yên Tử - Hạ Long - Bái Đính - Tràng An (Tour Tiết Kiệm)">
+                    <h4><a href="#" class="mot">Hà Nội - Lào Cai - Sapa - Chinh phục nóc nhà Đông Dương Fansipan - Yên Tử - Hạ Long - Bái Đính - Tràng An (Tour Tiết Kiệm)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 6</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon"> Khởi hành: 04/11/2018 07:10</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 2</p>
+                    </div>
+                    </div>
+                    <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p>
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">8,590,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Đà Lạt - Giao Lưu Văn Hoá Cồng Chiêng Tây Nguyên (Khách Sạn 2*)(Tour Tiết Kiệm)">
+                    <img src="images/da-lat-dulichvietnam24h.org.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Đà Lạt - Giao Lưu Văn Hoá Cồng Chiêng Tây Nguyên (Khách Sạn 2*)(Tour Tiết Kiệm)">
+                    <h4><a href="#" class="mot">Đà Lạt - Giao Lưu Văn Hoá Cồng Chiêng Tây Nguyên (Khách Sạn 2*)(Tour Tiết Kiệm)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 3</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 06/11/2018 05:30</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 3</p>
+                    </div>
+                    </div>
+                    <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p>
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">1,890,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Miền Tây - Sa Đéc - Cần Thơ - Cà Mau - Bạc Liêu - Sóc Trăng (khách sạn 4* và 5* trọn tour) (Tour Tiêu Chuẩn)">
+                    <img src="images/du-lich-mien-tay-cung-du-lich-canh-viet.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Miền Tây - Sa Đéc - Cần Thơ - Cà Mau - Bạc Liêu - Sóc Trăng (khách sạn 4* và 5* trọn tour) (Tour Tiêu Chuẩn)">
+                    <h4><a href="#" class="mot">Miền Tây - Sa Đéc - Cần Thơ - Cà Mau - Bạc Liêu - Sóc Trăng (khách sạn 4* và 5* trọn tour) (Tour Tiêu Chuẩn)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 5</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 01/11/2018 07:40</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 4</p>
+                    </div>
+                    </div>
+                    <!-- <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p> -->
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">3,490,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Hà Nội - Tràng An: Hành Cung Vũ Lâm - Phim Trường Kong - Bái Đính (Ninh Bình) - Yên Tử - Hạ Long - Royal City (Chương trình tri ân khách hàng)">
+                    <img src="images/trang-an.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Hà Nội - Tràng An: Hành Cung Vũ Lâm - Phim Trường Kong - Bái Đính (Ninh Bình) - Yên Tử - Hạ Long - Royal City (Chương trình tri ân khách hàng)">
+                    <h4><a href="#" class="mot">Hà Nội - Tràng An: Hành Cung Vũ Lâm - Phim Trường Kong - Bái Đính (Ninh Bình) - Yên Tử - Hạ Long - Royal City (Chương trình tri ân khách hàng)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 4</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 01/11/2018 07:40</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 5</p>
+                    </div>
+                    </div>
+                    <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p>
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">5,990,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <div class="img1 col-lg-12 col-xs-12"  style="padding:0" data-aos="zoom-in-right">
+                <div class="col-lg-4 col-xs-12" style="padding:0">
+                    <button title="Buôn Ma Thuột - Thác Dray Nur - Bản Đôn - Làng Cà Phê Trung Nguyên (Khách sạn 5*. Mùa hoa dã quỳ.Tour Mua Ngay)">
+                    <img src="images/voi-ban-don_combotravel.jpg"></button>
+                </div>
+                <div class="col-lg-6 col-xs-12" style="margin-bottom:10px">
+                    <button title="Buôn Ma Thuột - Thác Dray Nur - Bản Đôn - Làng Cà Phê Trung Nguyên (Khách sạn 5*. Mùa hoa dã quỳ.Tour Mua Ngay)">
+                    <h4><a href="#" class="mot">Buôn Ma Thuột - Thác Dray Nur - Bản Đôn - Làng Cà Phê Trung Nguyên (Khách sạn 5*. Mùa hoa dã quỳ.Tour Mua Ngay)</a></h4></button>
+                    <div class="rateit" data-rateit-value="8" data-rateit-starwidth="8" data-rateit-starheight="16" data-rateit-min="0" data-rateit-max="10"  data-rateit-readonly="true"></div>
+                    <p class="mot">4.35/5 trong 409 Đánh giá</p>
+                    <div style="margin-top:15px;">
+                        <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-barcode"></i>
+                        <p class="bon">NDSGN560-075-021118XE-V</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-time"></i>
+                        <p class="bon">Số ngày: 3</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        <p class="bon">Khởi hành: 01/11/2018 07:40</p>
+                    </div>
+                    <div class="the col-lg-6 col-xs-12">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <p class="bon">Số chỗ còn nhận: 8</p>
+                    </div>
+                    </div>
+                    <!-- <p class="hai col-lg-12 col-xs-12"><span class="glyphicon glyphicon-bell"></span>GIẢM GIÁ KHI THANH TOÁN ONLINE</p> -->
+                </div>
+                <div class="col-lg-2 col-xs-12 right">
+                    <p class="nam">1,790,000 đ</p>
+                    <button class="mot col-xs-12">Chi tiết</button>
+                </div>
+            </div>
+            <center><ul class="pagination phan_trang">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul></center>
+        </div>
+    </div>
+    <div id="gioi_thieu">
+        <div class="col-lg-3 col-xs-12 gioi_thieu1">
+            <div>
+                <p class="mot">Liên hệ</p>
+                <p>190 Pasteur, Phường 6, Quận 3, Tp. HCM</p>
+                <p class="hai">Điện thoại: <p class="ba">(+84 28) 3822 8898</p></p>
+                <p class="hai">Fax: <p class="ba">(+84 28) 3822 8898</p></p>
+                <p class="hai">Email: <p class="ba">info@vietravel.com</p></p>
+                <p class="hai">Hotline: <p class="ba">1900 1839 (08h-23h)</p></p>
+                </div>
+            <div>
+                <ul>
+                    <li><a href="#">Vietravel toolbar</a></li>
+                    <li><a href="#">Chính sách riêng tư</a></li>
+                    <li><a href="#">Thỏa thuận sử dụng</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="mot">CHẤP NHẬN THANH TOÁN</p>
+                <div class="thanh_toan">
+                    <img src="images/123pay.png" class="col-lg-3 col-xs-3">
+                    <img src="images/visa.png" class="col-lg-3 col-xs-3">
+                    <img src="images/master.png" class="col-lg-3 col-xs-3">
+                    <img src="images/vnpay.jpg" class="col-lg-3 col-xs-3">
+                    <img src="images/jcb.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                    <img src="images/other3.png" class="col-lg-3 col-xs-3">
+                </div>
+            </div>
+            <div>
+                <p class="mot">ĐƯỢC ĐIỀU HÀNH BỞI</p>
+                <img src="images/logo_Vietravel.png">
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-12 gioi_thieu1">
+            <div>
+                <p class="mot">KẾT NỐI VỚI CHÚNG TÔI</p>
+                <div class="cach_hinh">
+                    <img src="images/fb.png">
+                    <img src="images/gp.png">
+                    <img src="images/tw.png">
+                    <img src="images/yt.png">
+                </div>
+            </div>
+            <div>
+                <p class="mot">NEWSLETTER</p>
+                <div class="input">
+                    <input type="text" placeholder="Email của bạn">
+                    <a href="#"><img src="images/send.png"></a>
+                </div>
+            </div>
+            <div>
+                <p class="mot">TÌM KIẾM</p>
+                <div class="input">
+                    <input type="text" placeholder="Tour du lịch, Điểm đến...">
+                    <a href="#"><img src="images/search-s.png"></a>
+                </div>
+            </div>
+            <div>
+                <p class="mot">ỨNG DỤNG DI ĐỘNG</p>
+                <div class="hinh">
+                    <div style="display:inline;margin-right: 15px;">
+                        <a href="#"><img src="images/a.png"></a>
+                        <p>Android</p>
+                    </div>
+                    <div style="display:inline">
+                        <a href="#"><img src="images/i.png"></a>
+                        <p>iOS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 gioi_thieu1">
+        <div class="col-lg-4 col-xs-6">
+            <p class="mot">TRONG NƯỚC</p>
+            <a href="#"><p>Hà Nội</p></a>
+            <a href="#"><p>Hạ Long</p></a>
+            <a href="#"><p>Ninh Bình</p></a>
+            <a href="#"><p>Quảng Bình</p></a>
+            <a href="#"><p>Lào Cai</p></a>
+            <a href="#"><p>Đà Nẵng</p></a>
+            <a href="#"><p>Qui Nhơn</p></a>
+            <a href="#"><p>Nha Trang</p></a>
+            <a href="#"><p>Phan Thiết</p></a>
+            <a href="#"><p>Đà Lạt</p></a>
+            <a href="#"><p>Vũng Tàu</p></a>
+            <a href="#"><p>Cần Thơ</p></a>
+            <a href="#"><p>Phú Quốc</p></a>
+            <a href="#"><p>Cà Mau</p></a>
+            <a href="#"><p>Kiên Giang</p></a>
+        </div>
+        <div class="col-lg-4 col-xs-6">
+            <p class="mot">TRONG NƯỚC</p>
+            <a href="#"><p>Hà Nội</p></a>
+            <a href="#"><p>Hạ Long</p></a>
+            <a href="#"><p>Ninh Bình</p></a>
+            <a href="#"><p>Quảng Bình</p></a>
+            <a href="#"><p>Lào Cai</p></a>
+            <a href="#"><p>Đà Nẵng</p></a>
+            <a href="#"><p>Qui Nhơn</p></a>
+            <a href="#"><p>Nha Trang</p></a>
+            <a href="#"><p>Phan Thiết</p></a>
+            <a href="#"><p>Đà Lạt</p></a>
+            <a href="#"><p>Vũng Tàu</p></a>
+            <a href="#"><p>Cần Thơ</p></a>
+            <a href="#"><p>Phú Quốc</p></a>
+            <a href="#"><p>Cà Mau</p></a>
+            <a href="#"><p>Kiên Giang</p></a>
+        </div>
+        <div class="col-lg-4 col-xs-6">
+            <p class="mot">DÒNG TOUR</p>
+            <a href="#"><p>Hà Nội</p></a>
+            <a href="#"><p>Hạ Long</p></a>
+            <a href="#"><p>Ninh Bình</p></a>
+            <a href="#"><p>Quảng Bình</p></a>
+            <p class="mot">THÔNG TIN</p>
+            <a href="#"><p>Lào Cai</p></a>
+            <a href="#"><p>Đà Nẵng</p></a>
+            <a href="#"><p>Qui Nhơn</p></a>
+            <a href="#"><p>Nha Trang</p></a>
+            <a href="#"><p>Phan Thiết</p></a>
+            <a href="#"><p>Đà Lạt</p></a>
+            <a href="#"><p>Vũng Tàu</p></a>
+            <p class="mot">CHỨNG NHẬN</p>
+            <img src="images/_dmca_premi_badge_5.png" style="margin-bottom:15px;">
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-12 col-xs-12 gioi_thieu2">
+        <div class="chu">
+            <p>Bản quyền của Vietravel ® 2016. Bảo lưu mọi quyền. Ghi rõ nguồn "www.travel.com.vn" ® khi sử dụng lại thông tin từ website này</p>
+            <p>Số GPKD: 0300465937 do Sở Kế Hoạch và Đầu Tư Thành Phố Hồ Chí Minh cấp ngày 27/09/2010</p>
+            <p>Giấy phép số: 239/GP-TTĐT do Cục Quản Lý Phát Thanh, Truyền Hình và Thông Tin Điện Tử cấp ngày 31/12/2008</p>
+        </div>
+        <div class="logo">
+            <img src="images/xdgfkjghdf.png">
+            <img src="images/mxfdjhkgd.png">
+            <img src="images/dsxyhlkyl.png">
+            <img src="images/ewlxgfkgjfE.gif">
+        </div>
+    </div>
+</body>
+</html>
