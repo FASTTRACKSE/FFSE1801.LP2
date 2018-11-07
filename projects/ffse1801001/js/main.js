@@ -346,11 +346,123 @@ var products = [
     img: "./img/fruit-hon-hop.jpg"
   },
   {
-    id: 6,
+    id: 60,
     category: "Food",
     name: "Gà xé",
-    price: "100000 ",
+    price: " ",
     img: "./img/fo-ga-xe.jpg"
+  },
+  {
+    id: 61,
+    category: "Food",
+    name: "Gà nướng",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 62,
+    category: "Food",
+    name: "Gà hấp hành",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 63,
+    category: "Food",
+    name: "Gà om sả",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 64,
+    category: "Food",
+    name: "Lẩu gà lá giang",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 65,
+    category: "Food",
+    name: "Cháo gà",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 66,
+    category: "Food",
+    name: "Ba chỉ nướng muối ớt",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 67,
+    category: "Food",
+    name: "Trâu xào lá trơn",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 68,
+    category: "Food",
+    name: "Trâu nướng",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 69,
+    category: "Food",
+    name: "Bò xào chua ngọt",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 70,
+    category: "Food",
+    name: "Bò xào cay",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 71,
+    category: "Food",
+    name: "Lẩu bò",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 72,
+    category: "Food",
+    name: "Bò nướng",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 73,
+    category: "Food",
+    name: "Bò hấp hành",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 74,
+    category: "Food",
+    name: "Chả cá thát lát chiên",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 75,
+    category: "Food",
+    name: "Lẩu cá thát lát",
+    price: " ",
+    img: "./img/fo-.jpg"
+  },
+  {
+    id: 76,
+    category: "Food",
+    name: "Mực hấp hành",
+    price: " ",
+    img: "./img/fo-.jpg"
   }
 ];
 
