@@ -40,7 +40,7 @@
 .brg-dt-bot {
   width: 100%;
   top: 1000px;
-  height: 1000px;
+  height: 600px;
 }
 .tiny-box-green {
   position: absolute;
@@ -93,14 +93,26 @@
   margin-left: 40px;
   font-family: "Bungee Inline", cursive;
 }
-.top-right-box button {
+.top-right-box .buy-now {
   background: #7f923b;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   margin-top: 20px;
   padding: 10px;
-  margin-left: 123px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 23%;
+}
+.back-to-menu {
+  background: #7f923b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 20px;
   border: none;
   border-radius: 10px;
   width: 23%;
