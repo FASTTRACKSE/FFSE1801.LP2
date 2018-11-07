@@ -51,7 +51,7 @@
 		</nav>
 	</div>
 	<div class="anh">
-		<img src="images/ios121.jpg">
+		<img src="images/ios121.JPG">
 	</div>
 	<div class="text">
 		<h3>iOS 12</h3>
@@ -59,7 +59,7 @@
 		<h4>iOS 12 is designed to make your iPhone and iPad experience even faster, more responsive, and more delightful. Here are the latest features and improvements in the world’s most advanced mobile operating system.</h4>
 	</div>
 	<div class="anh">
-		<img src="images/ios12x.jpg">
+		<img src="images/ios12x.JPG">
 	</div>
 	<div class="text">
 		<h3>Performance</h3>
@@ -67,7 +67,7 @@
 		<h4>Whether you’re using your iPhone or iPad, iOS has been enhanced for a faster and more responsive experience all around. Things you do all the time, like launching Camera and typing with the keyboard, happen faster than ever. And there are even more significant improvements when you’re doing a lot on your device at once. These enhancements improve performance on all supported devices, going all the way back to iPhone 5s and iPad Air.</h4>
 	</div>
 	<div class="anh">
-		<img src="images/ftios.jpg">
+		<img src="images/ftios.JPG">
 	</div>
 	<div class="text">
 		<h4>FaceTime</h4>
@@ -75,7 +75,7 @@
 		<h5>FaceTime now supports video and audio with up to 32 people at once. The tile of the person speaking gets larger automatically, so you’ll never lose track of the conversation. You can start Group FaceTime right from a group thread in Messages or join an active one at any time.</h5>
 	</div>
 	<div class="anh">
-		<img src="images/emoios.jpg">
+		<img src="images/emoios.JPG">
 	</div>
 	<div class="text">
 		<h4>Memoji</h4>
@@ -87,5 +87,29 @@
 		<p>Investors <a href="http://www.fasttrack.edu.vn">Fasttrack SE</a></p>
 		<p>Copyright © 2018 Apple Inc. All rights reserved.</p>
 	</div>
+<script type="text/javascript">
+	$('#tk').click(function(){
+    	$('.search').css('display','block');
+    	$('.nav').css('display','none');
+	});
+	$('#close').click(function(){
+    	$('.search').css('display','none');
+    	$('.nav').css('display','block');
+	});
+</script>
+<script type="text/javascript">
+	window.onscroll = function() {cuon()};
+
+	var header = document.getElementById("top-fixed");
+	var sticky = header.offsetTop;
+
+	function cuon() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+	  }
+	}
+</script>
 </body>
 </html>

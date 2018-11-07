@@ -78,6 +78,9 @@ h5 {
 .menu {
     float: left;
 }
+.slide img {
+	width: 100%;
+}
 .anh {
 	text-align: center;	
 }
