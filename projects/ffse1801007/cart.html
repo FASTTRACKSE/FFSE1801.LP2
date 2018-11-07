@@ -245,37 +245,22 @@
 			</div>
 
 
-
-
-
-		<!-- the div container o duoi -->
+		<!-- div container -->
 		</div>
 			
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="js/js.js"></script>
     <script type="text/javascript">
 
-
-
-
-
-        /* Set rates + misc */
+        // Set rates + misc 
         var taxRate = 0;
         var shippingRate = 15000; 
         var fadeTime = 100;
-
-
-        /* Assign actions */
-        // $('.product-quantity input').change( function() {
-        //   updateQuantity(this);
-        // });
+        // Assign actions 
         $(document).on("keyup", '.product-quantity input',function(){
           updateQuantity(this);
         });
@@ -288,22 +273,22 @@
         });
         $(window).ready (function () { recalculateCart(); });
 
-        /* Recalculate cart */
+        // Recalculate cart 
         function recalculateCart()
         {
           var subtotal = 0;
           
-          /* Sum up row totals */
+          // Sum up row totals 
           $('.product').each(function () {
             subtotal += parseFloat($(this).children('.product-line-price').text());
           });
           
-          /* Calculate totals */
+          // Calculate totals 
           var tax = subtotal * taxRate;
           var shipping = (subtotal > 0 ? shippingRate : 0);
           var total = subtotal + tax + shipping;
           
-          /* Update totals display */
+          // Update totals display 
           $('.totals-value').fadeOut(fadeTime, function() {
             $('#cart-subtotal').html(subtotal.toFixed(0));
             $('#cart-tax').html(tax.toFixed(0));
@@ -319,10 +304,10 @@
         }
 
 
-        /* Update quantity */
+        // Update quantity 
         function updateQuantity(quantityInput)
         {
-          /* Calculate line price */
+          // Calculate line price 
           var productRow = $(quantityInput).parent().parent();
           var price = parseFloat(productRow.children('.product-price').text());
           var quantity = $(quantityInput).val();
@@ -338,8 +323,7 @@
           });  
         }
 
-
-        /* Remove item from cart */
+        // Remove item from cart 
         function removeItem(removeButton)
         {
           /* Remove row from DOM and recalc cart total */
@@ -350,12 +334,9 @@
             recalculateCart();
           });
         }
-
+        
         // getitem   
 				// console.log(obj);
-				// document.getElementById("demo").innerHTML = obj.bookname;
-				// obj = JSON.parse(text);
-				// document.getElementById("demo").innerHTML = text1;
 				$(window).ready(function(){
 						text = localStorage.getItem("testJSON");
 						obj = JSON.parse(text);
@@ -365,9 +346,7 @@
             recalculateCart();
             }
         });
-        function canhbao(){
-  			alert("Chức năng chỉ hoạt động trên màn hình 1920 O.O!");
-  		}
+
     </script>
 
 </body>

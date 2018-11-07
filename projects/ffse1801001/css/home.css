@@ -1,0 +1,504 @@
+/**Form login**/
+a {
+  background-color: transparent;
+  color: brown;
+  font-size: 20px;
+}
+.home .background-top .container {
+  top: 150px;
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  margin-right: 200px;
+  max-width: 500px;
+  padding: 16px;
+  padding-top: 20px;
+  background-color: #f3e1ba;
+  box-shadow: 0 0 150px #f3e1ba;
+  z-index: 3;
+}
+.home .background-top .container .inpt {
+  width: 100%;
+  padding: 25px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.home .background-top .container .login {
+  background-color: #7d9238;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.home .background-top .container h1 {
+  color: #312927;
+  text-align: center;
+}
+.home .background-top .container b {
+  color: #312927;
+}
+.home .background-top .container .have-not-acc {
+  color: #312927;
+  padding-top: 5px;
+}
+.home .background-top .container img {
+  background: #7d9238;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 170px;
+  height: 170px;
+  margin-left: 150px;
+  border-radius: 50%;
+}
+
+/**Sign up**/
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for all buttons */
+.container button {
+  background-color: #7d9238;
+  color: white;
+  padding: 14px 202px;
+  margin: 8px 0;
+  opacity: 0.9;
+  border: none;
+  font-weight: bold;
+}
+.sign-up-bt {
+  background-color: #7d9238;
+  color: white;
+  padding: 14px 200px;
+  margin: 8px 0;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 1;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+.home .background-top .container-sign-up {
+  top: 300px;
+  margin: 100px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 16px;
+  padding-top: 20px;
+  background-color: #f3e1ba;
+  box-shadow: 0 0 150px #f3e1ba;
+}
+/* Add padding to container elements */
+.container-sign-up {
+  padding: 16px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1000px;
+  overflow: auto;
+  background-color: #aaa;
+  margin-top: 100px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 10%; /* Could be more or less, depending on screen size */
+}
+.checkbox {
+  width: 3%;
+  float: left;
+}
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+/**Oder link img & Slide**/
+.tiny-box-link-oder .step {
+  width: 20.1%;
+  z-index: 2;
+  margin: auto;
+  color: #312927;
+  background: #f5eee9;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  top: 954px;
+  left: 460px;
+}
+.tiny-box-link-oder .step:hover {
+  background: #312927;
+  color: #f5eee9;
+}
+.tiny-box-link-profile .qt {
+  width: 35%;
+  z-index: 2;
+  margin: auto;
+  color: #312927;
+  background: #f5eee9;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  top: 954px;
+  left: 843px;
+}
+.tiny-box-link-profile .qt:hover {
+  background: #312927;
+  color: #f5eee9;
+}
+.link-oder {
+  position: absolute;
+  width: 381px;
+  height: 450px;
+  z-index: 1;
+  top: 1002px;
+  left: 460px;
+}
+.link-oder .coffee-oder {
+  position: absolute;
+  width: 320px;
+  height: 335px;
+  z-index: 2;
+  top: 150px;
+  left: 39px;
+}
+.link-oder .nhan-oder {
+  position: relative;
+  width: 380px;
+  height: 450px;
+  top: 0px;
+  left: 0px;
+}
+.oder-title {
+  position: absolute;
+  width: 350px;
+}
+.oder-title p {
+  position: absolute;
+  color: #312927;
+  font-size: 20px;
+  font-weight: bold;
+}
+.steps-top {
+  top: -440px;
+  left: 125px;
+}
+.steps-under {
+  top: -415px;
+  left: 90px;
+}
+/**Slide home**/
+.slide-home {
+  position: relative;
+  width: 668px;
+  height: 450px;
+  z-index: 1;
+  top: -400px;
+  left: 790px;
+}
+.slide {
+  overflow: hidden;
+  width: 668px;
+  height: 450px;
+  float: left;
+  position: absolute;
+  left: 50px;
+}
+.swiper-slide img {
+  width: 668px;
+  height: 450px;
+  float: left;
+}
+.hot-news a p {
+  color: #b81f32;
+  margin-left: 255px;
+  margin-top: -45px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.hot-news p {
+  color: #312927;
+  font-size: 15.5px;
+  font-weight: bolder;
+}
+.hot-news .loi-moi-1 {
+  margin: 0;
+  margin-left: 75px;
+}
+.hot-news .loi-moi-2 {
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 18px;
+}
+.hot-news .loi-moi-3 {
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 67px;
+}
+
+/**Hot News**/
+.hot-news {
+  background: #f3dfba;
+  position: absolute;
+  width: 381px;
+  height: 400px;
+  z-index: 1;
+  top: 1452px;
+  left: 460px;
+}
+.uu-dai-coffee {
+  width: 342px;
+  height: 257px;
+  padding-left: 10px;
+  top: 1437px;
+  left: 460px;
+  padding-top: 20px;
+}
+.part-news-1 {
+  background: #fff4f8;
+  position: absolute;
+  width: 335px;
+  height: 400px;
+  z-index: 1;
+  top: 1452px;
+  left: 841px;
+}
+.part-news-2 {
+  background: #fbfcfc;
+  position: absolute;
+  width: 332px;
+  height: 400px;
+  z-index: 1;
+  top: 1452px;
+  left: 1176px;
+}
+.part-news-2 img {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+}
+.part-news-2 a p {
+  color: #8498ad;
+  margin-left: 15px;
+  font-weight: bolder;
+  font-size: 23px;
+  margin-bottom: 50px;
+}
+.part-news-2 a b {
+  color: #8498ad;
+  margin-left: 115px;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-style: solid;
+  border-width: 2px;
+}
+.anh-rong {
+  width: 100%;
+  opacity: 0.3;
+}
+.original {
+  position: absolute;
+  color: #b81f32;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 80px;
+  left: 745px;
+}
+.tim-hieu-them {
+  position: absolute;
+  color: #b81f32;
+  border-style: solid;
+  border-width: 2.5px;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px;
+  text-align: center;
+  top: 2030px;
+  left: 915px;
+}
+.newspaper {
+  width: 335px;
+  height: 400px;
+}
+/**Ensure**/
+#more-infor {
+  margin-top: 398px;
+  background: #fff;
+  width: 100%;
+  height: 1385px;
+  z-index: 1;
+}
+#more-infor .ensure {
+  font-family: "Charmonman", cursive;
+  color: #312927;
+  float: right;
+  font-size: 30px;
+  margin-right: 0;
+  margin-top: 65px;
+  padding-bottom: 10px;
+}
+#more-infor .name-cup {
+  color: #312927;
+  font-family: "Caveat", cursive;
+  margin-top: 335px;
+  margin-left: 230px;
+  font-size: 25px;
+}
+#more-infor .arrow-1 {
+  float: left;
+  margin-left: 180px;
+  width: 200px;
+  height: 170px;
+  margin-top: -95px;
+  z-index: 5;
+}
+#more-infor .coffee-cup-2 {
+  float: right;
+  margin-right: 110px;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.ensure-left-box {
+  background: #fff4f8;
+}
+.ensure-right-box {
+  background: #fff4f8;
+  padding-left: 130px;
+  padding-top: 35px;
+}
+
+/**Tiny Menu**/
+/* Style the tab */
+.ensure-right-box .tab {
+  overflow: hidden;
+  border: 1px solid #fff4f8;
+  background-color: #fff4f8;
+}
+
+/* Style the buttons inside the tab */
+.ensure-right-box .tab button {
+  background-color: #fff4f8;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 1s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+.tabcontent {
+  display: none;
+  padding: 12px 8px;
+  padding-right: 145px;
+}
+.tabcontent h3 {
+  margin-top: 0;
+  color: #731a1a;
+}
+.tabcontent p {
+  color: #312927;
+  text-align: justify;
+}
+.title-sm-menu {
+  color: #312927;
+}
+.title-sm-menu:hover {
+  color: #b81f32;
+}
+.coffee-with-friends {
+  position: absolute;
+  width: 520px;
+  height: 260px;
+  top: 2480px;
+  padding-bottom: 0;
+  left: 1380px;
+}
+.link-to-menu {
+  color: #b81f32;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 330px;
+  padding: 10px;
+}

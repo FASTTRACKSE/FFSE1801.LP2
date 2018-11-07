@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang chủ - Tình Coffee & Restaurant</title>
+    <link rel="shortcut icon" type="image/png" href="/logo.ico.lnk" />
+    <link rel="stylesheet" href="./css/normalize (1).css">
+    <link rel="stylesheet" href="./css/styletotal.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/logo.ico">
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./plugin/swiper/css/swiper.min.css">
+
+</head>
+
+<body>
+    <div id="cafe">
+        <div class="home">
+            <div class="background-top">
+                <img src="./img/hello.jpg" width="100%" height="1000px" position="relative" alt="">
+                <div class="row">
+                    <div class="col-5 tiny-box-link-oder">
+                        <a href="./Oder.html" style="text-decoration:none">
+                            <p class="step">6 Bước Oder Thức Uống Và Đồ Ăn</p>
+                        </a>
+                    </div>
+                    <div class="col-7 tiny-box-link-profile">
+                        <a href="./Profile.html" style="text-decoration:none">
+                            <p class="qt">Chúng Tôi Quan Tâm Đến Chất Lượng Và Cảm Nhận Của Bạn</p>
+                        </a>
+                    </div>
+                </div>
+                <form action="action_page.php">
+                    <div class="container">
+                        <img src="./img/use-img.png" alt="">
+                        <h1>ĐĂNG NHẬP</h1>
+                        <label for="usename"><b>Email</b></label>
+                        <input class="inpt" type="text" placeholder="Nhập địa chỉ Email">
+                        <label for="passwork"><b>Mật khẩu</b></label>
+                        <input class="inpt" type="password" value="FakePSW" id="myInput" placeholder="Nhập Mật khẩu"><br>
+                        <input type="checkbox" onclick="myFunction()">Hiện mật khẩu <br>
+                        <button type="submit" class="login">Đăng nhập</button>
+                        <p class="have-not-acc">Bạn chưa có tài khoản?</p>
+
+                        <!--Sign up-->
+                        <button onclick="document.getElementById('id01').style.display='block'" class="sign-up-bt"
+                            style="width:auto;">Đăng
+                            ký</button>
+                        <div id="id01" class="modal">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <form class="modal-content" action="/action_page.php">
+                                <div class="container-sign-up">
+                                    <h1>ĐĂNG KÝ</h1>
+                                    <p>Hãy điền đầy đủ các thông tin bên dưới để tạo một tài khoản mới</p>
+                                    <hr>
+                                    <label for="email"><b>Email</b></label>
+                                    <input class="inpt" type="text" placeholder="Nhập địa chỉ Email" name="email"
+                                        required>
+                                    <label for="psw"><b>Mật khẩu</b></label>
+                                    <input class="inpt" type="password" placeholder="Nhập mật khẩu" name="psw" required>
+                                    <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                                    <input class="inpt" type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat"
+                                        required>
+                                    <label>
+                                        <input class="checkbox" type="checkbox" checked="checked" name="remember" class="check">
+                                        Ghi nhớ cho lần đăng nhập kế tiếp
+                                    </label>
+                                    <p>Để tạo một tài khoản mới, bạn có đồng ý với các <a href="./security.html" style="color:dodgerblue">Điều
+                                            khoản bảo mật</a> của chúng tôi không?</p>
+                                    <div class="clearfix">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                            class="cancelbtn">Hủy
+                                            bỏ</button>
+                                        <button type="submit" class="signupbtn">Đồng ý</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="canvas">
+                <div class="tiny-line">
+                    <div class="row">
+                        <div id="triangle-bottomleft"></div>
+                        <a href="./Project.html" class="name" title="Tình Coffee & Restaurant" target="_self"><b>TÌNH
+                                COFFEE
+                                &
+                                RESTAURANT</b></a>
+                        <div class="mrloader">
+                            <div class="inner-loader">
+                                <div class="side"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="triangle-topright"></div>
+                    <div class="search-box">
+                        <input class="search-txt" type="text" name="" placeholder="Tìm sản phẩm, dịch vụ, liên hệ, đặt hàng,...">
+                        <a class="search-btn" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="./MyCart.html" title="My Cart" target="_blank"><i class="icon-cart fas fa-cart-plus"></i></a>
+                        <p>0</p>
+                    </div>
+                </div>
+
+                <!--menu-->
+                <div id="menu">
+
+                    <ul>
+                        <div class="slogan">
+                            <b>Bạn Cô Đơn ư? Hãy Đến Với Chúng Tôi Nào!</b>
+                        </div>
+                        <li><a href="./Project.html" title=" Tình Coffee & Retaurant" target="_self" style="text-decoration: underline">TRANG
+                                CHỦ</a></li>
+                        <li><a href="./Profile.html" title="About" target="_self">GIỚI THIỆU</a></li>
+                        <li><a href="./Menu.html" title="Menu" target="_self">THỰC ĐƠN</a></li>
+                        <li><a href="./New&Sale.html" title="News & Sale" target="_self">TIN TỨC & ƯU ĐÃI</a></li>
+                        <li><a href="./Place.html" title="Place" target="_self">CỬA HÀNG</a></li>
+                        <li><a href="./Recruitment.html" title="Employee Recruitment Information" target="_self">TUYỂN
+                                DỤNG</a></li>
+                        <li><a href="./Contact.html" title="Contact" target="_blank">LIÊN HỆ</a></li>
+                        <li class="icon"><a href="#" title="Facebook" target="_blank"><i class="fb fab fa-facebook"></i></a></li>
+                        <li class="icon"><a href="#" title="Instagram" target="_blank"><i class="insta fab fa-instagram"></i></a></li>
+                        <li class="icon"><a href="#" title="Youtube" target="_blank"><i class="youtu fab fa-youtube"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!--không biết đặt tên chi @@-->
+            <div id="more-infor">
+                <!--Slide & Oder-->
+                <div class="row">
+                    <div class="col-5 link-oder">
+                        <img class="coffee-oder" src="./img/coffee-oder.png" alt="">
+                        <img class="nhan-oder" src="./img/pink-pink.jpg" alt="">
+                        <div class="oder-title">
+                            <a href="./Oder.html" style="text-decoration:none;">
+                                <p class="steps-top">6 BƯỚC ODER</p>
+                                <p class="steps-under">VỪA NHANH VỪA DỄ!</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-7 slide-home" styde="width:670px;">
+                        <div class="swiper-container slide">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/anh-slide-home-01.jpg" alt="" border="0" /></div>
+                                <div class="swiper-slide"><img src="./img/anh-slide-home-02.jpg" alt="" border="0" /></div>
+                                <div class="swiper-slide"><img src="./img/anh-slide-home-03.jpg" alt="" border="0" /></div>
+                                <div class="swiper-slide"><img src="./img/anh-slide-home-04.jpg" alt="" border="0" /></div>
+                                <div class="swiper-slide"><img src="./img/anh-slide-home-05.jpg" alt="" border="0" /></div>
+                                <div class="swiper-slide"><img src="./img/anh-slide-home-06.jpg" alt="" border="0" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 hot-news">
+                        <img class="uu-dai-coffee" src="./img/coffee-flowers.png" alt="">
+                        <a href="./New&Sale.html" style="text-decoration:none">
+                            <p>TIN TỨC</p>
+                        </a>
+                        <p class="loi-moi-1">Cùng nhâm nhi tách cà phê thơm ngon</p>
+                        <p class="loi-moi-2">và cập nhật những tin tức mới nhất trong ngày</p>
+                        <p class="loi-moi-3">cùng Tình Coffee & Restaurant ngay nào!</p>
+                    </div>
+                    <div class="col-5 part-news-1">
+                        <iframe class="newspaper" src="https://vnexpress.net/"></iframe>
+                    </div>
+                    <div class="col-5 part-news-2">
+                        <img src="./img/bieu-do.png" alt="">
+                        <a href="./Inventor.html" style="text-decoration:none">
+                            <p>CẬP NHẬT THÊM THÔNG TIN VỀ NHÀ ĐẦU TƯ VÀ PHÁT TRIỂN WEB</p>
+                        </a>
+                        <a href="./Inventor.html" style="text-decoration:none"><b>Tại đây</b></a>
+                    </div>
+                    <img class="anh-rong" src="./img/anh-dai-nbgr.png" alt="">
+                    <p class="original">Chiết xuất từ những hạt cà phê tươi nguyên</p>
+                    <a class="tim-hieu-them" href="./Menu.html" style="text-decoration:none">Tìm hiểu thêm</a>
+                </div>
+
+                <!--Ensure-->
+                <div class="row">
+                    <div class="col-5 ensure-left-box">
+                        <p id="come" class="ensure">Chúng tôi đem đến những thức uống hảo hạng</p>
+                        <img class="coffee-cup-2" src="./img/coffee-cup-2.jpg" alt="">
+                        <p class="name-cup">Love coffee cups</p>
+                        <img class="arrow-1" src="./img/arrow-1.png" alt="">
+                    </div>
+
+                    <div class="col-7 ensure-right-box">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'Coffee')">
+                                <p class="title-sm-menu">Coffee</p>
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'Tea')">
+                                <p class="title-sm-menu">Trà nguyên chất</p>
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'Drink')">
+                                <p class="title-sm-menu">Thức uống giải nhiệt</p>
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'Fruit')">
+                                <p class="title-sm-menu">Trái cây</p>
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'Food')">
+                                <p class="title-sm-menu">Món ăn ngon</p>
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'Book')">
+                                <p class="title-sm-menu">Nhận đặt & tổ chức tiệc</p>
+                            </button>
+                        </div>
+
+                        <!--Small menu-->
+                        <div id="Coffee" class="tabcontent">
+                            <h3>Coffee</h3>
+                            <p>Chắt lọc từ những hạt cà phê tươi ngon nhất, chúng tôi đem đến cho bạn những tách cà phê
+                                thơm ngon và đậm đà. Đặc biệt, dòng cà phê rang xay được tinh chọn kĩ lưỡng để đảm bảo
+                                giữa nguyên hương vị, cho bạn thỏa mình thưởng thức.</p>
+                            <a class="link-to-menu" href="./Menu.html" style="text-decoration:none">Xem Menu</a>
+                        </div>
+
+                        <div id="Tea" class="tabcontent">
+                            <h3>Trà nguyên chất</h3>
+                            <p>Dòng trà nguyên chất cả tươi và sấy đậm đà, nguyên bản được sử dụng ngay trong ngày sau
+                                khi nấu để đảm bảo hương vị và chất lượng hoàn hảo nhất!</p>
+                            <a class="link-to-menu" href="./Menu.html" style="text-decoration:none">Xem Menu</a>
+                        </div>
+
+                        <div id="Drink" class="tabcontent">
+                            <h3>Thức uống giải nhiệt</h3>
+                            <p>Không cần đi đâu xa, ngay tại Tình Coffee & Restaurant cũng có những thức uống giúp bạn
+                                giải nhiệt mùa nóng và các dòng thức uống theo mùa thơm ngon tuyệt hảo!</p>
+                            <a class="link-to-menu" href="./Menu.html" style="text-decoration:none">Xem Menu</a>
+                        </div>
+
+                        <div id="Fruit" class="tabcontent">
+                            <h3>Trái cây</h3>
+                            <p>Nguồn trái cây được nhập từ các nguồn đáng tin cậy và một số có sẵn ngay trong khuôn
+                                viên nhà hàng cho bạn an tâm thưởng thức!</p>
+                            <a class="link-to-menu" href="./Menu.html" style="text-decoration:none">Xem Menu</a>
+                        </div>
+
+                        <div id="Food" class="tabcontent">
+                            <h3>Món ăn ngon</h3>
+                            <p>Đến ngay với chúng tôi để thưởng thức những món ăn từ truyền thống đến hiện đại do chính
+                                các đầu bếp tại địa phương chế biến ngay thôi nào!</p>
+                            <a class="link-to-menu" href="./Menu.html" style="text-decoration:none">Xem Menu</a>
+                        </div>
+
+                        <div id="Book" class="tabcontent">
+                            <h3>Nhận đặt trước & tổ chức tiệc</h3>
+                            <p>Với khuôn viên rộng rãi và thoáng mát, chúng tôi nhận tổ chức các buổi họp lớp, liên
+                                hoan, sinh nhật và đặt tiệc cưới hỏi...</p>
+                            <a class="link-to-menu" href="./Menu.html" style="text-decoration:none">Xem Menu</a>
+                        </div>
+                        <img class="coffee-with-friends" src="./img/drink-with-friends.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <!--footer-->
+            <div class="footer">
+                <a href="#home" class="tiny-name" title="Tình Coffee & Restaurant" target="_self"><b>TÌNH COFFEE &
+                        RESTAURANT</b></a>
+                <p class="know-more">Cổng làng cổ Phước Tích, Mỹ Chánh, Thừa Thiên Huế</p>
+                <p class="call">Hotline: 0981 044 562</p>
+                <p class="ship">Áp dụng giao hàng toàn quốc</p>
+                <a href="./security.html" title="Security Clauses" target="_self"><b class="security-clauses">Điều
+                        khoản bảo
+                        mật</b></a>
+                <hr color="#838482">
+                <p class="notes"><i class="icon-cf fas fa-coffee"></i> COPYRIGHT © 2019 BY TINH COFFEE & RESTAURANT</p>
+            </div>
+
+            <!--go  top and menu-->
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        </div>
+    </div>
+
+    <script src="./plugin/swiper/js/swiper.min.js"></script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+                document.getElementById("menu").style.top = "0";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+                document.getElementById("menu").style.top = "-200px";
+            }
+        }
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                // modal.style.display = "none";
+            }
+        }
+        var swiper = new Swiper('.slide', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000
+            },
+            grabCursor: true,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        openCity(event, 'Coffee')
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
