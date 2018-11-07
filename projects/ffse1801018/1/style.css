@@ -1,0 +1,260 @@
+*{
+margin: 0px;
+padding:0px;
+}
+.cach {
+margin: 0px;
+padding: 10px;
+line-height: 29px;
+border: 1px solid gray;
+background-color:rgba(0,0,0,0.8) !important;
+color: white !important;
+
+
+}
+html{
+	scroll-behavior: smooth;
+}
+.nen00{
+	position: fixed;
+	z-index: 1;
+	top: 5%;
+	right: 10%;
+	display: none;
+}
+.nen{
+position: absolute;
+top:0px;
+left: 0px;
+right: 0px;
+width: 100%;
+height: 2700px;
+ font-family: sans-serif;
+/*background-color: #f3f3f3;*/
+background-image: url("4.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment:  fixed;
+}
+.nen >ul {
+
+ background-color:rgba(0,0,0,0.4) !important;
+  list-style-type: none;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  opacity: .8;
+  }
+  .nen >ul>li>ul{
+  background: #1e293d;
+  }
+  .nen li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 0px;
+}
+.nen a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.nen a:hover {
+  background: white	;
+  color: #333;
+}
+.nen li {
+ position: relative;
+}
+.sub-menu {
+ display: none;
+ position:absolute;
+}
+.nen li:hover .sub-menu {
+ display: block;
+}
+
+.nen1{
+	position: absolute;
+	width: 30%;
+	top: 40px;
+	left: 2%;
+	color: blue;
+	font-size: 20px;
+	
+		
+}
+.dong1{
+	position: absolute;
+	top: 10%;
+	
+	left: 28%;
+	height: 110px;
+	width: 30%;
+	font-size: 2.8vw;
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+}
+.dong2{
+	position: absolute;
+	top: 23%;
+	width: 30%;
+	left: 28%;
+	font-size: 16px;
+	background-color:rgba(0,0,0,0.8) !important;
+
+	font-family: "Helvetica Neue", Times, serif;
+	color: white;
+	border-left: 4px solid gray;
+}
+.donga{
+	position: absolute;
+	top: 340px;
+	width: 100%;
+	left: 0px;
+	 
+	color: white;
+	
+	border-top: 4px solid white;
+}
+#dong3{
+	position: absolute;
+	top: 343px;
+	width: 99%;
+	left: 0px;
+	background-color: #d7d5e3;
+	color: #45403a;
+	height: 220px;
+	font-size: 19px;
+	/*border:2px solid gray;*/
+	
+	font-family: "San Francisco", Times, serif;
+}
+
+.vien{
+	border: 1px solid gray;
+}
+#dong4{
+	position: absolute;
+	top: 630px;
+	width: 60%;
+	right: 0px;
+	background-color: #d7d5e3;
+	color: #45403a;
+	height: 430px;
+	/*border:2px solid gray;*/
+	font-family: "San Francisco", Times, serif;
+}
+#dong5{
+	position: absolute;
+	top: 1127px;
+	width: 60%;
+	left: 0px;
+	background-color: #d7d5e3;
+	color: #45403a;
+		height: 430px;
+	/*border:2px solid gray;*/
+	font-family: "Times New Roman", Times, serif;
+}
+#dong6{
+	position: absolute;
+	top: 1634px;
+	width: 60%;
+	right: 0px;
+	background-color: #d7d5e3;
+	color: #45403a;
+	height: 430px;
+	/*border:2px solid gray;*/
+	font-family: "Times New Roman", Times, serif;
+}
+#dong7{
+	position: absolute;
+	top: 2141px;
+	width: 60%;
+	left: 0px;
+	background-color: #d7d5e3;
+	color: #45403a;
+	height: 430px;
+	/*border:2px solid gray;*/
+	font-family: "Times New Roman", Times, serif;
+}
+.donga1{
+	position: absolute;
+	top: 2590px;
+	width: 100%;
+	left: 0px;
+	
+	color: #45403a;
+	
+	border-top: 4px solid white;
+}
+.dong8{
+	position: absolute;
+	top: 2648px;
+	width: 100%;
+	margin-top: 19px;
+	font-size: 16px;
+	background-color: #d7d5e3;
+	color: gray;
+	height: 40px;
+	border:1px solid blue;
+	text-align: center;
+	font-family: "cursive", Times, serif;
+}
+@media only screen and (max-width: 500px) {
+    
+      .nen ul{  
+      	display: none;}
+      	.nen >p{ display: block;
+
+      	}
+      .dong1{
+
+      	font-size: 13px;
+      	top:22	px;
+      	margin-left: 10px;
+      }
+      .dong2{
+      	font-size: 11px;
+      	border: none;
+      	line-height: 19px;
+      	top: 45px;
+
+
+      }
+     #dong3{
+     	width: 96%;
+     	font-size: 9px;
+     	line-height: 26px;
+     }
+ 	#dong4{
+     	font-size: 9px;
+     	line-height: 26px;
+     }
+      #dong5{
+     	font-size: 9px;
+     	line-height: 26px;
+     }
+      #dong6{
+     	font-size: 9px;
+     	line-height: 26px;
+     }
+      #dong7{
+     	font-size: 9px;
+     	line-height: 26px;
+     }
+      .dong8{
+      	margin-top: 30px;
+     	font-size: 9px;
+     	line-height: 11px;
+     	height: 20px;
+     }
+     .nen00{
+     	display: block;
+     }
+}
+    

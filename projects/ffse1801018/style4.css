@@ -1,0 +1,66 @@
+.navbar-inverse{
+	height: auto;
+background-color: #272729;
+
+	
+}
+.navbar-brand{
+	font-size: 28px;
+	margin-top: 8px;
+	margin-left: 60px;
+
+}
+.navbar-collapse{
+	margin-top: 9px;
+	margin-bottom: 9px;
+	margin-right: 60px;
+	font-size: 16px;
+
+}
+.page-header{
+	margin-top: 100px;
+	margin-left: 70px;
+	}	
+.page-header h1{
+font-size: 47px;
+
+}
+.page-header small{
+color: black;
+}
+.pagination{
+	margin-left: 43%;
+	font-size: 17px;
+}
+.lasttask{
+	height: 150px;
+	background:teal	;
+	
+}	
+.lasttask h3{
+	top: 70px;
+	text-align: center;
+	color: white;
+	font-size: 23px;
+	padding-top: 60px;
+}
+.hoho{
+	margin-top: 10px;	
+}
+#time{
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+	height: 100px;
+	font-size: 2vw;
+	background: teal;
+	color: white;
+	border: 1px;
+	font-family: arial;
+}
+.hsa{
+	background-color: #f5f6f7;
+}
+.cach{
+margin-top: 40px;	
+}
