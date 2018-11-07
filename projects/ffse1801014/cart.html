@@ -14,11 +14,11 @@
 
 <body class="container-fluid">
     <nav class="navbar navbar-light bg-light row position-fixed z-index-99 w-100">
-        <a href="index.html" class="navbar-brand"><img style="width:200px; heigth:15px" src="logo/mylogo-black.png" alt=""></a>
+        <a href="index.html" class="navbar-brand"><img style="width:200px;" src="logo/mylogo-black.png" alt=""></a>
         <form class="form-inline">
 
             <button class="btn bg-light ml-2" onclick="document.getElementById('id01').style.display='block'">Login</button>
-            <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
+            <a href="cart.html"><i class="fal fa-shopping-cart"><span class="px-2" id="cart-quantity" style="color: red;"</span>0</i></a>
             <div id="id01" class="modal">
 
                 <form class="modal-content animate w-50" action="/action_page.php">

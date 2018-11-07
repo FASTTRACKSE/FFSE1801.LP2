@@ -273,10 +273,12 @@ function showproducts() {
         </div>
         <div class="col-4">
             <input type="number" style="cursor: text;" class="text-center btn btn-sm btn-outline-dark col-lg-3 col-md-6 col-6" id="quantity`+ list_products[index].id + `" value="1" min="1"></input>
-            <button class="btn btn-primary btn-sm" onclick="cart(`+ list_products[index].id + `)">add cart</button>
+            <button class="btn btn-primary btn-sm iconnumber" onclick="cart(`+ list_products[index].id + `)">add cart</button>
         </div>
         `
         document.getElementById("order").appendChild(div);
+        
+        // console.log(localStorage.cart);
     }
 }
 //show cart
@@ -308,7 +310,9 @@ function showcart() {
         </td>
         `
         document.getElementById("showcart").appendChild(tr);
-        // console.log(products)
+        // console.log(cart.length);
+        document.getElementById("cart-quantity").innerHTML=cart.length;
+        
     }
 
 }
@@ -354,8 +358,9 @@ function cart(params) {
             counta: document.getElementById('quantity' + params).value,
         }
         cart.push(temp)
-        localStorage.cart = JSON.stringify(cart)
+        localStorage.cart = JSON.stringify(cart)        
     }
+    carticonnumber();
 }
 
 ///////////multi and total cart page------------------------------------
@@ -421,7 +426,13 @@ function sort_ZA(){
 // console.log(list_products)
 //active-menu
 //search
+function carticonnumber() {
+    let cart = JSON.parse(localStorage.cart)
+    console.log(cart.length);
+    document.getElementById("cart-number").innerHTML=cart.length;    
 
+
+}
 
 
 
