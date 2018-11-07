@@ -1,0 +1,127 @@
+body{
+	background: url("http://iphonedanang.net/wp-content/themes/pdnstore/img/bgnoise_lg@2x.png)") !important;
+	    font-family: Open Sans, Helvetica, Arial, sans-serif;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+a:hover{
+	text-decoration: none;
+	color:black;
+}
+.right{
+	background: white;
+
+}
+
+.content{
+	margin:0 20% !important;
+	background: white;
+}
+.item img{
+	max-width:100%;
+}
+.item{
+	
+	padding:0 10px 10px 0;
+}
+.item .my-border{
+	position: relative;
+	padding: 10px;
+	border:1px solid lightgrey;
+	text-align: center;
+}
+.item span{
+	position: absolute;
+	background:lightgreen;
+	top:0;
+	left:25px;
+	color:white;
+	padding: 7px;
+}
+.item .name{
+	font-size:15px;
+}
+.item .sale{
+	text-decoration: line-through;
+}
+.item .price{
+	font-size: 18px;
+	color:lightgreen;
+}
+.item .my-button{
+	background: black;
+	border:none;
+	width: 100%;
+	font-size:60%;
+	height: auto;
+	color:white;
+	transition: background 1s;
+}
+.item .my-button:hover{
+	background:lightgreen;
+}
+.content .right .camket{
+	text-align: center;
+}
+.content .right .camket p span{
+	color:white;
+	border: 1px solid green;
+	border-radius: 50%;
+	padding: 4px;
+	background: green;
+}
+.content .right .list-hot{}
+
+.content .right .list-news{}
+.content .right .address{}
+.content .right .reviewd{}
+
+/* End right */
+/*start Left */
+.left{
+	background: white;
+	
+}
+.left .moi .tieude{ 
+    font-size: 3vmax ;
+    font-size:3vmin;
+}
+.liner{
+	border-bottom: 2px solid green;
+	border-width: 20%;
+	position: absolute;
+	top:-2px;
+	left:0px;
+	z-index: 9999;
+	width:20%;
+}
+#first{
+	position: relative;	
+}
+.left .tintuc{
+	border-top:1px solid lightgrey;
+	z-index: 0;
+	padding-top:10px;
+	
+}
+.left .moi .hinh{
+	padding:0px;
+
+}
+.left .moi .hinh img{
+	max-width:100%;
+
+}
+.left .moi .vanban{}
+.left .moi .vanban h3{
+    font-size: 1.5vmax ;
+ 	font-size:13px;
+	margin-top:0px;
+	font-weight: none;	
+}
+.left .moi .vanban p{
+	font-size:10px;
+	color:grey;
+}

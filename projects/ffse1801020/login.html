@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<div class="show-login-btn">
+		<i class="fas fa-sign-in-alt"></i>
+		MỞ TRANG ĐĂNG NHẬP CỦA DU LỊCH MIỀN TRUNG
+	</div>
+	<div class="close"> 
+		<a href="trangchu.html"> QUAY VỀ TRANG CHỦ</a>
+	</div>
+
+
+
+
+
+	<div class="login-box">
+		<div class="hide-login-btn">
+				<i class="fas fa-times"></i>
+			</div>
+		<form class="login-form" action="index.html" method="post">
+			
+			<h1>WELCOM</h1>
+			<input class=" txtb" type="text" name="" placeholder="username">
+			<input class=" txtb" type="password" name="" placeholder="password">
+			<input class="login-btn" type="submit" name="" value="LOGIN">
+			<input class="registration-btn" type="submit" name="" value="REGISTRATION">
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		$(".show-login-btn").on("click", function(){
+			$(".login-box").toggleClass("showed");
+		});
+		$(".hide-login-btn").on("click", function(){
+			$(".login-box").toggleClass("showed");
+		});
+	</script>
+
+
+
+</body>
+</html>
