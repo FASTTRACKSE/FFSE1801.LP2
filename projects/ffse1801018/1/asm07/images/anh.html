@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style >
+	.mySlides {display:none;
+
+}
+.canle{
+ position: absolute;
+    top: 144px;
+    right: 460px;
+    left: 200px;
+    height: 440px;
+}
+</style>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<div class="canle">
+  
+
+<div class="w3-content w3-display-container">
+ <img class="mySlides" src="images/1.jpg" height="440" width="600" >
+  <img class="mySlides" src="images/2.jpg" height="440" width="600">
+  <img class="mySlides" src="images/3.jpg" height="440" width="600">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+}
+</script>
+<div class=" dong1">
+	<img src="00.png" width="50">
+	
+</div>	
+<div class="dong2">
+	<ul><input type="text" name="" placeholder="   Bạn cần tìm gì...?"></ul>
+
+		
+</div>
+<div class="dong3">
+	<ul>
+		<a href="#home"> ✉EMAIL&nbsp&nbsp&nbsp</a> 
+		<a href="#home">⏰	08:00 - 20:00&nbsp&nbsp&nbsp</a>
+		<a href="#home"> ✆1900636594&nbsp&nbsp&nbsp</a>
+		<a href="#home"> ĐĂNG NHẬP&nbsp&nbsp&nbsp</a>
+
+	</ul>	
+</div>
+<div class="dong4">
+	
+</div>
+
+<div class="dong5">
+<ul>
+		<a href="#home"> ĐIỆN THOẠI&nbsp&nbsp&nbsp</a> 
+		<a href="#home"> IPAD&nbsp&nbsp&nbsp</a>
+		<a href="#home"> PHỤ KIỆN&nbsp&nbsp&nbsp</a>
+		<a href="#home"> ASMART CARE&nbsp&nbsp&nbsp</a>
+		<a href="#home"> KHUYẾN MÃI&nbsp&nbsp&nbsp</a> 
+		<a href="#home"> QUY ĐỊNH BẢO HÀNH&nbsp&nbsp&nbsp</a>
+		<a href="#home"> TRẢ GÓP&nbsp&nbsp&nbsp</a>
+		<a href="#home"> TIN TỨC&nbsp&nbsp&nbsp</a>
+		<a href="#home"> LIÊN HỆ&nbsp&nbsp&nbsp</a>
+	</ul>	
+</div>
+<div class="hinh">
+	<img src="00.jpg" width="50">
+</div>
+<div class="hinh1">
+	<img src="2.jpg" width="324" height="210"	>
+</div>
+<div class="hinh2">
+	<img src="3.jpg"width="324" height="210">
+</div>
+<div class="hinh3">
+	<img src="4.jpg"width="324" height="210">
+</div>
+<!-- <div class="hinh4">
+	<img src="1.jpg" height="440" width="600">
+</div> -->
+<div class="hinh5">
+	<img src="5.jpg" width="290" height="210">
+</div>
+<div class="hinh6">
+	<img src="6.jpg" width="300" height="210">
+</div>
+<div class="dong6">
+	<p>SẢN PHẨM ĐANG KHUYẾN MÃI</p>
+</div>
+<div class="hinh7">
+	<img src="7.jpg">
+</div>
+<div class="hinh8">
+	<img src="8.jpg">
+</div>
+<div class="hinh9">
+	<img src="9.jpg">
+</div>
+<div class="hinh10">
+	<img src="10.jpg">
+</div>
+<div class="hinh11">
+	<img src="11.jpg">
+</div>
+<div class="hinh12">
+	<img src="12.jpg">
+</div>
+<div class="hinh13">
+	<img src="13.jpg">
+</div>
+<div class="hinh14">
+	<img src="14.jpg">
+</div>
+<div class="hinh15">
+	<img src="15.jpg">
+</div>
+<div class="hinh16">
+	<img src="16.jpg">
+</div>
+<div class="dong7">
+	<p>SẢN PHẨM HOT</p>
+</div>
+<div class="hinh17"> 
+	<img src="17.jpg">
+
+</div>
+<div class="hinh18">
+	<img src="18.jpg">
+
+</div>
+<div class="hinh19">
+	<img src="19.jpg">
+
+</div>
+<div class="hinh20">
+	<img src="20.jpg">
+
+</div>
+<div class="hinh21">
+	<img src="21.jpg">
+
+</div>
+</body>
+</html>

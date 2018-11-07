@@ -1,0 +1,173 @@
+body {margin:0;}
+
+.cuccu {
+
+  background-color: #464646	;
+ 	position : absolute;
+  top: 0px;
+  width: 100%;
+  border-right: 1px solid gray;
+
+}
+
+.cuccu a {
+  
+  float:left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:"Arial", Times, serif; 
+  border-right: 1px solid gray;
+}
+
+
+
+	.cuccu a:hover {
+	  background: #464646;
+	  color: orange;
+	}
+.nen {
+
+  background-color: #ececec ;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  border-right: 1px solid gray;
+  -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+.nen1{
+  position: absolute;
+  
+  top: 70px;
+     
+  left: 900px;
+  right:60px;
+  height: 40px
+  font-size:14px;
+  border-radius: 30px;
+  font-family:"Times new roman", Times, serif;
+}
+.nen1 ul input {
+border-radius: 13px;
+height: 40px;
+width: 250px;
+}
+.nen2 {
+  background-color: #f7f7f7;
+  top: 157px;
+  height: 80px;
+right: 0px;
+left: 0px;
+
+  position: absolute;
+}
+.nen2 a {
+  padding: 15px 4px;
+  margin-top: 10px;
+  text-decoration:  none;
+}
+.nen3{
+  position: absolute;
+ 
+  left: 530px;
+  top: 220px;
+ right: 300px;
+  height: 500px;
+  width: auto;
+}
+.nen4{
+  position: absolute;
+  left: 530px;
+  top: 720px;
+  
+  height: 220px;
+  right: 275px;
+  background-color: #ebebeb;
+
+}
+.nen5{
+  position: absolute;
+  left:540px;
+  top: 720px;
+  right: 870px;
+  height: 220px;
+  
+  background-color: white;
+
+}
+.nen5 p{
+  color: red;
+}
+.nen6{
+  position: absolute;
+  left:850px;
+  top: 720px;
+  right: 570px;
+  height: 220px;
+  
+  background-color: white;
+
+}
+.nen6 p{
+  color: red;}
+.nen7{
+  position: absolute;
+  left:1150px;
+  top: 720px;
+  right: 280px;
+  height: 220px;
+  
+  background-color: white;}
+  .nen7 p{
+  color: red;}
+.nen8{
+  position: absolute;
+  left:0px;
+  top: 1020px;
+  right: 1160px;
+  height: 290px;
+  
+  background-image: url("6.png" );
+ background-repeat: no-repeat;
+ background-size: 100%;
+}
+.nen9{
+  position: absolute;
+  left:520px;
+  top: 1020px;
+  right: 750px;
+  height: 290px;
+  
+
+}
+.nen10{
+   position: absolute;
+ /* background-image: url(8.png  );
+ background-repeat: no-repeat;
+ background-size: 200%;*/
+
+  left:940px;
+  top: 1020px;
+  right: 280px;
+  height: 290px;
+
+}
+.nen11  {
+   position: absolute;
+   
+  left:0px;
+  top: 240px;
+  right: 1150px;
+  height: 700px;
+}
+.nen11 ul input {
+border-radius: 7px;
+height: 30px;
+width: 470px;
+}
