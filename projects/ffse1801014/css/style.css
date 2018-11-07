@@ -1,0 +1,436 @@
+body{
+    margin: 0;
+    font-family: Helvetica,Arial,sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box !important;
+}
+#home{
+    background-image: url(../images/mybackground.jpg);
+    height: 600px;
+    /* width: 1349px; */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* Animation fade in up */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+/* end fade in up */
+.hover-icon:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.3,1.3);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .8);
+}
+/*  */
+.z-index-99{
+    z-index: 99;
+}
+.crystal-clear{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.color-button{
+   color: white !important;
+}
+.align-center{
+    text-align: center !important;
+}
+.ul-format li a:hover{
+    transition: 1s;
+    color: #e89b43 !important;
+    /* text-decoration: line-through; */
+}
+.ul-format>li>a{
+    font-size: 80%;
+    color: white !important;
+}
+h2{
+    text-transform: uppercase;
+    color: white !important;
+    font-weight: 900 !important;
+    text-align: center;
+    line-height: 70px !important;
+    text-shadow: 0 10px 50px black !important;
+    font-size: 5vw !important;
+}
+h3{
+    font-size: 5vh !important;
+    font-weight: 700 !important;
+    color: white !important;
+}
+h4{
+    color: white !important;
+}
+.hover-hover:hover{
+    transition: 1s;
+    cursor: pointer;
+    opacity: 3 !important;
+}
+.custom{
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+}
+/*-------- midle-------------------------- */
+.middle{
+    /* background-image: url(https://theme.hstatic.net/1000075078/1000297410/14/bg-wave.png?v=40); */
+    background-size: cover;
+    height: 100%;
+}
+.text-align-center{
+    text-align: center !important;
+}
+.content-cf{
+    padding: 0 10%;
+}
+/* -------------left-store------------ */
+
+
+.left-store{
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?w968h681);
+    background-size: cover;
+}
+.color-fill{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.sub-store{
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px !important;
+}
+.img-hover{
+    width: 30%;
+    float: left;
+}
+.img-hover img{
+    width: 100%;
+}
+.content-hover{
+    float: left;
+    margin-left: 5px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* --------right-store------------ */
+.right-store{
+    height:auto;
+    padding: 0 !important;
+    /* background-color: aliceblue !important; */
+}
+.img-hover-right{
+    width: 30%;
+    float: left;
+}
+.img-hover-right img{
+    width: 100%;
+}
+.content-hover-right{
+    float: left;
+    margin-left: 5px;
+}
+/* .btncss{
+    right: 10px !important;
+} */
+ol li{
+    border-radius: 50%;
+    height: 20px !important;
+    width: 20px !important;
+    /* background-color: gray; */
+}
+.item-slide > div{
+    margin-left: 10%;
+}
+.list-item > div{
+    padding: 0;
+}
+.list-item >div >div{
+    height: 100%;
+
+}
+.list-item >div >div img{
+    height: 100%;
+    width: 100%;
+}
+
+/* contact */
+.resize-contact{
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+}
+.right-img-contact{
+    height: 700px;
+}
+.right-img-contact img{
+    width: 100%;
+    height: 100%;
+}
+
+.icon-footer table tr th a i{
+    font-size: 30px !important;
+    color: red;
+}
+.border-top-gray{
+    border-top: 0.5px solid #262626;
+}
+/* -------page intro custom------------*/
+/* ------------------------------ */
+.second{
+    background-image: url(https://theme.hstatic.net/1000075078/1000297410/14/banner-about.jpg?v=40);
+    background-size: cover;
+    /* height: 664px; */
+}
+.banner-coffee{
+    bottom: 20px;
+    left: 5px;
+}
+.img-coffee{ 
+    height: 200%;
+}
+.bg-content-coffee{
+    background: url(https://theme.hstatic.net/1000075078/1000297410/14/bg-wave1.png?v=40);
+    background-size:cover;
+    height: 100%;
+}
+.content-intro-first{
+}
+/* -----menu----------- */
+/* --------------------- */
+@media only screen and (max-width: 600px) {
+    .img-media1{display: block !important;}
+    .img-media2{display: block !important;}
+    .img-media3{display: block !important;}
+}
+.bg-black{
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+.menu-custom{
+    /* z-index: 9999 !important; */
+}
+
+.background-custom{
+    background: rgba(0, 0, 0, 0) !important;
+    line-height: 30px !important;
+    height: 30px !important;
+}
+.background-custom li{
+    /* content: "-" !important; */
+    line-height: 30px !important;
+    height: 30px !important;
+    vertical-align: middle !important;
+}
+.background-custom li a{
+    /* font-size: 1vw !important; */
+}
+.content-menu{
+    background: url(https://theme.hstatic.net/1000075078/1000297410/14/bg-wave1.png?v=40);
+    background-size:cover;
+    height: 100%;
+}
+.list-menu table tr:hover{
+    color: #ea8024;
+    transition: 1s;
+    cursor: pointer;
+}
+/* -------------giỏ hàng--------- */
+/* -------------------------------- */
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+.product-price::after{
+    content: "$";
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+		width:20%;
+		display: inline !important;
+	}
+	.actions .btn-custom{
+		width: 100%;
+		margin:1.5em 0;
+	}
+	
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+	
+	table#cart thead { display: none; }
+	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	table#cart tbody tr td:first-child { background: #333; color: #fff; }
+	table#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	
+	
+	
+	table#cart tfoot td{display:block; }
+	table#cart tfoot td .btn{display:block;}
+    
+
+    
+}
+    /* ---------------------form login---------------------- */
+    /* ----------------------------------------------------- */
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.btn-login{
+    /* background-color: #4CAF50 !important; */
+    color: white !important;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.input-login{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script language="javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./data/data.css">
+    <script type="text/javascript" src="./data/data.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default .navbar-fixed-top" id="menu">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Trang chủ</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="list" href="sanpham.html">Sản phẩm</a></li>
+                    <li><a class="list" href="suachua.html">Sửa chữa</a></li>
+                    <li><a class="list" href="tintuc.html">Tin tức</a></li>
+                    <li class="caigio"><a href="giohang.html" target="_blank" style="color:orange; font-size: 16px">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="number_item">0</span> Items</a>
+                        <img class="igio" src="./img/tamgiac.png" alt="">
+                        <div id="ch" class="igio"></div>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control search" placeholder="Tìm sản phẩm">
+                    </div>
+                    <a class="btn btn-default submit" href="search.html">Tìm</a>
+                    <div class="timkiem"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="contain">
+        <!-- bannerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+        <div id="tinhtien">
+
+        </div>
+        <div id="banner" class="row">
+            <div class="col-sm-12 col-md-12 top">
+                <img src="https://mikistorecantho.com/wp-content/uploads/2018/04/dienthoaicantho.gif" alt="">
+            </div>
+            <div class="left col-sm-7 col-md-8">
+                <div id="show1">
+                    <p style="left:0px"><a id="back" style='cursor: pointer;color: rgb(131, 131, 131)'> <i class="fas fa-angle-left"></i>
+                        </a></p>
+                    <p style="right:0px"><a id="next" style='cursor: pointer;color: rgb(131, 131, 131)'><i class="fas fa-angle-right"></i></a></p>
+                    <img src="https://cdn.didongthongminh.vn/upload_images/2018/10/iphoneX-1.jpg" />
+                </div>
+                <div id="store">
+                    <img class="active" src="https://cdn.didongthongminh.vn/upload_images/2018/10/iphoneX-1.jpg" />
+                    <img src="https://cdn.tgdd.vn/qcao/19_10_2018_06_57_49_iPhoneNEW-800-300.png" />
+                    <img src="https://cdn.tgdd.vn/qcao/20_10_2018_12_24_11_Note9-TangTV-800-300.png" />
+                    <img src="https://cdn.didongthongminh.vn/upload_images/2018/10/slide-nokia-1.jpg" />
+                    <img src="https://cdn.didongthongminh.vn/upload_images/2018/10/note-8-slide-1.jpg" />
+                    <img src="https://cdn.didongthongminh.vn/upload_images/2018/10/iphone-7-plus-cpo-128gb-1.jpg" />
+                </div>
+            </div>
+            <div class="right col-xs-12 col-sm-5 col-md-4">
+                <div class="row">
+                    <div style="padding:0;margin-top: 5px;" class="col-xs-5 col-sm-12 col-md-12">
+                        <img src="https://cdn.didongthongminh.vn/upload_images/2018/10/GIF-iphone-ipad.gif" alt="">
+                    </div>
+                    <div style="padding:0;margin-top: 5px;" class="col-xs-7 col-sm-12 col-md-12">
+                        <img src="https://cdn.tgdd.vn/qcao/01_11_2018_17_26_06_Hotsale-J8-T11-398-110.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="title_">
+            <h4>SẢN PHẨM BÁN CHẠY</h4>
+        </div>
+        <div id="slide2" class="row">
+            <span id="show2">
+            </span>
+            <div id="button1">
+                <p id="next2"><i class="fas fa-angle-right"></i></p>
+            </div>
+            <div id="button2">
+                <p id="prev2"><i class="fas fa-angle-left"></i></p>
+            </div>
+        </div>
+        <div class="title2">
+            <h4>SẢN PHẨM MỚI</h4>
+        </div>
+        <div id="topdt">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 left">
+                    <img src="https://cdn.tgdd.vn/qcao/31_10_2018_17_46_35_Note9-T11-800-300.png" alt="">
+                    <h4 style="margin-left: 30px; font-weight: 600;"> Samsung Galaxy Note 9</h4>
+                    <b style="color: red; font-size:16px; margin-left: 30px"> 22.990.000₫</b>
+                </div>
+            </div>
+        </div>
+        <div id="title3">
+            <h4>TIN TỨC NỔI BẬT</h4>
+        </div>
+        <div id="news" class="row">
+            <div class="left col-xs-12 col-sm-7 col-md-7">
+                <div>
+                    <img src="https://cdn.tgdd.vn/Files/2018/10/15/1124696/xxx-0_800x452-600x400.jpg" alt="" />
+                    <div class="new">
+                        <h4>iPhone X camera kép, nhận dạng khuôn mặt 3D giảm giá tới 2 triệu đồng</h4>
+                        <p>Nếu bạn đang là người chuẩn bị mua iPhone X thì tin vui đây rồi, theo đó, nhiều model iPhone
+                            X đang được giảm giá tới 2 triệu đồng khi mua online từ ngày 24 - 31/10.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://cdn.tgdd.vn/Files/2018/10/26/1127130/galaxy-a7-2018_1280x720-300x200.jpg" alt="" />
+                    <div class="new">
+                        <h4>Đánh giá hiệu năng Galaxy A7 (2018): Exynos 7885 gây bất ngờ!</h4>
+                        <p>Galaxy A7 (2018) là chiếc smartphone tầm trung khá đặc biệt với cụm 3 camera ở mặt sau.
+                            Nhưng
+                            bên cạnh đó, vi xử lý Exynos 7885 là một trong những nâng cấp đáng giá về cấu hình trên sản
+                            phẩm này. Và để kiểm chứng điều đó, ngay bây giờ mình sẽ tiến hành đánh giá hiệu năng
+                            Galaxy A7 (2018).</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://cdn.tgdd.vn/Files/2018/10/27/1127222/qualcomm-quick-charge-5_800x450.jpg" alt="" />
+                    <div class="new">
+                        <h4>2019, Qualcomm sẽ ra mắt Quick Charge 5 hỗ trợ dòng điện tối đa 32W</h4>
+                        <p>Sau khi phát triển bốn thế hệ công nghệ sạc nhanh, hệ sinh thái Quick Charge đang phát triển
+                            nhanh chóng bao gồm hơn 200 thiết bị di động tương thích, 700 phụ kiện và 100 bộ điều
+                            khiển. Dự kiến, Quick Charge 5 sẽ ra mắt vào năm sau.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right col-xs-12 col-sm-5 col-md-5">
+                <div>
+                    <img src="https://cdn.tgdd.vn/Files/2018/10/25/1126926/nokia_800x450.jpg" alt="">
+                    <h3>Nokia và Samsung mở rộng thỏa thuận cấp phép bằng sáng chế</h3>
+                </div>
+                <div>
+                    <img src="https://cdn.tgdd.vn/Files/2018/10/26/1127038/10_800x450.png" alt="">
+                    <h3>Thái Lan sắp có Apple Store chính chủ, kế đến là Việt Nam?</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end_">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Giới thiệu công ty (DĐTM)</li>
+                    <li>Hệ thống cửa hàng</li>
+                    <li>Tuyển dụng</li>
+                    <li>Chính sách bảo mật</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách đổi trả sản phẩm</li>
+                    <li>Hỏi Đáp Mua Hàng Online</li>
+                    <li>Phương Thức Thanh Toán</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Gọi mua hàng: <b>1900.6122</b> (8H00 - 21H30)</li>
+                    <li>Gọi bảo hành: <b>1800.6501</b> (8H00 - 21H30)</li>
+                    <li>Gọi khiếu nại: <b>1800.6502</b> (8H00 - 21H30)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="creder">
+        <h4>Made by TuHuynh</h4>
+        <p>Email:FFSE1801022@outlook.com</p>
+        <p>Sdt: 64823492034</p>
+    </div>
+
+    <div id="zoom">
+        <div id="hide"></div>
+        <div id="zoom-main" class="items">
+            <div class="left">
+                <div>
+                    <img src="gai.jpg" id="img-zoom" class="car" alt="item">
+                    <p style="color: red; font-weight:600;font-size: 16px;line-height: 50px;" class="giatien"></p>
+                </div>
+            </div>
+            <div class="right">
+                <h4>Tên sản phẩm</h4>
+                <p>Nhà sản xuất:<span></span></p>
+                <div id="cauhinh">
+                    <table cellpadding="10" cellspacing="0">
+                        <tr>
+                            <td style="width: 40%;">Màn hình:</td>
+                            <td>Super AMOLED, 6.2", Quad HD+ (2K+)</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành:</td>
+                            <td>Android 8.0 (Oreo)</td>
+                        </tr>
+                        <tr>
+                            <td>Camera sau</td>
+                            <td>2 camera 12 MP</td>
+                        </tr>
+                        <tr>
+                            <td>Camera trước:</td>
+                            <td>8 MP</td>
+                        </tr>
+                        <tr>
+                            <td>CPU:</td>
+                            <td>Exynos 9810 8 nhân 64 bit</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td> 6 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Bộ nhớ trong:</td>
+                            <td>64 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Thẻ nhớ:</td>
+                            <td>MicroSD, hỗ trợ tối đa 400 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Thẻ SIM:</td>
+                            <td>2 SIM Nano (SIM 2 chung khe thẻ nhớ), Hỗ trợ 4G</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>HOT SIM VIETTEL V90 (60GB data/ tháng). Giá từ 80.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>Dung lượng pin:</td>
+                            <td>3500 mAh, có sạc nhanh</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="more">
+                    <a class="btn btn-primary buy-now btninmore" role="button">Thêm vào giỏ hàng</a>
+                    <a href="S9.html" class="xem" style="color:blue"><b>Xem chi tiết sản phẩm</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            //giỏ hàng //////////////////////////////////
+            var soluong = 0
+            for (let i = 0; i < sp.length; i++) {
+                if (localStorage.getItem(sp[i].id) != null) {
+                    soluong++;
+                }
+            }
+            $("#number_item").text(soluong);
+            // js slide 1111111111111111111111111111111111111111111
+            var interval;
+            start();
+            function start() {
+                interval = setInterval(function () {
+                    $("#next").click()
+                }, 4000);
+            }
+            function stop() {
+                clearInterval(interval);
+            }
+            $("#next").click(function () {
+                var timeout = $(this).hasClass("pending");
+                if (timeout) {
+                    return false;
+                }
+                $(this).parents("#show1").find("a").addClass("pending");
+                var active = $(".active")
+                var src = active.next();
+                if (src.length == 0) {
+                    src = $("#store img:first");
+                }
+                $("<img/>", {
+                    class: "show1toleft",
+                    src: src.attr("src")
+                }).appendTo("#show1");
+                src.addClass("active");
+                active.removeClass("active")
+
+                $("#show1 img:first").css("position", "absolute")
+                    .animate({
+                        "left": "-100%"
+                    }, {
+                            duration: 1500,
+                            easing: "linear",
+                            complete: function () {
+                                $("#show1 img").not("#show1 img:last").remove();
+                                $("#show1").find("a").removeClass("pending");
+                            }
+                        });
+            });
+            $("#show1").on("mouseover", function () {
+                stop();
+            }).on("mouseout", function () {
+                start();
+            })
+            $("#back").click(function () {
+                var timeout = $(this).hasClass("pending");
+                if (timeout) {
+                    return false;
+                }
+                $(this).parents("#show1").find("a").addClass("pending");
+                var active = $(".active")
+                var src = active.prev();
+                if (src.length == 0) {
+                    src = $("#store img:last");
+                }
+                $("<img/>", {
+                    class: "show1toright",
+                    src: src.attr("src")
+                }).appendTo("#show1");
+                src.addClass("active");
+                active.removeClass("active")
+
+                $("#show1 img:first").css("position", "absolute")
+                    .animate({
+                        "left": "100%"
+                    }, {
+                            duration: 1500,
+                            easing: "linear",
+                            complete: function () {
+                                $("#show1 img:first").remove();
+                                $("#show1").find("a").removeClass("pending");
+                            }
+                        });
+            });
+            // js slide 22222222222222222222222222222222222
+            var dem = 0;
+            var i = $("#show2 .items").length;
+            var dai = $("#show2 .items").width() + 6;
+            $("#next2").click(function () {
+                var d = $("#slide2").width();
+                dem = dem - dai
+                if (dem == -((dai * i) - d) - dai) {
+                    dem = 0
+                }
+                if (dem < -((dai * i) - d)) {
+                    dem = -((dai * i) - d);
+                }
+
+                $("#show2").animate({
+                    "margin-left": dem + "px"
+                })
+            })
+            $("#prev2").click(function () {
+                var d = $("#slide2").width();
+                dem = dem + dai;
+                if (dem == 0 + dai) {
+                    dem = -((dai * i) - d)
+                }
+                if (dem > 0) {
+                    dem = 0
+                }
+                $("#show2").animate({
+                    "margin-left": dem + "px"
+                })
+            })
+        })
+
+        var n = [galaxyJ6.showto("#slide2 span", 6, 3, 2),
+        galaxynote8.showto("#slide2 span", 6, 3, 2),
+        GalaxyJ8.showto("#slide2 span", 6, 3, 2),
+        GalaxyA6.showto("#slide2 span", 6, 3, 2),
+        GalaxyNote9.showto("#slide2 span", 6, 3, 2),
+        GalaxyJ4.showto("#slide2 span", 6, 3, 2),
+        nokia7plus.showto("#slide2 span", 6, 3, 2),
+        nokia6plus.showto("#slide2 span", 6, 3, 2),
+        nokia31.showto("#slide2 span", 6, 3, 2),
+        nokia8110.showto("#slide2 span", 6, 3, 2)]
+
+        iphoneXsMax.showto("#topdt .row", 6, 3, 2);
+        galaxyA8.showto("#topdt .row", 6, 3, 2);
+        nokia51.showto("#topdt .row", 6, 3, 2);
+        galaxyA7.showto("#topdt .row", 6, 3, 2);
+        nokia21.showto("#topdt .row", 6, 3, 2);
+        GalaxyS8plus.showto("#topdt .row", 6, 3, 2);
+        GalaxyS9.showto("#topdt .row", 6, 3, 2);
+        nokia105.showto("#topdt .row", 6, 3, 2);
+        nokia216.showto("#topdt .row", 6, 3, 2);
+
+    </script>
+</body>
+
+</html>

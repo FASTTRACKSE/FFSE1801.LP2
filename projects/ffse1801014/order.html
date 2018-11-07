@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>order</title>
+    <link rel="shortcut icon" href="https://www.clipartmax.com/png/full/27-277471_tea-and-coffee-clipart.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-pro-5.0/css/all.css">
+</head>
+
+<body class="container-fluid p-0">
+    <nav class="navbar navbar-light bg-light row position-fixed z-index-99 w-100 m-0">
+        <a href="index.html" class="navbar-brand"><img style="width:200px;" src="logo/mylogo-black.png" alt=""></a>
+        <form class="form-inline">
+
+            <button class="btn bg-light ml-2" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <a href="cart.html"><i class="fal fa-shopping-cart" style="font-size: 150%;"></i></a>
+            <div id="id01" class="modal">
+
+                <form class="modal-content animate w-50" method="POST" action=".....php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+                    </div>
+
+                    <div class="container bg-light">
+                        <label for="uname"><b>Username</b></label>
+                        <input class="w-100 input-login" type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input class="w-100 input-login" type="password" placeholder="Enter Password" name="psw"
+                            required>
+
+                        <button class="btn-login btn-info" type="submit">Login</button>
+                        <label>
+                            <input class=" input-login" type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container bg-light">
+                        <button class="btn-login btn-info" type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+
+                        <span>Forgot <a href="#">password?</a> or <a class="text-center" href="sign-up.html">Sign up</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </nav>
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-3 col-12 pt-5 px-0">
+            <div class="nav flex-column nav-pills w-100">
+                <a id="sort-default" class="nav-link text-center active" data-toggle="pill" href="order.html">Default</a>
+                <a id="sort-up" class="nav-link  text-center" data-toggle="pill" href="#v-pills-home">Sort
+                    by price ascending</a>
+                <a id="sort-down"" class=" nav-link text-center" data-toggle="pill" href="#v-pills-profile">Sort
+                    by price descending</a>
+                <a id="sort-AZ" class="nav-link text-center" data-toggle="pill" href="#v-pills-messages">Sort by name A
+                    - Z</a>
+                <a id="sort-ZA" class="nav-link text-center" data-toggle="pill" href="#v-pills-messages">Sort by name Z
+                    - A</a>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-12 shadow pl-lg-5" style="padding-left: 12% !important; background-color: white;"
+            id="order">
+            <form class="form-check-inline pt-3" style="width: 83%;" action="" id="top">
+                <input class="form-control" type="search" placeholder="what do you want..?" aria-label="Search">
+                <button onclick="alertt()" class="btn btn-secondary my-3 my-sm-0 border-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="row my-footer text-center" style="background-color: black;">
+        <div class="icon-footer col-12 pt-3">
+            <table class=" mx-auto mb-3">
+                <tr>
+                <tr>
+                    <th class="px-3 hover-icon"><a href="https://www.facebook.com/TranDucTamLuong"><i class="fab fa-facebook-f"></i></a>
+                    </th>
+                    <th class="px-3 hover-icon"><a href="https://plus.google.com/u/0/101969152477025705258"><i class="fab fa-google-plus-g"></i>
+                        </a></th>
+                    <th class="px-3 hover-icon"><a href="https://www.instagram.com/tranductamluong/"><i class="fab fa-instagram"></i>
+                        </a> </th>
+                    <th class="px-3 hover-icon"><a href="https://mail.google.com"><i class="far fa-envelope"></i> </a>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-content text-center mx-auto mb-3 col-12">
+            <a href=""> <img class="pt-3 img-fluid" src="logo/mylogo-white.png" alt=""></a>
+            <p class="pt-4 text-light" style="line-height: 30px;">
+                Address of my store <br>
+                Hotline: 0979749507 <br>
+                Free delivery: 000000000 <br>
+            </p>
+            <a href="" class="text-light">security clause</a>
+        </div>
+        <div class="col-12 border-top-gray pt-3">
+            <p style="font-size: 0.8rem"> <i class="far fa-copyright"></i>2018 - ALL RIGHTS RESERVED. <a href="" style="color:#212529;">POWERED
+                    BY LUONG</a></p>
+        </div>
+    </div>
+    <!-- ------------------------------nạp file JS ------------->
+    <script src="js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let a = `<form class="form-check-inline pt-3" style="width: 83%;" action="" id="top">
+                <input class="form-control" type="search" placeholder="what do you want..?" aria-label="Search">
+                <button class="btn btn-secondary my-3 my-sm-0 border-0" type="submit">Search</button>
+            </form>`
+
+
+        document.getElementById("sort-default").addEventListener("click", function () {
+            sort_default();
+            document.getElementById('order').innerHTML = a
+            showproducts();
+        });
+        document.getElementById("sort-up").addEventListener("click", function () {
+            sort_up();
+            document.getElementById('order').innerHTML = a
+            showproducts();
+        });
+        document.getElementById("sort-down").addEventListener("click", function () {
+            sort_down();
+            document.getElementById('order').innerHTML = a
+            showproducts();
+        });
+        document.getElementById("sort-AZ").addEventListener("click", function () {
+            // alert("ok");
+            sort_AZ();
+            document.getElementById('order').innerHTML = a
+            showproducts();
+        });
+        document.getElementById("sort-ZA").addEventListener("click", function () {
+            sort_ZA();
+            document.getElementById('order').innerHTML = a
+            showproducts();
+        });
+        // -------------------------
+        showproducts();
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

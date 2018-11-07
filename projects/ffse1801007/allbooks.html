@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="http://www.harvard.com/apple-touch-icon.png" rel="shortcut icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/style-allbooks.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Allbooks</title>
+</head>
+<body>
+  	<div class="container ">
+  		<div class="banner">
+  		  <img src="img/BANNER-Books-V2.jpg">
+  		</div>
+  		<nav class="navbar navbar-expand-lg navbar-light bg-light my-navbar">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto ">
+			      <li class="nav-item">
+			        <a class="nav-link" href="index.html">TRANG CHỦ<span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          SẢN PHẨM
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			        	<a class="dropdown-item" href="allbooks.html">Tất cả sách</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Sách sắp phát hành</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Sách mới</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Sách tái bản</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Combo Sách</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Văn hóa - Giáo dục</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Light Novel</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">BeeBooks - Tủ sách Thiếu nhi</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Toán song ngữ</a>
+			        </div>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">SỰ KIỆN</a>
+			      </li>
+			     	<li class="nav-item">
+			        <a class="nav-link" href="#">TIN TỨC</a>
+			      </li>
+
+			      <li class="nav-item">
+			        <a class="nav-link" href="https://www.fasttrack.edu.vn/">NHÀ ĐẦU TƯ</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="cv.html" onclick="canhbao()">NHÀ PHÁT TRIỂN</a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          TÀI KHOẢN
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          
+			          <a class="dropdown-item" href="#">Đăng nhập</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Đăng kí</a>
+
+			        </div>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="cart.html" target="_blank">GIỎ HÀNG <i class="fas fa-shopping-cart"></i></a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+
+			<div class="header-marquee">
+				
+					<div class="">
+						<div class="text-marquee">
+							<marquee direction="right">
+								<p>Chúc bạn luôn THÀNH CÔNG - HẠNH PHÚC - BÌNH AN</p>
+							</marquee>
+						</div>
+					</div>
+				
+			</div>
+
+			<div class="bread">
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+				  </ol>
+				</nav>
+			</div>
+
+			<!-- <content top -->
+
+			<div class="content col-xl-12">
+				<div class="row">
+					<div class="col-xl-3 left">
+						<div class="my-search">
+							<div class="ms-inner">
+								<h3>Tìm kiếm</h3>
+								<input type="text" name="timkiem" placeholder=" Nhập từ khóa">
+							</div>
+						</div>
+						<div class="my-list">
+							<div class="ml-inner">
+								<h3>Các danh mục sản phẩm</h3>
+								<ul class="list-group">
+								  <li class="my-item"><a href="">sách sắp phát hành</a></li>
+								  <li class="my-item"><a href="">sách mới</a></li>
+								  <li class="my-item"><a href="">cách tái bản</a></li>
+								  <li class="my-item"><a href="">combo sách</a></li>
+								  <li class="my-item"><a href="">v-biz</a></li>
+								  <li class="my-item"><a href="">v-parents</a></li>
+								  <li class="my-item"><a href="">v-buddhism</a></li>
+								  <li class="my-item my-item-ex-1 d-block bd-none" onclick="expand1()"><span>Xem thêm</span></li>
+								  <li class="my-item my-item-ex-1 d-none"><a href="">Văn hóa - Giáo dục</a></li>
+								  <li class="my-item my-item-ex-1 d-none"><a href="">BeeBooks - Tủ sách Thiếu nhi</a></li>
+								  <li class="my-item my-item-ex-1 d-none"><a href="">Coloring Books</a></li>
+								  <li class="my-item my-item-ex-1 d-none"><a href="">Light Novel</a></li>
+								  <li class="my-item my-item-ex-1 d-none"><a href="">Dummies</a></li>
+								  <li class="my-item my-item-ex-1 d-none"><a href="">Toán song ngữ</a></li>
+								  <li class="my-item my-item-ex-1 d-none"><a href="">Nonbooks</a></li>
+								  <li class="my-item my-item-ex-1 d-none bd-none" onclick="hide1()"><span>Thu gọn</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="my-list">
+							<div class="ml-inner">
+								<h3>Tác giả</h3>
+								<ul class="list-group">
+								  <li class="my-item"><a href="">Alex Malley</a></li>
+								  <li class="my-item"><a href="">Betty L Khoo-Kingsley</a></li>
+								  <li class="my-item"><a href="">Pháp sư Thích Nhất Như</a></li>
+								  <li class="my-item"><a href="">Akira Ikegawa</a></li>
+								  <li class="my-item"><a href="">Sasaki Masami</a></li>
+								  <li class="my-item"><a href="">Phạm Thị Thanh</a></li>
+								  <li class="my-item"><a href="">Wataru WATARI</a></li>
+								  <li class="my-item my-item-ex-2 d-block bd-none" onclick="expand2()"><span>Xem thêm</span></li>
+								  <li class="my-item my-item-ex-2 d-none"><a href="">Cao Phượng Diễm</a></li>
+								  <li class="my-item my-item-ex-2 d-none"><a href="">David Gilmour</a></li>
+								  <li class="my-item my-item-ex-2 d-none"><a href="">Trần Diệu Linh</a></li>
+								  <li class="my-item my-item-ex-2 d-none"><a href="">Fujimaru</a></li>
+								  <li class="my-item my-item-ex-2 d-none"><a href="">Isuna Hasekura</a></li>
+								  <li class="my-item my-item-ex-2 d-none bd-none" onclick="hide2()"><span>Thu gọn</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9">
+						<div class="product">
+							<div class="col-xl-12">
+								<div class="row">
+									<div class="col-xl-9">
+										<h2>TẤT CẢ SẢN PHẨM</h2>
+									</div>
+									<div class="col-xl-3">
+										<!-- <button class="btn " onclick="sapxep()">sap xep</button> -->
+										<select class="custom-select custom-select-sm text-right" onchange="sapxep(this.value)">
+										  <option value="0" selected>Default</option>
+										  <option value="1">Sort by price up</option>
+										  <option value="2">Sort by price down</option>
+										  <option value="3">Sort A-Z</option>
+										  <option value="4">Sort Z-A</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="card-group">
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+								    <img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/09/Chuyện-tình-thanh-xuân-bi-hài-4-OUT-01.jpg" alt="Card image cap">
+								  	</div>
+								  </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Chuyện tình thanh xuân bi hài của tôi quả nhiên là sai lầm 4 (Bản đặc biệt)</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">119000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2016/11/Bia_co-gai-van-chuong_tap-3-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Tập 3 – Cô gái văn chương và gã khờ bị trói buộc</h5></a>
+							    </div>
+							    <div class="card-foote my-card-footer">
+							    	<p class="book-price">99000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2016/11/Bi_mat_giao_uoc_bong_toi-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Bí mật giao ước bóng tối</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">109000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/10/Thói-quen-của-mẹ-nuôi-con-tự-giác-học-tập-.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Thói quen của mẹ nuôi con tự giác học tập</h5></a>	
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">75000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							</div>
+
+							<div class="card-group">
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+								   	 <img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/05/Hành-trình-linh-hồn-247x300.jpg" alt="Card image cap">
+								    </div>
+								  </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Hành trình của linh hồn</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">88000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/10/hạnh-phúc.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Hạnh phúc không nằm trong ví</h5></a>
+							    </div>
+							    <div class="card-foote my-card-footer">
+							    	<p class="book-price">82000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/09/Hành-trình-cafe.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Hành trình cà phê</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">90000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/08/Nguyên-tắc-thiết-kế-slide-chuẩn-TED-bìa.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Nguyên tắc thiết kế slide chuẩn TED</h5></a>	
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">50000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							</div>
+
+							<div class="card-group">
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+								    	<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2016/11/Bia_Sinh-ra-de-tro-thanh-Steve-Jobs--247x300.jpg" alt="Card image cap">
+								    </div>
+								  </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Sinh ra để trở thành Steve Jobs</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">70000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/10/hạnh-phúc.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Hạnh phúc không nằm trong ví</h5></a>
+							    </div>
+							    <div class="card-foote my-card-footer">
+							    	<p class="book-price">65000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2016/11/Bia_Nhung-nguoi-khong-lo-trong-gioi-kinh-doanh-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Những người khổng lồ trong giới kinh doanh</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">62000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2016/11/Bìa_AQ-Chi-so-vuot-kho-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">AQ – Chỉ số vượt khó</h5></a>	
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">55000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							</div>
+
+							<div class="card-group">
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+								    	<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/06/Bìa-cuốn-15-cách-giúp-trẻ-tư-duy-số-học-247x300.jpg" alt="Card image cap">
+								    </div>
+								  </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">15 cách giúp trẻ tư duy số học</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">45000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/10/1-2.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Ikebana cơ bản: Nghệ thuật cắm hoa của người Nhật</h5></a>
+							    </div>
+							    <div class="card-foote my-card-footer">
+							    	<p class="book-price">58000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/04/Bia-Ky-nang-thoat-nan-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Kỹ năng thoát nạn từ một số sự cố trong cuộc sống hàng ngày</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">78000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/02/heart-our-story-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Hear Our Stories – Hãy lắng nghe câu chuyện của chúng tôi</h5></a>	
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">60000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							</div>
+							<!-- 1 dong sp -->
+							<div class="card-group">
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+								    	<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2018/04/tai-lieu-mat-edit-247x300.jpg" alt="Card image cap">
+								    </div>
+								  </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Tài liệu mật: Hồi ký về cuộc chiến tranh Việt Nam và vụ tiết lộ Hồ sơ Lầu Năm Góc</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">60000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2017/06/19532792_874894615999533_714817786_o-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">TEDBooks – Con trai kẻ khủng bố</h5></a>
+							    </div>
+							    <div class="card-foote my-card-footer">
+							    	<p class="book-price">80000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2016/11/cảm-ơn-con-đã-chọn-bố-mẹ-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Cảm ơn con đã chọn bố mẹ</h5></a>
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">74000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							  <div class="card">
+							  	<a href="chitiet.html">
+							  		<div class="img-box">
+							    		<img class="book-image" src="http://thaihabooks.com/wp-content/uploads/2016/11/1314910020_Bia_Chien-luoc-nhan-su_OUT-01-247x300.jpg" alt="Card image cap">
+							    	</div>
+							    </a>
+							    <div class="card-body">
+							      <a href="chitiet.html"><h5 class="book-title">Chiến lược nhân sự</h5></a>	
+							    </div>
+							    <div class="card-footer my-card-footer">
+							    	<p class="book-price">40000</p>
+							      <p class="card-text star-rating"></p>
+							    </div>
+							  </div>
+							</div>
+
+							<nav aria-label="Page navigation example">
+							  <ul class="pagination justify-content-end">
+							    <li class="page-item disabled">
+							      <a class="page-link" href="#" tabindex="-1">Previous</a>
+							    </li>
+							    <li class="page-item"><a class="page-link" href="#">1</a></li>
+							    <li class="page-item"><a class="page-link" href="#">2</a></li>
+							    <li class="page-item"><a class="page-link" href="#">3</a></li>
+							    <li class="page-item"><a class="page-link" href="#">...</a></li>
+							    <li class="page-item">
+							      <a class="page-link" href="#">Next</a>
+							    </li>
+							  </ul>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div> 
+
+			<!-- content bot -->
+
+			
+			<!-- footer -->
+ 
+			<div class="footer">
+				<div class="col-lg-12">
+					<div class="row">
+						<div class="col-lg-3">
+							<h5>HAPPY READING! BOOKS</h5>
+							<ul>
+								<li><a href="">Trang chủ</a></li>
+								<li><a href="">Giới thiệu</a></li>
+								<li><a href="">Sách</a></li>
+								<li><a href="">BLog</a></li>
+								<li><a href="">Tin tức</a></li>
+								<li><a href="">Tuyển dụng</a></li>
+								<li><a href="">Liên Hệ</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3">
+							<h5>TỦ SÁCH HAPPY READING!</h5>
+							<ul>
+								<li><a href="">V-Biz</a></li>
+								<li><a href="">V-Parents</a></li>
+								<li><a href="">V-Buddhism</a></li>
+								<li><a href="">Văn hóa – Giáo dục</a></li>
+								<li><a href="">Beebooks</a></li>
+								<li><a href="">Light novel</a></li>
+								<li><a href="">Dummies</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3">
+							<h5>TRỤ SỞ VÀ CHI NHÁNH</h5>
+							<ul>
+								<li><p><strong>TẠI HÀ NỘI:</strong></p></li>
+								<li><p>53 Phạm Thận Duật, P. Mai Dịch, Cầu Giấy, Hà Nội - 024 3793 0480 - 024 3792 0995</p></li>
+								<li><p><strong>TẠI TP HỒ CHÍ MINH:</strong></p></li>
+								<li><p>88/28 Đào Duy Anh, phường 9, Quận Phú Nhuận, TP.HCM - 028 2253 2641 Hotline: 028 6276 1719</p></li>
+							</ul>
+						</div>
+						<div class="col-lg-3">
+							<h5>HỆ THỐNG NHÀ SÁCH</h5>
+							<ul>
+								<li><p><strong>TẠI HÀ NỘI:</strong></p></li>
+								<li><p>1) 119C5 Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội - 024 6281 3638</p></li>
+								<li><p>2) Phố sách Hà Nội, đường 19 tháng 12, Trần Hưng Đạo, Hoàn Kiếm, Hà Nội - 024 2211 6161</p></li>
+								<li><p><strong>TẠI TP HỒ CHÍ MINH:</strong></p></li>
+								<li><p>Đường sách Nguyễn Văn Bình, Bến Nghé, Q.1, TP HCM - 028 3822 3340</p></li>
+								<li><p>88/28 Đào Duy Anh, phường 9, Quận Phú Nhuận, TP.HCM - 028 2253 2641 Hotline: 028 6276 1719</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		<!-- the div container o duoi -->
+		</div>
+			
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+    	var arraybook=[];
+    	var listimage=$(".book-image");
+    	var listtitle=$(".book-title");
+    	var listprice=$(".book-price");
+    	for (var i = 0; i < listimage.length; i++) {
+    		arraybook[i]=
+    		{image:listimage[i].src,
+    			title:listtitle[i].innerHTML,
+    			price:listprice[i].innerHTML}
+    	}
+
+    	var arraybookorigin=[];
+    	var listimageorigin=$(".book-image");
+    	var listtitleorigin=$(".book-title");
+    	var listpriceorigin=$(".book-price");
+    	for (var i = 0; i < listimageorigin.length; i++) {
+    		arraybookorigin[i]=
+    		{image:listimageorigin[i].src,
+    			title:listtitleorigin[i].innerHTML,
+    			price:listpriceorigin[i].innerHTML}
+    	}
+
+    	console.log(arraybookorigin);
+    	function sortpriceup(){
+    	arraybook.sort(function compare(a, b) {
+			  return a.price - b.price;
+			});
+    	}
+    	function sortpricedown(){
+    	arraybook.sort(function compare(b, a) {
+			  return a.price - b.price;
+			});
+    	}
+    	function sortnameAZ(){
+    	arraybook.sort(function compare(a, b) {
+			  var textA = a.title.toUpperCase();
+    		var textB = b.title.toUpperCase();
+    		return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+			});
+    	}
+    	function sortnameZA(){
+    	arraybook.sort(function compare(b, a) {
+			  var textA = a.title.toUpperCase();
+    		var textB = b.title.toUpperCase();
+    		return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+			});
+    	}
+
+			function sapxep(index){
+				if(index == 0){
+					for (var i = 0; i < arraybookorigin.length; i++) {
+						$(".book-image")[i].src=arraybookorigin[i].image;
+						$(".book-title")[i].innerHTML=arraybookorigin[i].title;
+						$(".book-price")[i].innerHTML=arraybookorigin[i].price;
+					}
+				}
+				if(index == 1){sortpriceup();changePosition();}
+				if(index == 2){sortpricedown();changePosition();}
+				if(index == 3){sortnameAZ();changePosition();}
+				if(index == 4){sortnameZA();changePosition();}	
+			}
+			function changePosition(){
+				for (var i = 0; i < arraybook.length; i++) {
+						$(".book-image")[i].src=arraybook[i].image;
+						$(".book-title")[i].innerHTML=arraybook[i].title;
+						$(".book-price")[i].innerHTML=arraybook[i].price;
+				}
+			}
+			console.log(arraybook);
+    	function expand1(){
+    		var listitem1=$(".my-item-ex-1");
+    		console.log(listitem1);
+    		for (var i = 0; i < listitem1.length; i++) {
+    			listitem1[i].className=listitem1[i].className.replace(" d-none", " d-block");
+    			listitem1[0].className=listitem1[0].className.replace(" d-block", " d-none");
+    		}
+    	}
+    	function expand2(){
+    		var listitem2=$(".my-item-ex-2");
+    		for (var i = 0; i < listitem2.length; i++) {
+    			listitem2[i].className=listitem2[i].className.replace(" d-none", " d-block");
+    			listitem2[0].className=listitem2[0].className.replace(" d-block", " d-none");
+    		}
+  		}
+  		function hide1(){
+    		var listitem1=$(".my-item-ex-1");
+    		console.log(listitem1);
+    		for (var i = 0; i < listitem1.length; i++) {
+    			listitem1[i].className=listitem1[i].className.replace(" d-block", " d-none");
+    			listitem1[0].className=listitem1[0].className.replace(" d-none", " d-block");
+    		}
+    	}
+    	function hide2(){
+    		var listitem2=$(".my-item-ex-2");
+    		for (var i = 0; i < listitem2.length; i++) {
+    			listitem2[i].className=listitem2[i].className.replace(" d-block", " d-none");
+    			listitem2[0].className=listitem2[0].className.replace(" d-none", " d-block");
+    		}
+  		}
+  		function canhbao(){
+  			alert("Chức năng chỉ hoạt động trên màn hình 1920 O.O!");
+  		}
+    </script>
+
+</body>
+</html>

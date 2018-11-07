@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức công nghệ</title>
+    <script language="javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="tintuc.css">
+    <link rel="stylesheet" href="./data/data.css">
+    <script type="text/javascript" src="./data/data.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default .navbar-fixed-top" id="menu">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Trang chủ</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="list" href="sanpham.html">Sản phẩm</a></li>
+                    <li><a class="list" href="suachua.html">Sửa chữa</a></li>
+                    <li style="background:gray;"><a class="list" href="tintuc.html">Tin tức</a></li>
+                    <li class="caigio"><a href="giohang.html" target="_blank" style="color:orange; font-size: 16px">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="number_item">0</span> Items</a>
+                        <img class="igio" src="./img/tamgiac.png" alt="">
+                        <div id="ch" class="igio"></div>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control search" placeholder="Tìm sản phẩm">
+                    </div>
+                    <a class="btn btn-default submit" href="search.html" target="_blank">Tìm</a>
+                    <div class="timkiem"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="contain" style="margin-top:70px;">
+        <div id="list_">
+            <ul>
+                <li style="background:rgb(243, 181, 9);">TIN MỚI</li>
+                <li>SẢN PHẨM MỚI</li>
+                <li>ĐÁNH GIÁ</li>
+                <li>MẸO HAY</li>
+                <li>THỊ TRƯỜNG</li>
+                <li>CUỘC SỐNG SỐ</li>
+                <li>GAME - APP</li>
+                <li>SỰ KIỆN</li>
+                <li>LAPTOP</li>
+            </ul>
+            <div style="clear:left"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8">
+                <div class="row class1">
+                    <div class="col-xs-12 col-sm-8 col-md-8 class1_1">
+                        <img src="https://cdn.tgdd.vn/Files/2018/11/01/1128266/y93_800x450-600x400.jpg" alt="">
+                        <h3>Vivo Y93 ra mắt: Màn giọt nước, chip Snapdragon 439, giá 5 triệu đồng </h3>
+                        <p>
+                            Chỉ mới rò rỉ thông tin cách nay ít ngày, vậy mà hôm nay Vivo Y93 đã chính thức ra mắt tại
+                            Trung Quốc. Vivo Y93 có mặt lưng bắt mắt với công nghệ 3D micro-arc, màn hình "giọt nước"
+                            LCD 6.2 inch với độ phân giải 1.520 x 720 pixel, dùng chip Snapdragon 439.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4  class1_2">
+                        <div class="row">
+                            <div class="col-xs-5 col-sm-12 col-md-12">
+                                <img src="https://cdn.tgdd.vn/Files/2018/10/31/1128185/1_800x450-300x200.jpg" alt="">
+                                <h4>Hình ảnh thiết kế Galaxy S10 lộ diện cực kỳ rõ nét</h4>
+                            </div>
+                            <div class="col-xs-7 col-sm-12 col-md-12">
+                                <p>4 camera trên Galaxy A9 (2018) có thể làm được những gì</p>
+                                <p>Hàng loạt smartphone Samsung giảm giá sốc chỉ còn 3 triệu</p>
+                                <p>Lenovo Z5 pro ra mắt: màn hình trược, vân tay dưới màn hình, Snapdragon 710</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main">
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Files/2018/11/01/1128362/xiaomi-mi-8-lite-review_800x450-300x200.jpg"
+                            alt="">
+                        <h4>Xiaomi Mi 8 Lite lên kệ Thế Giới Di Động với giá gần 6.7 triệu đồng</h4>
+                        <p>Như vậy sau bao ngày quảng cáo rầm rộ tại Việt Nam, hôm nay Xiaomi Mi 8 Lite đã chính thức
+                            lên kệ Thế Giới Di Động. Một chiếc smartphone tầm trung...</p>
+                        <span>24 giờ trước - tin 24/7</span>
+                        <h5 style="clear: both;"></h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Files/2018/10/30/1127800/apple-iphone-xs-hands_screen-09122018_inline.jpg.large_2x_1142x644-300x200.jpg"
+                            alt="">
+                        <h4>Cách điều chỉnh khẩu độ camera trên iPhone Xs Max, iPhone Xs, iPhone Xr</h4>
+                        <p>iPhone Xs, Xs Max và Xr là bộ ba "siêu phẩm" mới nhất từ Apple với nhiều nâng cấp đáng giá
+                            về cấu hình cũng như các tính năng hữu ích đi kèm. Thú...</p>
+                        <span>24 giờ trước - tin 24/7</span>
+                        <h5 style="clear: both;"></h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Files/2018/10/28/1127559/maxresdefault_1280x720-300x200.jpg" alt="">
+                        <h4>Hướng dẫn đăng ảnh 3D lên Facebook để "khè" bạn bè</h4>
+                        <p>Facebook vừa chính thức giới thiệu tính năng đăng và xem ảnh 3D trên smartphone, tuy nhiên
+                            lại giới hạn ở một số thiết bị sở hữu camera kép. Vậy...</p>
+                        <span>24 giờ trước - tin 24/7</span>
+                        <h5 style="clear: both;"></h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Files/2018/11/01/1128352/fa1_1200x675-300x200.jpg" alt="">
+                        <h4>Snapdragon 8150 chưa ra mắt nhưng đã lộ điểm sức mạnh trên Geekbench</h4>
+                        <p>NSnapdragon 8150 hiện vẫn chưa ra mắt thị trường, tuy nhiên nó cũng đã có mặt trên mẫu
+                            smartphone màn hình gập đầu tiên mới ra mắt - Royole FlexPai...</p>
+                        <span>24 giờ trước - tin 24/7</span>
+                        <h5 style="clear: both;"></h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Files/2018/11/01/1128339/1_800x450-300x200.jpg" alt="">
+                        <h4>iOS 12.1 gặp lỗi bảo mật, vượt màn hình khóa để truy cập danh bạ</h4>
+                        <p>Vào đầu tuần này, Apple đã phát hành phiên bản hệ điều hành iOS 12.1 mới và các nhà nghiên
+                            cứu bảo mật đã phát hiện ra một lỗ hổng bảo mật...</p>
+                        <span>24 giờ trước - tin 24/7</span>
+                        <h5 style="clear: both;"></h5>
+                    </div>
+                    <div class="w3-content w3-display-container" style="max-width:800px">
+                        <img class="mySlides" src="https://cdn.tgdd.vn/Files/2018/10/31/1128173/ss_799x450.jpg" style="width:100%">
+                        <img class="mySlides" src="https://cdn.tgdd.vn/Files/2018/10/28/1127512/halloween2018-camera_800x450.jpg"
+                            style="width:100%">
+                        <img class="mySlides" src="https://cdn.tgdd.vn/Files/2018/10/24/1126673/hermes_800x450.jpg"
+                            style="width:100%">
+                        <div style="width:100%"></div>
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fas fa-angle-left"></i></div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)"><i class="fas fa-angle-right"></i></div>
+                        <span class="w3-badge demo d1 w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                        <span class="w3-badge demo d2 w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                        <span class="w3-badge demo d3 w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    </div>
+                    <!-- <div style="width:100%; height: 50px;"></div> -->
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Files/2018/10/28/1127441/facebook_800x450-300x200.jpg" alt="">
+                        <h4>Đây là 5 loại thông tin cá nhân mà Facebook thu thập từ bạn</h4>
+                        <p>Mạng xã hội hiện là một trong những ứng dụng phổ biến nhất trên internet và là một nền tảng
+                            mạnh mẽ cho phép người dùng kết nối với gia đình, bạn...</p>
+                        <span>24 giờ trước - tin 24/7</span>
+                        <h5 style="clear: both;"></h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Files/2018/10/27/1127266/l1_800x450-300x200.jpg" alt="">
+                        <h4>Xiaomi Mi 8 Lite lên kệ Thế Giới Di Động với giá gần 6.7 triệu đồng</h4>
+                        <p>IPhone Xr, iPhone Xs và iPhone Xs Max vừa chính thức lên kệ tại Thế Giới Di Động, và ngay
+                            sau đây là những hình ảnh thực tế, cảm nhận nhanh về bộ 3 siêu phẩm này. Hãy...</p>
+                        <span>24 giờ trước - tin 24/7</span>
+                        <h5 style="clear: both;"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 class2">
+                <div class="class2_1">
+                    <h4>THẢO LUẬN NHIỀU</h4>
+                    <div>
+                        <div class="stt">1</div>
+                        <p>Lên đời Samsung Galaxy Note 9, tiết kiệm lên đến 10 triệu <span><i class="fas fa-comment-alt"></i> 123</span></p>
+                    </div>
+                    <div>
+                        <div class="stt">2</div>
+                        <p>KẾT QUẢ Minigame tặng miễn phí Galaxy A7 (2018) để bạn "chụp cả thế giới" <span><i class="fas fa-comment-alt"></i> 123</span></p>
+                    </div>
+                    <div>
+                        <div class="stt">3</div>
+                        <p>Khuyến mãi phụ kiện tháng 11: Mua càng nhiều, giảm càng cao <span><i class="fas fa-comment-alt"></i> 123</span></p>
+                    </div>
+                    <div>
+                        <div class="stt">4</div>
+                        <p>Ưu đãi giảm ngay 2.5 triệu khi mua "siêu phẩm" Galaxy Note 9 <span><i class="fas fa-comment-alt"></i> 123</span></p>
+                    </div>
+                </div>
+                <div class="class2_2">
+                    <h4>TUYỂN DỤNG TẠI MWG</h4>
+                    <div>
+                        <ul>
+                            <li>Chuyên Viên Đào Tạo ( Soft-skill, Hard-skill, E-Learning) <br>
+                                <span>TP.Hồ Chí Minh</span>
+                            </li>
+                            <li>Lập Trình WEB (ASP.NET/MVC) và Web Designer<br>
+                                <span>TP.Hồ Chí Minh</span>
+                            </li>
+                            <li>Tìm kiếm & Phát Triển Mặt Bằng<br>
+                                <span>TP.Hồ Chí Minh</span>
+                            </li>
+                            <li>Tổng Đài Giải Quyết Khiếu Nại<br>
+                                <span>TP.Hồ Chí Minh</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class2_3">
+                    <h4>SẢN PHẨM MỚI</h4>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/188963/huawei-mate-20-pro-green-400x400.jpg"
+                            alt="">
+                        <p>HUAWEI MATE 20 PRO</p>
+                        <h5>21.990.000 VND</h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/179736/huawei-mate-20-black-400x400.jpg" alt="">
+                        <p>HUAWEI MATE 20</p>
+                        <h5>21.990.000 VND</h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/153854/nokia-7-plus-2-400x400.jpg" alt="">
+                        <p>NOKIA 7 PLUS</p>
+                        <h5>21.990.000 VND</h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/145789/nokia-6-2018-13-400x400.jpg" alt="">
+                        <p>NOKIA 6.1</p>
+                        <h5>21.990.000 VND</h5>
+                    </div>
+                </div>
+                <div class="class2_4">
+                    <h3>KHUYẾN MÃI</h3>
+                    <img src="https://cdn.tgdd.vn/Files/2018/11/01/1128267/home-credit-61xe_800x450-600x400.jpg" alt="">
+                    <b>Tháng 11 & 12/2018: Mua trả góp Home Credit, trúng xe Wave Alpha mỗi ngày (61 xe)</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end_">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <ul>
+                        <li>Giới thiệu công ty (DĐTM)</li>
+                        <li>Hệ thống cửa hàng</li>
+                        <li>Tuyển dụng</li>
+                        <li>Chính sách bảo mật</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <ul>
+                        <li>Chính sách bảo hành</li>
+                        <li>Chính sách đổi trả sản phẩm</li>
+                        <li>Hỏi Đáp Mua Hàng Online</li>
+                        <li>Phương Thức Thanh Toán</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <ul>
+                        <li>Gọi mua hàng: <b>1900.6122</b> (8H00 - 21H30)</li>
+                        <li>Gọi bảo hành: <b>1800.6501</b> (8H00 - 21H30)</li>
+                        <li>Gọi khiếu nại: <b>1800.6502</b> (8H00 - 21H30)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="creder">
+            <h4>Made by TuHuynh</h4>
+            <p>Email:FFSE1801022@outlook.com</p>
+            <p>Sdt: 64823492034</p>
+        </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+        function showDivs(n) {
+            var i;
+            var x = $(".mySlides");
+            var dots = $(".demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x.eq(i).fadeOut(500);
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots.eq(i).removeClass("w3-white")
+            }
+            x.eq(slideIndex - 1).fadeIn(500);
+            dots.eq(slideIndex - 1).addClass("w3-white");
+        }
+        $(document).ready(function () {
+            $(".w3-content").height($(".mySlides").height())
+            var soluong = 0
+            for (let i = 0; i < sp.length; i++) {
+                if (localStorage.getItem(sp[i].id) != null) {
+                    soluong++;
+                }
+            }
+            $("#number_item").text(soluong);
+        })
+
+    </script>
+</body>
+
+</html>
