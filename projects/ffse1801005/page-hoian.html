@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hạ Long Tours</title>
+	<meta property="og:image" content="/files/files/img/logo.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylebase1.css">
+	<link rel="shortcut icon" href="img/favicon1.ico">
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="jssor.slider.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top tong-menu">
+		<div class="container">
+			<div class="navbar-header col-md-2">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html">
+					<img src="img/logo.png"  class="img-logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav col-md-8 main-menu">
+					<li class="dropdown ">
+						<a class="dropdown-toggle " data-toggle="dropdown" href="index.html" style="color:white" onclick="color">PACKAGE TUOR<span class="caret"></span></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="#">Việt Nam Package tuors</a></li>
+							<li><a href="page2.html">Campodia Package tuors</a></li>
+						</ul>
+					</li>
+					<li class="dropdown ">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color:white">HALONG TUOR<span class="caret"></span></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="#">Standard Cruises</a></li>
+							<li><a href="#">Deluxe Cruises</a></li>
+							<li><a href="#">Luxury Cruises</a></li>
+						</ul>
+					</li>
+					<li class="dropdown ">
+						<a class="dropdown-toggle day-trip" data-toggle="dropdown" href="#"style="color:white">DAY TRIPS<span class="caret"></span></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="#">Sapa Tuors</a></li>
+							<li><a href="#">Ha noi Day Tuors</a></li>
+							<li><a href="#">Hue Day Tuors</a></li>
+							<li><a href="#">Da Nang Day Tuors</a></li>
+							<li><a href="#">Hoi An Day Tuors</a></li>
+						</ul>
+					</li>
+					<li><a href="transportation.html"style="color:white">TRANSPORTATION</a></li>
+					<li><a href="page-contact.html" class="ct"style="color:white">CONTACT US</a></li>
+				</ul>
+				<div class=" col-md-2">
+					<form class="navbar-form navbar-left col-md-2" action="/action_page.php">
+						<div class="input-group form-search">
+							<input type="text" class="form-control" placeholder="Search" name="search">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="slide">
+		<script src="js/jssor.slider.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			jssor_1_slider_init = function() {
+
+				var jssor_1_options = {
+					$AutoPlay: 1,
+					$SlideDuration: 800,
+					$SlideEasing: $Jease$.$OutQuint,
+					$ArrowNavigatorOptions: {
+						$Class: $JssorArrowNavigator$
+					},
+					$BulletNavigatorOptions: {
+						$Class: $JssorBulletNavigator$
+					}
+				};
+
+				var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+				/*#region responsive code begin*/
+
+				var MAX_WIDTH = 3000;
+
+				function ScaleSlider() {
+					var containerElement = jssor_1_slider.$Elmt.parentNode;
+					var containerWidth = containerElement.clientWidth;
+
+					if (containerWidth) {
+
+						var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+						jssor_1_slider.$ScaleWidth(expectedWidth);
+					}
+					else {
+						window.setTimeout(ScaleSlider, 30);
+					}
+				}
+
+				ScaleSlider();
+
+				$Jssor$.$AddEvent(window, "load", ScaleSlider);
+				$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+				$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+				/*#endregion responsive code end*/
+			};
+		</script>
+		<style>
+		/*jssor slider loading skin spin css*/
+		.jssorl-009-spin img {
+			animation-name: jssorl-009-spin;
+			animation-duration: 1.6s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		@keyframes jssorl-009-spin {
+			from { transform: rotate(0deg); }
+			to { transform: rotate(360deg); }
+		}
+
+		/*jssor slider bullet skin 032 css*/
+		.jssorb032 {position:absolute;}
+		.jssorb032 .i {position:absolute;cursor:pointer;}
+		.jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
+		.jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
+		.jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
+		.jssorb032 .i.idn {opacity:.3;}
+
+		/*jssor slider arrow skin 051 css*/
+		.jssora051 {display:block;position:absolute;cursor:pointer;}
+		.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+		.jssora051:hover {opacity:.8;}
+		.jssora051.jssora051dn {opacity:.5;}
+		.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+	</style>
+	<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:550px;overflow:hidden;visibility:hidden;">
+		<!-- Loading Screen -->
+		<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+			<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+		</div>
+		<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:550px;overflow:hidden;">
+			<div>
+				<img data-u="image" src="img/13.jpg" />
+				<h1 class="intro-title">Halong Tours Booking </h1>
+				<div class="intro-text"> We make your holidays memorable</div>
+			</div>
+			<div>
+				<img data-u="image" src="img/1.jpg" />
+				<h1 class="intro-title">Halong Tours Booking </h1>
+				<div class="intro-text"> We make your holidays memorable</div>
+			</div>
+			<div>
+				<img data-u="image" src="img/10.jpg" />
+				<h1 class="intro-title">Halong Tours Booking </h1>
+				<div class="intro-text"> We make your holidays memorable</div>
+			</div>
+			<div>
+				<img data-u="image" src="img/11.jpg" />
+				<h1 class="intro-title">Halong Tours Booking </h1>
+				<div class="intro-text"> We make your holidays memorable</div>
+			</div>
+			<div>
+				<img data-u="image" src="img/9.jpg" />
+				<h1 class="intro-title">Halong Tours Booking </h1>
+				<div class="intro-text"> We make your holidays memorable</div>
+			</div>
+		</div>
+		<!-- Bullet Navigator -->
+		<div data-u="navigator" class="jssorb032" style="position:absolute;bottom:1px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+			<div data-u="prototype" class="i" style="width:16px;height:16px;">
+				<svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+					<circle class="b" cx="8000" cy="8000" r="5800"></circle>
+				</svg>
+			</div>
+		</div>
+		<!-- Arrow Navigator -->
+		<div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+			<svg viewBox="0 0 16000 16000" style="position:absolute;top:0px;left:0;width:100%;height:100%;">
+				<polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+			</svg>
+		</div>
+		<div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+			<svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+				<polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+			</svg>
+		</div>
+	</div>
+	<script type="text/javascript">jssor_1_slider_init();</script>
+</div>
+<div class="sub-nav ">
+	<div class="navbar navbar-inverse title-nd">
+		<div class="container">
+			<div class="navbar-header">
+				<h1 id="title-h1">
+				</h1>
+			</div>
+			<!-- Sub Nav Links -->
+			<nav class="navbar-collapse collapse" id="navbar-sub">
+				<ul class="nav navbar-nav navbar-right sm" data-smartmenus-id="15407865895480671" style="margin-top:10px">
+					<li>
+						<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://swallowtravel.com/vietnam-package-tours"><i class="fa fa-facebook"></i><span class="hidden-md hidden-lg">Facebook</span></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://twitter.com/share?url=http://swallowtravel.com/vietnam-package-tours"><i class="fa fa-twitter"></i><span class="hidden-md hidden-lg">Twitter</span></a>
+					</li>
+					<li>
+						<a target="_blank" href="https://plus.google.com/share?url=http://swallowtravel.com/vietnam-package-tours"><i class="fa fa-google-plus"></i><span class="hidden-md hidden-lg">Google +</span></a>
+					</li>
+					<li><a target="_blank" href="mailto:info@halongtoursbooking.com.vn"><i class="fa fa-envelope-o"></i> <span class="hidden-md hidden-lg">Email</span></a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+</div>
+<section class="regular" style="padding-top: 4rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/71/hanoi-city-tour" title="Hanoi City Tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/HanoiCityTour/Hanoi-City.jpg" alt="Hanoi City Tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/71/hanoi-city-tour" title="Hanoi City Tour">Hanoi City Tour</a></h3>
+                            <div style="text-align: justify">
+                                The colonial capital city Hanoi is a unique Asian city with tree-lined boulevards, French colonial architecture, peaceful lakes and oriental pagodas and temples dating back a thousand years.
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$30</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/71/hanoi-city-tour" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/72/hanoi-foodie-private-tour" title="Hanoi Foodie private tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/hanoicitytourfullday/pho-%20dai%20dien.jpg" alt="Hanoi Foodie private tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/72/hanoi-foodie-private-tour" title="Hanoi Foodie private tour">Hanoi Foodie private tour</a></h3>
+                            <div style="text-align: justify">
+                                With a 3-hour street food tour, experience a great way to explore a side of Old Quarter life with local cuisines as well as historical cultures
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$25</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/72/hanoi-foodie-private-tour" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/74/hoa-lu-tam-coc-full-day-tour" title="Hoa Lu Tam Coc full day tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/hoalutamcoctourfullday/hoa%20lu-dai%20dien.jpg" alt="Hoa Lu Tam Coc full day tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/74/hoa-lu-tam-coc-full-day-tour" title="Hoa Lu Tam Coc full day tour">Hoa Lu Tam Coc full day tour</a></h3>
+                            <div style="text-align: justify">
+                                Visit Hoa Lu and Tam Coc and learn more about the northern Vietnamese countryside, history, and culture on a full-day tour. Hoa Lu is an ancient capital, and Tam Coc, which means “3 caves,” features karst formations and caves you’ll explore by boat.
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$35</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/74/hoa-lu-tam-coc-full-day-tour" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/75/trang-an-ecotourism-complex-bai-dinh-pagoda-tour" title=" Trang An Ecotourism Complex- Bai Dinh Pagoda Tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/HoaLu-TC-BaiDinh-TrangAn/trang%20an%20dai%20dien.jpg" alt=" Trang An Ecotourism Complex- Bai Dinh Pagoda Tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/75/trang-an-ecotourism-complex-bai-dinh-pagoda-tour" title=" Trang An Ecotourism Complex- Bai Dinh Pagoda Tour"> Trang An Ecotourism Complex- Bai Dinh Pagoda Tour</a></h3>
+                            <div style="text-align: justify">
+                                Trang An, the eco tourist attraction located in the East of Ninh Binh, with area of 2000 ha, is divided into 5 function parts: special protection area (Hoa Lu Ancient Capital), the centre, caves area, service and travel area, spirit area Bai Dinh Pagoda
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$35</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/75/trang-an-ecotourism-complex-bai-dinh-pagoda-tour" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/76/perfume-pagoda-1-day-tour" title="Perfume Pagoda 1 Day Tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/perfumepagodatourfullday/chua-huong%20dai%20dien.jpg" alt="Perfume Pagoda 1 Day Tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/76/perfume-pagoda-1-day-tour" title="Perfume Pagoda 1 Day Tour">Perfume Pagoda 1 Day Tour</a></h3>
+                            <div style="text-align: justify">
+                                The Perfume Pagoda (Chùa Hương) is a vast complex of Buddhist temples and shrines built into the limestone Huong Tich mountains. The Perfume Pagoda one of the most important religious sites in Buddhist Vietnam. 
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$38</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/76/perfume-pagoda-1-day-tour" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/95/mai-chau-full-day-private-tour" title="Mai Chau full day private tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/mai%20chau/mai-chau-hoa-binh%20dai%20dien.jpg" alt="Mai Chau full day private tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/95/mai-chau-full-day-private-tour" title="Mai Chau full day private tour">Mai Chau full day private tour</a></h3>
+                            <div style="text-align: justify">
+                                Rushed of time? We offer a 1 day trip tour to Mai Chau and back to Hanoi in one day so you can visit beautiful Mai Chau and continue your travels.
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$75</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/95/mai-chau-full-day-private-tour" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/156/cyclo-and-water-puppetry-tour" title="Cyclo and Water Puppetry Tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/HanoiCityTour/cyclo%202%20max.jpg" alt="Cyclo and Water Puppetry Tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/156/cyclo-and-water-puppetry-tour" title="Cyclo and Water Puppetry Tour">Cyclo and Water Puppetry Tour</a></h3>
+                            <div style="text-align: justify">
+                                Enjoy a 1 hour traditional puppetry art show . Take a ride on a cyclo for an adventure winding through the sights, sounds &amp; smells of this historic metropolis.
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$35</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/156/cyclo-and-water-puppetry-tour" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/173/duong-lam-ancient-village" title="Duong Lam Ancient Village Tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/duonglamvillagevietancient/Duong-Lam-Village-5.jpg" alt="Duong Lam Ancient Village Tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/173/duong-lam-ancient-village" title="Duong Lam Ancient Village Tour">Duong Lam Ancient Village Tour</a></h3>
+                            <div style="text-align: justify">
+                                Duong Lam ancient village was recognized the UNESCO Conservation Heritage in 2013. This village has been known as a museum of laterite with ancient houses aged up to 400 years old. 
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$40</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/173/duong-lam-ancient-village" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/196/hoa-lu-tam-coc-small-group-full-day-tour" title="Hoa Lu Tam Coc small group full day tour">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/medium0.jpg" alt="Hoa Lu Tam Coc small group full day tour" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/196/hoa-lu-tam-coc-small-group-full-day-tour" title="Hoa Lu Tam Coc small group full day tour">Hoa Lu Tam Coc small group full day tour</a></h3>
+                            <div style="text-align: justify">
+                                Hoa Lu and Tam Coc, the two must-see destinations when visiting Ninh Binh province, are located about 100 km away from the southeast of Hanoi. On 23 June 2014, at the 38th session of the World Heritage Committee in Doha, the Trang An Scenic Landscape Complex was inscribed as a UNESCO World Heritage Site.
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$50</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/196/hoa-lu-tam-coc-small-group-full-day-tour" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/hanoi-day-tours/200/my-village-show" title="My Village Show">
+                                <img src="/files/images/tours/dailytours/hanoidailytours/myvillageshow/medium6.jpg" alt="My Village Show" style="width: 100%;" class="img-border">
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/hanoi-day-tours/200/my-village-show" title="My Village Show">My Village Show</a></h3>
+                            <div style="text-align: justify">
+                                Lang Toi (My Village) is a delicate merge of tradition and innovation, where poetic beauty of Northern Vietnam’s village life is presented under new cirque approach. Farming, building activities, traditional games, lifestyle of Northern villagers are recreated by ancestral bamboo props, breath-taking cirque and acrobatics, rhythmic dance, to distinct folk music from more than 20 musical instruments. 
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$28</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/hanoi-day-tours/200/my-village-show" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+            </div>
+            <div class="col-lg-3">
+                <div id="sidebar">
+    
+
+    <div class="wrap-category-left">
+        <h2 class="title-h3">DAY TRIPS</h2>
+                <h3><i class="fa fa-chevron-right"></i><a href="/hanoi-day-tours" alt="Hanoi Day Tours">Hanoi Day Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/hue-day-tours" alt="Hue Day Tours">Hue Day Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/hoi-an-day-tours" alt="Hoi An Day Tours">Hoi An Day Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/nha-trang-day-tours" alt="Nha Trang Day Tours">Nha Trang Day Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/da-lat-day-tours" alt="Da Lat Day Tours">Da Lat Day Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/ho-chi-minh-day-tours" alt="Ho Chi Minh Day Tours">Ho Chi Minh Day Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/phu-quoc-day-tours" alt="Phu Quoc Day Tours">Phu Quoc Day Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/sapa-tours" alt="Sapa Tours">Sapa Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/mekong-delta-tours" alt="Mekong Delta Tours">Mekong Delta Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/phnom-penh-tours" alt="Phnom Penh Tours">Phnom Penh Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/siem-reap-tours" alt="Siem Reap Tours">Siem Reap Tours</a></h3>
+                <h3><i class="fa fa-chevron-right"></i><a href="/da-nang-day-tours" alt="Da Nang Day Tours">Da Nang Day Tours</a></h3>
+    </div>
+
+<style>
+    h4.sub-menu-left {
+        background: none;
+        font-size: 13px;
+    }
+
+        h4.sub-menu-left span {
+            margin-right: 5px;
+            color: #003580;
+        }
+</style>
+    
+
+        <div class="wrap-item-sidebar">
+            <a alt="Early bird SALES"><img src="/files/files/Promotion/early%20bird%20promotion.jpg" width="279px"></a>
+        </div>
+       
+    <div class="clearfix"></div>
+</div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+            <div class="row paging">
+                <div class="col-xs-12">
+                    <ul class="pagination">
+                                                        <li class="active"><a href="javascript:void(0)">1</a></li>
+                                <li><a href="/hanoi-day-tours?page=2">2</a></li>
+                                                    <li><a href="/hanoi-day-tours?page=2">»</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</section>
+<div id="footer">
+	<section class="top-footer regular">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="logo-footer">
+						<img src="img/logo.png" style="margin-left: 33%;">
+					</div>
+					<h3 class="name-company">We make your holidays memorable</h3>
+					<div id="social">
+						<a href="https://www.facebook.com/dinh151296"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.facebook.com/dinh151296"><i class="fa fa-google-plus"></i></a>
+						<a href="https://www.facebook.com/dinh151296"><i class="fa fa-tripadvisor"></i></a>
+						<a href="https://www.facebook.com/dinh151296"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<h3 class="widgettitle">Head office</h3>
+					<div id="info-hotel">
+						Address: No 14 Hang Ca Hoan Kiem Ha Noi<br>
+						Telephone: <a href="tel:+84 975 468 252">+84 975 468 252</a><br>
+						Hotline: <a href="tel:+84972 050 808">+84972 050 808</a> <br>
+						Email: <a href="mailto:info@halongtoursbooking.com.vn">info@halongtoursbooking.com.vn</a><br>
+						Our Site: <a href="http://swallowtravel.com.vn/" target="_blank">http://swallowtravel.com.vn</a><br>
+					</div>
+
+				</div>
+
+				<div class="col-lg-2 col-sm-6" style="height:150px">
+					<h3 class="widgettitle">Support</h3>
+					<ul class="menusecord" style="margin-top:-6px;">
+						<li><a href="/contact-us">Contact Us</a></li>
+						<li><a href="/about-us">About Us</a></li>
+						<li><a href="/conditions-of-use">Conditions Of Use</a></li>
+						<li><a href="/private-notes">Private Notes</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-6" style="height:150px">
+					<h3 class="widgettitle">COMPANY INFO</h3>
+					<ul class="menusecord" style="margin-top:-5px;">
+						<li><a href="/career-with-us">Career With Us</a></li>
+						<li><a href="/client-testimonials">Client Testimonials</a></li>
+						<li><a href="/special-promotions">SPECIAL PROMOTIONS</a></li>
+						<li><a href="/our-client-album">Our Client Album</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-6" style="height:150px">
+					<div class="menusecord" style="margin-top:0px;">
+						<div id="TA_excellent448" class="TA_excellent"><img src="https://p.travelsmarter.net/api/usersync/seed.gif?api_key=gqLWKHSnTxes4YmmtgWkqA&amp;loc_id=8290098&amp;publisher_browser_id=2f73a2ba5944db7eb10806f1b0492df0771e595d&amp;cb=1540519266400" alt="" width="0" height="0"> <div id="CDSWIDEXC" class="widEXC"> <div class="bravoBox"> <div class="bravoWrapper"> <div class="bravoText"> Bravo! </div> </div> <img src="https://www.tripadvisor.co.uk/img/cdsi/partner/transparent_pixel-11863-2.gif" height="1" width="1"> </div> <br> <div id="CDSWIDEXCLINK" class="widEXCLINK"> <a target="_blank" href="https://www.tripadvisor.co.uk/Attraction_Review-g293924-d8290098-Reviews-Swallow_Travel-Hanoi.html" onclick="ta.cds.handleTALink(11863,this);return true;" rel="nofollow">Swallow Travel rated "excellent" by 136 travellers</a><br> </div> <div class="widEXCTALOGO"> <a target="_blank" href="https://www.tripadvisor.co.uk/"><img src="https://static.tacdn.com/img2/widget/tripadvisor_logo_115x18.gif" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"></a> </div> </div><!--/ cdsEXCBadge--> </div>
+						<script src="https://www.jscache.com/wejs?wtype=excellent&amp;uniq=448&amp;locationId=8290098&amp;lang=en_UK&amp;display_version=2"></script>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<span style="color:#999; font-size: 13px;">© 2018 Halong Tours Booking. power by <a href="http://webhotel.vn/" target="blank">webhotel.vn</a></span>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+
+
+<script lang="javascript">
+	var i=0,text;
+	text="Hanoi Day Tours"
+
+	function typing(){
+		if (i<text.length) {
+			document.getElementById("title-h1").innerHTML += text.charAt(i);
+			i++;
+			setTimeout(typing,60);
+		}
+	}
+	typing();
+</script>
+</body>
+</html>
