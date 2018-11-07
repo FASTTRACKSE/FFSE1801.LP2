@@ -437,11 +437,20 @@ function show_products_in_mycart(params) {
                 <td><img src="` +
       product.img +
       `"></td>
-              <td><input type="number" min="1" value="1"></td>
-
-                <td>` +
+      
+      <td ><span id="price` +
+      product.id +
+      `">` +
       numberWithCommas(product.price) +
-      `đ</td>
+      `</span>đ</td>
+      <td ><input type="number" min="1" value="1" id="quantity` +
+      product.id +
+      `"></td>
+                <td><span id="total` +
+      product.id +
+      `">` +
+      numberWithCommas(product.price) +
+      `</span>đ</td>
                 <td >
                 <i style="font-size:25px;cursor: pointer;" onclick="delete_products(` +
       product.id +
