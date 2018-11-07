@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bengus Việt Nam</title>
+    <link rel="SHORTCUT ICON"  href="images/File logo BenGus hoàn chỉnh.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/CART.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i|Encode+Sans+Semi+Expanded:100,200,300,400,500,600,700,800,900|Lobster|Pattaya|Quicksand:300,400,500,700&subset=vietnamese');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/CART.js"></script>
+</head>
+<body>
+    <div class="container-fluid body">
+        <!------------------------- NAVIGATION BAR ------------------------ -->
+        <div class="pos-f-t d-md-block d-lg-none d-xl-none">
+                
+            <nav class="navbar navbar-dark bg-dark mini-menu col-lg-12 justify-content-around">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4 justify-content-around">
+                            <ul class="navbar-nav justify-content-around col-lg-8" style="padding: 0px">
+            
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="BengusVietNam-Home.html" >Trang chủ</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="BengusVietNam-About.html" >Giới thiệu</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="BengusVietNam-Product.html">Sản phẩm</a>
+                                    </li>
+                    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="BengusVietNam-AboutMe.html">Thông tin</a>
+                                    </li>       
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="BengusVietNam-Contact.html" >Liên hệ</a>
+                                    </li>
+                                    
+                                    <div class="row" style="margin-left: 7vw">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="BengusVietNam-Login.html" >Đăng nhập</a>
+                                        </li>
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="BengusVietNam-Cart.html" >
+                                                <i class="material-icons">shopping_cart</i>           
+                                            </a>
+                                        
+                                        </li>
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="material-icons">search</i>
+                                            </a>
+                                        </li>
+                                    </div>    
+                                    
+                                    
+                                </ul>
+                    </div>
+                </div>
+                
+
+                <div class="col-sm-12 col-md-12" style="padding: 0px">
+                        
+                    <button class="navbar-toggler" style="position: relative; outline: none" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i style="  position: absolute;
+                                        top: -2.5vh;
+                                        left: 0vw;
+                                        color: #105e3e;" class="material-icons">
+                                        menu
+                            </i>   
+                    </button>
+                    <img class="col-4 col-sm-4 col-md-4" style="margin-left: 21vw" 
+                            src="images/File logo BenGus hoàn chỉnh.png">
+            
+                </div>
+
+            </nav>
+        </div>
+
+        <nav class="navbar navbar-expand-sm menu justify-content-around row d-lg-flex d-none">
+            
+            <a class="navbar-brand col-lg-2" href="BengusVietNam-Home.html">
+                <img class="brand col-lg-12" src="images/File logo BenGus hoàn chỉnh.png" />
+            </a>
+            <ul class="navbar-nav justify-content-around col-lg-8">
+                
+                    <li class="nav-item">
+                            <a class="nav-link" href="BengusVietNam-Home.html" >Trang chủ</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="BengusVietNam-About.html" >Giới thiệu</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="BengusVietNam-Product.html">Sản phẩm</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="BengusVietNam-AboutMe.html">Thông tin</a>
+                    </li>       
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="BengusVietNam-Contact.html" >Liên hệ</a>
+                    </li>
+                    
+                    <div class="row" style="margin-left: 7vw">
+                        <li class="nav-item">
+                            <a class="nav-link" href="BengusVietNam-Login.html" >Đăng nhập</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="BengusVietNam-Cart.html" >
+                                <i class="material-icons">shopping_cart</i>           
+                            </a>
+                        
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="search-button">
+                                <i class="material-icons">search</i>
+                            </a>
+                        </li>
+                    </div>    
+                
+                
+            </ul>
+
+        </nav>
+        <div class="col-lg-12 justify-content-around" id="search-bar">
+            <form class="form-inline" action="/action_page.php" style="margin-left: 25vw;">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <a href="#" id="search-close">
+                    <i class="material-icons">close</i>
+                </a>
+            </form>
+        </div>
+        
+        <!-- ------------------------------------------------------------- -->
+
+        <!-- -----------------------------MAIN--------------------------- -->
+        <div class="col-lg-12" style="padding:0px">
+            <iframe style="width: 100% !important;margin-top: 11vh !important;height: 89vh !important;" class="map" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.394057869033!2d108.16611911494066!3d16.045028488895863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142196ac1549671%3A0xcf9643ccc979b44b!2zQsO5aSBU4bqlbiBEacOqbiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1540482723272" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="row justify-content-around" id="product">
+            
+            
+        </div>
+
+            
+        <!-- -------------------------FOOTER INFOR----------------------------- -->
+        <div class="row col-lg-12 footer justify-content-around">
+            <p>© 2018 - Copyright by Nguyễn Hữu Đức</p>
+        </div>
+        <!-- ------------------------------------------------------------------ -->
+
+        
+        
+
+
+    </div> 
+</body>
+</html>
