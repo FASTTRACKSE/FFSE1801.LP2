@@ -50,41 +50,6 @@ var products = [
     name: "Cà phê sữa Sài Gòn",
     price: "12000",
     img: "./img/cf-sua-sg-1.jpg"
-  },
-  {
-    id: 7,
-    category: "Coffee",
-    name: "Cà phê đen rang xay",
-    price: "12000",
-    img: "./img/cf-den-rang-xay.jpg"
-  },
-  {
-    id: 8,
-    category: "Coffee",
-    name: "Cà phê sữa rang xay",
-    price: "12000",
-    img: "./img/cf-sua-rang-xay.jpg"
-  },
-  {
-    id: 9,
-    category: "Coffee",
-    name: "Cà phê đen pha phin",
-    price: "7000",
-    img: "./img/cf-den-pha-phin.jpg"
-  },
-  {
-    id: 10,
-    category: "Coffee",
-    name: "Cà phê sữa pha phin",
-    price: "8000",
-    img: "./img/cf-sua-pha-phin.jpg"
-  },
-  {
-    id: 11,
-    category: "Coffee",
-    name: "Cà phê Hotpot",
-    price: "12000",
-    img: "./img/coffee-hotpot.jpg"
   }
 ];
 
@@ -114,7 +79,7 @@ function show_products(params) {
         <a href="#" id="contact">Youtube</a>
         <img src="./img/deco-flower.png" alt="">
     </div>
-    <button onclick="add_cart(` +
+    <button  onclick="add_cart(this,` +
         products[i].id +
         `)">Thêm vào giỏ hàng</button>`;
       document.getElementById("show_" + params).appendChild(div);
@@ -122,18 +87,35 @@ function show_products(params) {
   }
 }
 
-function add_cart(params) {
+function add_cart(id, paramsid) {
   if (localStorage.mycart) {
     let arr = JSON.parse(localStorage.mycart);
-    arr.push(params);
+    console.log(arr);
+
+    for (let i = 0; i < arr.length; i++) {
+      let arr_f = arr.find(function(params) {
+        return params == paramsid;
+      });
+      if (arr_f !== undefined) {
+        disableBtn(id);
+        return;
+      }
+    }
+    arr.push(paramsid);
     localStorage.mycart = JSON.stringify(arr);
+    disableBtn(id);
   } else {
     let arr = [];
-    arr.push(params);
+    arr.push(paramsid);
     localStorage.mycart = JSON.stringify(arr);
+    disableBtn(id);
   }
 }
-
+function disableBtn(id) {
+  id.onclick = "";
+  id.innerHTML = "Đã thêm sản phẩm";
+  id.style = "background:#923b3b";
+}
 function show_products_in_mycart(params) {
   let arr = JSON.parse(localStorage.mycart);
   console.log(arr);
@@ -153,6 +135,8 @@ function show_products_in_mycart(params) {
                 <td><img src="` +
       product.img +
       `"></td>
+              <td><input type="number" min="1" value="1"></td>
+
                 <td>` +
       numberWithCommas(product.price) +
       `đ</td>
