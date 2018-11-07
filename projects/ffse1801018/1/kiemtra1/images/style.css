@@ -1,0 +1,216 @@
+.dong {
+	top: 10px;
+	left: 10px;
+	right: 600px;
+	background-color: #222222;
+	height: 50px;
+	position: absolute;
+	font-family:"Arial", Times, serif;
+	font-size: 20px;
+	color: white;
+}
+.dong1{
+	top: 58px;
+	left: 10px;
+  	right: 600px;
+  	background-color: #2b2b2b;
+  	height: 540px;
+  	position: absolute;
+
+}
+.dong2{
+	top: 68px;
+	left: 40px;
+  	right: 600px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	border-bottom: 1px solid #a699a0;
+}
+.dong3{
+	top: 48px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: white;
+}
+.dong4{
+	top: 250px;
+	left: 40px;
+  	right: 600px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	border-bottom: 1px solid #a699a0;
+}
+
+.dong5{
+	top: 430px;
+	left: 40px;
+  	right: 600px;
+  	
+  	height: 150px;
+  	position: absolute;
+
+}
+.dong6{
+	top: 230px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: white;
+}
+.dong7{
+	top: 410px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: white;
+}
+.dong8{
+	top: 630px;
+	left: 20px;
+  	right: 600px;	
+  	height: 150px;
+  	position: absolute;
+}
+.dong9{
+	top: 610px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 17px;
+	line-height: 26px;
+	color: black;
+}
+.dong10{
+	top: 695px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 12px;
+	
+	color: #a699a0;
+}
+.dong11{
+	top: 725px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 12px;
+	
+	color: #a699a0;
+}
+.dong12{
+	top: 820px;
+	left: 20px;
+  	right: 600px;	
+  	height: 550px;
+  	position: absolute;
+
+  	;
+
+}
+.dong13{
+	top: 800px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 250px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 17px;
+	line-height: 26px;
+	color: black;
+}
+.dong14{
+	top: 870px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 250px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #a699a0;
+}
+.dong15{
+	top: 910px;
+	left: 286px;
+  	right: 630px;
+  	height: 250px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #a699a0;
+}
+.dong16{
+	top: 610px;
+	left: 0px;
+  	right: 600px;	
+  	height: 150px;
+  	position: absolute;
+  	border-top: 1px solid #a699a0;
+}
+.dong17{
+	top: 148px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #a699a0;
+}
+.dong18{
+	top: 330px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #a699a0;
+}
+.dong19{
+	top: 510px;
+	left: 286px;
+  	right: 630px;
+  	
+  	height: 150px;
+  	position: absolute;
+  	font-family:"Arial", Times, serif;
+	font-size: 12px;
+	line-height: 26px;
+	color: #a699a0;
+}

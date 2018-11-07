@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" type="text/css" href="style5.css">
+   
+    <title> Trang thông tin người phát triển </title>
+  <style type="text/css">
+ 
+  </style>
+</head>
+
+<body>
+
+<div class="container>
+        <div id="header">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+
+                    <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>                   
+                         <a class="navbar-brand " href="#">Protect 03</a>
+
+
+                        </div>
+                         <div class="collapse navbar-collapse pull-right" id="myNavbar">
+                     <ul class="nav navbar-nav">
+
+                    <li class=" "> <a href="trangchu.html">Trang chủ</a></li>
+
+                    <li ">
+                <a  href="review.html" target="_blank">Đánh giá</span></a>
+            
+        </li>
+        
+        <li><a href="event.html" target="_blank">Tư vấn</a></li>
+       
+        <li><a href="nhadautu.html" target="_blank">Chủ đầu tư</a></li>
+        <li><a href="nguoipt.html" target="_blank">Người phát triền</a></li>
+          <li > &nbsp&nbsp<input class="hoho" type="text" name="" placeholder="   Bạn cần tìm gì...?"> <button><span class="glyphicon glyphicon-search"></span></button></li>
+
+      </ul>
+                  </div>
+
+                </nav>
+            </div>
+                 
+    </div>
+    <div class="page-header">
+  <h1><strong>Briefseverus</strong> <small>Review sản phẩm công nghệ cao, tin tức công nghệ...</small></h1>
+  <h5>Trang chủ > Thông tin người phát triển </h5>
+</div>
+<div class="container">
+ <div class="col-sm-12">
+
+  <h2>Người phát triển : Thân Anh Quân</h2>
+  <p><hr></p>
+  <h3>Thông tin</h3>
+    <div class="col-sm-8">
+   <div class="jumbotron">
+      
+ 
+   <ul>
+     <li> Địa chỉ : 170 Phạm Cự Lượng, An Hải Đông, Sơn Trà, Đà Nẵng</li>
+     <li>Số điện thoại : 0912485347</li>
+     <li>Ngày sinh : 28-06-2000</li>
+   </ul>
+
+  <p><a href="https://www.facebook.com/anhquan.than.7" target="_blank" class="btn btn-primary btn-xs" role="button" class="pull-right">Liên hệ</a> <a href="1/cv.html" target="_blank" class="btn btn-primary btn-xs" role="button" class="pull-right">Curriculum Vitae</a></p>
+
+  </div>
+  <h4>Hiện tại là học viên khóa 1801 của khóa học Fast Track SE</h4>
+</div>
+  <div class="col-sm-4"> 
+
+  </div>
+
+</div> 
+ </div>
+</div>
+<ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+   <li><a href="#">4</a></li>
+     <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>  
+</ul>
+ <iframe class="pull-right" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhiephoianhtroll%2F&tabs=timeline&width=180&height=60&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="180" height="60" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<div class="lasttask">
+    <h3>Copyright © Your Website 2018</h3>
+</div>
+<script>
+  function dongho(){
+    var time = new Date();
+    var gio = time.getHours();
+    var phut = time.getMinutes();
+    var giay = time.getSeconds();
+    if(gio<10){gio="0"+gio};
+    if(phut<10){phut="0"+phut};
+    if(giay<10){giay="0"+giay};
+    var t= document.getElementById("time");
+    t.innerHTML=gio+":"+phut+":"+giay;
+    setTimeout("dongho()",1000);
+  }
+  dongho();
+</script>
+<body onload="dongho()">
+<div id="time">
+  
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

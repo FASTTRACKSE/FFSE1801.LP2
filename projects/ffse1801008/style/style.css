@@ -1,0 +1,111 @@
+/*=============PROJECT==================*/
+/*=========================================*/
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background: white;
+}
+
+.navbar {
+	margin-top: -52px;
+	margin-bottom: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	border-radius: 0;
+	background: black;
+	
+}
+.navbar-brand {
+	padding: 12px;
+}
+
+.logo-center {
+	display: none;
+}
+.search {
+	width: 80%;
+	margin: 8px 15%;
+	display: none;	
+}
+.input-group {
+	width: 80%;
+	float: left;
+}
+.search a {
+	color: white;
+	font-size: 24px;
+	display:inline-block;
+	float: left;
+	margin-left: 10%;
+}
+@media only screen and (max-width: 767px){
+	.navbar-brand {
+		display: none;
+	}
+	.logo-center {
+	display: inline-block;
+	margin-left: 35%;
+	margin-top: 12px;
+	margin-right: 30%;
+	}
+
+}
+@media only screen and (max-width: 450px){
+	.logo-center {
+		display: inline-block;
+		margin-left: 28%;
+		margin-top: 12px;
+		margin-right: 30%;
+	}
+}
+.navbar-toggle {
+    float: left;
+}
+/*=======SLIDE============*/
+.slide {
+	margin-top: 52px;
+}
+/*=======body=========*/
+.full {
+	margin-top: 10px;
+}
+.full img {
+	width: 100%;
+}
+.full2 {
+	margin-top: 10px;
+	display: none;
+}
+.full2 img {
+	width: 100%;
+}
+.half {
+	margin-top:10px;
+	width: 50%;
+	float: left;
+
+}
+.half img {
+	width: 96.5%;
+	margin-left: 2%;
+}
+@media only screen and (max-width: 767px){
+	.full {
+		display: none;
+	}
+	.full2 {
+		display: block;
+	}
+	.half {
+		display: none;
+	}
+	.half2 {
+		display: block;
+	}
+}
+.foot {
+	background: #F2F2F2;
+	text-align: center;
+}

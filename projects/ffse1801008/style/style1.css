@@ -1,0 +1,103 @@
+/*===============PROJECT=======================*/
+/*==========background====white============================*/
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background: white;
+}
+h1{
+	font-size: 4.5vw; 
+}
+h2 {
+	font-size: 4vw;
+}
+h3 {
+	font-size: 3vw;
+}
+h4 {
+	font-size: 2.8vw;
+}
+h5 {
+	font-size: 2.6vw ;
+}
+.sticky {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+}
+.apple {
+	padding: 12px;
+}
+.navbar {
+	border-radius: 0;
+}
+.navbar1{
+	margin-top: -20px;
+	width: 100%;
+}
+.logo-center {
+	display: none;
+}
+.search {
+	width: 80%;
+	margin: 8px 15%;
+	display: none;	
+}
+.input-group {
+	width: 80%;
+	float: left;
+}
+.search a {
+	color: white;
+	font-size: 24px;
+	display:inline-block;
+	float: left;
+	margin-left: 10%;
+}
+@media only screen and (max-width: 767px){
+	.apple {
+		display: none;
+	}
+
+	.logo-center {
+	display: inline-block;
+	margin-left: 35%;
+	margin-top: 12px;
+	margin-right: 30%;
+	}
+}
+@media only screen and (max-width: 450px){
+	.logo-center {
+		display: inline-block;
+		margin-left: 28%;
+		margin-top: 12px;
+		margin-right: 30%;
+	}
+}
+.menu {
+    float: left;
+}
+.anh { 
+	text-align: center;	
+}
+.anh img {
+	margin-top: 10px;
+	width: 100%;
+}
+.text {
+	padding: 0 20%;
+	text-align: center;
+}
+.text img {
+	width: 100%;
+}
+.video {
+	margin-bottom: 10px;
+	text-align: center;	
+}
+
+.foot {
+	background: #F2F2F2;
+	text-align: center;
+}
