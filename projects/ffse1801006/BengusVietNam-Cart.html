@@ -13,9 +13,7 @@
         @import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i|Encode+Sans+Semi+Expanded:100,200,300,400,500,600,700,800,900|Lobster|Pattaya|Quicksand:300,400,500,700&subset=vietnamese');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/CART.js"></script>
+    
 </head>
 <body>
     <div class="container-fluid body">
@@ -49,7 +47,7 @@
                                     
                                     <div class="row" style="margin-left: 7vw">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="BengusVietNam-Login.html" >Đăng nhập</a>
+                                            <a class="nav-link" id="login" href="BengusVietNam-Login.html" >Đăng nhập</a>
                                         </li>
                                         
                                         <li class="nav-item">
@@ -119,7 +117,7 @@
                     
                     <div class="row" style="margin-left: 7vw">
                         <li class="nav-item">
-                            <a class="nav-link" href="BengusVietNam-Login.html" >Đăng nhập</a>
+                            <a class="nav-link" id="login" href="BengusVietNam-Login.html" >Đăng nhập</a>
                         </li>
                         
                         <li class="nav-item">
@@ -154,7 +152,7 @@
         <!-- -----------------------------MAIN--------------------------- -->
 
         <div class="row justify-content-around" id="product">
-            <h3 style="color: white !important; margin-bottom: 5vh !important;">ĐƠN HÀNG</h3>
+            <h2 style="color: white !important; margin-bottom: 5vh !important;">ĐƠN HÀNG</h2>
             <table class="col-lg-12">
                 <tr>
                     <th style="width: 10vw;">STT</th>
@@ -175,11 +173,11 @@
                     <td>
                         Sen vòi
                     </td>
-                    <td>
-                        1.200.000đ
+                    <td class="price">
+                        54
                     </td>
-                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"></td>
-                    <td>1.200.000đ</td>
+                    <td data-th="Quantity"><input class="form-control text-center qua1" value="1" type="number" id="test"></td>
+                    <td class="total"></td>
                     <td>
                         <a class="remove-product" href="#"><i class="material-icons">remove_shopping_cart</i></a>
                     </td>
@@ -194,11 +192,11 @@
                     <td>
                         Sen vòi
                     </td>
-                    <td>
-                        1.200.000đ
+                    <td class="price">
+                        65
                     </td>
                     <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"></td>
-                    <td>1.200.000đ</td>
+                    <td class="total">65</td>
                     <td>
                         <a class="remove-product" href="#"><i class="material-icons">remove_shopping_cart</i></a>
                     </td>
@@ -213,11 +211,11 @@
                     <td>
                         Sen vòi
                     </td>
-                    <td>
-                        1.200.000đ
+                    <td class="price">
+                        43
                     </td>
                     <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"></td>
-                    <td>1.200.000đ</td>
+                    <td class="total">43</td>
                     <td>
                         <a class="remove-product" href="#"><i class="material-icons">remove_shopping_cart</i></a>
                     </td>
@@ -232,11 +230,11 @@
                     <td>
                         Sen vòi
                     </td>
-                    <td>
-                        1.200.000đ
+                    <td class="price">
+                        98
                     </td>
                     <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"></td>
-                    <td>1.200.000đ</td>
+                    <td class="total">98</td>
                     <td>
                         <a class="remove-product" href="#"><i class="material-icons">remove_shopping_cart</i></a>
                     </td>
@@ -251,14 +249,27 @@
                     <td>
                         Sen vòi
                     </td>
-                    <td>
-                        1.200.000đ
+                    <td class="price">
+                        67
                     </td>
                     <td data-th="Quantity"><input class="form-control text-center" value="1" type="number"></td>
-                    <td>1.200.000đ</td>
+                    <td class="total">67</td>
                     <td>
                         <a class="remove-product" href="#"><i class="material-icons">remove_shopping_cart</i></a>
                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4 style="color: white">Tổng cộng: </h4>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="color: white" id="sum">
+                        0
+                    </td>
+                    <td></td>
                 </tr>
             </table>
         </div>
@@ -301,5 +312,9 @@
 
 
     </div> 
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/CART.js"></script>
+    
 </body>
 </html>

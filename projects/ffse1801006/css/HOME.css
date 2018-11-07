@@ -234,6 +234,9 @@ body{
     padding: 0px !important;
     
 }
+.card-text::after{
+    content: "$";   
+}
 .title-new-product{
     text-align: center;
     font: normal normal normal 28px/1.4em proxima-n-w01-reg,sans-serif;

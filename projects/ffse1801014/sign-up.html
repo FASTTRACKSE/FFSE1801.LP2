@@ -7,18 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign up</title>
     <link rel="shortcut icon" href="https://www.clipartmax.com/png/full/27-277471_tea-and-coffee-clipart.png">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../fontawesome-pro-5.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-pro-5.0/css/all.css">
 </head>
 
 <body class="container-fluid">
     <nav class="navbar navbar-light bg-light fixed-top z-index-99 w-100">
-        <a href="../index.html" class="navbar-brand"><img style="width:200px;" src="../logo/mylogo-black.png" alt=""></a>
+        <a href="index.html" class="navbar-brand"><img style="width:200px;" src="logo/mylogo-black.png" alt=""></a>
         <form class="form-inline">
 
             <button class="btn bg-light ml-2" onclick="document.getElementById('id01').style.display='block'">Login</button>
-            <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
+            <a href="cart.html"><i class="fal fa-shopping-cart"></i><span class="px-2" id="cart-number" style="color: red;">4</span></a>
             <div id="id01" class="modal">
 
                 <form class="modal-content animate w-50" action="/action_page.php">
@@ -88,7 +88,7 @@
             </table>
         </div>
         <div class="footer-content text-center mx-auto mb-3 col-12">
-            <a href=""> <img class="pt-3 img-fluid" src="../logo/mylogo-white.png" alt=""></a>
+            <a href=""> <img class="pt-3 img-fluid" src="logo/mylogo-white.png" alt=""></a>
             <p class="pt-4 text-light" style="line-height: 30px;">
                 Address of my store <br>
                 Hotline: 0979749507 <br>
@@ -101,8 +101,14 @@
                     BY LUONG</a></p>
         </div>
     </div>
+    <script>
+        var temp =JSON.parse(localStorage.cart);
+        document.getElementById("cart-number").innerHTML=temp.length;
+        // console.log(temp.length);
+            // carticonnumber();        
+    </script>
     <!-- ------------------------------nạp file JS ------------->
-    <script src="../js/js.js"></script>
+    <script src="js/js.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

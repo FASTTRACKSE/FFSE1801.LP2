@@ -23,6 +23,9 @@ $(document).ready(function(){
         $("#search-bar").slideUp(300)
         $("#search-bar").fadeOut(300)
     })
-    
+        
+    $("#login").click(function(){
+        alert("Chức năng này hiện đang được phát triển !")
+    })
 
 });
