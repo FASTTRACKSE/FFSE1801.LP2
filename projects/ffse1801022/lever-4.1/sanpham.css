@@ -1,0 +1,27 @@
+#contain{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.main{
+    margin-top: 20px !important;
+}
+.main .left{
+    margin-top:20px;
+}
+.main .left input{
+    float: left;
+    display: block;
+}
+.main .left p{
+    /* clear: left; */
+    margin-left: 5px;
+}
+.none{
+    margin-top: 40px;
+    text-align: center;
+}
+.loc{
+    margin-top:-10px;
+    margin-bottom: 10px !important;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+    <script language="javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="./data/data.css">
+    <script type="text/javascript" src="./data/data.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default .navbar-fixed-top" id="menu">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Trang chủ</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="background:gray;"><a class="list" href="sanpham.html">Sản phẩm</a></li>
+                    <li><a class="list" href="suachua.html">Sửa chữa</a></li>
+                    <li><a class="list" href="tintuc.html">Tin tức</a></li>
+                    <li class="caigio"><a href="giohang.html" target="_blank" style="color:orange; font-size: 16px">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="number_item">0</span> Items</a>
+                        <img class="igio" src="./img/tamgiac.png" alt="">
+                        <div id="ch" class="igio"></div>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control search" placeholder="Tìm sản phẩm">
+                    </div>
+                    <a class="btn btn-default submit" href="search.html">Tìm</a>
+                    <div class="timkiem"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="contain" style="margin-top:70px;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8">
+                <div class="row main"></div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 class2">
+                <div class="class2_1">
+                    <h4>THẢO LUẬN NHIỀU</h4>
+                    <div>
+                        <div class="stt">1</div>
+                        <p>Lên đời Samsung Galaxy Note 9, tiết kiệm lên đến 10 triệu <span><i class="fas fa-comment-alt"></i>
+                                123</span></p>
+                    </div>
+                    <div>
+                        <div class="stt">2</div>
+                        <p>KẾT QUẢ Minigame tặng miễn phí Galaxy A7 (2018) để bạn "chụp cả thế giới" <span><i class="fas fa-comment-alt"></i>
+                                123</span></p>
+                    </div>
+                    <div>
+                        <div class="stt">3</div>
+                        <p>Khuyến mãi phụ kiện tháng 11: Mua càng nhiều, giảm càng cao <span><i class="fas fa-comment-alt"></i>
+                                123</span></p>
+                    </div>
+                    <div>
+                        <div class="stt">4</div>
+                        <p>Ưu đãi giảm ngay 2.5 triệu khi mua "siêu phẩm" Galaxy Note 9 <span><i class="fas fa-comment-alt"></i>
+                                123</span></p>
+                    </div>
+                </div>
+                <div class="class2_2">
+                    <h4>TUYỂN DỤNG TẠI MWG</h4>
+                    <div>
+                        <ul>
+                            <li>Chuyên Viên Đào Tạo ( Soft-skill, Hard-skill, E-Learning) <br>
+                                <span>TP.Hồ Chí Minh</span>
+                            </li>
+                            <li>Lập Trình WEB (ASP.NET/MVC) và Web Designer<br>
+                                <span>TP.Hồ Chí Minh</span>
+                            </li>
+                            <li>Tìm kiếm & Phát Triển Mặt Bằng<br>
+                                <span>TP.Hồ Chí Minh</span>
+                            </li>
+                            <li>Tổng Đài Giải Quyết Khiếu Nại<br>
+                                <span>TP.Hồ Chí Minh</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class2_3">
+                    <h4>SẢN PHẨM MỚI</h4>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/188963/huawei-mate-20-pro-green-400x400.jpg"
+                            alt="">
+                        <p>HUAWEI MATE 20 PRO</p>
+                        <h5>21.990.000 VND</h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/179736/huawei-mate-20-black-400x400.jpg" alt="">
+                        <p>HUAWEI MATE 20</p>
+                        <h5>21.990.000 VND</h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/153854/nokia-7-plus-2-400x400.jpg" alt="">
+                        <p>NOKIA 7 PLUS</p>
+                        <h5>21.990.000 VND</h5>
+                    </div>
+                    <div>
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/145789/nokia-6-2018-13-400x400.jpg" alt="">
+                        <p>NOKIA 6.1</p>
+                        <h5>21.990.000 VND</h5>
+                    </div>
+                </div>
+                <div class="class2_4">
+                    <h3>KHUYẾN MÃI</h3>
+                    <img src="https://cdn.tgdd.vn/Files/2018/11/01/1128267/home-credit-61xe_800x450-600x400.jpg" alt="">
+                    <b>Tháng 11 & 12/2018: Mua trả góp Home Credit, trúng xe Wave Alpha mỗi ngày (61 xe)</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="end_">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Giới thiệu công ty (DĐTM)</li>
+                    <li>Hệ thống cửa hàng</li>
+                    <li>Tuyển dụng</li>
+                    <li>Chính sách bảo mật</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách đổi trả sản phẩm</li>
+                    <li>Hỏi Đáp Mua Hàng Online</li>
+                    <li>Phương Thức Thanh Toán</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Gọi mua hàng: <b>1900.6122</b> (8H00 - 21H30)</li>
+                    <li>Gọi bảo hành: <b>1800.6501</b> (8H00 - 21H30)</li>
+                    <li>Gọi khiếu nại: <b>1800.6502</b> (8H00 - 21H30)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="creder">
+        <h4>Made by TuHuynh</h4>
+        <p>Email:FFSE1801022@outlook.com</p>
+        <p>Sdt: 64823492034</p>
+    </div>
+    <div id="zoom">
+        <div id="hide"></div>
+        <div id="zoom-main" class="items">
+            <div class="left">
+                <div>
+                    <img src="gai.jpg" id="img-zoom" class="car" alt="item">
+                </div>
+            </div>
+            <div class="right">
+                <h4>Tên sản phẩm</h4>
+                <p>Nhà sản xuất:<span></span></p>
+                <div id="cauhinh">
+                    <table cellpadding="10" cellspacing="0">
+                        <tr>
+                            <td style="width: 40%;">Màn hình:</td>
+                            <td>Super AMOLED, 6.2", Quad HD+ (2K+)</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành:</td>
+                            <td>Android 8.0 (Oreo)</td>
+                        </tr>
+                        <tr>
+                            <td>Camera sau</td>
+                            <td>2 camera 12 MP</td>
+                        </tr>
+                        <tr>
+                            <td>Camera trước:</td>
+                            <td>8 MP</td>
+                        </tr>
+                        <tr>
+                            <td>CPU:</td>
+                            <td>Exynos 9810 8 nhân 64 bit</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td> 6 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Bộ nhớ trong:</td>
+                            <td>64 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Thẻ nhớ:</td>
+                            <td>MicroSD, hỗ trợ tối đa 400 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Thẻ SIM:</td>
+                            <td>2 SIM Nano (SIM 2 chung khe thẻ nhớ), Hỗ trợ 4G</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>HOT SIM VIETTEL V90 (60GB data/ tháng). Giá từ 80.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>Dung lượng pin:</td>
+                            <td>3500 mAh, có sạc nhanh</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="more">
+                    <a class="btn btn-primary buy-now btninmore" role="button">Thêm vào giỏ hàng</a>
+                    <a href="S9.html" class="xem" style="color:blue"><b>Xem chi tiết sản phẩm</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            //giỏ hàng //////////////////////////////////
+            var soluong = 0
+            for (let i = 0; i < sp.length; i++) {
+                if (localStorage.getItem(sp[i].id) != null) {
+                    soluong++;
+                }
+            }
+            $("#number_item").text(soluong);
+            var keyw = localStorage.getItem("search");
+            var sluong = 0
+            var search = keyw.toLowerCase();
+            if (keyw == '') {
+                $(".main").before('<h3> Bạn phải nhập sản phẩm bạn muốn tìm </h3>');
+            }
+            else {
+                for (let i = 0; i < n; i++) {
+                    var o = [];
+                    var u = [];
+                    var name = sp[i].name.toLowerCase();
+                    var type = sp[i].type.toLowerCase();
+                    o[i] = name.search(search);
+                    u[i] = type.search(search);
+                    if (o[i] != -1 || u[i] != -1) {
+                        sp[i].showto(".main", 6, 4, 3)
+                        sluong++
+                    }
+                }
+                $(".main").before('<h3> Tìm thấy <b>' + sluong + ' kết quả</b> phù hợp với từ khóa <b>"' + keyw + '" </b> trong đó có: </h3>');
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

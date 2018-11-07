@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script language="javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./data/data.js"></script>
+    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="./data/data.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default .navbar-fixed-top" id="menu">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Trang chủ</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="list" href="sanpham.html">Sản phẩm</a></li>
+                    <li><a class="list" href="suachua.html">Sửa chữa</a></li>
+                    <li><a class="list" href="tintuc.html">Tin tức</a></li>
+                    <li class="caigio"><a href="giohang.html" target="_blank" style="color:orange; font-size: 16px">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="number_item">0</span> Items</a>
+                        <img class="igio" src="./img/tamgiac.png" alt="">
+                        <div id="ch" class="igio"></div>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control search" placeholder="Tìm sản phẩm">
+                    </div>
+                    <a class="btn btn-default submit" href="search.html" target="_blank">Tìm</a>
+                    <div class="timkiem"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="contain">
+        <div class="row">
+            <div class="table1 col-xs-12 col-sm-8 col-md-8">
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td> STT </td>
+                        <td> Sản phẩm </td>
+                        <td> Thành tiền </td>
+                    </tr>
+                </table>
+                <a href="sanpham.html" class="btn btn-info">Quay Trở lại cửa hàng</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 right_">
+                <div class="top">
+                    <h3>THANH TOÁN</h3>
+                    <p>Tổng cộng :<span class="sum"></span></p>
+                    <p>Phí Giao hàng: <span>0 VND</span></p>
+                    <p>Tổng tiền :<span class="sum"></span></p>
+                </div>
+                <div class="bottom_">
+                    <form action="">
+                        <input type="submit" class="btn btn-warning" value="Tiến hành thanh toán">
+                        <div id="gioitinh">
+                            <input type="radio" name="gioitinh" class="gioitinh" checked>Anh
+                            <input type="radio" name="gioitinh" class="gioitinh">Chị
+                        </div>
+                        <div id="form">
+                            <input type="text" name="full-name" class="form-control name" placeholder="Họ và tên">
+                            <input type="text" name="phone-number" class="form-control phone" placeholder="Số điện thoại">
+                            <input type="text" name="command" class="form-control command" placeholder="Yêu cầu khác (không bắt buột)">
+                        </div>
+                        <div>
+                            <p><b>Để được phục vụ nhanh hơn</b>, hãy chọn thêm:</p>
+                            <input type="radio" name="chosen" class="chosen">Giao hàng tại nhà
+                            <input type="radio" name="chosen" class="chosen" style="margin-left:10px;">Nhận tại
+                            siêu thị
+                        </div>
+                        <div class="xanh nhap">
+                            <select name="diachi" id="diachi">
+                                <option value="tinh">Đà Nẵng</option>
+                                <option value="tinh">Hà Nội</option>
+                                <option value="tinh">TP Hồ Chí Minh</option>
+                                <option value="tinh">Cần Thơ</option>
+                                <option value="tinh">Vũng Tàu</option>
+                                <option value="tinh">Quảng Nam</option>
+                                <option value="tinh">Huế</option>
+                                <option value="tinh">Kom Tum</option>
+                                <option value="tinh">Lai châu</option>
+                                <option value="tinh">Khánh Hòa</option>
+                            </select>
+                            <select name="huyen" id="huyen">
+                                <option value="huyen"> Quận 1</option>
+                                <option value="huyen"> Quận 2</option>
+                                <option value="huyen"> Quận 3</option>
+                                <option value="huyen"> Quận 4</option>
+                                <option value="huyen"> Quận 5</option>
+                                <option value="huyen"> Quận 6</option>
+                                <option value="huyen"> Quận 7</option>
+                                <option value="huyen"> Quận 8</option>
+                                <option value="huyen"> Quận 9</option>
+                            </select>
+                            <input type="text" name="full-name" class="form-control name" placeholder="Số nhà, tên phường, xã">
+                            <input type="checkbox"> Yêu cầu nhân viên kỹ thuật đi giao hàng. <br>
+                            <input type="checkbox"> Cà thẻ khi nhận hàng.<br>
+                            <input type="checkbox"> Xuất hóa đơn công ty.<br>
+                        </div>
+                        <div class="do nhap">
+                            <select name="diachi" id="diachi2">
+                                <option value="tinh">Đà Nẵng</option>
+                                <option value="tinh">Hà Nội</option>
+                                <option value="tinh">TP Hồ Chí Minh</option>
+                                <option value="tinh">Cần Thơ</option>
+                                <option value="tinh">Vũng Tàu</option>
+                                <option value="tinh">Quảng Nam</option>
+                                <option value="tinh">Huế</option>
+                                <option value="tinh">Kom Tum</option>
+                                <option value="tinh">Lai châu</option>
+                                <option value="tinh">Khánh Hòa</option>
+                            </select>
+                            <select name="huyen" id="huyen2">
+                                <option value="huyen"> Quận 1</option>
+                                <option value="huyen"> Quận 2</option>
+                                <option value="huyen"> Quận 3</option>
+                                <option value="huyen"> Quận 4</option>
+                                <option value="huyen"> Quận 5</option>
+                                <option value="huyen"> Quận 6</option>
+                                <option value="huyen"> Quận 7</option>
+                                <option value="huyen"> Quận 8</option>
+                                <option value="huyen"> Quận 9</option>
+                            </select>
+                            <input type="text" name="full-name" class="form-control name" placeholder="Nhập tên đường để tìm nhanh siêu thị.">
+                            <p>Có 7 siêu thị tại tỉnh/thành phố nơi bạn sống</p>
+                            <h4>Thời gian làm việc 6h30.am - 10h30.pm</h4>
+                            <input type="checkbox">Xuất hóa đơn công ty.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="end_">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Giới thiệu công ty (DĐTM)</li>
+                    <li>Hệ thống cửa hàng</li>
+                    <li>Tuyển dụng</li>
+                    <li>Chính sách bảo mật</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách đổi trả sản phẩm</li>
+                    <li>Hỏi Đáp Mua Hàng Online</li>
+                    <li>Phương Thức Thanh Toán</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul>
+                    <li>Gọi mua hàng: <b>1900.6122</b> (8H00 - 21H30)</li>
+                    <li>Gọi bảo hành: <b>1800.6501</b> (8H00 - 21H30)</li>
+                    <li>Gọi khiếu nại: <b>1800.6502</b> (8H00 - 21H30)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="creder">
+        <h4>Made by TuHuynh</h4>
+        <p>Email:FFSE1801022@outlook.com</p>
+        <p>Sdt: 64823492034</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var soluong = 0
+            for (let i = 0; i < sp.length; i++) {
+                if (localStorage.getItem(sp[i].id) != null) {
+                    soluong++;
+                }
+            }
+            if (soluong == 0) {
+                $(".table1 table").remove();
+                $(".table1").append("<h3>Chưa có sản phẩm nào trong giỏ hàng </h3>")
+            }
+            $("#number_item").text(soluong);
+            var n = sp.length
+            var sum = 0
+            for (let i = 0; i < n; i++) {
+                var stt = $("tr").length;
+                var sumprice = sp[i].price;
+
+                if (localStorage.getItem(sp[i].id) != null) {
+                    var objSanpham = JSON.parse(localStorage.getItem(sp[i].id));
+                    $("table").append('<tr><td>' + stt + '</td><td class = "row">' +
+                        '<img class="col-xs-12 col-sm-6 col-md-5" src="' + objSanpham.imgitem + '"/> <div class="name col-xs-12 col-sm-6 col-md-7"> <h3>' + objSanpham.nameitem + '</h3>' +
+                        '<h4><span  class="price" data="' + sp[i].price + '"> ' + sp[i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '</span> VND</h4>' +
+                        '<p>Số lượng: <input class="quantity quantity' + sp[i].id + '" type="number" name="quantity" min="1" max="10" value="1"> </p>' +
+                        '<a href="" class="' + sp[i].id + '"> <i class="fas fa-times-circle"></i> xóa </a></td>' +
+                        '</div>   </td>   <td  class="a' + sp[i].id + '"> <p>' + sumprice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' VND</p> </td> + </tr>'
+                    );
+                }
+                $("." + sp[i].id).click(function () {
+                    localStorage.removeItem(sp[i].id);
+                    localStorage.setItem("số lượng", localStorage.getItem("số lượng") - 1);
+                })
+                $(".quantity" + sp[i].id).change(function () {
+                    sumprice = sp[i].price * $(".quantity" + sp[i].id).val();
+                    $(".a" + sp[i].id + " p").text(sumprice + ' VND');
+                })
+            }
+            m = $(".price").length
+            for (let i = 0; i < m; i++) {
+                sum = sum + parseInt($(".price").eq(i).attr("data")) * $(".quantity").eq(i).val()
+                // $(".sum").text(sum +" VND");
+            }
+            $(document).on("change","click", ".quantity", function () {
+                sum = 0
+                for (let i = 0; i < m; i++) {
+                    sum = sum + parseInt($(".price").eq(i).attr("data")) * $(".quantity").eq(i).val()
+                    $(".sum").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " VND");
+                }
+            });
+            $(".sum").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " VND");
+        })
+        var chosen = $(".chosen")
+        chosen.click(function () {
+            if (chosen.eq(0).is(":checked")) {
+                $(".xanh").css("display", "block");
+                $(".do").css("display", "none");
+            }
+            if (chosen.eq(1).is(":checked")) {
+                $(".do").css("display", "block");
+                $(".xanh").css("display", "none");
+            }
+        })
+    </script>
+</body>
+
+</html>
