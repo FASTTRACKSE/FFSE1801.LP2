@@ -1,0 +1,44 @@
+/**CSS PSTORE PAGE**/
+.bgr-wood-menu {
+  width: 100%;
+  height: 630px;
+  margin-top: 110px;
+  position: relative;
+  opacity: 0.9;
+  right: 0;
+}
+.brg-menu-bot {
+  width: 100%;
+  height: 2000px;
+  top: 1000px;
+}
+.tiny-box-green {
+  position: absolute;
+  color: #fff;
+  background: #7f923b;
+  padding: 15px;
+  top: 700px;
+  left: 20%;
+  z-index: 2;
+}
+.title-top-store {
+  color: #555;
+  text-align: left;
+  position: absolute;
+  top: 300px;
+  font-size: 75px;
+  font-weight: bold;
+  font-family: "Bungee Outline", cursive;
+  width: 100%;
+  left: 5%;
+}
+.begin-line-store {
+  color: #555;
+  text-align: left;
+  position: absolute;
+  top: 460px;
+  font-size: 30px;
+  font-family: "Athiti", sans-serif;
+  width: 100%;
+  left: 5%;
+}
