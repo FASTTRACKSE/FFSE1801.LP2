@@ -50,6 +50,41 @@ var products = [
     name: "Cà phê sữa Sài Gòn",
     price: "12000",
     img: "./img/cf-sua-sg-1.jpg"
+  },
+  {
+    id: 7,
+    category: "Coffee",
+    name: "Cà phê đen rang xay",
+    price: "12000",
+    img: "./img/cf-den-rang-xay.jpg"
+  },
+  {
+    id: 8,
+    category: "Coffee",
+    name: "Cà phê sữa rang xay",
+    price: "12000",
+    img: "./img/cf-sua-rang-xay.jpg"
+  },
+  {
+    id: 9,
+    category: "Coffee",
+    name: "Cà phê đen pha phin",
+    price: "7000",
+    img: "./img/cf-den-pha-phin.jpg"
+  },
+  {
+    id: 10,
+    category: "Coffee",
+    name: "Cà phê sữa pha phin",
+    price: "8000",
+    img: "./img/cf-sua-pha-phin.jpg"
+  },
+  {
+    id: 11,
+    category: "Coffee",
+    name: "Cà phê Hotpot",
+    price: "12000",
+    img: "./img/coffee-hotpot.jpg"
   }
 ];
 
