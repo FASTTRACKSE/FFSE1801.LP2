@@ -178,13 +178,6 @@ var products = [
     img: "./img/drink-ice-lemon-1.jpg"
   },
   {
-    id: 25,
-    category: "Drink",
-    name: "Chanh đá",
-    price: "10000 ",
-    img: "./img/drink-ice-lemon-1.jpg"
-  },
-  {
     id: 26,
     category: "Drink",
     name: "Nước cam",
