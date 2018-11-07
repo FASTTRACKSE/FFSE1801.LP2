@@ -1,0 +1,234 @@
+/**CSS INVENTOR PAGE**/
+a {
+  background-color: transparent;
+  color: brown;
+  font-size: 20px;
+}
+.bgr-iventor {
+  width: 102%;
+  height: 630px;
+  margin-top: 115px;
+  left: -16px;
+  position: relative;
+  opacity: 0.6;
+}
+.tiny-box-green-inventor {
+  top: 720px;
+  position: absolute;
+  color: #fff;
+  background: #7f923b;
+  padding: 15px;
+  left: 20%;
+}
+.logo-ffse {
+  position: absolute;
+  opacity: 0.5;
+  width: 45%;
+  height: 220px;
+  top: 525px;
+  left: 985px;
+}
+/*Hover Background Inventor*/
+.background-top-news-sale figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.background-top-news-sale figure:hover::before {
+  -webkit-animation: shine 1s;
+  animation: shine 1s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+/*CSS title Iventor page*/
+.txtretroshadow {
+  position: absolute;
+  font-size: 70px;
+  color: #312927;
+  letter-spacing: 0.05em;
+  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  top: 340px;
+  left: 100px;
+  opacity: 0.9;
+  line-height: 90px;
+  margin-right: 775px;
+}
+
+/*Container Inventor Page*/
+/* Style the tab */
+.tabs-inventor-devs {
+  position: absolute;
+  overflow: hidden;
+  border-top: 3px solid #731a1a;
+  border-bottom: 1px solid #731a1a;
+  width: 1210px;
+}
+
+/* Style the buttons inside the tab */
+.tabs-inventor-devs button {
+  position: absolute;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 30px;
+  transition: 1s;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #fff;
+  margin-left: 270px;
+}
+.name-tabs {
+  color: #731a1a;
+}
+.name-tabs:hover {
+  color: #b81f32;
+  text-decoration: underline;
+}
+/* Change background color of buttons on hover */
+.tabs-inventor-devs button:hover {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+
+/* Create an active/current tablink class */
+.tabs-inventor-devs button.active {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+.logo-ffse-av {
+  right: -40px;
+  position: absolute;
+  width: 40%;
+  height: 365px;
+  top: 115px;
+}
+/*Contact Inventor*/
+.contact-inv-yt {
+  position: absolute;
+  padding: 16px;
+  width: 371px;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  right: 20px;
+  color: #fff;
+  top: 450px;
+  background: #b81f32;
+  font-weight: bold;
+  font-size: 18px;
+}
+.contact-inv-ins {
+  position: absolute;
+  padding: 16px;
+  width: 371px;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  right: 20px;
+  color: #fff;
+  top: 520px;
+  background: #aaa;
+  font-weight: bold;
+  font-size: 18px;
+}
+.contact-inv-mess {
+  position: absolute;
+  padding: 16px;
+  width: 371px;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  right: 20px;
+  color: #fff;
+  top: 595px;
+  background: #4267b2;
+  font-weight: bold;
+  font-size: 18px;
+}
+.contact-inv-hline {
+  position: absolute;
+  padding: 16px;
+  width: 371px;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  right: 20px;
+  color: #fff;
+  top: 670px;
+  background: #42c139;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*Phát triển Web*/
+.card {
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 360px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-left: 0;
+  margin-top: 100px;
+  height: 662px;
+}
+
+.title {
+  position: absolute;
+  color: grey;
+  font-size: 18px;
+}
+
+.card p button {
+  position: absolute;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: -14px;
+}
+
+.card div a {
+  position: absolute;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card p button:hover,
+a:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thực Đơn - Tình Coffee & Restaurant</title>
+    <link rel="stylesheet" href="./css/normalize (1).css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styletotal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/logo.ico">
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-pro-5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
+</head>
+
+<body>
+    <div id="cafe">
+        <div id="container-security">
+            <div class="home">
+                <div class="canvas">
+                    <div class="tiny-line">
+                        <div class="row">
+                            <div id="triangle-bottomleft"></div>
+                            <a href="./Project.html" class="name" title="Tình Coffee & Restaurant" target="_self"><b>TÌNH
+                                    COFFEE
+                                    & RESTAURANT</b></a>
+                            <div class="mrloader">
+                                <div class="inner-loader">
+                                    <div class="side"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="triangle-topright"></div>
+                        <div class="search-box">
+                            <input class="search-txt" type="text" name="" placeholder="Tìm sản phẩm, dịch vụ, liên hệ, đặt hàng,...">
+                            <a class="search-btn" href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="./MyCart.html" title="My Cart" target="_blank"><i class="icon-cart fas fa-cart-plus"></i></a>
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--menu-->
+            <div id="menu">
+
+                <ul>
+                    <div class="slogan">
+                        <b>Bạn Cô Đơn ư? Hãy Đến Với Chúng Tôi Nào!</b>
+                    </div>
+                    <li><a href="./Project.html" title=" Tình Coffee & Retaurant" target="_self">TRANG CHỦ</a></li>
+                    <li><a href="./Profile.html" title="About" target="_self">GIỚI THIỆU</a></li>
+                    <li><a href="./Menu.html" title="Menu" target="_self" style="text-decoration: underline">THỰC ĐƠN</a></li>
+                    <li><a href="./New&Sale.html" title="News & Sale" target="_self">TIN TỨC & ƯU ĐÃI</a></li>
+                    <li><a href="./Place.html" title="Place" target="_self">CỬA HÀNG</a></li>
+                    <li><a href="./Recruitment.html" title="Employee Recruitment Information" target="_self">TUYỂN DỤNG</a></li>
+                    <li><a href="./Contact.html" title="Contact" target="_blank">LIÊN HỆ</a></li>
+                    <li class="icon"><a href="#" title="Facebook" target="_blank"><i class="fb fab fa-facebook"></i></a></li>
+                    <li class="icon"><a href="#" title="Instagram" target="_blank"><i class="insta fab fa-instagram"></i></a></li>
+                    <li class="icon"><a href="#" title="Youtube" target="_blank"><i class="youtu fab fa-youtube"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!--Background Top-->
+        <div class="background-top-menu">
+            <img class="bgr-wood-menu" src="./img/background-container-2.jpg" alt="">
+            <p class="title-top-menu">MENU HIỆN TẠI</p>
+            <p class="begin-line-menu">Giới thiệu thực đơn đa dạng và hấp dẫn tại nhà hàng</p>
+        </div>
+        <!--Show Products List-->
+        <div class="background-bott-menu">
+            <img class="brg-menu-bot" src="./img/white.png" alt="">
+            <p class="tiny-box-green"><i class="fas fa-home"></i> <i class="fas fa-angle-right"></i> Menu hiện tại</p>
+        </div>
+        <div class="container-menu">
+            <div class="tabs-menu">
+                <div class="tabs">
+                    <button class="nametablinks" onclick="openCity(event, 'Coffee')" id="defaultOpen">
+                        <p id="coffee-tab" class="name-tabs"><i class="fas fa-coffee"></i> Coffee</p>
+                    </button>
+                    <button class="nametablinks" onclick="openCity(event, 'Tea')">
+                        <p class="name-tabs"><i class="fal fa-coffee"></i> Trà nguyên chất</p>
+                    </button>
+                    <button class="nametablinks" onclick="openCity(event, 'Drink')">
+                        <p class="name-tabs"><i class="fas fa-cocktail"></i> Thức uống giải nhiệt</p>
+                    </button>
+                    <button class="nametablinks" onclick="openCity(event, 'Fruit')" id="defaultOpen">
+                        <p class="name-tabs"><i class="fas fa-apple-alt"></i> Trái cây</p>
+                    </button>
+                    <button class="nametablinks" onclick="openCity(event, 'Food')">
+                        <p class="name-tabs"><i class="fas fa-utensils"></i> Món ăn ngon</p>
+                    </button>
+                    <button class="nametablinks" onclick="openCity(event, 'Book')">
+                        <p class="name-tabs"><i class="fas fa-clipboard-list"></i> Nhận đặt & tổ chức tiệc</p>
+                    </button>
+                </div>
+
+                <div class="document-tabs">
+                    <div id="Coffee" class="tabcontents">
+                        <div class="title-tab-box">
+                            <p class="name-tab">COFFEE</p>
+                            <div class="row" id="show_Coffee">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Tea" class="tabcontents">
+                        <div class="title-tab-box">
+                            <p class="name-tab">TRÀ NGUYÊN CHẤT</p>
+                            <div class="row" id="show_Tea">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Drink" class="tabcontents">
+                        <div class="title-tab-box">
+                            <p class="name-tab">THỨC UỐNG GIẢI NHIỆT</p>
+                            <div class="row" id="show_Drink">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Fruit" class="tabcontents">
+                        <div class="title-tab-box">
+                            <p class="name-tab">TRÁI CÂY</p>
+                            <div class="row" id="show_Fruit">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Food" class="tabcontents">
+                        <div class="title-tab-box">
+                            <p class="name-tab">MÓN ĂN NGON</p>
+                            <div class="row" id="show_Food">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Book" class="tabcontents">
+                        <div class="title-tab-box">
+                            <p class="name-tab">NHẬN ĐẶT CHỖ TRƯỚC VÀ TỔ CHỨC TIỆC</p>
+                            <div class="row" id="show_Book">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div id="Drink" class="tabcontents">
+                    <div class="title-tab-box-1">
+                        <p class="name-tab">THỨC UỐNG GIẢI NHIỆT</p>
+                        <div class="row">
+                            <div class="column">
+                                <figure><img class="cf" src="./img/drink-hot-lemon.jpg" alt=""></figure>
+                                <p class="name-product">Nước chanh nóng</p>
+                                <p class="price">Giá thành: 10.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                            <div class="column">
+                                <figure><img class="cf" src="./img/drink-ice-lemon-1.jpg" alt=""></figure>
+                                <p class="name-product">Nước chanh đá</p>
+                                <p class="price">Giá thành: 10.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                            <div class="column">
+                                <figure><img class="cf" src="./img/drink-orange.jpg" alt=""></figure>
+                                <p class="name-product">Cam vắt</p>
+                                <p class="price">Giá thành: 15.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                            <div class="column">
+                                <figure><img class="cf" src="./img/drink-avocado.jpg" alt=""></figure>
+                                <p class="name-product">Sinh tố bơ</p>
+                                <p class="price">Giá thành: 15.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                            <div class="column">
+                                <figure><img class="cf" src="./img/drink-mango.png" alt=""></figure>
+                                <p class="name-product">Sinh tố xoài</p>
+                                <p class="price">Giá thành: 15.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                            <div class="column">
+                                <figure><img class="cf" src="./img/drink-carot.jpg" alt=""></figure>
+                                <p class="name-product">Sinh tố cà rốt</p>
+                                <p class="price">Giá thành: 15.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                            <div class="column">
+                                <figure><img class="cf" src="./img/drink-chanh-day-1.jpg" alt=""></figure>
+                                <p class="name-product">Nước chanh dây</p>
+                                <p class="price">Giá thành: 15.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Fruit" class="tabcontents">
+                    <div class="title-tab-box-1">
+                        <p class="name-tab">TRÁI CÂY</p>
+                        <div class="row">
+                            <div class="column">
+                                <figure><img class="cf" src="./img/fruit-mango.jpg" alt=""></figure>
+                                <p class="name-product">Xoài</p>
+                                <p class="price">Giá thành: 10.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                            <div class="column">
+                                <figure><img class="cf" src="./img/fruit-oi.jpg" alt=""></figure>
+                                <p class="name-product">Ổi</p>
+                                <p class="price">Giá thành: 10.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                            <div class="column">
+                                <figure><img class="cf" src="./img/fruit-orange.jpg" alt=""></figure>
+                                <p class="name-product">Cam</p>
+                                <p class="price">Giá thành: 10.000 ₫</p>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="./Details.html" id="about">Xem chi tiết</a>
+                                    <a href="#" id="blog">Facebook</a>
+                                    <a href="#" id="projects">Instagram</a>
+                                    <a href="#" id="contact">Youtube</a>
+                                    <img src="./img/deco-flower.png" alt="">
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Food" class="tabcontents">
+                    <div class="title-tab-box">
+                        <p class="name-tab">MÓN ĂN NGON</p>
+                    </div>
+                </div>
+
+                <div id="Book" class="tabcontents">
+                    <div class="title-tab-box">
+                        <p class="name-tab">NHẬN ĐẶT CHỖ VÀ TỔ CHỨC TIỆC</p>
+                    </div>
+                </div> -->
+                <!-- <div id="Tea" class="tabcontents">
+                    <div id="Tea" class="tabcontents">
+                        <div class="title-tab-box">
+                            <p class="name-tab">TRÀ NGUYÊN CHẤT</p>
+                            <div class="row">
+                                <div class="column">
+                                    <figure><img class="cf" src="./img/tea-ginger.jpg" alt=""></figure>
+                                    <p class="name-product">Trà gừng</p>
+                                    <p class="price">Giá thành: 12.000 ₫</p>
+                                    <div id="mySidenav" class="sidenav">
+                                        <a href="./Details.html" id="about">Xem chi tiết</a>
+                                        <a href="#" id="blog">Facebook</a>
+                                        <a href="#" id="projects">Instagram</a>
+                                        <a href="#" id="contact">Youtube</a>
+                                        <img src="./img/deco-flower.png" alt="">
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+
+                                <div class="column">
+                                    <figure><img class="cf" src="./img/tea-lipton.png" alt=""></figure>
+                                    <p class="name-product">Trà Lipton</p>
+                                    <p class="price">Giá thành: 15.000 ₫</p>
+                                    <div id="mySidenav" class="sidenav">
+                                        <a href="./Details.html" id="about">Xem chi tiết</a>
+                                        <a href="#" id="blog">Facebook</a>
+                                        <a href="#" id="projects">Instagram</a>
+                                        <a href="#" id="contact">Youtube</a>
+                                        <img src="./img/deco-flower.png" alt="">
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+
+                                <div class="column">
+                                    <figure><img class="cf" src="./img/tea-original.jpeg" alt=""></figure>
+                                    <p class="name-product">Trà nguyên chất</p>
+                                    <p class="price">Giá thành: 15.000 ₫</p>
+                                    <div id="mySidenav" class="sidenav">
+                                        <a href="./Details.html" id="about">Xem chi tiết</a>
+                                        <a href="#" id="blog">Facebook</a>
+                                        <a href="#" id="projects">Instagram</a>
+                                        <a href="#" id="contact">Youtube</a>
+                                        <img src="./img/deco-flower.png" alt="">
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <a href="./Project.html" class="tiny-name" title="Tình Coffee & Restaurant" target="_self"><b>TÌNH
+                COFFEE &
+                RESTAURANT</b></a>
+        <p class="know-more">Cổng làng cổ Phước Tích, Mỹ Chánh, Thừa Thiên Huế</p>
+        <p class="call">Hotline: 0981 044 562</p>
+        <p class="ship">Áp dụng giao hàng toàn quốc</p>
+        <a href="./security.html" title="Security Clauses" target="_blank"><b class="security-clauses">Điều
+                khoản
+                bảo
+                mật</b></a>
+        <hr color="#838482">
+        <p class="notes"><i class="icon-cf fas fa-coffee"></i> COPYRIGHT © 2019 BY TINH COFFEE &
+            RESTAURANT</p>
+    </div>
+
+    <!--go  top and menu-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+                document.getElementById("menu").style.top = "0";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+                document.getElementById("menu").style.top = "-200px";
+            }
+        }
+    </script>
+
+    <!--Small Menu-->
+    <script>
+        function openCity(evt, cityName) {
+            show_products(cityName)
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontents");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("nametablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
