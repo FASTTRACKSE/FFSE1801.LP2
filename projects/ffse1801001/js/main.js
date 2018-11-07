@@ -110,6 +110,7 @@ function add_cart(id, paramsid) {
     localStorage.mycart = JSON.stringify(arr);
     disableBtn(id);
   }
+  u_cart();
 }
 function disableBtn(id) {
   id.onclick = "";
@@ -163,3 +164,12 @@ function delete_products(params) {
   } else {
   }
 }
+function u_cart() {
+  if (localStorage.mycart) {
+    let arr = JSON.parse(localStorage.mycart);
+    let p = document.createElement("p");
+    p.innerHTML = arr.length;
+    document.getElementsByClassName("cart")[0].appendChild(p);
+  }
+}
+u_cart();
