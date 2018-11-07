@@ -85,6 +85,27 @@ var products = [
     name: "Cà phê Hotpot",
     price: "12000",
     img: "./img/coffee-hotpot.jpg"
+  },
+  {
+    id: 12,
+    category: "Tea",
+    name: "Trà gừng nóng",
+    price: "12000",
+    img: "./img/tea-ginger.jpg"
+  },
+  {
+    id: 13,
+    category: "Tea",
+    name: "Trà Lipton",
+    price: "15000",
+    img: "./img/tea-lipton.png"
+  },
+  {
+    id: 14,
+    category: "Tea",
+    name: "Trà nguyên chất",
+    price: "15000",
+    img: "./img/tea-original.jpeg"
   }
 ];
 
