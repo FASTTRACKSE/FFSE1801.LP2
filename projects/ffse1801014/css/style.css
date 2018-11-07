@@ -10,7 +10,7 @@ html{
 }
 #home{
     background-image: url(../images/mybackground.jpg);
-    height: 600px;
+    height: 680px;
     /* width: 1349px; */
     background-size: cover;
     background-position: center center;
@@ -270,7 +270,7 @@ ol li{
     vertical-align: middle !important;
 }
 .background-custom li a{
-    /* font-size: 1vw !important; */
+    font-size: 1vw !important;
 }
 .content-menu{
     background: url(https://theme.hstatic.net/1000075078/1000297410/14/bg-wave1.png?v=40);
