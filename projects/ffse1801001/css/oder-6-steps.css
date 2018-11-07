@@ -1,0 +1,259 @@
+/**CSS ODER PAGE**/
+
+/**Oder Page**/
+.nhan-oder {
+  position: absolute;
+  width: 60%;
+  height: 150px;
+  top: 250px;
+  left: 410px;
+}
+.oder {
+  background: #fff4f8;
+  width: 100%;
+  height: 2170px;
+}
+.cf-with-fr {
+  position: absolute;
+  z-index: 3;
+  width: 25%;
+  height: 320px;
+  top: 1845px;
+  left: 1425px;
+}
+.oder .steps-oder {
+  color: #312927;
+  font-size: 50px;
+  padding-top: 300px;
+  position: absolute;
+  left: 510px;
+  text-decoration: 2px 2px 2px #b9b9b9;
+}
+.oder .menu-box {
+  background: #312927;
+  top: 50%;
+  right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: fixed;
+}
+.oder .menu-box p {
+  text-decoration: none;
+  display: inline-block !important;
+  color: bisque;
+}
+.step-1-to-6 {
+  padding-top: 500px;
+}
+.step-1-to-6 p {
+  color: #312927;
+  font-size: 23px;
+}
+.step-1-to-6 .step-1-vn {
+  float: right;
+  font-weight: bold;
+}
+.step-1-to-6 .step-1-eng {
+  float: right;
+  margin-bottom: 150px;
+  margin-left: 270px;
+}
+.step-1-to-6 .step-2-vn {
+  float: right;
+  font-weight: bold;
+}
+.step-1-to-6 .step-2-eng {
+  float: right;
+  margin-bottom: 150px;
+  margin-left: 501px;
+}
+.step-1-to-6 .step-3-vn {
+  float: right;
+  font-weight: bold;
+}
+.step-1-to-6 .step-3-eng {
+  float: right;
+  margin-bottom: 150px;
+  margin-left: 120px;
+}
+.step-1-to-6 .step-4-vn {
+  float: right;
+  font-weight: bold;
+}
+.step-1-to-6 .step-4-eng {
+  float: right;
+  margin-bottom: 150px;
+  margin-left: 430px;
+}
+.step-1-to-6 .step-5-vn {
+  float: right;
+  font-weight: bold;
+}
+.step-1-to-6 .step-5-eng {
+  float: right;
+  margin-bottom: 150px;
+  margin-left: 300px;
+}
+.step-1-to-6 .step-6-vn {
+  float: right;
+  font-weight: bold;
+}
+.step-1-to-6 .step-6-eng {
+  float: right;
+  margin-bottom: 150px;
+  margin-left: 330px;
+}
+.demo-img-1 {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+  height: 200px;
+  left: 892px;
+  top: 490px;
+  -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example1;
+  animation-duration: 2s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example1 {
+  0% {
+    background: url(../img/step-1.png);
+    left: 1000px;
+    top: 490px;
+  }
+  100% {
+    background: url(../img/step-1.png);
+    left: 892px;
+    top: 490px;
+  }
+}
+
+.demo-img-2 {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+  height: 200px;
+  left: 892px;
+  top: 760px;
+  -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  animation-name: example2;
+  animation-duration: 3s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+  0% {
+    background: url(../img/step-2.png);
+    left: 1000px;
+    top: 760px;
+  }
+  100% {
+    background: url(../img/step-2.png);
+    left: 892px;
+    top: 760px;
+  }
+}
+
+.demo-img-3 {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+  height: 200px;
+  left: 892px;
+  top: 1030px;
+  -webkit-animation-name: example3; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example3;
+  animation-duration: 4s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example3 {
+  0% {
+    background: url(../img/buoc3-1.jpg);
+    left: 1000px;
+    top: 1030px;
+  }
+  100% {
+    background: url(../img/buoc3-1.jpg);
+    left: 892px;
+    top: 1030px;
+  }
+}
+
+.demo-img-4 {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+  height: 200px;
+  left: 892px;
+  top: 1300px;
+  -webkit-animation-name: example4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  animation-name: example4;
+  animation-duration: 5s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example4 {
+  0% {
+    background: url(../img/buoc4-1.jpg);
+    left: 1000px;
+    top: 1300px;
+  }
+  100% {
+    background: url(../img/buoc4-1.jpg);
+    left: 892px;
+    top: 1300px;
+  }
+}
+.demo-img-5 {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+  height: 200px;
+  left: 892px;
+  top: 1580px;
+  -webkit-animation-name: example5; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  animation-name: example5;
+  animation-duration: 6s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example5 {
+  0% {
+    background: url(../img/step-5.png);
+    left: 1000px;
+    top: 1580px;
+  }
+  100% {
+    background: url(../img/step-5.png);
+    left: 892px;
+    top: 1580px;
+  }
+}
+
+.demo-img-6 {
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  height: 200px;
+  left: 892px;
+  top: 1860px;
+  -webkit-animation-name: example6; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: example6;
+  animation-duration: 8s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example6 {
+  0% {
+    background: url(../img/step-6.png);
+    left: 1000px;
+    top: 1860px;
+  }
+  100% {
+    background: url(../img/step-6.png);
+    left: 892px;
+    top: 1860px;
+  }
+}
