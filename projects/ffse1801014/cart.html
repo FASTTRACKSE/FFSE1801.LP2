@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-pro-5.0/css/all.css">
+    <title>my cart</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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">
+</head>
+
+<body class="container-fluid">
+    <nav class="navbar navbar-light bg-light row position-fixed z-index-99 w-100">
+        <a href="index.html" class="navbar-brand"><img style="width:200px; heigth:15px" src="logo/mylogo-black.png" alt=""></a>
+        <form class="form-inline">
+
+            <button class="btn bg-light ml-2" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
+            <div id="id01" class="modal">
+
+                <form class="modal-content animate w-50" action="/action_page.php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+                    </div>
+
+                    <div class="container bg-light">
+                        <label for="uname"><b>Username</b></label>
+                        <input class="w-100 input-login" type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input id="password" class="w-100 input-login" type="password" placeholder="Enter Password"
+                            name="psw" required>
+
+                        <button class="btn-login btn-info" type="submit">Login</button>
+                        <label>
+                            <input class=" input-login" type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container bg-light">
+                        <button class="btn-login btn-info" type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+
+                        <span>Forgot <a href="#">password?</a> or <a class="text-center" href="sign-up.html">Sign up</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </nav>
+    <div class="container">
+        <table id="cart" class="table table-hover table-condensed mt-5">
+            <thead class="bg-info text-light">
+                <tr>
+                    <th style="width:50%">Product</th>
+                    <th style="width:10%">Price</th>
+                    <th style="width:8%">Quantity</th>
+                    <th style="width:22%" class="text-center">Subtotal</th>
+                    <th style="width:10%"></th>
+                </tr>
+            </thead>
+            <tbody id="showcart">
+                <!----------------------- item product begin---------------------- -->
+
+
+                <!------------------------ item product end--------------------- -->
+            </tbody>
+            <tfoot>
+                <tr class="d-block d-sm-none">
+                    <td class="text-center"><strong class="total">0$</strong></td>
+                </tr>
+                <tr>
+                    <td><a href="order.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue
+                            Shopping</a></td>
+                    <td colspan="2" class="hidden-xs"></td>
+                    <td class="d-none d-sm-block text-center"><strong class="total">Total $0</strong></td>
+                    <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- Footer -->
+    <div class="row my-footer text-center" style="background-color: black;">
+        <div class="icon-footer col-12 pt-3">
+            <table class=" mx-auto mb-3">
+                <tr>
+                    <th class="px-3 hover-icon"><a href="https://www.facebook.com/TranDucTamLuong"><i class="fab fa-facebook-f"></i></a>
+                    </th>
+                    <th class="px-3 hover-icon"><a href="https://plus.google.com/u/0/101969152477025705258"><i class="fab fa-google-plus-g"></i>
+                        </a></th>
+                    <th class="px-3 hover-icon"><a href="https://www.instagram.com/tranductamluong/"><i class="fab fa-instagram"></i>
+                        </a> </th>
+                    <th class="px-3 hover-icon"><a href="https://mail.google.com"><i class="far fa-envelope"></i> </a>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-content text-center mx-auto mb-3 col-12">
+            <a href=""> <img class="pt-3 img-fluid" src="logo/mylogo-white.png" alt=""></a>
+            <p class="pt-4 text-light" style="line-height: 30px;">
+                Address of my store <br>
+                Hotline: 0979749507 <br>
+                Free delivery: 000000000 <br>
+            </p>
+            <a href="" class="text-light">security clause</a>
+        </div>
+        <div class="col-12 border-top-gray pt-3">
+            <p style="font-size: 0.8rem"> <i class="far fa-copyright"></i>2018 - ALL RIGHTS RESERVED. <a href="" style="color:#212529;">POWERED
+                    BY LUONG</a></p>
+        </div>
+    </div>
+    <!-- ------------------------------nạp file JS ------------->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+    <script>
+        showcart()//show giỏ hàng
+        multiplication();
+        document.addEventListener("click", function (params) {   //tính price
+            multiplication()
+        })
+        document.addEventListener("keyup", function (params) {
+            multiplication()
+        })
+    </script>
+</body>
+
+</html>
