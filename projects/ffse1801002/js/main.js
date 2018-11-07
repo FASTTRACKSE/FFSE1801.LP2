@@ -48,7 +48,7 @@ header();
 function menu_active() {
   let url = window.location.pathname;
   let page = url.split("/");
-  switch (page[2]) {
+  switch (page[[page.length-1]) {
     case "trang-chu.html":
       active(0);
       break;
