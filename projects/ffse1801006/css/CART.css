@@ -176,3 +176,13 @@ body{
 .remove-product i {
     color: white;
 }
+.price::after{
+    content: "$";   
+}
+/* .sum::after{
+    content: "s";
+} */
+tr{
+    color: white;
+    margin-bottom: 10vh !important;
+}
