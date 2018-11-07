@@ -35,7 +35,7 @@ var products = [
     category: "Coffee",
     name: "Cà phê sữa đá",
     price: "10000",
-    img: "./img/cf-sua-da-3.jpg"
+    img: "./img/cf-sua-da.jpg"
   },
   {
     id: 5,
@@ -106,6 +106,251 @@ var products = [
     name: "Trà nguyên chất",
     price: "15000",
     img: "./img/tea-original.jpeg"
+  },
+  {
+    id: 15,
+    category: "Drink",
+    name: "Sinh tố xoài",
+    price: "15000 ",
+    img: "./img/drink-mango.png"
+  },
+  {
+    id: 16,
+    category: "Drink",
+    name: "Sinh tố bơ",
+    price: "15000 ",
+    img: "./img/drink-avocado.jpg"
+  },
+  {
+    id: 17,
+    category: "Drink",
+    name: "Sinh tố cà rốt",
+    price: "15000 ",
+    img: "./img/drink-carot.jpg"
+  },
+  {
+    id: 18,
+    category: "Drink",
+    name: "Sinh tố dưa hấu",
+    price: "15000 ",
+    img: "./img/drink-melon.png"
+  },
+  {
+    id: 19,
+    category: "Drink",
+    name: "Sinh tố mít",
+    price: "15000 ",
+    img: "./img/drink-mit.jpg"
+  },
+  {
+    id: 20,
+    category: "Drink",
+    name: "Sinh tố thập cẩm",
+    price: "15000 ",
+    img: "./img/drink-thap-cam.jpg"
+  },
+  {
+    id: 21,
+    category: "Drink",
+    name: "Nước dừa",
+    price: "25000 ",
+    img: "./img/drink-coconut.jpg"
+  },
+  {
+    id: 22,
+    category: "Drink",
+    name: "Nước chanh dây",
+    price: "15000 ",
+    img: "./img/drink-chanh-day-2.jpg"
+  },
+  {
+    id: 23,
+    category: "Drink",
+    name: "Chanh nóng",
+    price: "10000 ",
+    img: "./img/drink-hot-lemon.jpg"
+  },
+  {
+    id: 24,
+    category: "Drink",
+    name: "Chanh đá",
+    price: "10000 ",
+    img: "./img/drink-ice-lemon-1.jpg"
+  },
+  {
+    id: 25,
+    category: "Drink",
+    name: "Chanh đá",
+    price: "10000 ",
+    img: "./img/drink-ice-lemon-1.jpg"
+  },
+  {
+    id: 26,
+    category: "Drink",
+    name: "Nước cam",
+    price: "15000 ",
+    img: "./img/drink-orange.jpg"
+  },
+  {
+    id: 27,
+    category: "Drink",
+    name: "Nước chanh muối",
+    price: "10000 ",
+    img: "./img/drink-chanh-muoi.jpg"
+  },
+  {
+    id: 28,
+    category: "Drink",
+    name: "Sữa chua đá xay",
+    price: "10000 ",
+    img: "./img/drink-sua-chua-da.png"
+  },
+  {
+    id: 29,
+    category: "Drink",
+    name: "Sữa tươi",
+    price: "10000 ",
+    img: "./img/drink-sua-tuoi.jpg"
+  },
+  {
+    id: 30,
+    category: "Drink",
+    name: "Sữa cam",
+    price: "15000 ",
+    img: "./img/drink-sua-cam.jpg"
+  },
+  {
+    id: 31,
+    category: "Drink",
+    name: "Coca",
+    price: "10000 ",
+    img: "./img/drink-coca.jpg"
+  },
+  {
+    id: 32,
+    category: "Drink",
+    name: "Number One",
+    price: "10000 ",
+    img: "./img/drink-number-one.jpg"
+  },
+  {
+    id: 33,
+    category: "Drink",
+    name: "Redbull",
+    price: "13000 ",
+    img: "./img/drink-redbull.jpg"
+  },
+  {
+    id: 34,
+    category: "Drink",
+    name: "Tà xanh không độ",
+    price: "12000 ",
+    img: "./img/drink-0-do.jpg"
+  },
+  {
+    id: 35,
+    category: "Drink",
+    name: "Trà Dotor Thanh",
+    price: "10000 ",
+    img: "./img/drink-dt-thanh.jpg"
+  },
+  {
+    id: 35,
+    category: "Drink",
+    name: "Cacao nóng",
+    price: "12000 ",
+    img: "./img/drink-cacao-hot.jpg"
+  },
+  {
+    id: 36,
+    category: "Drink",
+    name: "Cacao đá",
+    price: "12000 ",
+    img: "./img/drink-cacao.jpg"
+  },
+  {
+    id: 37,
+    category: "Drink",
+    name: "Milo nóng",
+    price: "12000 ",
+    img: "./img/drink-milo-hot.jpg"
+  },
+  {
+    id: 38,
+    category: "Drink",
+    name: "Milo đá",
+    price: "12000 ",
+    img: "./img/drink-milo.jpg"
+  },
+  {
+    id: 39,
+    category: "Drink",
+    name: "Bia Huda lon",
+    price: "11000 ",
+    img: "./img/drink-huda.jpg"
+  },
+  {
+    id: 40,
+    category: "Drink",
+    name: "Bia Sài Gòn",
+    price: "12000 ",
+    img: "./img/drink-sg.jpg"
+  },
+  {
+    id: 50,
+    category: "Fruit",
+    name: "Xoài",
+    price: "30000 ",
+    img: "./img/fruit-mango.jpg"
+  },
+  {
+    id: 51,
+    category: "Fruit",
+    name: "Ổi",
+    price: "30000 ",
+    img: "./img/fruit-oi.jpg"
+  },
+  {
+    id: 52,
+    category: "Fruit",
+    name: "Cóc",
+    price: "30000 ",
+    img: "./img/fruit-coc.jpg"
+  },
+  {
+    id: 53,
+    category: "Fruit",
+    name: "Mít",
+    price: "30000 ",
+    img: "./img/fruit-mit.jpg"
+  },
+  {
+    id: 54,
+    category: "Fruit",
+    name: "Cam",
+    price: "30000 ",
+    img: "./img/fruit-orange.jpg"
+  },
+  {
+    id: 55,
+    category: "Fruit",
+    name: "Dưa hấu",
+    price: "30000 ",
+    img: "./img/fruit-melon.jpg"
+  },
+  {
+    id: 56,
+    category: "Fruit",
+    name: "Trái cây các loại",
+    price: "30000 ",
+    img: "./img/fruit-hon-hop.jpg"
+  },
+  {
+    id: 6,
+    category: "Food",
+    name: "Gà xé",
+    price: "100000 ",
+    img: "./img/fo-ga-xe.jpg"
   }
 ];
 
