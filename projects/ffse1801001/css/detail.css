@@ -88,6 +88,31 @@
   bottom: 0;
   box-shadow: 0px 2px 10px 2px #7d9238;
 }
+.product_name {
+  color: #b81f32;
+  margin-left: 40px;
+  font-family: "Bungee Inline", cursive;
+}
+.pro_price {
+  color: #b81f32;
+  margin-left: 40;
+}
+.number {
+  color: #731a1a;
+}
+.sale_off {
+  color: #b81f32;
+}
+.percents {
+  color: #731a1a;
+}
+
+.status {
+  color: #b81f32;
+}
+.mt {
+  color: #731a1a;
+}
 .bot-right-box {
   background: #f5eee9;
   position: absolute;
@@ -109,7 +134,6 @@
   margin-top: 75px;
   border-radius: 5%;
 }
-
 .zoom:hover {
   -ms-transform: scale(1.4); /* IE 9 */
   -webkit-transform: scale(1.5s); /* Safari 3-8 */
