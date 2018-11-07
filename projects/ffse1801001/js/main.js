@@ -140,8 +140,26 @@ function show_products_in_mycart(params) {
                 <td>` +
       numberWithCommas(product.price) +
       `đ</td>
-                <td>x</td>
+                <td >
+                <i style="font-size:25px;cursor: pointer;" onclick="delete_products(` +
+      product.id +
+      `)"  class="fas fa-times"></i>
+                </td>
             `;
     document.getElementById("myTable").appendChild(tr);
+  }
+}
+function delete_products(params) {
+  let arr = JSON.parse(localStorage.mycart);
+  console.log(arr);
+  let product = arr.find(function(id) {
+    return id == params;
+  });
+  if (product !== undefined) {
+    let i = arr.indexOf(product);
+    arr.splice(i, 1);
+    localStorage.mycart = JSON.stringify(arr);
+    location.reload();
+  } else {
   }
 }
