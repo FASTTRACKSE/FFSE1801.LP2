@@ -548,7 +548,7 @@ function show_products_in_mycart(params) {
       `">` +
       numberWithCommas(product.price) +
       `</span>đ</td>
-      <td ><input type="number" min="1" value="1" id="quantity` +
+      <td ><input type="number" min="1" value="1" onchange="u_price()" id="quantity` +
       product.id +
       `"></td>
                 <td><span id="total` +
