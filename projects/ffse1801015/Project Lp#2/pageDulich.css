@@ -368,7 +368,6 @@ body::-webkit-resizer {
 }
 .gioi_thieu2 img{
     position: absolute;
-    margin: 20px 47% 0 46%;
 }
 
 
@@ -397,6 +396,9 @@ body::-webkit-resizer {
         border-left: 1px solid lightgray;
         margin-top: 150px;
     }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 46%;
+    }
 }
 @media only screen and (max-width: 1024px){
     #container ul li a:hover{
@@ -423,5 +425,8 @@ body::-webkit-resizer {
     }
     #slide2{
         display: block;
+    }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 33%;
     }
 }

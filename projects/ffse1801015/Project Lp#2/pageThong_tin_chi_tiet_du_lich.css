@@ -6,7 +6,17 @@ body{
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+    background-attachment: fixed;
+    
+}
+/* body p{
+    font-size: 18px;
+} */
+body a:hover{
+    text-decoration: none;
+}
+body b{
+    color: rgb(0, 0, 0);
 }
 body::-webkit-scrollbar {
     border-radius: 20px;
@@ -91,10 +101,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 70px;
     opacity: 1;
 }
-#slide1{
-    padding-left: 0;
-    margin-top: 50px;
-}
+
 
 
 #trang{
@@ -102,161 +109,96 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 50px;
     padding-left: 10px;
 }
-#trang .rateit{
-    color: rgb(255, 238, 0);
-    width: 100px;
+#trang img{
+    margin: 15px 0 15px 0;
+    max-width: 100%;
 }
-#trang button{
-    text-align: left;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
+#trang .slide{
+    padding: 3px;
 }
-#trang h1{
-    margin-bottom: 5px;
+#trang .thong_tin{
+    padding:0;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid lightgray;
 }
-#trang i{
-    margin-right: 5px;
+#trang .chuong_trinh{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(168, 168, 168);
 }
-#trang span{
-    top: 3px;
-    margin-left: 5px;
-    color: lightslategray;
-    margin-right: 5px;
+#trang .chuong_trinh span{
+    margin-top: 20px;
+    
+}#trang .chuong_trinh p,b{
+    margin-top: 20px;
+    font-size: 18px;
 }
-#trang button{
-    padding: 0;
-    margin-top: 10px;
+#trang .dac_diem{
+    margin: 20px 0 20px 0;
+    padding-bottom: 10px;
+}
+#trang .dac_diem span{
+    margin-top: 20px;
+    font-size: 21px;
+}
+#trang .dac_diem p,b{
+    margin-top: 20px;
+    font-size: 17px;
+}
+#trang .right p.mot{
+    margin: 5px 0 0 0;
+    display: block;
+    color: rgb(253, 118, 7);
+    font-weight: bold;
+    font-size: 18px;
+}
+#trang .right p.hai{
+    font-size: 19px;
+    color: #333;
     margin-bottom: 10px;
 }
+#trang span.mot{
+    margin-right:10px;
+    margin-left: 10px;
+}
+#trang span.hai{
+    margin-right:10px;
+}
 
-#trang .img1{
-    background-color: #f7f7f7;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 0 15px 0 15px;
+#trang h1{
+    margin: 15px 0 10px 15px;
+    font-size: 26px;
 }
-#trang .img1 .the{
-    margin-bottom: 15px;
+#trang h2{
+    margin-top: 40px;
+    padding-left: 10px;
+    font-size: 24px;
+    color: rgb(255, 115, 0);
+    border-left: 10px solid rgb(255, 115, 0);
 }
-#trang img{
-    margin: 0 15px 7px 5px;
-    height: 15px;
-    width: 15px;
+#trang h3{
+    display: inline;
+    font-size: 22px;
 }
-#trang .img1 a.mot{
-    color: #333;
-    font-size: 23px;
-    text-decoration: none;
-}
-#trang a:hover.mot{
+#trang a.mot{
     color: rgb(255, 115, 0);
 }
-#trang a:hover.hai{
-    font-weight: normal;
-    color: #000;
-    text-decoration: none;
-}
-#trang select{
-    height: 40px;
-    width: 100%;
-    padding-left: 10px;
-    font-size: 19px;
-}
-#trang input.input{
-    height: 40px;
-    width: 100%;
-    padding-left: 10px;
-    font-size: 19px;
-    opacity: 0.8;
-}
-#trang input.submit{
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 102, 0);
-    border: none;
-    text-align: center;
-    height: 40px;
-    width: 100%;
-}
-#trang textarea{
-    resize: none;
-    width: 100%;
-}
-#trang .nhap{
-    margin-top: 20px;
-}
-#trang .thongtin{
-    margin-bottom: 15px;
-    margin-left: 15px;
-}
-#trang .thongtin1{
-    margin-bottom: 3px;
-    margin-left: 15px;
+#trang a.mot:hover{
+    color: rgb(0, 0, 0);
 }
 
-#trang .img1 p.mot{
+#trang p{
+    display: inline; 
+}
+#trang p.mot{
     display: inline;
-    padding-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
+    /* font-size: 21px; */
+}
+#trang p.hai{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
 }
 
-#trang .img1 p.hai{
-    display: inline;
-    color: red;
-}
-#trang .img1 p.ba{
-    text-align: center;
-    font-size: 23px;
-    margin: 30px;
-    font-weight: bold;
-}
-#trang .img1 p.bon{
-    margin: 25px 25px 20px 25px;
-    font-weight: bold;
-    font-size: 19px;
-    
-}
-#trang .img1 p.nam{
-    /* margin-bottom: 10px; */
-    display: inline;
-    font-size: 13px;
-    line-height: 5px;
-}
-#trang .img1 button.mot{
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-    margin: 0;
-    margin-bottom: 15px;
-    display: block;
-    color: rgb(255, 255, 255);
-    background-color: rgb(252, 113, 0);
-    height: 35px;
-    width: 150px;
-}
-
-
-#trang .img2{
-    padding: 10px;
-    padding-top: 0;
-}
-#trang .img2 img{
-    height: 100%;
-    width: 100%;
-    padding: 0;
-}
-#trang .phan_trang li a{
-    color: #000;
-}
-#trang .phan_trang li a:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 123, 0);
-}
-#trang .nhap textarea{
-    padding: 10px;
-    font-size: 19px;
-    opacity: 0.8;
-}
 
 
 
@@ -325,7 +267,6 @@ body::-webkit-scrollbar-thumb {
 }
 .gioi_thieu2 img{
     position: absolute;
-    margin: 20px 47% 0 46%;
 }
 
 
@@ -340,9 +281,6 @@ body::-webkit-scrollbar-thumb {
         background-color:#414040;
         margin:0 13% ;
     }
-    #slide2{
-        display: none;
-    }
     .gioi_thieu1{
         background-color: #cecfcf;
         height: 500px;
@@ -354,6 +292,23 @@ body::-webkit-scrollbar-thumb {
     #trang input.submit{
         width: 5%;
         margin: 0 47% 30px 47%;
+    }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 46%;
+    }
+    #trang p.mot{
+        display: inline;
+        font-size: 21px;
+    }
+    #trang a.mot{
+    font-size: 21px;
+    }
+    #trang p.bon{
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-weight: bold;
+        padding: 30px;
+        margin-top: 20px;
     }
 }
 @media only screen and (max-width: 1024px){
@@ -381,5 +336,18 @@ body::-webkit-scrollbar-thumb {
     }
     #slide2{
         display: block;
+    }
+    #trang a.mot{
+        font-size: 15px;
+    }
+    #trang p.bon{
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-weight: bold;
+        padding: 20px 10px 20px 10px;
+        margin-top: 20px;
+    }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 33%;
     }
 }

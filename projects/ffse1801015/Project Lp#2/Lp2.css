@@ -321,7 +321,6 @@ body a:hover{
 }
 .gioi_thieu2 img{
     position: absolute;
-    margin: 20px 47% 0 46%;
 }
 
 
@@ -345,8 +344,38 @@ body a:hover{
     #trang .img1 img{
         height: 350px;
     }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 46%;
+    }
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) and (min-width: 401px) {
+    #container ul li a:hover{
+        background-color: #0a0a0a;
+        transition: 0.5s;
+    }
+    #container{
+        background-color:#414040;
+        margin:0 1% ;
+    }
+    #container div #myNavbar{
+        padding: 0 40px 0 40px;;
+    }
+    #container{
+        background-color:#414040;
+        margin:0 5% ;
+    }
+    #danh_muc{
+        margin: 0;
+        margin-top: 20px;
+    }
+    #trang .img3 img{
+        height: 350px;
+    }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 42%;
+    }
+}
+@media only screen and (max-width: 400px){
     #container ul li a:hover{
         background-color: #0a0a0a;
         transition: 0.5s;
@@ -374,7 +403,10 @@ body a:hover{
     }
     figure.snip1477 img {
         height: 290px;
-      }
+    }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 33%;
+    }
 }
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,800);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);

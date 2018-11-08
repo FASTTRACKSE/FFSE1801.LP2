@@ -314,7 +314,6 @@ body::-webkit-resizer {
 }
 .gioi_thieu2 img{
     position: absolute;
-    margin: 20px 47% 0 46%;
 }
 
 
@@ -335,6 +334,9 @@ body::-webkit-resizer {
     .gioi_thieu1{
         background-color: #cecfcf;
         height: 500px;
+    }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 46%;
     }
 }
 @media only screen and (max-width: 1024px){
@@ -362,5 +364,8 @@ body::-webkit-resizer {
     }
     #slide2{
         display: block;
+    }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 33%;
     }
 }

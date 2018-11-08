@@ -325,7 +325,6 @@ body::-webkit-scrollbar-thumb {
 }
 .gioi_thieu2 img{
     position: absolute;
-    margin: 20px 47% 0 46%;
 }
 
 
@@ -355,6 +354,9 @@ body::-webkit-scrollbar-thumb {
         width: 5%;
         margin: 0 47% 30px 47%;
     }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 46%;
+    }
 }
 @media only screen and (max-width: 1024px){
     #container ul li a:hover{
@@ -381,5 +383,8 @@ body::-webkit-scrollbar-thumb {
     }
     #slide2{
         display: block;
+    }
+    .gioi_thieu2 img{
+        margin: 20px 47% 0 33%;
     }
 }
