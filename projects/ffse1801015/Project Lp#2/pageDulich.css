@@ -123,7 +123,7 @@ body::-webkit-resizer {
     margin-bottom: 10px;
 }
 .border img{
-    margin: 12% 31%;
+    margin: 12% 0 12% 0;
     max-height: 100%;
     max-width: 100%;
 }
@@ -203,7 +203,6 @@ body::-webkit-resizer {
 #trang i{
     top: 0px;
     margin-left: 5px;
-    margin-bottom: 20px;
 }
 #trang span{
     top: 0px;
@@ -227,6 +226,10 @@ body::-webkit-resizer {
     background-color: #f7f7f7;
     margin-bottom: 20px;
     padding: 0;
+}
+#trang .img1 .chu{
+    margin-bottom: 10px;
+    line-height: 30px;
 }
 
 #trang .img1 img{
@@ -405,16 +408,12 @@ body::-webkit-resizer {
         background-color: #0a0a0a;
         transition: 0.5s;
     }
-    #container{
-        background-color:#414040;
-        margin:0 1% ;
-    }
     #container div #myNavbar{
         padding: 0 40px 0 40px;;
     }
     #container{
         background-color:#414040;
-        margin:0 5% ;
+        margin:0 2% ;
     }
     #danh_muc{
         margin: 0;

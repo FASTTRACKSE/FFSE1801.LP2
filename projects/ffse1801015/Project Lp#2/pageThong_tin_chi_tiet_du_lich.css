@@ -316,16 +316,12 @@ body::-webkit-scrollbar-thumb {
         background-color: #0a0a0a;
         transition: 0.5s;
     }
-    #container{
-        background-color:#414040;
-        margin:0 1% ;
-    }
     #container div #myNavbar{
         padding: 0 40px 0 40px;;
     }
     #container{
         background-color:#414040;
-        margin:0 5% ;
+        margin:0 2% ;
     }
     #danh_muc{
         margin: 0;
