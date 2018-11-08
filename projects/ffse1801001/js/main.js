@@ -479,7 +479,9 @@ function show_products(params) {
         products[i].price +
         ` ₫</p>
     <div id="mySidenav" class="sidenav">
-        <a href="./Details.html" id="about">Xem chi tiết</a>
+        <a href="./Details.html#` +
+        products[i].id +
+        `" id="about">Xem chi tiết</a>
         <a href="#" id="blog">Facebook</a>
         <a href="#" id="projects">Instagram</a>
         <a href="#" id="contact">Youtube</a>
@@ -492,7 +494,13 @@ function show_products(params) {
     }
   }
 }
-
+function show_detail(params) {
+  let hash = location.hash;
+  console.log(hash);
+  let f_product = products.find(function(params) {
+    // return params==;
+  });
+}
 function add_cart(id, paramsid) {
   if (localStorage.mycart) {
     let arr = JSON.parse(localStorage.mycart);
