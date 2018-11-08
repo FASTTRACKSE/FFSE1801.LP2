@@ -1105,6 +1105,6 @@ function contentProductDetail(params) {
 
 function content404() {
   get.id("content").innerHTML = `  <div id="not-found" class="container">
-                <iframe src="http://lp2.fasttrack.edu.vn/ffse1801024/404.html" frameborder="0" height="800" width="1180" style="margin-bottom:-4px;"></iframe>
+                <iframe src="./404.html" frameborder="0" height="800" width="1180" style="margin-bottom:-4px;"></iframe>
             </div>`;
 }
