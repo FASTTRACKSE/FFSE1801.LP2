@@ -123,7 +123,7 @@
 				</tr> 
 			</thead> 
 			<tbody>
-				<tr id="product1"> 
+				<tr class="product1"> 
 					<td data-th="Product"> 
 						<div class="row" style="background-color: white"> 
 							<div class="col-sm-2 hidden-xs"><img src="images/hinh47.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
@@ -138,13 +138,13 @@
 					<td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
 					</td> 
 					<td data-th="Subtotal" class="text-center">230.000 đ</td> 
-					<td id="remove-product" class="actions" data-th=""> 
+					<td class="actions" data-th=""> 
 						<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o">xóa</i>
 						</button>
 					</td> 
 				</tr> 
 
-				<tr id="product1"> 
+				<tr class="product1"> 
 					<td data-th="Product"> 
 						<div class="row" style="background-color: white"> 
 							<div class="col-sm-2 hidden-xs"><img src="images/hinh48.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
@@ -159,13 +159,13 @@
 					<td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
 					</td> 
 					<td data-th="Subtotal" class="text-center">250.000 đ</td> 
-					<td id="remove-product" class="actions" data-th="">
+					<td class="actions" data-th="">
 						<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o">xóa</i>
 						</button>
 					</td> 
 				</tr>
 
-				<tr id="product1"> 
+				<tr class="product1"> 
 					<td data-th="Product"> 
 						<div class="row" style="background-color: white"> 
 							<div class="col-sm-2 hidden-xs"><img src="images/13.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
@@ -180,7 +180,7 @@
 					<td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
 					</td> 
 					<td data-th="Subtotal" class="text-center">330.000 đ</td> 
-					<td id="remove-product" class="actions" data-th="">
+					<td class="actions" data-th="">
 						<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o">xóa</i>
 						</button>
 					</td> 
@@ -310,8 +310,8 @@
 </div>
 </div>
 <script type="text/javascript">
-	$("#remove-product").click(function(){
-		$(this).parents("#product1").remove()
+	$(".actions").click(function(){
+		$(this).parents(".product1").remove()
 	})
 </script>
 </body>
