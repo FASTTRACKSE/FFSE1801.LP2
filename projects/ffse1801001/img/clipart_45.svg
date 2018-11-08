@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ (c) 2016 PicsArt, Inc.  All rights reserved.
+  -->
+
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+<path d="M12.502,6.772H0.027v0.006H0V32.97h5.631V12.381h6.871V6.772z M27.523,34.309H12.58V19.376l20.661-0.013v-5.634H6.945V40
+	h26.295V27.441h-5.717V34.309z M20.612,6.772v5.609h5.71V6.772H20.612z M13.754,27.358v5.69h12.542V20.618h-5.655v6.74H13.754z
+	 M39.936,0.167V0h-26.26v12.381h5.762V5.609h14.931v14.924h-6.846v5.739L40,26.28V0.167H39.936z"/>
+</svg>

@@ -94,7 +94,9 @@ $(document).ready(function(){
     //     sapxep(1);
     //     console.log(sapxep());
     // })
-
+    $("#login").click(function(){
+        alert("Chức năng này hiện đang được phát triển !")
+    })
     
 
 });

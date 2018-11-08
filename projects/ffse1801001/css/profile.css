@@ -23,24 +23,24 @@
 }
 .title-cart-top {
   color: #555;
-  text-align: left;
+  text-align: right;
   position: absolute;
   top: 250px;
+  right: 5%;
   font-size: 75px;
   font-weight: bold;
   font-family: "Bungee Outline", cursive;
   width: 100%;
-  left: 5%;
 }
 .title-cart-bott {
   color: #555;
-  text-align: left;
+  text-align: right;
   position: absolute;
-  top: 385px;
+  top: 395px;
+  right: 5%;
   font-size: 30px;
   font-family: "Athiti", sans-serif;
   width: 100%;
-  left: 5%;
 }
 .tinh-story {
   top: 740px;
