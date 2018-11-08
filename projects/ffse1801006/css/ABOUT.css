@@ -1,0 +1,358 @@
+/* ---------------BODY------------- */
+.body{
+    margin: 0px !important;  
+    padding: 0px !important;
+}
+body{
+    letter-spacing: 0.1vw;
+    background-image: url(../images/Modern-Bathroom-Interior-Hd-Desktop-Wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* -------------------------------- */
+/* ---------NAVIGATION BAR-------- */
+.brand{
+    padding-left: 5vw;
+    height: auto;
+    text-align: center;
+}
+.logo{
+    padding: 0px !important;
+    height: 20vh;
+}
+.menu{
+    background-color: white !important;
+    padding: 0px !important;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.menu-scroll{
+    box-shadow: 0 0 15px 0 grey;
+}
+.mini-menu{
+    background-color: #105e3e !important;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+     
+}
+.mini-menu-scroll{
+    box-shadow: 0px -5px 10px 5px black;
+}
+.navbar-toggler-icon{
+    border-color: gray !important;
+}
+.nav-link{
+    color: #105e3e;
+    font-weight: 400;
+    text-align: center;
+    transition: 0.75s;
+    display: block;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.menu .nav-item .nav-link:hover{
+    color: #489977;
+}
+#sub-menu{
+    background: white !important;
+    box-shadow: 0 15px 25px -17px;
+    display: none !important;
+}
+#search-bar{
+
+    position: fixed;
+    top: 10vh;
+    z-index: 1 !important;
+    width: 100vw;
+    padding: 2vh 0 2vh 0;
+    background: white;
+    display: none;
+
+}
+#search-bar form input{
+    padding: 1rem 1.75rem !important;
+    width: 50vw;
+    color: #105e3e !important;
+    border: 1.5px solid #105e3e !important;
+}
+#search-bar form i{
+    position: absolute;
+    left: 72vw;
+    top: 31%;
+}
+.material-icons{
+    color: #105e3e;
+    padding-right: 10px;
+    transition: 0.25s;
+}
+.dropdown-menu{
+    display: none !important;
+    border: none !important;
+    border-radius: 0% !important;
+    box-shadow: 1px 5px 10px -3px #5f5f5f;
+    margin-top: 0 !important;
+    padding: 0px !important;
+    z-index: 1 !important;
+}
+.dropdown:hover .dropdown-menu{
+    display: block !important;
+}
+.dropdown-item{
+    padding: 20px 8rem 20px 2rem !important;
+
+}
+.dropdown-menu .dropdown-item{
+    color: #105e3e !important;
+    text-align: left !important;
+    font-weight: 400;
+}
+.dropdown-menu .dropdown-item:hover{
+    border-right: 2px solid #105e3e;
+}
+.nav-item:hover .dropdown-menu {
+    display: block;
+    color: #105e3e;
+}
+.form-control{
+    height: calc(1.25rem + 5px) !important;
+    border-radius: 1em !important;
+    border: none !important;
+    outline-style: none !important;
+}
+.form-inline button{
+    height: calc(1.25rem + 5px) !important;
+    outline: none !important;
+}
+/* ------------------------ */
+
+/*  ----------MAIN--------- */
+.about{
+    background: black;
+    opacity: 0.3;
+    margin-left: 8vw;
+    padding: 0;
+    margin-top: 0;
+    position: absolute;
+    height: 140vh;
+    top: 15vh;
+}
+.about img{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.line-cut{
+    background: white;
+    height: 2px;
+    margin-top: 15vh;
+
+}
+/* ------------WHAT IS ?---------- */
+#whatis{
+    margin: 10% 10% 0 10%;
+    padding: 3% 0 5% 0;
+    background: #105e3e30;
+}
+#whatis p{
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 1vh;
+    margin-block-end: 1vh;
+    color: white;
+}
+#whatis h2{
+    color: white;
+}
+#whatis p span{
+    padding: 3vw;
+}
+
+/* ---------DIFFERENT THINGS------ */
+#differentthings{
+    margin: 5% 10% 5% 10%;
+    padding: 6vh 0 6vh 0;
+    background: #105e3e30;
+}
+#differentthings h2{
+    color: white;
+}
+#differentthings p {
+    color: white;
+    margin: 0px;
+    padding : 0px;
+    margin-block-start: 1vh;
+    margin-block-end: 1vh;
+    margin-inline-start: 2vw;;
+}
+/* --------------------------------- */
+
+/* -----------------------  -------- */
+
+/* ------------------------ */
+
+/* ----------FOOTER INFO---------- */
+.footer{
+    padding: 0px;
+    margin:0px !important;
+    color: white;
+    height: 10vh;
+    z-index: 1;
+}
+.footer p{
+    margin-top: 3.5vh;
+    font-weight: 100;
+}
+
+/* ------------------------------- */
+
+/* ---------RESPONSIVE-------- */
+@media (max-width: 426px){
+    .caption {
+        color: black !important;
+    }
+}
+@media (min-width: 1024px){
+    .d-lg-flex {
+        display: flex !important;
+    }
+}
+@media (max-width: 1471px){
+    .d-none {
+        display: none !important;
+    }
+    .d-md-block{
+        display: inline !important;
+
+    }
+    #search-button .material-icons {
+        color: white;
+        padding-right: 10px;
+        transition: 0.25s;
+        position: absolute;
+        top: 4px;
+        right: 0px;
+    }
+    #search-bar {
+        font-size: 25px;
+        transition: 0.75s;
+        border: none;
+        border-radius: 2rem;
+        outline: none !important;
+        position: relative;
+    }
+    .form-control {
+        height: calc(1.25rem + 5px) !important;
+        border-radius: 1em !important;
+        border: none !important;
+        outline-style: none !important;
+        background: #105e3e;
+        padding: 8%;
+    }
+    .carousel-item{
+        width: 100vw !important;
+        height: 70vh !important;
+        margin-top: 0 !important;
+    
+    }
+    .nav-link{
+        color: #105e3e !important;
+    }
+    .navbar-brand{
+        padding: 0 !important;
+        margin-top: 9vh !important;
+    }
+    .bg-dark{
+        background: white !important;
+    }
+    .caption {
+        position: absolute;
+        /* right: 18vw; */
+        bottom: 18vh;
+        left: 5.5vw;
+        z-index: 10;
+        /* padding-top: 20px; */
+        /* padding-bottom: 20px; */
+        text-align: center;
+        background: white;
+        color: #105e3e !important;
+        /* border: 1px solid #105e3e; */
+        padding: 10px;
+        width: 50vh;
+    }
+    .brand-menu{
+        margin: 0px;
+        color: #105e3e;
+        display: inline-block;
+        padding-left: 15vw;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .brand {
+        padding-left: 5vw;
+        height: auto;
+        text-align: center;
+        margin-top: 8vh;
+    }
+    .x{
+        bottom: 11vh !important;
+    }
+    .intro h1{
+        font-size: 15vw !important;
+        margin-top: -10vh !important;
+    }
+    .new-product {
+        height: auto;
+        margin: 0px !important;
+        padding: 0px !important;
+        margin-top: 30vh !important;
+    }
+    .title-new-product h1 {
+        font-size: 7.3vw;
+        letter-spacing: 5px;
+        font-weight: 100 !important;
+    }
+    .title-new-product p {
+        font-size: 3.9vw;
+        letter-spacing: 1px;
+        font-weight: 100;
+        display: inline-block;
+    }
+    .product-card {
+        width: 100vw;
+        border: none !important;
+        font-weight: 100 !important;
+    }
+    .background-intro {
+        margin-top: -3vh !important;
+    }
+    .about-card img {
+        width: 71vw !important;
+        margin-bottom: 1vh !important;
+    }
+    .intro{
+        margin: 0 0 20vh 0;
+    }
+    .about-card{
+        margin-top: 10vh !important;
+    }
+    .about-div{
+        margin-top: 10vh !important;
+    }
+    .name {
+        padding: 0 21vw 0 15px;
+        margin-right: 0px !important;
+    }
+    .about {
+        background: white;
+        margin-left: 0 !important;
+        padding: 0px;
+    }
+
+}
+/* --------------------------- */
+

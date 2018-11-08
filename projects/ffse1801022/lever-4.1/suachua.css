@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white !important;
+}
+.contain{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.contain>img{
+    width: 100%;
+    margin-left: 0;
+}
+.contain>h3{
+    text-align: center;
+    font-weight: 600;
+}
+#chon{
+    border: 1px gray solid;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.513);
+}
+#chon>div{
+    text-align: center;
+    margin-top: 20px;
+}
+.selectTitle{
+    background: blue;
+    line-height: 30px;
+    color: white;
+    font-weight: 550;
+}
+select{
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid blue;
+    /* -webkit-appearance: button-bevel; */
+    margin-top: 20px;
+}
+#suachua{
+    border: 1px gray solid;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: none;
+}
+#suachua #title_{
+    background: blue;
+    color: white;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+#suachua .a li{
+    margin: 5px;
+}
+#suachua .b{
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+    margin: 0;
+}
+#suachua .b li{
+    list-style: none;
+
+}
+#suachua .c li{
+    list-style: none;
+    margin-top: 10px;
+}
+#suachua .c li label{
+    margin: 0;
+    padding: 0;
+}
+#suachua .c li select{
+    margin: 0;
+}
+#div1,#div2{
+    opacity: 0.5;
+}

@@ -1,0 +1,498 @@
+/* ---------------BODY------------- */
+.body{
+    padding: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+body{
+    letter-spacing: 0.1vw;
+    background-image: url(../images/Minosa-bathroom-hdrrt-ja-01_05.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* -------------------------------- */
+/* ---------NAVIGATION BAR-------- */
+.brand{
+    padding-left: 5vw;
+    height: auto;
+    text-align: center;
+}
+.logo{
+    padding: 0px !important;
+    height: 20vh;
+}
+.menu{
+    background-color: white !important;
+    padding: 0px !important;
+    z-index: 1;
+    position: fixed;
+}
+.menu-scroll{
+    box-shadow: 0 0 15px 0 grey;
+}
+.mini-menu{
+    background-color: #105e3e !important;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px -5px 10px 5px black;
+  
+}
+.navbar-toggler-icon{
+    border-color: gray !important;
+}
+.nav-link{
+    color: #105e3e;
+    font-weight: 400;
+    text-align: center;
+    transition: 0.75s;
+    display: block;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.menu .nav-item .nav-link:hover{
+    color: #489977;
+}
+#sub-menu{
+    background: white !important;
+    box-shadow: 0 15px 25px -17px;
+    display: none !important;
+}
+#search-bar{
+
+    position: fixed;
+    top: 10vh;
+    z-index: 1 !important;
+    width: 100vw;
+    padding: 2vh 0 2vh 0;
+    background: white;
+    display: none;
+
+}
+#search-bar form input{
+    padding: 1rem 1.75rem !important;
+    width: 50vw;
+    color: #105e3e !important;
+    border: 1.5px solid #105e3e !important;
+}
+#search-bar form i{
+    position: absolute;
+    left: 72vw;
+    top: 31%;
+}
+.material-icons{
+    color: #105e3e;
+    padding-right: 10px;
+    transition: 0.25s;
+}
+.dropdown-menu{
+    display: none !important;
+    border: none !important;
+    border-radius: 0% !important;
+    box-shadow: 1px 5px 10px -3px #5f5f5f;
+    margin-top: 0 !important;
+    padding: 0px !important;
+    z-index: 1 !important;
+}
+.dropdown:hover .dropdown-menu{
+    display: block !important;
+}
+.dropdown-item{
+    padding: 20px 8rem 20px 2rem !important;
+
+}
+.dropdown-menu .dropdown-item{
+    color: #105e3e !important;
+    text-align: left !important;
+    font-weight: 400;
+}
+.dropdown-menu .dropdown-item:hover{
+    border-right: 2px solid #105e3e;
+}
+.nav-item:hover .dropdown-menu {
+    display: block;
+    color: #105e3e;
+}
+.form-control{
+    height: calc(1.25rem + 5px) !important;
+    border-radius: 1em !important;
+    border: none !important;
+    outline-style: none !important;
+}
+.form-inline button{
+    height: calc(1.25rem + 5px) !important;
+    outline: none !important;
+}
+
+/* ------------------------ */
+
+
+/* ----------SLIDE IMAGES--------- */
+.carousel-item{
+    width: 100vw !important;
+    height: 75vh !important;
+    margin-top: 11vh;
+
+}
+.carousel-control-prev,.carousel-control-next{
+    display: none;
+}
+.caption{
+    position: absolute;
+    bottom: 21vh;
+    left: 24vw;
+    z-index: 10;
+    text-align: center;
+    background: white;
+    color: #105e3e !important;
+    padding: 10px;
+    width: 100vh;
+    
+}
+.background-caption{
+    background: white;
+    border: 1px solid #105e3e;
+    padding: 20px;
+}
+.caption h1{
+    font-size: 4vw;
+    font-weight: 300;
+    letter-spacing: 0.5vw;
+    margin: 3vh;
+}
+.caption p{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.5vw;
+    font-weight: 500;
+    padding-top: 3vh !important;
+    border-top: 1px solid #105e3e;
+}
+.mask{
+    background-color: black;
+    opacity: 0.2;
+    width: 100vw;
+    height: 75vh;
+    position: absolute;
+    z-index: 9;
+}
+/* ------------------------ */
+
+/* ---------INTRODUCE------- */
+.clear{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.background-intro{
+    background: #4f7d6a;
+    height: 50vh;
+    position: absolute;
+    top: 100vh;
+
+}
+.intro{ 
+    background: #105e3e;
+    margin: -9vh 0 20vh 0;
+    height: 65vh;
+    padding-top: 5vh;
+    font-family: "Lobster", cursive;
+    box-shadow: 2px 2px 20px 0px black;
+}
+.intro h1{
+    color: white;
+    margin-top: 2vh;
+    font-size: 4vw;
+}
+.intro p{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin-top: 2vh;
+    padding: 0px !important;
+}
+.sign{  
+    display: inline-block;
+    margin: 2vh 0 0 0;
+}
+.avatar{
+    height: 47vh;
+    margin-top: 3.5vh;
+    border: 6px solid white;
+}
+/* ------------------------- */
+
+/* -------NEW PRODUCT------- */
+.new-product{
+    height: auto;
+    margin: 0px !important;
+    padding: 0px !important;
+    
+}
+.card-text::after{
+    content: "$";   
+}
+.title-new-product{
+    text-align: center;
+    font: normal normal normal 28px/1.4em proxima-n-w01-reg,sans-serif;
+    color: #000000;
+    background: white !important;
+    padding-top: 10vh;
+}
+.title-new-product h1{
+    font-size: 2.3vw;
+    letter-spacing: 5px;
+    font-weight: 100 !important;
+    color: #105e3e;
+}
+.title-new-product p{
+    font-size: 0.9vw;
+    letter-spacing: 3px;
+    font-weight: 100;
+    display: inline-block;
+    
+}
+.product-slide{
+    background: white !important;
+    margin-bottom: 15vh;
+}
+.carousel-card{
+    display: inline-flex;
+    text-align: center;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.carousel-item-card{
+    width: auto !important;
+    height: 60vh !important;
+}
+.product-card{
+    width: 19vw;
+    border: none !important;
+    font-weight: 100 !important;
+    background: #f2f1f0;
+}
+.product-card div h5{
+    font-weight: 400 !important;
+    border: 2px solid white;
+    padding: 15%;
+}
+.product-card img{
+    border-radius: 0% !important;
+}
+.link-product{
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.25s;
+    box-shadow: none;
+}
+
+.link-product:hover{
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 5px 10px -3px #5f5f5f;
+}
+
+/* ------------------------- */
+
+/* -----------ABOUT--------- */
+.about{
+    background: white;
+    width: 100vw;
+    
+}
+.about-card{
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.about-card img{
+    width: 20vw;
+    margin-bottom: 1vh;
+ 
+}
+.about-card span{
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+.about-card form button{
+    border: none;
+    color: white;
+    background: #105e3e;
+    outline: none;
+}
+.about-card form button:hover{
+   background: black;
+}
+.contact{
+    height: 5vh;
+    margin-bottom: 5vh;
+    border: none;
+    border-bottom: 1px solid #7a7a7a;
+    outline: none;
+}
+.name{
+    padding: 0 2vw 0 1vw;
+}
+.map{
+    border: 0;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 5vh;
+}
+/* ------------------------- */
+
+/* ----------FOOTER INFO---------- */
+.footer{
+    padding: 0px;
+    margin:0px;
+    color: white;
+    height: 10vh;
+}
+.footer p{
+    margin-top: 3.5vh;
+    font-weight: 100;
+}
+
+/* ------------------------------- */
+
+/* ---------RESPONSIVE-------- */
+@media (max-width: 426px){
+    .caption {
+        color: black !important;
+    }
+}
+@media (min-width: 1024px){
+    .d-lg-flex {
+        display: flex !important;
+    }
+}
+@media (max-width: 1471px){
+    .d-none {
+        display: none !important;
+    }
+    .d-md-block{
+        display: inline !important;
+
+    }
+    .material-icons {
+        color: white;
+        padding-right: 10px;
+        transition: 0.25s;
+        position: absolute;
+        top: 4px;
+        right: 0px;
+    }
+    #search-bar {
+        font-size: 25px;
+        transition: 0.75s;
+        border: none;
+        border-radius: 2rem;
+        outline: none !important;
+        position: relative;
+    }
+    .form-control {
+        height: calc(1.25rem + 5px) !important;
+        border-radius: 1em !important;
+        border: none !important;
+        outline-style: none !important;
+        background: #105e3e;
+        padding: 8%;
+    }
+    .carousel-item{
+        width: 100vw !important;
+        height: 70vh !important;
+        margin-top: 0 !important;
+    
+    }
+    .nav-link{
+        color: #105e3e !important;
+    }
+    .navbar-brand{
+        padding: 0 !important;
+        margin-top: 9vh !important;
+    }
+    .bg-dark{
+        background: white !important;
+    }
+    .caption {
+        position: absolute;
+        bottom: 18vh;
+        left: 5.5vw;
+        z-index: 10;
+        text-align: center;
+        background: white;
+        color: #105e3e !important;
+        padding: 10px;
+        width: 50vh;
+
+    }
+    .brand-menu{
+        margin: 0px;
+        color: #105e3e;
+        display: inline-block;
+        padding-left: 15vw;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .brand {
+        padding-left: 5vw;
+        height: auto;
+        text-align: center;
+        margin-top: 8vh;
+    }
+    .x{
+        bottom: 11vh !important;
+    }
+    .intro h1{
+        font-size: 15vw !important;
+        margin-top: -10vh !important;
+    }
+    .new-product {
+        height: auto;
+        margin: 0px !important;
+        padding: 0px !important;
+        margin-top: 30vh !important;
+    }
+    .title-new-product h1 {
+        font-size: 7.3vw;
+        letter-spacing: 5px;
+        font-weight: 100 !important;
+    }
+    .title-new-product p {
+        font-size: 3.9vw;
+        letter-spacing: 1px;
+        font-weight: 100;
+        display: inline-block;
+    }
+    .product-card {
+        width: 100vw;
+        border: none !important;
+        font-weight: 100 !important;
+    }
+    .background-intro {
+        margin-top: -3vh !important;
+    }
+    .about-card img {
+        width: 71vw !important;
+        margin-bottom: 1vh !important;
+    }
+    .intro{
+        margin: 0 0 20vh 0;
+    }
+    .about-card{
+        margin-top: 10vh !important;
+    }
+    .about-div{
+        margin-top: 10vh !important;
+    }
+    .name {
+        padding: 0 21vw 0 15px;
+        margin-right: 0px !important;
+    }
+    
+}
+/* --------------------------- */

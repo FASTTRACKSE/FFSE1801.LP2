@@ -1,0 +1,135 @@
+/* ---------------BODY------------- */
+.body{
+    margin: 0px !important;  
+    padding: 0px !important;
+}
+body{
+    letter-spacing: 0.1vw;
+    background-image: url(../images/Modern-Bathroom-Interior-Hd-Desktop-Wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/* -------------------------------- */
+/* ---------NAVIGATION BAR-------- */
+
+.brand{
+    padding-left: 5vw;
+    height: auto;
+    text-align: center;
+}
+.logo{
+    padding: 0px !important;
+    height: 20vh;
+}
+.menu{
+    background-color: white !important;
+    padding: 0px !important;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.menu-scroll{
+    box-shadow: 0 0 15px 0 grey;
+}
+.mini-menu{
+    background-color: #105e3e !important;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+     
+}
+.mini-menu-scroll{
+    box-shadow: 0px -5px 10px 5px black;
+}
+.navbar-toggler-icon{
+    border-color: gray !important;
+}
+.nav-link{
+    color: #105e3e;
+    font-weight: 400;
+    text-align: center;
+    transition: 0.75s;
+    display: block;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.menu .nav-item .nav-link:hover{
+    color: #489977;
+}
+#sub-menu{
+    background: white !important;
+    box-shadow: 0 15px 25px -17px;
+    display: none !important;
+}
+#search-bar{
+
+    position: fixed;
+    top: 10vh;
+    z-index: 1 !important;
+    width: 100vw;
+    padding: 2vh 0 2vh 0;
+    background: white;
+    display: none;
+
+}
+#search-bar form input{
+    padding: 1rem 1.75rem !important;
+    width: 50vw;
+    color: #105e3e !important;
+    border: 1.5px solid #105e3e !important;
+}
+#search-bar form i{
+    position: absolute;
+    left: 72vw;
+    top: 31%;
+}
+.material-icons{
+    color: #105e3e;
+    padding-right: 10px;
+    transition: 0.25s;
+}
+.dropdown-menu{
+    display: none !important;
+    border: none !important;
+    border-radius: 0% !important;
+    box-shadow: 1px 5px 10px -3px #5f5f5f;
+    margin-top: 0 !important;
+    padding: 0px !important;
+    z-index: 1 !important;
+}
+.dropdown:hover .dropdown-menu{
+    display: block !important;
+}
+.dropdown-item{
+    padding: 20px 8rem 20px 2rem !important;
+
+}
+.dropdown-menu .dropdown-item{
+    color: #105e3e !important;
+    text-align: left !important;
+    font-weight: 400;
+}
+.dropdown-menu .dropdown-item:hover{
+    border-right: 2px solid #105e3e;
+}
+.nav-item:hover .dropdown-menu {
+    display: block;
+    color: #105e3e;
+}
+.form-control{
+    height: calc(1.25rem + 5px) !important;
+    border-radius: 1em !important;
+    border: none !important;
+    outline-style: none !important;
+}
+.form-inline button{
+    height: calc(1.25rem + 5px) !important;
+    outline: none !important;
+}
+/* ------------------------ */

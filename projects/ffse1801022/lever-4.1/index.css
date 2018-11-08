@@ -1,0 +1,266 @@
+
+/* banerrrrrrrrrrrrrrrrrrrrrrrr */
+#banner .top{
+    /* height: 100px;
+    background: red; */
+    padding: 0;
+    margin-bottom: 10px;
+}
+#banner .top img{
+    width: 100%;
+}
+#banner{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#banner .left{
+    height: 100%;
+    padding: 0;
+}
+#banner .right img{
+   width: 100%;
+    /* margin-bottom: 10px */
+}
+/* slodeshowwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww */
+#show1 {
+    width: 100%;
+    height:270px;
+    border: 1px rgb(126, 126, 126) solid;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+@media all and (max-width: 500px) {
+    #show1 {
+        height:170px;
+    }
+}
+#show1 p {
+    position: absolute;
+    bottom: 38%;
+    z-index: 10;
+}
+#show1 a{
+    display: block;
+    width: 25px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.219);
+    border-radius: 2px;
+}
+#show1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.show1toleft,
+.show1toright {
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    animation: moveleft 1.5s forwards;
+}
+
+.show1toright {
+    animation: moveright 1.5s forwards;
+}
+
+@keyframes moveleft {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes moveright {
+    from {
+        right: 100%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+#store{
+    display: none;
+}
+/* /////////////////////////////////////////////////////////////////// */
+#contain{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 65px;
+}
+#slide2 {
+    width: 100%;
+    height:350px;
+    background: rgb(219, 219, 219);
+    border: 1px solid rgb(151, 0, 0);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+#slide2 span div {
+    width: 211px;
+    margin-left: 5px;
+}
+#slide2 span{
+    width: 10000px;
+    height: 100px;
+    display: block;
+}
+#slide2 #button2{
+    position: absolute;
+    z-index: 30;
+    left: 0;
+    top: 38%;
+    background: rgba(0, 0, 0, 0.308);
+    font-size: 40px;
+    height: 54px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+#slide2 #button1{
+    position: absolute;
+    z-index: 30;
+    right: 0;
+    top: 38%;
+    background: rgba(0, 0, 0, 0.308);
+    font-size: 40px;
+    height: 54px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+#title_{
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background: rgb(0, 30, 114);
+    z-index: 0;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px black solid;
+    bottom: -7px;
+    border-radius: 10px;
+}
+#title_ h4{
+    line-height: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+/* ////san pham moi///////////////////////////////////////// */
+#topdt{
+    border: 1px gray solid;
+    position: relative;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+#topdt .left{
+    padding: 0 !important;
+}
+#topdt .left img{
+    width: 100%;
+}
+#topdt .row>div{
+    margin: 7px 0;
+}
+.title2{
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background: rgb(0, 30, 114);
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    bottom: -7px;
+    margin-top: 50px;
+    
+}
+.title2 h4{
+    line-height: 40px;
+    font-weight: 600;
+}
+/* tin tức ///////////////////////////////////////////////////////////////// */
+#news{
+    width: 100%;
+    border: 1px gray solid;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+    position: relative;
+    z-index: 20;
+}
+#news .left{
+    height: 470px;
+    padding: 0;
+}
+#news .right{
+    height: 470px;
+    padding: 0;
+}
+#news .left>div{
+    height: 32%;
+    box-sizing: border-box;
+    background: rgb(245, 245, 245);
+    margin: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#news .left div img{
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+}
+#news .right>div{
+    height: 49%;
+    box-sizing: border-box;
+    /* border: 1px gray solid; */
+    margin: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+#news .right>div img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+#news .right>div h3{
+    position: absolute;
+    bottom: 10px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+#news .right>div:hover img{
+    transform: scale(1.3,1.3);
+}
+#title3{
+    margin: 0 auto;
+    width: 250px;
+    height: 40px;
+    background: rgb(0, 30, 114);
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: -7px;
+    z-index: 15;
+    margin-top: 50px;
+}
+#title3 h4{
+    color: white;
+    font-weight: 600;
+    line-height: 40px;
+
+}

@@ -1,0 +1,97 @@
+/**CSS PROFILE PAGE**/
+.bgr-wood-menu {
+  width: 100%;
+  height: 630px;
+  margin-top: 110px;
+  position: relative;
+  opacity: 0.9;
+  right: 0;
+}
+.brg-menu-bot {
+  width: 100%;
+  height: 2000px;
+  top: 1000px;
+}
+.tiny-box-green {
+  position: absolute;
+  color: #fff;
+  background: #7f923b;
+  padding: 15px;
+  top: 700px;
+  left: 20%;
+  z-index: 2;
+}
+.title-cart-top {
+  color: #555;
+  text-align: right;
+  position: absolute;
+  top: 250px;
+  right: 5%;
+  font-size: 75px;
+  font-weight: bold;
+  font-family: "Bungee Outline", cursive;
+  width: 100%;
+}
+.title-cart-bott {
+  color: #555;
+  text-align: right;
+  position: absolute;
+  top: 395px;
+  right: 5%;
+  font-size: 30px;
+  font-family: "Athiti", sans-serif;
+  width: 100%;
+}
+.tinh-story {
+  top: 740px;
+  position: absolute;
+  z-index: 1;
+  background: #f8e5de;
+  width: 100%;
+  padding: 100px;
+  padding-left: 375px;
+  font-size: 16px;
+  line-height: 25px;
+  padding-right: 1015px;
+  text-align: justify;
+}
+.title-story {
+  font-size: 25px;
+  color: #b81f32;
+  font-weight: bolder;
+}
+.coffee-sugar {
+  position: absolute;
+  width: 35%;
+  height: 585px;
+  right: 380px;
+  top: 805px;
+  z-index: 2;
+}
+.content-story {
+  color: #333333;
+}
+.ke-cf-1 {
+  position: absolute;
+  width: 50%;
+  height: 140px;
+  left: 0;
+  top: 1420px;
+  opacity: 0.5;
+}
+.ke-cf-2 {
+  position: absolute;
+  width: 50.15%;
+  height: 150px;
+  right: 0px;
+  top: 1401px;
+  opacity: 0.5;
+}
+.gia-tri {
+  top: 1550px;
+  position: absolute;
+  z-index: 1;
+  background: #f8e5de;
+  height: 500px;
+  width: 100%;
+}

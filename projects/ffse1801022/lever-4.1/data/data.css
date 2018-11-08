@@ -1,0 +1,292 @@
+body{
+    background: rgb(236, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contain{
+    background: white !important;
+}
+a{
+    color: black;
+}
+.imgitems{
+    height: 200px !important;
+    position: relative;
+    padding: 0;
+    margin: 0 !important;
+    width: 100%;
+    overflow: hidden !important;
+    cursor: pointer;
+    padding-top: 10px !important;
+}
+.imgitems img{
+    /* height: 100%; */
+    width: 80%;
+}
+.items{
+    margin-top: 5px !important;
+    float: left;
+    text-align: center;
+    padding: 0 !important;
+    height: 330px !important;
+    background: white;
+}
+.thumb{
+    padding: 0 !important;
+}
+.items>div{
+    margin: 0 !important;
+}
+.row{
+    width: 100% ;
+    margin: 0;
+}
+.info{
+    position: absolute;
+    background: rgba(0, 68, 255, 0.589);
+    bottom: -20%;
+    margin: 0 !important;
+    width: 100%;
+    height: 20%;
+    transition: 0.4s;
+}
+.info i{
+    font-size: 15px;
+    display: block;
+    background: orange;
+    width: 25px;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    margin: 7px 10px 7px 20%;
+    color: white;
+    border-radius: 100%;
+}
+.info:hover i{
+    background: rgb(165, 0, 0);
+}
+.info p{
+    color: white;
+    line-height: 100%;
+    float: left;
+    margin-top: 12px;
+}
+/* .info .fas{
+    float: right;
+} */
+.items:hover .info{
+    bottom: 0%;
+}
+.items .cap h4{
+    cursor: pointer;
+}
+.items:hover .cap h4{
+    color: blue;
+}
+.cap{
+    height: 120px;
+    background: rgba(214, 8, 8, 0);
+    /* width: 95% !important; */
+    margin: 0 !important;
+    border: none !important;
+}
+.buy-now{
+    margin: 0 auto;
+}
+/* thông tin  nhanh sản phẩm//////////////////////////////////////// */
+#zoom {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top:0;
+    z-index: 20;
+    text-align: center;
+}
+#zoom-main {
+    height: 60% !important;
+    width: 60%;
+    left: 20%;
+    top:15%;
+    margin: 0 auto;
+    background: white;
+    position: absolute;
+    z-index: 20;
+}
+#img-zoom {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+#hide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.295);
+    z-index: 9;
+}
+#zoom .left{
+    height: 100%;
+    width: 45%;
+    float: left;
+}
+#zoom .left div{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#zoom .left img{
+    width: 100%;
+}
+#zoom .right{
+    float: left;
+    width: 55%;
+    height: 100%;
+}
+#zoom #cauhinh{
+    width: 100%;
+    height: 60%;
+    background: rgb(250, 250, 250);
+    border: 1px rgba(177, 177, 177, 0.349) solid;
+    overflow: hidden;
+}
+table{
+    width: 100%;
+    height: 300px;
+}
+table tr td{
+    height: 40px;
+    border-top:1px solid #EEEEEE;
+    text-align: left;
+    padding-left: 30px;
+}
+#zoom .more{
+    width: 90%;
+    height: 20%;
+    margin: 5%;
+}
+#zoom .more .btninmore{
+    float: left;
+}
+#zoom .more .xem{
+    float: right;
+}
+/* menuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
+nav .container-fluid{
+    width: 90%;
+    margin: 0 auto;
+}
+#menu{
+    position: fixed !important;
+    z-index: 200;
+    width: 100%;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.876);
+    border: 0px solid black;
+    transition: 0.3s;
+    border-radius: 0px;
+    border-bottom: 6px rgba(51, 121, 183, 0.671) solid;
+}
+#myNavbar .list{
+    color: rgb(255, 255, 255);
+    /* background: red; */
+    font-weight: 600;
+    font-size: 15px;
+    border-right:1px rgb(110, 110, 110) solid;
+}
+#myNavbar .list:hover{
+    background: rgb(163, 163, 163);
+    color: rgb(255, 255, 255);
+}
+.navbar-brand{
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold !important;
+}
+/* ///////////////////////////////giỏ hàng */
+.caigio:hover .igio,
+.caigio:hover #ch{
+    display: block;
+}
+#ch{
+    display: none;
+    position: fixed;
+    width: 300px;
+    /* min-height: 50px; */
+    background: white;
+    border-radius: 5px;
+    border: 1px solid red;
+    top:50px;
+    right: 10px;
+    max-height: 400px !important;
+    overflow: auto;
+    box-shadow: 4px 4px 15px black;
+}
+#ch>div{
+    height: 50px;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px gray solid;
+}
+#ch img{
+    height: 100%;
+    float: left;
+    margin-right: 15px;
+}
+img.igio{
+    display: none;
+    position: fixed;
+    top:30px;
+    right: 150px;
+    width: 20px;
+    z-index: 2;
+}
+/* timkiem/////////////////////////////////////////////////// */
+.timkiem{
+    position: fixed;
+    width: 350px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px black;
+    max-height: 300px !important;
+    overflow: hidden;
+    /* min-height: 50px; */
+}
+.timkiem div{
+    height: 50px;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px gray solid;
+    cursor: pointer;
+}
+.timkiem div:hover{
+    background: rgb(214, 214, 214);
+}
+.timkiem div img{
+    height: 100%;
+    float: left;
+    margin-right: 15px;
+}
+/* /////////////////end/////////////////////////////////// */
+#end_{
+    margin-top: 60px;
+    width: 100%;
+    background: white;
+}
+#end_ li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px;
+}
+#creder{
+    padding: 10px;
+    background: rgb(58, 58, 58);
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 120px;
+}
+
+

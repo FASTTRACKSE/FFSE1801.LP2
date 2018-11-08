@@ -67,6 +67,9 @@ body {
 .slide {
 	margin-top: 52px;
 }
+.slide img {
+	width: 100%;
+}
 /*=======body=========*/
 .full {
 	margin-top: 10px;
