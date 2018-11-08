@@ -564,6 +564,7 @@ function show_products_in_mycart(params) {
             `;
     document.getElementById("myTable").appendChild(tr);
   }
+  u_price();
 }
 function delete_products(params) {
   let arr = JSON.parse(localStorage.mycart);
@@ -588,3 +589,27 @@ function u_cart() {
   }
 }
 u_cart();
+
+function u_price() {
+  let arr = JSON.parse(localStorage.mycart);
+  let all_t = document.getElementById("all_total");
+  let t_all_total = 0;
+  for (let index = 0; index < arr.length; index++) {
+    let product = products.find(function(id) {
+      return id.id == arr[index];
+    });
+    temp = "quantity" + arr[index];
+    let quantity = document.getElementById(temp);
+    temp = "price" + arr[index];
+
+    let price = document.getElementById(temp);
+    temp = "total" + arr[index];
+
+    let total = document.getElementById(temp);
+    let total_t = product.price * quantity.value;
+    // console.log(total_t);
+    total.innerHTML = numberWithCommas(total_t);
+    t_all_total = t_all_total + total_t;
+  }
+  all_t.innerHTML = numberWithCommas(t_all_total + 20000) + `đ`;
+}
