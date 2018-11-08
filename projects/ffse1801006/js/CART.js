@@ -58,7 +58,7 @@ $(document).ready(function(){
             s += a[index];                      
         }
         $("#sum").html(s+"$");
-        // document.getElementById("sum").innerHTML =s; 
+        
    
     }
     pay();
