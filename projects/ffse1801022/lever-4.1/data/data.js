@@ -83,6 +83,9 @@ function sanpham(name, type, price, src, src1, src2, src3,id) {
         if(localStorage.getItem(obj.id) != null){
             $("."+obj.id).text("Đã thêm vào giỏ hàng").css("background","orange");
         }
+        if($(window).width() < 768){
+            $(".info").remove();
+        }
     }
 }
 var galaxyA8 = new sanpham("Samsung Galaxy A8 (2018)","Samsung", 10990000,"./img/S1.jpg",4,5,6,"S1");
