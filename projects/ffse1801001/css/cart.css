@@ -3,6 +3,7 @@ img {
   width: 20%;
 }
 .cart-img {
+  cursor: pointer;
   width: 55%;
   height: 545px;
   position: absolute;

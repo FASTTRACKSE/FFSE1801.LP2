@@ -128,7 +128,7 @@
 								  <li class="my-item"><a href="">v-biz</a></li>
 								  <li class="my-item"><a href="">v-parents</a></li>
 								  <li class="my-item"><a href="">v-buddhism</a></li>
-								  <li class="my-item my-item-ex-1 d-block bd-none" onclick="expand1()"><span>Xem thêm</span></li>
+								  <li class="my-item my-item-ex-1 d-block bd-none" onclick="expand(1)"><span>Xem thêm</span></li>
 								  <li class="my-item my-item-ex-1 d-none"><a href="">Văn hóa - Giáo dục</a></li>
 								  <li class="my-item my-item-ex-1 d-none"><a href="">BeeBooks - Tủ sách Thiếu nhi</a></li>
 								  <li class="my-item my-item-ex-1 d-none"><a href="">Coloring Books</a></li>
@@ -136,7 +136,7 @@
 								  <li class="my-item my-item-ex-1 d-none"><a href="">Dummies</a></li>
 								  <li class="my-item my-item-ex-1 d-none"><a href="">Toán song ngữ</a></li>
 								  <li class="my-item my-item-ex-1 d-none"><a href="">Nonbooks</a></li>
-								  <li class="my-item my-item-ex-1 d-none bd-none" onclick="hide1()"><span>Thu gọn</span></li>
+								  <li class="my-item my-item-ex-1 d-none bd-none" onclick="hide(1)"><span>Thu gọn</span></li>
 								</ul>
 							</div>
 						</div>
@@ -151,13 +151,13 @@
 								  <li class="my-item"><a href="">Sasaki Masami</a></li>
 								  <li class="my-item"><a href="">Phạm Thị Thanh</a></li>
 								  <li class="my-item"><a href="">Wataru WATARI</a></li>
-								  <li class="my-item my-item-ex-2 d-block bd-none" onclick="expand2()"><span>Xem thêm</span></li>
+								  <li class="my-item my-item-ex-2 d-block bd-none" onclick="expand(2)"><span>Xem thêm</span></li>
 								  <li class="my-item my-item-ex-2 d-none"><a href="">Cao Phượng Diễm</a></li>
 								  <li class="my-item my-item-ex-2 d-none"><a href="">David Gilmour</a></li>
 								  <li class="my-item my-item-ex-2 d-none"><a href="">Trần Diệu Linh</a></li>
 								  <li class="my-item my-item-ex-2 d-none"><a href="">Fujimaru</a></li>
 								  <li class="my-item my-item-ex-2 d-none"><a href="">Isuna Hasekura</a></li>
-								  <li class="my-item my-item-ex-2 d-none bd-none" onclick="hide2()"><span>Thu gọn</span></li>
+								  <li class="my-item my-item-ex-2 d-none bd-none" onclick="hide(2)"><span>Thu gọn</span></li>
 								</ul>
 							</div>
 						</div>
@@ -331,26 +331,17 @@
 				</div>
 			</div>
 
-
-
-
-
-		<!-- the div container o duoi -->
+		<!-- div container  -->
 		</div>
-			
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="js/js.js"></script>
    	<script type="text/javascript">
-
+   			var anh,ten,gia;
    			anh=$("#book-img").attr("src");
 	   		ten=$("#book-title").text();
 	   		gia=$("#book-price").text();
@@ -360,21 +351,8 @@
 			  this.bookprice = gia;
 			}
 			book1 = new book(anh,ten,gia);
-			// book1 = new book("http://thaihabooks.com/wp-content/uploads/2018/09/Chuyện-tình-thanh-xuân-bi-hài-4-OUT-01.jpg",
-			//  "Chuyện tình thanh xuân bi hài của tôi quả nhiên là sai lầm 4 (Bản đặc biệt)",
-			//   119000,);
-			// console.log(book1);
-			
 
    		function addtocart(){
-	   		var anh,ten,gia;
-	   		// anh=$("#book-img").attr("src");
-	   		// ten=$("#book-title").text();
-	   		// gia=$("#book-price").text();
-	   		// document.getElementById("demo").innerHTML = c;
-	   		// myanh = JSON.stringify(anh);
-	   		// myten = JSON.stringify(ten);
-	   		// mygia = JSON.stringify(gia);
 	   		myJSON = JSON.stringify(book1);
 				localStorage.setItem("testJSON", myJSON);
 	   		$(".add").removeClass("d-inline-block");
@@ -391,39 +369,7 @@
 	   		$(".remove").addClass("d-none");
 	   		$(".remove").removeClass("d-inline-block");
 	   	}
-   		function expand1(){
-    		var listitem1=$(".my-item-ex-1");
-    		console.log(listitem1);
-    		for (var i = 0; i < listitem1.length; i++) {
-    			listitem1[i].className=listitem1[i].className.replace(" d-none", " d-block");
-    			listitem1[0].className=listitem1[0].className.replace(" d-block", " d-none");
-    		}
-    	}
-    	function expand2(){
-    		var listitem2=$(".my-item-ex-2");
-    		for (var i = 0; i < listitem2.length; i++) {
-    			listitem2[i].className=listitem2[i].className.replace(" d-none", " d-block");
-    			listitem2[0].className=listitem2[0].className.replace(" d-block", " d-none");
-    		}
-  		}
-  		function hide1(){
-    		var listitem1=$(".my-item-ex-1");
-    		console.log(listitem1);
-    		for (var i = 0; i < listitem1.length; i++) {
-    			listitem1[i].className=listitem1[i].className.replace(" d-block", " d-none");
-    			listitem1[0].className=listitem1[0].className.replace(" d-none", " d-block");
-    		}
-    	}
-    	function hide2(){
-    		var listitem2=$(".my-item-ex-2");
-    		for (var i = 0; i < listitem2.length; i++) {
-    			listitem2[i].className=listitem2[i].className.replace(" d-block", " d-none");
-    			listitem2[0].className=listitem2[0].className.replace(" d-none", " d-block");
-    		}
-  		}
-   		function canhbao(){
-  			alert("Chức năng chỉ hoạt động trên màn hình 1920 O.O!");
-  		}
+   		
    	</script>
 </body>
 </html>

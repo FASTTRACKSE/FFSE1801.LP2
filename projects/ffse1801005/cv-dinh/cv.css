@@ -1,0 +1,662 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+/* body{
+	background-color:#eeeeee;
+	} */
+	html{
+		scroll-behavior:smooth;
+	}
+	#nd{
+		width:100%;
+		height:5600px;
+	}
+	#start{
+		background-image:url("tzv44Z2.jpg");
+		height: 938px;
+		width:1900px;
+	}
+	#sidebar{
+		float: left;
+		margin-left: 20px;
+		width: 300px;
+		height: 890px;
+		background-color: white;
+		margin-top: 25px;
+		position:fixed;
+		border: 1px ridge lightgray;
+		background-color:#eeeeee;
+		/* background-image:url("a1.jpg") */
+		/* background-color: #5a4e4e87; */
+	}
+	#avata{
+		float:left;
+		float:left;
+		width:300px;
+		height:350px;
+		transition: all 2s;
+		/* 	-webkit-transition: all 2s; */
+	}
+	#avata img{
+		width: 270px;
+		height: 298px;
+		margin-top: 15px;
+		margin-left: 15px;
+		border-image: 50px;
+		border-radius: 136px;
+	}
+	#menu{
+		float:left;
+		width:300px;
+		height:580px;
+	}
+	#menu ul{
+		list-style-type:none;
+	}
+	#menu ul li a{
+		text-decoration:none;
+		color:#545454;
+		float:right;
+		font-weight: 550;
+		font-size: 20px;
+		color: #333;
+	}
+	.btn{
+		border: none;
+		outline: none;
+		/* padding: 10px 16px; */
+		background-color: #f1f1f1;
+		cursor: pointer;
+		font-size: 20px;
+	}
+	.active, .btn:hover {
+		background-color: #3aa8db;
+		color: white;
+	}
+	/* .active,.btn:hover{
+		color:blue;
+		font-size:30px;
+		transition:0.5s;
+		} */
+		#menu ul li a:hover{
+			color:white;
+			font-size:30px;
+			transition:0.5s;
+		}
+		#menu ul li {
+			margin-top:30px;
+			font-size:25px;
+			border-bottom: 1px ridge #e5e5e5;
+			width: 250px;
+			float: left;
+			margin-left: 18px;
+		}
+		#follow{
+			float:left;
+			height:50px;
+			width: 290px;
+			margin-top: 100px;
+		}
+		#follow  p {
+			color: #68e2b9;
+		}
+		.iconflow{
+			float: left;
+			width: 70%;
+			margin-left: 64px;
+		}
+		.iconflow1{
+			width:33%;
+			float:left;
+		}
+		.iconflow1 img{
+			margin-top: 5px;
+			width: 20px;
+		}
+		#container{
+			float: right;
+			height: 200px;
+			width: 540px;
+			margin-right: 220px;
+			margin-top: 400px;
+		}
+		#container h1{
+			color:white;
+		}
+		#container h1 strong{
+			font-weight:700;
+		}
+		#container h4{
+			color:#caa669;
+		}
+		#about{
+			height: 400px;
+			margin-left: 540px;
+			width: 1000px;
+		}
+		#icon{
+			width: 300px;
+			height: 100px;
+			margin-top: 20px;
+		}
+		#icon img{
+			width: 70px;
+			float: left;
+		}
+		#icon p{
+			font-family: fantasy;
+			font-size: 35px;
+			float: left;
+			/* margin-left: 20px; */
+			margin-top: 15px;
+
+		}
+		#ndabout{
+			height: 400px;
+			width:100%;
+			background-color: white;
+		}
+		#ndaboutl{
+			width: 45%;
+			height: 85%;
+			float: left;
+			font-size: 25px;
+			margin-top: 64px;
+			margin-left: 5%;
+		}
+		.iconndabout{
+			height: 50px;
+			width: 100%;
+		}
+
+		.iconndabout img{
+			float: left;
+			width: 35px
+		}
+		.iconndabout p{
+			font-family: sans-serif;
+			margin-left: 10px;
+			float: left;
+			font-size: 28px;
+
+		}
+		.ndabout{    float: left;
+			width: 100%;
+			height: 300px;
+		}
+		.ndabout ul li span{
+			font-weight: 600;
+		}
+		#skill{
+			float:left;
+			height: 900px;
+			margin-left:  540px;
+			width: 1100px
+		}
+		#titleskill{
+			float:left;
+			width:100%;
+			height:50px;
+			border-bottom: 1px solid #ddd;
+			margin-top: 20px;
+		}
+		#titleskill h2{
+			font-family: fantasy;
+		}
+
+		.skill{
+			color: #333;
+			font-weight: 600;
+			margin-bottom: 25px;
+			float: left;
+			margin-top: 25px;
+		}
+		.skill span{
+			font-weight: 300;
+		}
+		.progress{
+			float: left;
+			width: 90%;
+			height: 2px;
+			margin-bottom: 20px;
+			background-color: #ded5d5;
+			border-radius: 0;
+			box-shadow: none;
+			overflow: visible;
+			width:90%;
+		}
+		.progress-bar{
+			height: 2px;
+			line-height: 8px;
+			background-color: #666;
+			box-shadow: none;
+			position: relative;
+		}
+		.progress-bar span {
+			display: block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #000;
+			background: #F1F3F6;
+			font-weight: 500;
+			position: absolute;
+			top: -16px;
+			right: -20px;
+		}
+		#experience{
+			float: left;
+			height: 700px;
+			margin-left: 540px;
+			width: 1100px;
+		}
+		#kn{
+			float:left;
+			width:100%;
+			height: 200px;
+		}
+		#kn h3{
+			font-size: 25px;
+			margin-top: 10px;
+		}
+		.ndkn {
+			float: left;
+			width: 100%;
+			height: 60%;
+			margin-top: 17px;
+		}
+		.iconkn{
+			float: left;
+			width: 260px;
+			height: 20px;
+			margin-top:3px;
+		}
+		.iconkn1{
+			width: 50%;
+			float: left;
+			height: 100%;
+		}
+		.iconkn1 img{
+			float:left;
+			width:17px;
+		}
+		.iconkn1 p{
+			float: left;
+			font-size: 15px;
+			margin-left: 3px;
+			color:#c1cad1;
+		}
+		.language{
+			float: left;
+			width: 100%;
+			height: 33%;
+		}
+		.titlelanguage{
+			float: left;
+			width: 24%;
+			height: 20%;
+			margin-top: 3%;
+			margin-left: 34%;
+		}
+		.titlelanguage >h3{
+			line-height: 50px;
+			text-align: center;
+			font-weight: 500;
+			font-size: 40px;
+			color: black;
+		}
+		.ndlanguage{
+			float: left;
+			width: 78%;
+			height: 83%;
+			margin-left: 10%;
+		}
+		.ndlanguage1{
+			float: left;
+			width: 30%;
+			margin-left: 3%;
+			height: 100%
+		}
+		.ndlanguage1 img{
+			float: left;
+			width: 100%;
+			height: 57%;
+		}
+		.ndlanguage1bot{
+			width: 100%;
+			height: 43%;
+			float: left;
+		}
+		.ndlanguage1bot p{
+			width: 100%;
+			height: 35%;
+			margin-top: 6%;
+			float: left;
+			font-size: 25px;
+			color: #223d3e;
+			margin-left: 27%;
+		}
+		.ndlanguage1bot i{
+			float: left;
+			width: 9%;
+			height: 20%;
+			margin-left: 10%;
+		}
+		#project{
+			margin-top:50px;
+			float: left;
+			height: 900px;
+			margin-left: 540px;
+			width: 1100px;
+		}
+		#proj{
+			width: 100%;
+			height: 41%;
+			float: left;
+			margin-top: 3%;
+			background-color: #eeeeee;
+		}
+		.proj1{
+			float: left;
+			width: 32%;
+			height: 100%;
+			background-color: white;
+			margin-left: 1%
+		}
+		.img{
+			width: 100%;
+			height: 60%;
+		}
+		.img img{
+			width: 90%;
+			margin-left: 5%;
+			height: 100%;
+		}
+		.img img:hover{
+			margin:auto;
+			width:100%;
+			transition:0.5s;
+		}
+		.ndproj{
+			width: 100%;
+			height: 40%;
+		}
+		.titlendproj{
+			float: left;
+			width: 100%;
+			height: 22%;
+		}
+		.titlendproj p{
+			margin-top: 10px;
+			margin-left: 20px;
+			width: 22%;
+			background-color: #eeeeee;
+		}
+		.ndprojbot{
+			float: left;
+			width: 100%;
+			height: 78%;
+		}
+		.ndprojbot h4{
+			margin-top: 6%
+		}
+		.ndprojbot h4 a{
+			text-decoration: none;
+			margin-left: 5%;
+			margin-top: 7px;
+		}
+		.ndprojbot h4 a:hover{
+			color:gray;
+			transition:0.3s;
+		}
+		.ndprojbot p{
+			margin-left: 5%;
+			margin-top: 6%;
+		}
+		#education{
+			margin-top:50px;
+			float: left;
+			height: 700px;
+			margin-left: 540px;
+			width: 1100px;
+		}
+		#ndedu{
+			float: left;
+			margin-top: 20px;
+			width: 100%;
+			height: 620px;
+			background-color:#eeeeee;
+		}
+		#edul{
+			height: 100%;
+			width: 47%;
+			float: left;
+		}
+		.edultop{
+			background-color:white;
+			width: 85%;
+			height: 35%;
+			margin-top: 18%;
+			margin-left: 9%;
+		}
+		.edultop1{
+			width: 100%;
+			height: 30%;
+			float: left;
+		}
+		.edultop1 h4{
+			margin-top: 10px;
+			margin-left: 20px;
+		}
+		.edultop1 p{
+			width: 60px;
+			margin-left: 20px;
+			margin-top: 3px;
+			font-size: 16px;
+			color: gray;
+			background-color: #efefef;
+		}
+		.edultop2{
+			width: 100%;
+			float: left;
+			height: 69%;
+		}
+		.edultop2 p{
+			color: #848282;
+			margin-left: 10px;
+			font-size: 18px;
+			margin-top: 10px;
+		}
+		.edulbot{
+			background-color:orange;
+			float: left;
+			width: 16%;
+			height: 5%;
+			margin-top: 10%;
+			margin-left: 78%;
+		}
+		.edulbot p{
+			color: white;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		.edurbot p{
+			color: white;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		#edur{
+			float: left;
+			width: 47%;
+			height: 100%;
+		}
+		.edurtop{
+			background-color:white;
+			width:85%;
+			height:35%;
+			margin-top: 70%;
+			margin-left: 5%;
+		}
+		.edurbot{
+			background-color:orange;
+			float: left;
+			width: 16%;
+			height: 5%;
+			margin-top: 18%;
+			margin-left: 5%;
+		}
+		#edub{
+			height:100%;
+			width:6%;
+			float:left;
+		}
+		.edub{
+			width:48%;
+			height:88%;
+			float:left;
+			border-right:3px ridge orange;
+		}
+		.edub i{
+			margin-top: 20px;
+		}
+		.edub>.fa-check-circle{
+			margin-top: 20px;
+			margin-left: 24px;
+			color: #ef6c00;
+		}
+		#i2{
+			margin-top: 250px;
+		}
+		#edub img{
+			width:100%;
+		}
+		#contact{
+			margin-top:50px;
+			float: left;
+			height: 700px;
+			margin-left: 540px;
+			width: 1100px;
+		}
+		#ndcontact{
+			float:left;
+			margin-top:70px;
+			width:100%;
+			background-color: cadetblue;
+			height:600px;
+		}
+		#ndcontactl{
+			float: left;
+			width: 50%;
+			height: 95%;
+			margin-top: 3%;
+		}
+		.name{
+			float:left;
+			width:100%;
+			height: 85px;
+			margin-bottom: 20px;
+		}
+		.yourname{
+			float:left;
+			height:50%;
+			width:100%;
+			border-bottom:1px solid #727272;
+		}
+		.yourname form{
+			height: 100%;
+		}
+		.yourname form input{
+			height: 100%;
+			width: 90%;
+			border: none;
+			font-size: 15px;
+			margin-left:10px;
+			border-radius:10px;
+			padding-left: 10px;
+		}
+		.pleaseenter{
+			float:left;
+			height:50%;
+			width:100%;
+		}
+		.pleaseenter p{
+			color:#7f7f86;
+			float:left;
+			margin-top: 5px;
+		}
+
+		.yourmessage{
+			float:left;
+			width:100%;
+			margin-top: 50px;
+		}
+		.yourmessage textarea{
+			height: 100%;
+			width: 98%;
+			font-size: 15px;
+			margin-left:10px;
+			color:#7f7f86;
+		}
+		#ndcontactr{
+			width: 45%;
+			float: left;
+			height: 95%;
+			margin-left: 55px;
+			margin-top: 1%;
+		}
+		.ndcontactr1{
+			width:80%;
+			height:15%;
+			float:left;
+			margin-bottom: 15px;
+		}
+		.ndcontactr1 i{
+			float:left;
+			width: 36px;
+			margin-top: 30px;
+		}
+		.map{
+			float:left;
+		}
+		.map iframe{
+			height: 210px;
+			width: 480px;
+		}
+		.map iframe:hover{
+			width:510px;
+			height:220px;
+			transition:0.5s;
+		}
+		.content{
+			float: left;
+			height: 100%;
+			width: 350px;
+		}
+		.content h5{
+			float: left;
+			margin-top: 15px;
+		}
+		.content p{
+			margin-top: 40px;
+		}
+		#submid{
+			float: left;
+			width: 200px;
+			height: 50px;
+			margin-top: 16px;
+			margin-left: 10px;
+		}
+		#submid button{
+			width: 150px;
+			height: 50px;
+			background-color:black;
+			color:white;
+		}
+		#submid button:hover{
+			background-color:white;
+			color:black;
+			width:200px;
+			transition: 0.5s
+		}

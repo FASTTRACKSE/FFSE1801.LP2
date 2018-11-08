@@ -1,3 +1,4 @@
+/**CSS HOME PAGE**/
 /**Form login**/
 a {
   background-color: transparent;
@@ -26,7 +27,7 @@ a {
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
-  background-color: #ddd;
+  background-color: #312927;
   outline: none;
 }
 .home .background-top .container .login {

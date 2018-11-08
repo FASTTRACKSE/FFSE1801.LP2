@@ -12,7 +12,7 @@ $(document).ready(function(){
     })
     $(window).scroll(function() {
         let scroll = $("html").scrollTop()
-        console.log($("html").scrollTop())
+        
 
         if(scroll>0){
             $(".menu").addClass("menu-scroll") 
@@ -28,4 +28,44 @@ $(document).ready(function(){
         scrollTop(offsetTop);
 
     })
+    
+    $("#login").click(function(){
+        alert("Chức năng này hiện đang được phát triển !")
+    })
+    
+
 })
+    function pay() {
+
+        var quantity = $(".text-center");
+
+        var price = $(".price")
+
+        var total= $(".total");
+
+        var a=[];s=0;
+        
+        for (let index = 0; index < quantity.length; index++) {
+
+            quantity[index] = parseInt(quantity.eq(index).val());
+
+            price[index] = parseInt(price.eq(index).text());
+
+            a[index] = quantity[index]*price[index];
+
+            total[index].innerHTML= a[index]+"$";
+
+            s += a[index];                      
+        }
+        $("#sum").html(s+"$");
+        
+   
+    }
+    pay();
+    $(".text-center").keydown(function(){
+        pay();
+    })
+
+    $(".text-center").change(function(){
+        pay();
+    })

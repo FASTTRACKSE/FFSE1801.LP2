@@ -15,4 +15,8 @@ $(document).ready(function(){
     });
     $('.product-slide').carousel({interval: 4000})
     $('.zoom').zoom();
+
+    $("#login").click(function(){
+        alert("Chức năng này hiện đang được phát triển !")
+    })
 })

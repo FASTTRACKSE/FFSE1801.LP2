@@ -176,3 +176,10 @@ body{
 .remove-product i {
     color: white;
 }
+.price::after{
+    content: "$";   
+}
+tr{
+    color: white;
+    margin-bottom: 10vh !important;
+}
