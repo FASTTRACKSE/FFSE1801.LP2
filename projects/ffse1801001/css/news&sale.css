@@ -1,0 +1,160 @@
+/**News Page**/
+.bgr-news-sale {
+  width: 100%;
+  height: 630px;
+  margin-top: 110px;
+  position: relative;
+  opacity: 0.8;
+}
+.title-ns-top {
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  top: 215px;
+  font-size: 75px;
+  font-weight: bold;
+  padding-right: 90px;
+  font-family: "Bungee Outline", cursive;
+  width: 100%;
+}
+.begin-line-news-sale {
+  color: #aaa;
+  text-align: right;
+  position: absolute;
+  top: 370px;
+  font-size: 30px;
+  padding-right: 90px;
+  font-family: "Athiti", sans-serif;
+  width: 100%;
+}
+.brg-menu-bot {
+  width: 100%;
+  top: 1000px;
+  height: 5000px;
+}
+.tiny-box-green {
+  position: absolute;
+  color: #fff;
+  background: #7f923b;
+  padding: 15px;
+  top: 700px;
+  left: 20%;
+}
+
+/* Style the tab */
+.tabs-inventor-devs {
+  overflow: hidden;
+  border-top: 3px solid #731a1a;
+  border-bottom: 1px solid #731a1a;
+  width: 1210px;
+}
+
+/* Style the buttons inside the tab */
+.tabs-inventor-devs button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 30px;
+  transition: 1s;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #fff;
+  margin-left: 270px;
+}
+.name-tabs {
+  color: #731a1a;
+}
+.name-tabs:hover {
+  color: #b81f32;
+  text-decoration: underline;
+}
+/* Change background color of buttons on hover */
+.tabs-inventor-devs button:hover {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+
+/* Create an active/current tablink class */
+.tabs-inventor-devs button.active {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+.logo-ffse-av {
+  right: -40px;
+  position: absolute;
+  width: 40%;
+  height: 365px;
+  top: 190px;
+}
+/* Style the tab */
+.tabs-menu {
+  position: absolute;
+  top: 800px;
+  left: 20%;
+}
+.tabs {
+  overflow: hidden;
+  border-top: 3px solid #731a1a;
+  border-bottom: 1px solid #731a1a;
+  width: 1210px;
+}
+
+/* Style the buttons inside the tab */
+.tabs button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 30px;
+  transition: 1s;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #fff;
+}
+.name-tabs {
+  color: #731a1a;
+}
+.name-tabs:hover {
+  color: #b81f32;
+  text-decoration: underline;
+}
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+
+/*Document tabs*/
+.document-tabs {
+  height: 1000px;
+}
+/* Style the tab content */
+.tabcontents {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.tabcontents .name-tab {
+  background: #e5ded8;
+  padding: 10px;
+  text-align: center;
+  color: #731a1a;
+  font-size: 30px;
+  font-weight: bold;
+  width: 1180px;
+}

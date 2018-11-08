@@ -232,3 +232,71 @@ a {
 a:hover {
   opacity: 0.7;
 }
+
+/* Style the tab */
+.tabs-menu {
+  position: absolute;
+  top: 800px;
+  left: 20%;
+}
+.tabs {
+  overflow: hidden;
+  border-top: 3px solid #731a1a;
+  border-bottom: 1px solid #731a1a;
+  width: 1210px;
+}
+
+/* Style the buttons inside the tab */
+.tabs button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 30px;
+  transition: 1s;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #fff;
+}
+.name-tabs {
+  color: #731a1a;
+}
+.name-tabs:hover {
+  color: #b81f32;
+  text-decoration: underline;
+}
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #b81f32;
+}
+
+/*Document tabs*/
+.document-tabs {
+  height: 1000px;
+}
+/* Style the tab content */
+.tabcontents {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.tabcontents .name-tab {
+  background: #e5ded8;
+  padding: 10px;
+  text-align: center;
+  color: #731a1a;
+  font-size: 30px;
+  font-weight: bold;
+  width: 1180px;
+}
