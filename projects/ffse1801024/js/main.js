@@ -128,7 +128,7 @@ function navigationH() {
       }
     }
 
-    history.pushState(null, "", "/#/404");
+    history.pushState(null, "", "#/404");
     content404();
   }
 }
