@@ -496,10 +496,46 @@ function show_products(params) {
 }
 function show_detail(params) {
   let hash = location.hash;
-  console.log(hash);
+  let id = hash.split("#");
   let f_product = products.find(function(params) {
-    // return params==;
+    return params.id == id[1];
   });
+  let type = [
+    {
+      type: "Coffee",
+      name: "Coffee"
+    },
+    {
+      type: "Tea",
+      name: "Trà nguyên chất"
+    },
+    {
+      type: "Drink",
+      name: "Thức uống giải nhiệt"
+    },
+    {
+      type: "Fruit",
+      name: "Thức uống giải nhiệt"
+    },
+    {
+      type: "Food",
+      name: "Món ăn ngon"
+    },
+    {
+      type: "Book",
+      name: "Nhận đặt & tổ chức tiệc"
+    }
+  ];
+  document.getElementById("img_detail").src = f_product.img;
+  document.getElementById("product_name_detail").innerHTML = f_product.name;
+  document.getElementById("product_price_detail").innerHTML =
+    numberWithCommas(f_product.price) + `đ`;
+  let n_type = f_product.category;
+  let f_type = type.find(function(params) {
+    return params.type == n_type;
+  });
+  document.getElementById("product_type_detail").innerHTML = f_type.name;
+  console.log(f_product);
 }
 function add_cart(id, paramsid) {
   if (localStorage.mycart) {
