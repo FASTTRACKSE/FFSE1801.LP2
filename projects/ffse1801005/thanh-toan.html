@@ -42,7 +42,7 @@
 					<li class="dropdown ">
 						<a class="dropdown-toggle " data-toggle="dropdown" href="index.html" style="color:white" onclick="color">PACKAGE TUOR<span class="caret"></span></a>
 						<ul class="dropdown-menu sub-menu">
-							<li><a href="page1-vn-tuor-1.html">Việt Nam Package tuors</a></li>
+							<li><a href="page-vn-tuor-1.html">Việt Nam Package tuors</a></li>
 							<li><a href="page-compodia.html">Campodia Package tuors</a></li>
 						</ul>
 					</li>
@@ -240,92 +240,133 @@
 <section class="regular" style="padding-top: 4rem">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-9"data-aos="fade-up">
-				<div class="item-content">
-					<div class="col-md-3">
-						<a href="/hanoi-day-tours/71/hanoi-city-tour" title="Hanoi City Tour">
-							<img src="img/26.jpg" alt="Hanoi City Tour" style="width: 100%;" class="img-border">
-						</a>
-					</div>
-					<div class="col-md-7">
-						<h3 class="title-content" style="margin-top:0px"><a href="/hanoi-day-tours/71/hanoi-city-tour" title="Hanoi City Tour">HANOI BICYCLE TOUR</a></h3>
-						<div style="text-align: justify">
-							Is there any way better than riding a bicycle to experience the real local life of Hanoi? Joining us for the simplest but most marvelous things that you have never got before! we can bring you the most unforgettable and breathtaking time beyond your expected journey with biking tour.
+			<div class="col-lg-9">
+
+				<form action="/BookingTour/SendBooking" method="POST" id="bk-tour" class="form-horizontal" novalidate="novalidate">
+					<input type="hidden" name="TourId" value="63" id="TourId">
+					<h3 class="title-h1">Payment Information</h3>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Payment method:</label>
+						<div class="col-sm-9">
+							<input style="display:none" type="radio" name="TypePayment" id="Radio2" value="2" onchange=" changePaymethod()" checked="checked" class="radio-type-pay">
 						</div>
 					</div>
-					<div class="col-md-2">
-						<p class="from"><i>from</i></p>
-						<p class="div_price"><strong>$30</strong></p>
-						<div class="div-book btn btn-primary"><a href="/hanoi-day-tours/71/hanoi-city-tour" title="Book">See more</a></div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Tour:</label>
+						<div class="col-sm-9" style="
+						margin-top: 8px;
+						">
+						<strong>Halong Majestic Cruise</strong>
 					</div>
-					<div class="clearfix"></div>
 				</div>
-				<div class="item-content">
-					<div class="col-md-3">
-						<a href="/hanoi-day-tours/72/hanoi-foodie-private-tour" title="Hanoi Foodie private tour">
-							<img src="img/27.jpg" alt="Hanoi Foodie private tour" style="width: 100%;" class="img-border">
-						</a>
-					</div>
-					<div class="col-md-7">
-						<h3 class="title-content"style="margin-top:0px"><a href="/hanoi-day-tours/72/hanoi-foodie-private-tour" title="Hanoi Foodie private tour">HANOI CULTURE DISCOVERY PRIVATE TOUR</a></h3>
-						<div style="text-align: justify">
-							We would like to bring you the most spectacular and liveliest experiences in Vietnam. What would you like most when you travel to the new destination? Most of the people want to explore these things, such as beautiful landscapes, historic sites, shopping, good foods, etc. At Hanoi, we can help you this type of program, you will have a chance to enjoy and experience all the new, real and amazing things about Vietnam.
-						</div>
-					</div>
-					<div class="col-md-2">
-						<p class="from"><i>from</i></p>
-						<p class="div_price"><strong>$25</strong></p>
-						<div class="div-book btn btn-primary"><a href="/hanoi-day-tours/72/hanoi-foodie-private-tour" title="Book">See more</a></div>
-					</div>
-					<div class="clearfix"></div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Itineraries:</label>
+					<div class="col-sm-9" style="
+					margin-top: 8px;
+					">
+					<select name="TabId" id="TabId" onchange=" amountPrice() ">
+						<option>Select a itineraries</option>
+						<option>2 Days 1 Night ($ 118)</option>
+						<option>3 Days 2 Nights ($ 225)</option>
+					</select>
 				</div>
 			</div>
-			<div class="col-lg-3"data-aos="fade-up">
-				<div id="sidebar">
-
-
-					<div class="wrap-category-left">
-						<h2 class="title-h3">DAY TRIPS</h2>
-						<h3><i class="fa fa-chevron-right"></i><a href="/vietnam-package-tours" alt="Vietnam Package Tours">Hanoi Day Tours</a></h3>
-						<h3><i class="fa fa-chevron-right"></i><a href="/cambodia-package-tours" alt="Cambodia Package Tours">Hue Day Tours</a></h3>
-						<h3><i class="fa fa-chevron-right"></i><a href="/cambodia-package-tours" alt="Cambodia Package Tours">Hoi An Day Tuors</a></h3>
-						<h3><i class="fa fa-chevron-right"></i><a href="/cambodia-package-tours" alt="Cambodia Package Tours">Sapa Day Tuors</a></h3>
-						<h3><i class="fa fa-chevron-right"></i><a href="/cambodia-package-tours" alt="Cambodia Package Tours">Da Nang Day Tours</a></h3>
-					</div>
-
-					<style>
-					h4.sub-menu-left {
-						background: none;
-						font-size: 13px;
-					}
-
-					h4.sub-menu-left span {
-						margin-right: 5px;
-						color: #003580;
-					}
-				</style>
-
-
-				<div class="wrap-item-sidebar">
-					<a alt="Early bird SALES"><img src="img/p1-10.jpg" width="279px"></a>
-				</div>
-
-				<div class="clearfix"></div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Price itinerary:</label>
+				<div class="col-sm-9" style="
+				margin-top: 8px;
+				">
+				<strong id="text-price-itinerary">0.00 USD</strong>
 			</div>
-			<div class="clearfix"></div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Adults:</label>
+			<div class="col-sm-3" style="
+			margin-top: 8px;
+			">
+			<select name="Adult" id="Adult" onchange=" amountPrice() ">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+			</select>
+
 		</div>
 	</div>
-	<div class="row paging">
-		<div class="col-xs-12">
-			<ul class="pagination" style="margin-left: 30%">
-				<li class="disabled"><a href="page-hanoi.html">«</a></li>
-				<li><a href="page-hanoi.html">1</a></li>
-				<li class="active"><a href="#">2</a></li>
-				<div class="clearfix"></div>
-			</ul>
-		</div>
+	<div class="form-group">
+		<label class="col-sm-3 control-label">Total itinerary:</label>
+		<div class="col-sm-9" style="
+		margin-top: 8px;
+		">
+		<strong id="text-total-price" style="margin-top:8px">0.00 USD</strong>
 	</div>
 </div>
+<div class="form-group" id="payment-now" style="display: none;">
+	<label class="col-sm-3 control-label">Payment Now:</label>
+	<div class="col-sm-9">
+		<strong id="text-payment-now">0.00 USD ~ 0 VND</strong>
+	</div>
+</div>
+<div class="form-group">
+	<label class="col-sm-3 control-label">Balance Due on Arrival:</label>
+	<div class="col-sm-9" style="
+	margin-top: 8px;
+	">
+	<div class="r-line-pay" id="text-due-payment">0.00 USD</div>
+</div>
+</div>
+
+<br>
+<input type="submit" value="Continue" class="btn btn-primary" style="margin-top: 0px;">
+<br>
+
+
+</form>
+
+</div>
+<div class="col-lg-3">
+
+
+
+	<style>
+	h4.sub-menu-left {
+		background: none;
+		font-size: 13px;
+	}
+
+	h4.sub-menu-left span {
+		margin-right: 5px;
+		color: #003580;
+	}
+</style>
+
+
+<div class="wrap-item-sidebar">
+	<a alt="Early bird SALES"><img src="img/p1-10.jpg" width="279px"></a>
+</div>
+
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+
 </section>
 <div id="footer">
 	<section class="top-footer regular">
@@ -400,7 +441,7 @@
 
 <script lang="javascript">
 	var i=0,text;
-	text="Hanoi Day Tours"
+	text="Sapa Tours"
 
 	function typing(){
 		if (i<text.length) {
