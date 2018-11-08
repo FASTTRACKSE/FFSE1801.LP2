@@ -57,7 +57,6 @@
           </div>
           <div class="ads">
             <div class="chu-nhat">
-              4
               <div class="tam-giac"></div>
               <div class="img"><img src="./imgs/cm.png" alt="" /></div>
               <div class="clearfix"></div>
@@ -119,6 +118,7 @@
         <div id="cham-soc-khach-hang"></div>
         <div id="kiem-tra-don-hang"></div>
         <div id="dang-ky"></div>
+        <div id="show_cart"></div>
       </div>
 
       <div id="footer">
@@ -183,37 +183,47 @@
         if (typeof Storage) {
           localStorage.account = JSON.stringify({
             name: googleUser.getBasicProfile().getName(),
+
             img: googleUser.getBasicProfile().getImageUrl(),
+
             email: googleUser.getBasicProfile().getEmail()
           });
         }
+        check_set_new_account(googleUser.getBasicProfile().getEmail());
         window.history.back();
         changeLogin();
       }
+
       function onFailure(error) {
         console.log(error);
       }
+
       function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function() {
           console.log("User signed out.");
         });
-        if (typeof Storage) {
-          localStorage.clear();
-        }
+        localStorage.clear();
         location.reload();
       }
+
       function renderButton() {
         gapi.signin2.render("my-signin2", {
           scope: "profile email",
+
           width: 300.75,
+
           height: 38,
+
           longtitle: true,
+
           onsuccess: onSuccess,
+
           onfailure: onFailure
         });
       }
     </script>
+    <script src="https://smartlock.google.com/client"></script>
     <script
       src="https://apis.google.com/js/platform.js?onload=renderButton"
       async

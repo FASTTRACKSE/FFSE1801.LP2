@@ -127,7 +127,6 @@ function navigationH() {
         }
       }
     }
-
     history.pushState(null, "", "#/404");
     content404();
   }
@@ -748,41 +747,53 @@ function products() {
 
             </div>`;
 }
-function a_cart() {
-  if (localStorage.cart) {
-    let cart = JSON.parse(localStorage.cart);
-    let f_cart = cart.find(function(obj) {
-      return obj.params == product_data_j.params;
-    });
-    if (f_cart !== undefined) {
-      let i = cart.indexOf(f_cart);
-      let d = {
-        params: product_data_j.params,
-        count: Number(get.id("quantity").innerText),
-        data: product_data_j
-      };
-      cart[i] = d;
-      localStorage.cart = JSON.stringify(cart);
+function a_cart(type) {
+  var auth2 = gapi.auth2;
+  if (auth2 !== undefined) {
+    if (localStorage.cart) {
+      let cart = JSON.parse(localStorage.cart);
+      let f_cart = cart.find(function(obj) {
+        return obj.params == product_data_j.params;
+      });
+      if (f_cart !== undefined) {
+        let i = cart.indexOf(f_cart);
+        let d = {
+          params: product_data_j.params,
+          count: Number(get.id("quantity").innerText),
+          data: product_data_j
+        };
+        cart[i] = d;
+        localStorage.cart = JSON.stringify(cart);
+      } else {
+        let d = {
+          params: product_data_j.params,
+          count: Number(get.id("quantity").innerText),
+          data: product_data_j
+        };
+        cart.push(d);
+        localStorage.cart = JSON.stringify(cart);
+      }
     } else {
+      let arr = [];
       let d = {
         params: product_data_j.params,
         count: Number(get.id("quantity").innerText),
         data: product_data_j
       };
-      cart.push(d);
-      localStorage.cart = JSON.stringify(cart);
+      arr.push(d);
+      localStorage.cart = JSON.stringify(arr);
+    }
+    account = JSON.parse(localStorage.account);
+    update_cart_account(account.email, localStorage.cart);
+    s_q_cart();
+    if (type == "add") {
+      alert_add();
+    } else {
+      location.href = "#/cart";
     }
   } else {
-    let arr = [];
-    let d = {
-      params: product_data_j.params,
-      count: Number(get.id("quantity").innerText),
-      data: product_data_j
-    };
-    arr.push(d);
-    localStorage.cart = JSON.stringify(arr);
+    location.href = "#/dang-nhap";
   }
-  s_q_cart();
 }
 function u_q_cart() {
   if (localStorage.cart) {
@@ -797,7 +808,7 @@ function u_q_cart() {
     get.id("show_quantity_cart").append(p);
   }
 }
-function s_q_cart(params) {
+function s_q_cart() {
   if (localStorage.cart) {
     let p = create.el("p");
     let cart = JSON.parse(localStorage.cart);
@@ -809,6 +820,9 @@ function s_q_cart(params) {
     p.innerHTML = count;
     get.id("show_quantity_cart").append(p);
   }
+}
+function alert_add() {
+  alert("Thêm thành công");
 }
 function contentProductDetail(params) {
   let product_data = params;
@@ -913,8 +927,8 @@ function contentProductDetail(params) {
                                 <i class="fal fa-plus" onclick="quantity_increase()"></i>
                             </div>
                             <div class="button row">
-                                <a onclick="a_cart()">MUA NGAY</a>
-                                <a onclick="a_cart()">THÊM VÀO GIỎ HÀNG</a>
+                                <a  onclick="a_cart('buy')">MUA NGAY</a>
+                                <a onclick="a_cart('add')" >THÊM VÀO GIỎ HÀNG</a>
                             </div>
                         </div>
                         <div class="col-3">

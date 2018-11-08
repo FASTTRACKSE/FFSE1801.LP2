@@ -125,3 +125,26 @@ const quantity_reduction = x => {
     quantity.innerHTML = num_quantity - 1;
   }
 };
+
+const check_set_new_account = x => {
+  db.collection("accounts")
+    .doc(x)
+    .get()
+    .then(function(params) {
+      if (params.data() === undefined) {
+        db.collection("accounts")
+          .doc(x)
+          .set({ cart: [] });
+      } else {
+        localStorage.cart = params.data().cart;
+        p.log(params.data().cart);
+        s_q_cart();
+      }
+    });
+};
+
+function update_cart_account(x, y) {
+  db.collection("accounts")
+    .doc(x)
+    .set({ cart: y });
+}
