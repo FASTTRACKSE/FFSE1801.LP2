@@ -125,6 +125,7 @@ function navigationH() {
                 get.tag("title")[0].innerHTML = data_f[1].name;
                 return;
               } else {
+                p.log("sai");
                 products();
                 show_products(hash_2[2]);
                 return;
