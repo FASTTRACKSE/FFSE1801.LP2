@@ -124,6 +124,10 @@ function navigationH() {
                 get.id("title_category_detail").innerHTML = data_f[2];
                 get.tag("title")[0].innerHTML = data_f[1].name;
                 return;
+              } else {
+                products();
+                show_products(hash_2[2]);
+                return;
               }
             }
           }
