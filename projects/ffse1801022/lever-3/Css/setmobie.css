@@ -1,0 +1,158 @@
+@media all and (max-width: 900px){
+    #header i{
+        display: none
+    }
+    #avatar{
+        top:30px;
+        margin: 5px;
+        height: 130px;
+        width: 130px;
+    }
+}
+@media all and (max-width: 750px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background: rgb(211, 211, 211);
+        font-size: 12px;
+    }
+    #avatar{
+        display: none;
+    }
+    #right{
+        left: 12px;
+        z-index: 210;
+        width: 0px;
+    }
+    #right ul{
+        top:340px;
+    }
+    #right li{
+        width: 30px;
+        height: 30px;
+    }
+
+    #header{
+        min-width: 50px;
+        width: 15%;
+    }
+    #header i{
+        display: block;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .panel{
+        width: 83%;
+        left: 12%;
+        padding: 10px !important;
+    }
+    #menu{
+        top:5%
+    }
+    #menu li a{
+        display: block;
+        height: 35px;
+        padding: 0;
+        margin: 0;
+    }
+    #menu li p,
+    #menu ul li .hover-menu{
+        display: none;
+    }
+    /* about ////////////////////////////////////////////////////////////// */
+    #about_left,#about_right1,#about_right2{
+        width: 96%;
+        height: auto !important;
+    }
+    /* skill/////////////////////////////////////////////////////////////////// */
+    #skills_left,#skills_right{
+        width: 96%;
+        padding-left: 5px;
+    }
+    #skills_left ul li,#skills_right ul li{
+        margin-bottom: 15px;
+    }
+    /* sử lý thẻ experience ////////////////////////////////////////////////////////////////////////////////////////////*/
+    #experience1,#experience2,#experience3{
+        position: relative;
+        left: 15%;
+        width: 75%;
+        min-height: 150px;
+        top: 126px;
+        padding: 10px;
+        font-size:11px;
+    }
+    /* #experience1{
+        margin-top: 85px;
+    } */
+    .experience_time{
+        position: absolute;
+        width: 120px;
+        top:-12px;
+        left: 35px;
+        background: #1CB9C8;
+        height: 23px;
+        border-radius: 12px;
+    }
+    .experience_dot1,.experience_dot2,.experience_dot3{
+        display: block;
+        position: absolute;
+        width: 8px;
+        background: #1CB9C8;
+        height: 8px;
+        left: -4px;
+        top: 60px;
+        border-radius: 50%;
+        border:#E9E9E9 3px solid;
+    }
+    .experience_dot2{
+        top:250px;
+    }
+    .experience_dot3{
+        top:440px;
+    }
+    /* <!-- education 444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444 --> */
+    #education_tree{
+        height: 1250px;
+        left: 93%;
+    }
+    #education_tree div{
+        display: none;
+    }
+    #the1st,#the2nd,#the3th,#the4th,#the5th,#the6th{
+        position: relative;
+        width: 70%;
+        height: auto;
+        padding: 20px;
+        right: 20px;
+        top: 85px;
+        margin-bottom: 20px;
+    }
+    #education .leaves_left{
+        width: 115%;
+    }
+    #education .leaves_right{
+        width: 115%;
+        left: 0;
+    }
+        /* fortfolio55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 */
+    #fortfolio_menu{
+        left: 10px;
+        width: 80%;
+    }
+    #all{
+        top:150px;
+        width: 70%;
+    }
+    #fortfolio_menu ul li a{
+        font-size: 15px;
+    }
+    /* contact77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777 */
+    #contact #info, #sms,#map{
+        width: 90% !important;
+        margin: 10px !important;
+    }
+    #sms .form-control{
+        width: 100% !important;
+    }
+}
