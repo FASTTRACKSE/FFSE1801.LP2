@@ -104,7 +104,7 @@
         <div id="topdt">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 left">
-                    <img src="https://cdn.tgdd.vn/qcao/31_10_2018_17_46_35_Note9-T11-800-300.png" alt="">
+                    <img id="width"src="https://cdn.tgdd.vn/qcao/31_10_2018_17_46_35_Note9-T11-800-300.png" alt="">
                     <h4 style="margin-left: 30px; font-weight: 600;"> Samsung Galaxy Note 9</h4>
                     <b style="color: red; font-size:16px; margin-left: 30px"> 22.990.000₫</b>
                 </div>
@@ -374,6 +374,9 @@
                     "margin-left": dem + "px"
                 })
             })
+            if($(window).width()>1400){
+                $("#width").height(240);
+            }
         })
 
         var n = [galaxyJ6.showto("#slide2 span", 6, 3, 2),
