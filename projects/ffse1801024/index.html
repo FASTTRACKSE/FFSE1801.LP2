@@ -53,7 +53,11 @@
             <button><i class="fal fa-search"></i></button>
           </div>
           <div class="cart" id="show_quantity_cart">
-            <i class="fal fa-shopping-cart"></i>
+            <i
+              style=" cursor: pointer;"
+              class="fal fa-shopping-cart"
+              onclick="show_cart_d()"
+            ></i>
           </div>
           <div class="ads">
             <div class="chu-nhat">
@@ -118,7 +122,6 @@
         <div id="cham-soc-khach-hang"></div>
         <div id="kiem-tra-don-hang"></div>
         <div id="dang-ky"></div>
-        <div id="show_cart"></div>
       </div>
 
       <div id="footer">
@@ -235,7 +238,7 @@
     <script src="./js/lib.js"></script>
     <script src="./js/main.js"></script>
     <script>
-      // getData();
+      getData();
     </script>
   </body>
 </html>

@@ -441,3 +441,42 @@
                     <div class="add-suggestion-today"><button onclick=" add_suggestion()">Tải thêm</button></div>
                 </div>
             </div>
+
+## aa
+
+        <!-- <div id="show_cart">
+          <div class="container">
+            <div class="row">
+              <div class="col8">
+                <div class="h1" id="show_cart_detail">
+                  <div class=" row h3">
+                    <div class="col2">
+                      <img
+                        width="100%"
+                        src="./imgs/product/01ff64cbcfcc0302d1614172ae11220a.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col5 padding-top">
+                      <a href="">
+                        Thùng 24 chai nước tăng lực Sting Dâu 330ml
+                      </a>
+                    </div>
+                    <div class="col2 padding-top">Giá:195.000 ₫</div>
+                    <div class="col2 padding-top">Số lượng: 2</div>
+
+                    <div class="col1 padding-top">
+                      <i class="fas fa-trash-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col4">
+                <div class="h2 payment">
+                  <button>Thanh toán</button>
+                  <div class="total">Tổng: <span>50000</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->

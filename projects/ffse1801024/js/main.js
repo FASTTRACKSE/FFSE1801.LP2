@@ -5,7 +5,8 @@ var hidden_pass = true,
   random_products_home = [],
   page_suggestion = 1,
   product_data_j = null,
-  accounts = [];
+  accounts = [],
+  delete_cart_pp = null;
 var router = [
   {
     level: 1,
@@ -23,7 +24,13 @@ var router = [
     level: 1,
     hash: "#/gio-hang",
     name: "Giá tiết kiệm nhất",
-    content: contentLogin
+    content: show_cart_detail
+  },
+  {
+    level: 1,
+    hash: "#/hoan-thanh",
+    name: "Đơn hàng hoàn thành",
+    content: contentThank
   },
   {
     level: 2,
@@ -789,7 +796,7 @@ function a_cart(type) {
     if (type == "add") {
       alert_add();
     } else {
-      location.href = "#/cart";
+      location.href = "#/gio-hang";
     }
   } else {
     location.href = "#/dang-nhap";
@@ -1121,4 +1128,138 @@ function content404() {
   get.id("content").innerHTML = `  <div id="not-found" class="container">
                 <iframe src="./404.html" frameborder="0" height="800" width="1180" style="margin-bottom:-4px;"></iframe>
             </div>`;
+}
+function show_cart_d(params) {
+  var auth2 = gapi.auth2;
+  if (auth2 !== undefined) {
+    location.href = "#/gio-hang";
+  } else {
+    location.href = "#/dang-nhap";
+  }
+}
+function show_cart_detail(params) {
+  var auth2 = gapi.auth2;
+  if (auth2 !== undefined) {
+    if (localStorage.cart !== "") {
+      if (localStorage.cart !== []) {
+        // p.log(localStorage.cart);
+        get.id("content").innerHTML = ` <div id="show_cart">
+          <div class="container">
+          <h3>Thanh toán</h3>
+            <div class="row">
+              <div class="col8">
+                <div class="h1" id="show_cart_detail">
+                  
+                </div>
+              </div>
+              <div class="col4">
+                <div class="h2 payment">
+                  <button onclick="delete_product_all()">Thanh toán</button>
+                  <div class="total">Tổng: <span id="totalll">50000</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`;
+        let cart = JSON.parse(localStorage.cart);
+        let total_ttt = 0;
+        for (let i = 0; i < cart.length; i++) {
+          const element = cart[i];
+          let str_cart = { name: "" };
+          str_cart.name = element.data.params;
+          total_ttt = Number(element.count) * Number(element.data.price);
+          let div = create.el("div");
+          div.classList.add("row");
+          div.classList.add("h3");
+          div.innerHTML =
+            `<div class=" row h3">
+        <div class="col2">
+          <img
+            width="100%"
+            src="` +
+            element.data.thumb +
+            `"
+            alt=""
+          />
+        </div>
+        <div class="col5 padding-top">
+          <a href="">
+          ` +
+            element.data.name +
+            `
+                      </a>
+        </div>
+        <div class="col2 padding-top" ><p style="color: #f46a00;font-size: 20px; text-align: center" class="m-0">  ` +
+            numberWithDots(element.data.price) +
+            ` ₫</p></div>
+        <div class="col2 padding-top"><p style="font-size: 15px; text-align: center" class="m-0">Số lượng:  ` +
+            numberWithDots(element.count) +
+            ` </p></div>
+
+        <div class="col1 padding-top">
+        <p onclick="delete_product(\'` +
+            element.data.params +
+            `\')"  style=" cursor: pointer;font-size: 15px; text-align: center" class="m-0"><i class="fas fa-trash-alt"></i> </p>
+           
+        </div>
+      </div>`;
+          get.id("show_cart_detail").appendChild(div);
+        }
+        get.id("totalll").innerHTML = numberWithDots(total_ttt) + ` ₫`;
+      } else {
+        get.id("content").innerHTML = ` <div id="show_cart">
+          <div class="container">
+          <h3>Bạn chưa có sản phẩm trong giỏ</h3>
+          <a href="#">Tiếp tục mua sắm</a>
+           </div>
+        </div>`;
+      }
+    } else {
+      get.id("content").innerHTML = ` <div id="show_cart">
+          <div class="container">
+          <h3>Bạn chưa có sản phẩm trong giỏ</h3>
+          <a href="#">Tiếp tục mua sắm</a>
+           </div>
+        </div>`;
+    }
+  } else {
+    location.href = "#/dang-nhap";
+  }
+
+  // let cart = JSON.parse(localStorage.cart);
+  // if (cart) {
+  // } else {
+  // }
+}
+function delete_product(paramspp) {
+  let cart = JSON.parse(localStorage.cart);
+  let f_cart = cart.find(function(params) {
+    return params.data.params == paramspp;
+  });
+  let i = cart.indexOf(f_cart);
+  cart.splice(i, 1);
+
+  localStorage.cart = JSON.stringify(cart);
+  email = JSON.parse(localStorage.account);
+  update_cart_account(email.email, localStorage.cart);
+  setTimeout(() => {
+    location.reload();
+  }, 3000);
+}
+function delete_product_all(paramspp) {
+  localStorage.cart = [];
+  email = JSON.parse(localStorage.account);
+  update_cart_account(email.email, localStorage.cart);
+  setTimeout(() => {
+    window.location.href = "#/hoan-thanh";
+    location.reload();
+  }, 3000);
+}
+function contentThank() {
+  get.id("content").innerHTML = ` <div id="show_cart">
+          <div class="container">
+          <h3>Cám ơn bạn đã mua hàng </h3>
+          <a href="#">Tiếp tục mua sắm</a>
+           </div>
+        </div>`;
 }
