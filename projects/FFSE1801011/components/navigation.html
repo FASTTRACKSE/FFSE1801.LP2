@@ -23,11 +23,11 @@
                           <input class="form-control bg-transparent border-0 col" type="search" placeholder="Search" aria-label="Search">
                           <button class="btn bg-transparent my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                     </form>
-                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                     </button>
   
-                    <div class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse" id="navbarMain">
                           <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
                                       <a class="nav-link" href="#">Công việc hot <span class="sr-only">(current)</span></a>
@@ -52,11 +52,13 @@
                           </ul>
   
                     </div>
-                    <a class="btn login" href="#" role="button" data-toggle="modal" data-target="#loginModal">Đăng nhập</a>
-                    <span>&nbsp;|&nbsp;</span>
-                    <a class="btn signup" href="#" role="button" data-toggle="modal" data-target="#signupModal">Đăng ký</a>
-                    <span>&nbsp;|&nbsp;</span>
-                    <a href="#">EN <span class="badge" style="background-image: url(../images/flag-en-logo.png);background-size: cover; width: 40px; height: 25px;"> </span></a>
+                    <div class="d-block d-md-inline">
+                        <a class="btn login" href="../applicant/applicant_profile.html" role="button" data-toggle="" data-target="#loginModal">Đăng nhập</a>
+                        <span class="font-weight-light">&nbsp;|&nbsp;</span>
+                        <a class="btn signup" href="../applicant/applicant_profile.html" role="button" data-toggle="" data-target="#signupModal">Đăng ký</a>
+                        <span class="font-weight-light">&nbsp;|&nbsp;</span>
+                        <a href="#">EN <span class="badge" style="background-image: url(../images/flag-en-logo.png);background-size: cover; width: 40px; height: 25px;"> </span></a>
+                    </div>
               </nav>
             
             <!-- Login Modal -->

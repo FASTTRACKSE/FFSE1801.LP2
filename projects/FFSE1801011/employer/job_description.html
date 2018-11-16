@@ -23,10 +23,9 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXbkXZX8Sl5hJBaUH9Z3SepsluuXv-PtA&callback=myMap"></script>
       <script src="../js/app.js"></script>
-      <script src="../js/jssor.js"></script>
+      <script src="../js/push_data.js"></script>
       <script src="../js/tagsinput.js"></script>
-      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"> -->
-
+      
       <style>
             body{
                   background-image: url("../images/backgrounds/photo2.jpg"); 
@@ -39,14 +38,14 @@
 <body>
             
       <div w3-include-html="../components/navigation.html"></div>
-      <div class="d-flex justify-content-around p-3 employer__navbar container--background--light">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
+      <div class="d-none d-md-flex justify-content-around p-3 employer__navbar container--background--light">
+                  <img src="../images/employer/001/logo.png" alt="..." class="logo bg-light img-thumbnail">
+                  <img src="../images/employer/002/logo.jpeg" alt="..." class="logo bg-light img-thumbnail">
+                  <img src="../images/employer/003/logo.png" alt="..." class="logo bg-light img-thumbnail">
+                  <img src="../images/employer/004/logo.jpg" alt="..." class="logo bg-light img-thumbnail">
+                  <img src="../images/employer/001/logo.png" alt="..." class="logo bg-light img-thumbnail">
+                  <img src="../images/employer/002/logo.jpeg" alt="..." class="logo bg-light img-thumbnail">
+                  <img src="../images/employer/003/logo.png" alt="..." class="logo bg-light img-thumbnail">
                   
       </div>
       <div class="container">
@@ -130,231 +129,188 @@
             <div class="row container--background--light py-5 px-3">
                   
                   <div class="col-md-9">
-                        <div class="container__scroll" data-spy="scroll" data-target="#myScrollSpy" data-offset="1">
+                        <div class="container__scroll pr-5" data-spy="scroll" data-target="#myScrollSpy" data-offset="1">
 
-                              <div id="section1" class="container__scroll__info">
-                                    <h3>Mô tả công việc</h3>
+                              <div id="section1" class="container__scroll__info ">
+                                    <h5>Mô tả công việc</h5>
+                                    <ul >
+                                          <li>Hỗ trợ cho hệ thống bán hàng, lên các chương trình hỗ trợ thương mại (HTTM) ngắn hạn và dài hạn nhằm thúc đẩy tiêu thụ ở các kênh của ngành hàng/ khu vực phụ trách.</li>
+                                          <li>Hỗ trợ các Trưởng ban HTTM trong xây dựng các chương trình chiến thuật theo ngành hàng.</li>
+                                          <li>Lên kế họach phân bổ chỉ tiêu khuyến mãi cho các từng nhà phân phối (NPP) để đảm bảo tính hiệu quả của các chương trình khuyến mãi cho điểm lẻ.</li>
+                                          <li>Tạo ra các mẫu biểu để kiểm sóat và đánh giá hiệu quả việc thực hiện các chương trình khuyến mãi cho các điểm bán sỉ và lẻ.</li>
+                                         
+                                    </ul>
                               </div>
                               <div id="section2" class="container__scroll__info">
-                                    <h3>Yêu cầu công việc</h3>
-                                    
+                                    <h5>Yêu cầu công việc</h5>
+                                    <h6 class="pl-3">Học vấn & Chuyên ngành</h6>
+                                    <ul>
+                                          <li>Tốt nghiệp đại học chính quy trở lên</li>
+                                          <li>Chuyên ngành: Kinh tế, Marketing, Quản trị kinh doanh, Ngoại thương</li>
+                                          <li>KINH NGHIỆM: Có từ 02 - 04 năm kinh nghiệm trong lĩnh vực Hỗ Trợ Thương Mại (HTTM)ngành hàng tiêu dùng nhanh tại các công ty có qui mô lớn</li>
+                                    </ul>
+                                    <h6 class="pl-3">Kiến thức chuyên môn & Các kỹ năng:</h6>
+                                    <ul>
+                                          <li>Kiến thức tốt về Kinh Doanh, MKT và HTTM</li>
+                                          <li>Hiểu biết về tài chính</li>
+                                          <li>Có hiểu biết về kênh phân phối/ngành hàng</li>
+                                          <li>Kỹ năng giao tiếp</li>
+                                          <li>Kỹ năng đàm phán</li>
+                                          <li>Kỹ năng ra quyết định</li>
+                                          <li>Kỹ năng giải quyết vấn đề</li>
+                                    </ul>
+                                    <h6 class="pl-3">Các yêu cầu khác</h6> 
+                                    <ul>
+                                          <li>Thành thạo MS Office</li>
+                                          <li>Có hiểu biết về Hệ thống phầm mềm quản lý: SAP/Solomon/Oracle.</li>
+                                          <li>Thành thạo Anh ngữ</li>
+                                          <li>Trung thực, có tinh thần đồng đội</li>
+                                    </ul>
                               </div>
                               <div id="section3" class="container__scroll__info">
-                                    <h3>Quyền lợi</h3>
-                                    
+                                    <h5>Quyền lợi</h5>
+                                    <ul>
+                                          <li>Lương thưởng hấp dẫn</li>
+                                          <li>Được hưởng lương, trợ cấp, thưởng theo quy định pháp luật và quy chế tài chính của công ty</li>
+                                          <li>Môi trường làm việc chuyên nghiệp năng động</li>
+                                    </ul>
                               </div>
                               <div id="section4" class="container__scroll__info">
-                                    <h3>Yêu cầu hồ sơ</h3>
-                                    
+                                    <h5>Yêu cầu hồ sơ</h5>
+                                    <ul>
+                                          <li>Sơ yếu lí lịch (không quá 6 tháng)</li>
+                                          <li>Đơn ứng tuyển (ghi rõ vị trí dự tuyển)</li>
+                                          <li>Bản sao có công chứng các văn bằng, chứng chỉ, CMND, giấy khai sinh</li>
+                                          <li>3 ảnh 4x6</li>
+                                    </ul>
                               </div>
                               <div id="section5" class="container__scroll__info">
-                                    <h3>Cách thức ứng tuyển</h3>
-                                    
+                                    <h5>Cách thức ứng tuyển</h5>
+                                    <p>Thí sinh có thể nộp hồ sơ tại văn phòng công ty hoặc nộp online. Trong đơn ứng tuyển vui lòng ghi rõ: "Biết đến tin tuyển dụng thông qua trang lebonjourjob.com để được ưu tiên.</p>
                               </div>
                               <div id="section6" class="container__scroll__info">
-                                    <h3>Đánh giá từ cộng đồng</h3>
+                                    <h5>Đánh giá từ cộng đồng</h5>
                                     <div w3-include-html="../components/review.html"></div>
                               </div>
 
 
 
                         </div>
+                        
+                        </div>
+                        <div class="col-md-3">
+                              <div class="ptext ptext--small pt-0 mx-auto">
+                                    <p class="border border--small trans d-md-inline">
+                                          Đang tuyển dụng
+                                    </p>
+                              </div>
+                              <div class="sidebar__box my-4" id="vipEmployers">
+                                    <script>
+                                    $("#vipEmployers").empty();
+                                    if ($( window ).width() > 576){
+                                          var hirings=4;
+                                    } else {
+                                          var hirings=2;
+                                    }
+                                    
+                                          $("#vipEmployers").append(`
+                                          <div class='col-12 mt-0'>
+                                          <div class='card employer__vip'>
+                                                <img class='card-img-top w-75 h-25 align-self-center' src='`+ emp1.logo +`'
+                                                      alt=' `+emp1.name+` logo'>
+                                                <div class='card-body py-2'>
+                                                      <a href='../employer/employer_profile.html'>
+                                                            <h5 class='card-title text-center'>`+emp1.name+`</h5>
+                                                      </a>
+                                                      <p class='card-text text-center'><i class='fas fa-map-marker-alt'></i> `+emp1.city+`</p>
+                                                      <h6 class="d-sm-none d-md-block">Công việc đang tuyển:</h6>
+                                                      <ul class='d-sm-none d-md-block list-group list-group-flush'>`+
+                                                      hiring(emp1.hiring,hirings) 
+                                                      +`
+                                                      </ul>
+                                                </div>
+                                                <div class='card-footer py-1'>
+                                                      <small class='text-muted'>Last updated 3 mins ago</small>
+                                                </div>
+                                          </div>
+                                    </div>
+                                          `
+                                          )   
+                                    
+                                    </script>   
+                              </div>
+                                    <h5>Địa điểm Nhà tuyển dụng:</h5>
+                                    <div class="mt-3" id="googleMap" style="width:100%;height:300px;"></div>
+                              </div>
                   </div>
 
-                  <div class="col-md-3">
-                        <div class="ptext ptext--small">
-                              <p class="border border--small trans d-md-inline">
-                                    Đang tuyển dụng
-                              </p>
-                        </div>
-                        <div class="sidebar__box mb-4">
-                                
-                                        <div class="card vipEmployer">
-                                              <img class="card-img-top w-75 h-25 align-self-center" src="../images/employer/lebonjour/logo.png" alt="Card image cap">
-                                              <div class="card-body">
-                                                    <h5 class="card-title "><a href="../employer/employer_profile.html">Công ty
-                                                                TNHH Le Bonjour Job</a></h5>
-                                                    <p class="card-text"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</p>
-                                                    <h6>Công việc đang tuyển:</h6>
-                                                    <ul class="list-group list-group-flush">
-                                                          <li class="list-group-item text-truncate"><a href="../shared/main_job.html">Chuyên
-                                                                      viên marketing tại đà nẵng</a></li>
-                                                          <li class="list-group-item text-truncate"><a href="../shared/main_job.html">Kế
-                                                                      toán tổng hợp</a></li>
-                                                          <li class="list-group-item text-truncate"><a href="../shared/main_job.html">Quản
-                                                                      lý dự án</a></li>
-                                                          <li class="list-group-item text-truncate"><a href="../shared/main_job.html">Chuyên
-                                                                      viên tuyển dụng</a></li>
-                                                    </ul>
-                                              </div>
-                                              <div class="card-footer">
-                                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                              </div>
-                                        </div>
-                                  
-                        </div>
-
-                        <h5>Địa điểm Nhà tuyển dụng:</h5>
-                        <div class="mt-3" id="googleMap" style="width:100%;height:300px;"></div>
-                  </div>
+                  
                   
                   
             </div>
-            <div class="form-group row my-5 p-4 text-light bg-dark rounded employer-review">
-                        <div class="col-md-2">
-                              <label for="exampleFormControlTextarea1"><h4>Đánh giá của bạn:</h4></label>
-                        </div>
-                        <div class="col-md-7">
-                              <div class="form-group" id="rating-ability-wrapper">
-                                    <label class="control-label" for="rating">
-                                    <span class="field-label-header">Bạn cảm nhận thế nào về công việc này? Hãy chia sẻ cùng chúng tôi:</span><br>
-                                    <span class="field-label-info"></span>
-                                    <input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
-                                    </label>
-                                    <h2 class="bold rating-header" style="">
-                                    <span class="selected-rating">0</span><small> / 5</small>
-                                    </h2>
-                                    <button type="button" class="btnrating btn btn-default btn-lg" data-attr="1" id="rating-star-1">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btnrating btn btn-default btn-lg" data-attr="2" id="rating-star-2">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btnrating btn btn-default btn-lg" data-attr="3" id="rating-star-3">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btnrating btn btn-default btn-lg" data-attr="4" id="rating-star-4">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                    <button type="button" class="btnrating btn btn-default btn-lg" data-attr="5" id="rating-star-5">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                <button class="btn btn-primary mt-3 px-5">
-                                          Gửi
-                              </button>
-                        </div>
-                        
+
+                  <div class="container">
+                              <div class="form-group row mt-5 p-4 text-light bg-dark rounded employer-review">
+                                          <div class="col-md-2">
+                                                <label for="exampleFormControlTextarea1"><h4>Đánh giá của bạn:</h4></label>
+                                          </div>
+                                          <div class="col-md-7">
+                                                <div class="form-group" id="rating-ability-wrapper">
+                                                      <label class="control-label" for="rating">
+                                                      <span class="field-label-header">Bạn cảm nhận thế nào về công việc này? Hãy chia sẻ cùng chúng tôi:</span><br>
+                                                      <span class="field-label-info"></span>
+                                                      <input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
+                                                      </label>
+                                                      <h2 class="bold rating-header" style="">
+                                                      <span class="selected-rating">0</span><small> / 5</small>
+                                                      </h2>
+                                                      <button type="button" class="btnrating btn btn-default btn-lg" data-attr="1" id="rating-star-1">
+                                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                                      </button>
+                                                      <button type="button" class="btnrating btn btn-default btn-lg" data-attr="2" id="rating-star-2">
+                                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                                      </button>
+                                                      <button type="button" class="btnrating btn btn-default btn-lg" data-attr="3" id="rating-star-3">
+                                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                                      </button>
+                                                      <button type="button" class="btnrating btn btn-default btn-lg" data-attr="4" id="rating-star-4">
+                                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                                      </button>
+                                                      <button type="button" class="btnrating btn btn-default btn-lg" data-attr="5" id="rating-star-5">
+                                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                                      </button>
+                                                  </div>
+                                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                  <button class="btn btn-primary mt-3 px-5">
+                                                            Gửi
+                                                </button>
+                                          </div>
+                                          
+                                          
+                                    </div>
+                  
+                              <br><br>
                         
                   </div>
+                  <div class="container bg-white mb-4 card w-100">
+                              <div class="card-header">
+                                    <h4>Công việc từ cùng NTD</h4>
+                              </div>
+                              <div class="card-body related_jobs">
+                                    <div class="row" id="relatedJobs">
+                                          <input class="col-12" type="text" value="danang, marketing, online, chuyen vien" data-role="tagsinput" placeholder="Add tags" />
+                                          <script>
+                                                      jobCard(job1,"relatedJobs",6,3);
+                                          </script>  
+                                    </div>
+                              </div>
+                              <div class="card-footer d-flex">
+                                    <p class="d-md-inline d-sm-block mr-auto">Còn 125 công việc tương tự</p>
+                                    <div class="d-flex"><a href="../shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
+                              </div>
+                        </div>
             
-            <!-- Add this link in your page  -->
 
-
-<br><br><br>
-
-<div class="bg-white card">
-      <div class="card-header">
-            <h4>Công việc tương tự</h4>
-      </div>
-      <div class="card-body related_jobs">
-            <div class="row">
-                  <input class="col-12" type="text" value="danang, marketing, online, chuyen vien" data-role="tagsinput" placeholder="Add tags" />
-                  <div class="media bg-light p-3 col-md-6 border-bottom border-bottom-secondary jobcard rounded">
-                              <img class="mr-3 logo" src="../images/employer/lebonjour/logo.png" alt="Generic placeholder image">
-                              <div class="media-body row">
-                                    <div class="col-md-8 pr-0">
-                                          <h5 class="mt-0 truncate"><a href="../employer/job_description.html">Chuyên viên
-                                                      marketing online tại thành phố Đà nẵng</a></h5>
-                                          <h6 class="truncate"><a href="../employer/employer_profile.html">Công ty TNHH Le Bonjour Job Le Bonjour Job Le Bonjour Job</a></h6>
-                                    
-                                    <div class="">
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-money-bill-alt"></i> 5.000.000&#8363;</div>
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</div>
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-users"></i> 3
-                                                <!-- <i class="fas fa-mars"></i> 
-                                          <i class="fas fa-venus"></i>  -->
-                                          <i class="fas fa-transgender"></i>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                          <p class="border border-secondary deadline text-center">Hạn cuối: 31/10/2018</p>
-                                          <a href="https://www.facebook.com/LeBonjourJOB/" class="btn bg-primary btn__sn btn__sn--sm px-2 d-inline-block w-100" type="button">
-                                                <i class="fas fa-bookmark"></i> Lưu
-                                      </a>
-                                      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flebonjourjob.netlify.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore btn btn__sn btn__sn--sm btn__sn--fb w-100 px-1">
-                                          <i class="fab fa-facebook"></i> Share
-                                    </a>
-
-                                    </div>
-                              </div>
-                  </div>
-                  <div class="media bg-light p-3 col-md-6 border-bottom border-bottom-secondary jobcard rounded">
-                              <img class="mr-3 logo" src="../images/employer/lebonjour/logo.png" alt="Generic placeholder image">
-                              <div class="media-body row">
-                                    <div class="col-md-8 pr-0">
-                                          <h5 class="mt-0 truncate"><a href="../employer/job_description.html">Chuyên viên
-                                                      marketing online tại thành phố Đà nẵng</a></h5>
-                                          <h6 class="truncate"><a href="../employer/employer_profile.html">Công ty TNHH Le Bonjour Job Le Bonjour Job Le Bonjour Job</a></h6>
-                                    
-                                    <div class="">
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-money-bill-alt"></i> 5.000.000&#8363;</div>
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</div>
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-users"></i> 3
-                                                <!-- <i class="fas fa-mars"></i> 
-                                          <i class="fas fa-venus"></i>  -->
-                                          <i class="fas fa-transgender"></i>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                          <p class="border border-secondary deadline text-center">Hạn cuối: 31/10/2018</p>
-                                          <a href="https://www.facebook.com/LeBonjourJOB/" class="btn bg-primary btn__sn btn__sn--sm px-2 d-inline-block w-100" type="button">
-                                                <i class="fas fa-bookmark"></i> Lưu
-                                          </a>
-                                          <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flebonjourjob.netlify.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore btn btn__sn btn__sn--sm btn__sn--fb w-100 px-1">
-                                          <i class="fab fa-facebook"></i> Share
-                                    </a>
-
-                                    </div>
-                              </div>
-                  </div>
-                  <div class="media bg-light p-3 col-md-6 border-bottom border-bottom-secondary jobcard rounded">
-                              <img class="mr-3 logo" src="../images/employer/lebonjour/logo.png" alt="Generic placeholder image">
-                              <div class="media-body row">
-                                    <div class="col-md-8 pr-0">
-                                          <h5 class="mt-0 truncate"><a href="../employer/job_description.html">Chuyên viên
-                                                      marketing online tại thành phố Đà nẵng</a></h5>
-                                          <h6 class="truncate"><a href="../employer/employer_profile.html">Công ty TNHH Le Bonjour Job Le Bonjour Job Le Bonjour Job</a></h6>
-                                    
-                                    <div class="">
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-money-bill-alt"></i> 5.000.000&#8363;</div>
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</div>
-                                                <div class="mr-3 d-inline-block"><i class="fas fa-users"></i> 3
-                                                <!-- <i class="fas fa-mars"></i> 
-                                          <i class="fas fa-venus"></i>  -->
-                                          <i class="fas fa-transgender"></i>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                          <p class="border border-secondary deadline text-center">Hạn cuối: 31/10/2018</p>
-                                          <a href="https://www.facebook.com/LeBonjourJOB/" class="btn bg-primary btn__sn btn__sn--sm px-2 d-inline-block w-100" type="button">
-                                                <i class="fas fa-bookmark"></i> Lưu
-                                          </a>
-                                          <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flebonjourjob.netlify.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore btn btn__sn btn__sn--sm btn__sn--fb w-100 px-1">
-                                          <i class="fab fa-facebook"></i> Share
-                                    </a>
-
-                                    </div>
-                              </div>
-                  </div>      
-            </div>
-      </div>
-      <div class="card-footer d-flex">
-            <p class="d-md-inline d-sm-block mr-auto">Còn 125 công việc tương tự</p>
-                  <div class="btn d-md-inline d-sm-block btn-primary ml-5"> Xem tất cả <i class="fas fa-angle-double-right"></i></div>
-      </div>
-        
-
-        
-      
-</div>
-
-
-      </div>
 
       <div w3-include-html="../components/fixed_menu.html"></div>
       <div w3-include-html="../components/footer.html"></div>

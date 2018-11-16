@@ -23,8 +23,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXbkXZX8Sl5hJBaUH9Z3SepsluuXv-PtA&callback=myMap"></script>
       <script src="../js/app.js"></script>
-      <script src="../js/jssor.js"></script>
-      <script src="../js/tagsinput.js"></script>
+      <script src="../js/push_data.js"></script>
       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"> -->
 
       <style>
@@ -39,17 +38,17 @@
 <body>
             
       <div w3-include-html="../components/navigation.html"></div>
-      <div class="d-flex justify-content-around p-3 employer__navbar bg-dark">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  <img src="../images/employer/lebonjour/logo.png" alt="..." class="logo bg-light img-thumbnail">
-                  
+      <div class="d-none d-md-flex justify-content-around p-3 employer__navbar container--background--light">
+            <img src="../images/employer/001/logo.png" alt="..." class="logo bg-light img-thumbnail">
+            <img src="../images/employer/002/logo.jpeg" alt="..." class="logo bg-light img-thumbnail">
+            <img src="../images/employer/003/logo.png" alt="..." class="logo bg-light img-thumbnail">
+            <img src="../images/employer/004/logo.jpg" alt="..." class="logo bg-light img-thumbnail">
+            <img src="../images/employer/001/logo.png" alt="..." class="logo bg-light img-thumbnail">
+            <img src="../images/employer/002/logo.jpeg" alt="..." class="logo bg-light img-thumbnail">
+            <img src="../images/employer/003/logo.png" alt="..." class="logo bg-light img-thumbnail">
+            
       </div>
-      <div class="container container--wide pr-5 pt-4">
+      <div class="container container--wide pr-5 pt-4 pb-5">
             
             <div class="row">
         <div class="col-md-3">
@@ -58,7 +57,7 @@
               </div>
               <ul class="sidebar__filter">
                         <li class="d-flex justify-content-between align-items-center list__title">
-                              Điều kiện 1
+                              <h6>Điều kiện 1</h6>
                         </li>
                         <li class="d-flex justify-content-between align-items-center">
                                     <div class="custom-control custom-checkbox">
@@ -118,54 +117,18 @@
                               </form>
                     </div>
                     
-                  <div class="media bg-light p-3 jobcard col-md-6 border-bottom border-bottom-secondary">
-                        <img class="mr-3 w-25" src="images/employer/lebonjour/logo.png" alt="Generic placeholder image">
-                        <div class="media-body row">
-                              <div class="col-md-9">
-                                    <h5 class="d-flex justify-content-left">
-                                          <a href="../employer/job_description.html">Chuyên viên
-                                                marketing online</a></h5>
-                                    <h6 class="d-flex justify-content-left">
-                                          <a href="../employer/employer_profile.html">Công ty TNHH Le Bonjour Job</a></h6>
-                              </div>
-                              <div class="col-md-3">
-                                    <p class="border border-secondary">Hạn cuối: 31/10/2018</p>
+                    <div class="row container mx-auto" id="relevantJobs">
+                        <script>
+                              jobCard(jobList,"relevantJobs",6,6)
+                              console.log(jobList)
+                              $( "input[type=checkbox]" ).on( "click", function() {
+                                    countCheckedJobs();
+                              });
+                        </script> 
+                        
 
-                              </div>
-                              <div class="col-md-4"><i class="fas fa-money-bill-alt"></i> 5.000.000&#8363;</div>
-                              <div class="col-md-4"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</div>
-                              <div class="col-md-4"><i class="fas fa-users"></i> 3
-                                    <!-- <i class="fas fa-mars"></i> 
-                                                <i class="fas fa-venus"></i>  -->
-                                    <i class="fas fa-transgender"></i>
-                              </div>
-                        </div>
                   </div>
-                  <div class="media bg-light p-3 jobcard col-md-6 border-bottom border-bottom-secondary">
-                        <img class="mr-3 w-25" src="images/employer/lebonjour/logo.png" alt="Generic placeholder image">
-                        <div class="media-body row">
-                              <div class="col-md-9">
-                                    <h5 class="d-flex justify-content-left">
-                                          <a href="../employer/job_description.html">Chuyên viên
-                                                marketing online</a></h5>
-                                    <h6 class="d-flex justify-content-left">
-                                          <a href="../employer/employer_profile.html">Công ty TNHH Le Bonjour Job</a></h6>
-                              </div>
-                              <div class="col-md-3">
-                                    <p class="border border-secondary">Hạn cuối: 31/10/2018</p>
 
-                              </div>
-                              <div class="col-md-4"><i class="fas fa-money-bill-alt"></i> 5.000.000&#8363;</div>
-                              <div class="col-md-4"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</div>
-                              <div class="col-md-4"><i class="fas fa-users"></i> 3
-                                    <!-- <i class="fas fa-mars"></i> 
-                                                <i class="fas fa-venus"></i>  -->
-                                    <i class="fas fa-transgender"></i>
-                              </div>
-                        </div>
-                  </div>
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6"></div>
               </div>
         </div>
         

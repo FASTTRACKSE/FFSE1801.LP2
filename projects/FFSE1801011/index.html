@@ -6,8 +6,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Tuyển dụng Le Bonjour | Nhà Hàng - Khách sạn Đà Nẵng - Hội An</title>
-      <link rel="stylesheet" href="../css/pure.css">
-      <link rel="stylesheet" href="../css/bootstrap.css">
+      <link rel = "icon" type = "image/png" sizes = "32x32" href = "images/icons/logo_32x32.png">
+      <link rel = "icon" type = "image/png" sizes = "16x16" href = "images/icons/logo_32x32.png">
+      <link rel = "shortcut icon" href = "images/icons/logo_32x32.png">
+      <link rel="stylesheet" href="css/pure.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
             crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -17,8 +20,18 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
-      <script src="../js/app.js"></script>
-      <script src="../js/push_data.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/push_data.js"></script>
+      <!-- Begin SessionStack code -->
+<script type="text/javascript">
+      !function(a,b){var c=window;c.SessionStackKey=a,c[a]=c[a]||{t:b,
+      q:[]};for(var d=["start","stop","identify","getSessionId","log","setOnDataCallback"],e=0;e<d.length;e++)!function(b){
+      c[a][b]=c[a][b]||function(){c[a].q.push([b].concat([].slice.call(arguments,0)));
+      }}(d[e]);var f=document.createElement("script");f.async=1,f.src="https://cdn.sessionstack.com/sessionstack.js";
+      var g=document.getElementsByTagName("script")[0];g.parentNode.insertBefore(f,g);
+      }("SessionStack","c31cd810cc9948b8927741ed9f332cb1");
+      </script>
+      <!-- End SessionStack Code -->
 
 </head>
 
@@ -27,7 +40,7 @@
       <!-------------------------------- Navbar---------------------------------------->
 
       <div class="pimg1">
-            <div w3-include-html="../components/navigation.html"></div>
+            <div w3-include-html="components/navigation.html"></div>
 
             <!-- -------------- Main jobs ------------------- -->
 
@@ -35,27 +48,30 @@
 
                   <div class="ptext">
                         <p class="border d-md-inline">
-                              <a href="../applicant/applicant_profile.html">Tìm việc ngay!</a>
+                              <a href="applicant/applicant_profile.html">Tìm việc ngay!</a>
                         </p>
                   </div>
 
-                  <div w3-include-html="../components/job_filter.html"></div>
-
+                  <div w3-include-html="components/job_filter.html"></div>
+                  
 
                   <h2 class="text-center text-light">Công việc phù hợp với bạn</h2>
                   <div class="row container mx-auto" id="relevantJobs">
-
                         <script>
+                              jobCard(jobList,"relevantJobs",6,3)
+                              console.log(jobList)
+                              $( "input[type=checkbox]" ).on( "click", function() {
+                                    countCheckedJobs();
+                              });
+                        </script> 
                         
-                        jobCard(job1,"relevantJobs",6,3);
-                        </script>
 
                   </div>
-                  <div class="d-flex"><a href="../shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
+                  <div class="d-flex"><a href="shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
             </div>
       </div>
       <!-- -------------------- Hot jobs ------------------------- -->
-
+<!-- 
       <section class="section section-dark py-3">
             <div class="ptext">
                   <p class="border trans d-md-inline">
@@ -85,13 +101,13 @@
                   </div>
 
             </div>
-            <div class="d-flex"><a href="../shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
-      </section>
+            <div class="d-flex"><a href="shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
+      </section> -->
 
       <!-- ------------------Nhà tuyển dụng VIP -------------------- -->
 
       <div class="pimg2 py-2">
-            <div class="ptext mt-0 mb-5 w-75 mx-auto">
+            <div class="ptext mt-0 mb-5 w-50 mx-auto">
                   <p class="border">
                         Nhà tuyển dụng VIP
                   </p>
@@ -100,12 +116,13 @@
                   <div class="row mx-auto my-4 round px-0" id="vipEmployers">
                         <script>
                               // console.log(emp1)
-                              vipCard(emp1,"vipEmployers",8,4);
+                              vipCard(empList,"vipEmployers",4,2);
+                              vipCard(empList,"vipEmployers",4,2);
                         </script>
 
                   </div>
                   
-                  <div class="d-flex"><a href="../shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
+                  <div class="d-flex"><a href="shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
             </div>
 
       </div>
@@ -153,13 +170,13 @@
 
             <div id="articleSection">
                         <script>
-                              console.log(art1)
+                              // console.log(art1)
                               articleCard(art1,"articleSection",9)
                         </script>
             </div>
             
             
-            <div class="d-flex"><a href="../shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
+            <div class="d-flex"><a href="shared/main_job.html" class="btn btn-primary mt-3 ml-auto mr-4 see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
       </div>
 
       <!-- ----------------- Sự kiện nghề nghiệp ------------------ -->
@@ -175,58 +192,54 @@
 
                               <a class="col-6 border border-dark rounded-0 nav-link active event__choose__item"
                                     data-toggle="pill" href="#hotEvent" role="tab">
-                                    <img src="../images/icons/megaphone.png" alt="">
+                                    <img class="d-none d-md-inline" src="images/icons/megaphone.png" alt="">
                                     <span>Đáng chú ý</span>
                               </a>
                               <a class="col-6 border border-dark rounded-0 nav-link event__choose__item" data-toggle="pill"
                                     href="#weekEvent" role="tab">
-                                    <img src="../images/icons/week.png" alt="">
+                                    <img class="d-none d-md-inline" src="images/icons/week.png" alt="">
                                     <span>
                                           Tuần này
                                     </span>
                               </a>
                               <a class="col-6 border border-dark rounded-0 nav-link event__choose__item" data-toggle="pill"
                                     href="#monthEvent" role="tab">
-                                    <img src="../images/icons/month.png" alt="">
+                                    <img class="d-none d-md-inline" src="images/icons/month.png" alt="">
                                     <span>
                                           Tháng này
                                     </span></a>
-                              <a class="col-6 border border-dark rounded-0 nav-link event__choose__item" data-toggle="pill"
-                                    href="#allEvent" role="tab">
-                                    <img src="../images/icons/calendar.png" alt="">
+                              <a class="col-6 border border-dark rounded-0 nav-link event__choose__item"
+                                    href="shared/constructing.html">
+                                    <img class="d-none d-md-inline" src="images/icons/calendar.png" alt="">
                                     <span>
                                           Xem tất cả
                                     </span></a>
                         </div>
                   </div>
-
+                  
                   <div class="tab-content">
                         <div class="tab-pane fade show active" id="hotEvent" role="tabpanel">
                               <div class="row event__row" id="hotEventRow" >
                                     <script>
-                                          eventCard(event1,"hotEventRow",5,2)
+                                          eventCard(eventList,"hotEventRow",5,2)
+                                          $( "input[type=checkbox]" ).on( "click", function() {
+                                                countCheckedEvents();
+                                          });
                                     </script>                                    
                               </div>
                         </div>
                         <div class="tab-pane fade show" id="weekEvent" role="tabpanel">
-                                    <div class="row event__row" id="weekEventRow" >
-                                          <script>
-                                                eventCard(event1,"weekEventRow",4,2)
-                                          </script>     
-                                    </div>
+                              <div class="row event__row" id="weekEventRow" >
+                                    <script>
+                                          // eventCard(eventList,"weekEventRow",4,2)
+                                    </script>     
+                              </div>
                         </div>
                         <div class="tab-pane fade show" id="monthEvent" role="tabpanel">
                               <div class="row event__row" id="monthEventRow" >
                                     <script>
-                                          eventCard(event1,"monthEventRow",3,2)
+                                          // eventCard(eventList,"monthEventRow",3,2)
                                     </script>         
-                              </div>
-                        </div>
-                        <div class="tab-pane fade show" id="allEvent" role="tabpanel">
-                              <div class="row event__row" id="allEventRow" >
-                                    <script>
-                                          eventCard(event1,"allEventRow",2,2)
-                                    </script>       
                               </div>
                         </div>
 
@@ -234,7 +247,8 @@
             </div>
 
             </div>
-            <div class="d-flex"><a href="../shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
+            <div class="d-flex"><a href="shared/main_job.html" class="btn btn-primary mt-3 ml-auto see-more">Xem tất cả <i class="fas fa-angle-double-right"></i></a></div>
+      
       </section>
 
       <!-- --------------- User reviews --------------------- -->
@@ -405,12 +419,23 @@
       </div>
 
       <!-- ------------------- Footer ----------------------- -->
-      
-      <div w3-include-html="../components/footer.html"></div>
-      <div w3-include-html="../components/fixed_menu.html"></div>
+
+      <div w3-include-html="components/footer.html"></div>
+      <div w3-include-html="components/fixed_menu.html"></div>
+      <script>
+                  window.onload=function(){
+                                        
+                  $('.multiselect').multiselect({
+                  buttonWidth: '160px',
+                  includeSelectAllOption: true,
+                  nonSelectedText: 'Tất cả'
+                  });
+                  }
+                </script>
       <script>
             includeHTML();
       </script>
+      
 </body>
 
 </html>
