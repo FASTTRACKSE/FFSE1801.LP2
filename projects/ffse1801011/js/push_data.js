@@ -111,7 +111,7 @@ var apl1=new apl(
       "Da Nang",
       "",
       "Viet Nam",
-      "./images/applicant/ava1.jpg",
+      "/ffse1801011/images/applicant/ava1.jpg",
       "079 208 3481",
       "trongkhoa93.due@gmail.com",
       "A tech lover and problem solver.",
@@ -120,7 +120,7 @@ var apl1=new apl(
 var emp1=new emp(
       "001", 
       "Công ty TNHH Le Bonjour Job",
-      "./images/employer/001/logo.png",
+      "/ffse1801011/images/employer/001/logo.png",
       "20/12/2018","12 Vũ Văn Dũng", 
       "Đà Nẵng",
       "",
@@ -135,14 +135,14 @@ var emp1=new emp(
       ['https://www.facebook.com/LeBonjourJOB/','https://www.messenger.com/t/316196982241647'],
       "Là công ty tiên phong trong việc áp dụng những kỹ thuật tiên tiến nhất về thu thập và xử lý dữ liệu, Le Bonjour Job tự hào là nhà cung cấp giải pháp toàn diện về các vấn đề nhân sự, quản lý đội ngũ, tìm kiếm nhân tài. Chúng tôi tự tin sẽ luôn đáp ứng những đòi hỏi khắt khe nhất của bạn.",
       "Là công ty tiên phong trong việc áp dụng những kỹ thuật tiên tiến nhất về thu thập và xử lý dữ liệu, Le Bonjour Job tự hào là nhà cung cấp giải pháp toàn diện về các vấn đề nhân sự, quản lý đội ngũ, tìm kiếm nhân tài. Chúng tôi tự tin sẽ luôn đáp ứng những đòi hỏi khắt khe nhất của bạn.",
-      ['./images/employer/001/banner1.jpg',
-      './images/employer/001/banner2.jpg',
-      './images/employer/001/banner3.jpg'],
-      ['./images/employer/001/activity/act1.jpg',
-      './images/employer/001/activity/act2.jpg',
-      './images/employer/001/activity/act3.jpg',
-      './images/employer/001/activity/act4.jpg',
-      './images/employer/001/activity/act5.jpg'],
+      ['/ffse1801011/images/employer/001/banner1.jpg',
+      '/ffse1801011/images/employer/001/banner2.jpg',
+      '/ffse1801011/images/employer/001/banner3.jpg'],
+      ['/ffse1801011/images/employer/001/activity/act1.jpg',
+      '/ffse1801011/images/employer/001/activity/act2.jpg',
+      '/ffse1801011/images/employer/001/activity/act3.jpg',
+      '/ffse1801011/images/employer/001/activity/act4.jpg',
+      '/ffse1801011/images/employer/001/activity/act5.jpg'],
       ['Chuyên viên marketing tại Đà Nẵng','Kế toán tổng hợp','Quản lý dự án','Chuyên viên tuyển dụng'],
       ['review 1','review 2','review 3'],
       ['User 1','User 2','User 3']
@@ -150,7 +150,7 @@ var emp1=new emp(
 var emp2=new emp(
       "002", 
       "Công ty Cổ phần Vinpearl",
-      "./images/employer/002/logo.jpeg",
+      "/ffse1801011/images/employer/002/logo.jpeg",
       "25/07/2001",
       "Tòa nhà A - Tập đoàn Vingroup, Số 7 đường Bằng Lăng 1, KĐT sinh thái Vinhomes Riverside, Phường Việt Hưng, Quận Long Biên, ", 
       "Hà Nội",
@@ -166,14 +166,14 @@ var emp2=new emp(
       ['https://www.facebook.com/Vinpearl/',''],
       "Tập đoàn khách sạn dẫn đầu tại Việt Nam, Vinpearl mang đến các thương hiệu riêng và kiến tạo nên hành trình trải nghiệm nghỉ dưỡng hoàn hảo và mới lạ. ",
       "Vinpearl là dịch vụ nghỉ dưỡng và giải trí mang đẳng cấp 5 sao quốc tế tại các miền di sản UNESCO, nằm trải dọc bờ biển của Việt Nam – nơi những bãi biển xinh đẹp nổi tiếng nhất thế giới, hay những khách sạn 5 sao – biểu tượng của sự thịnh vượng tại mỗi thành phố lớn tại Việt Nam mà Vinpearl có mặt. Vinpearl còn là sự kết hợp hoàn hảo giữa kỳ hội họp và nghỉ dưỡng cho cảm hứng sáng tạo thăng hoa.",
-      ['./images/employer/002/banner1.jpg',
-      './images/employer/002/banner2.jpg',
-      './images/employer/002/banner3.jpg'],
-      ['./images/employer/002/activity/act1.jpg',
-      './images/employer/002/activity/act2.jpg',
-      './images/employer/002/activity/act3.jpg',
-      './images/employer/002/activity/act4.jpg',
-      './images/employer/002/activity/act5.jpg'],
+      ['/ffse1801011/images/employer/002/banner1.jpg',
+      '/ffse1801011/images/employer/002/banner2.jpg',
+      '/ffse1801011/images/employer/002/banner3.jpg'],
+      ['/ffse1801011/images/employer/002/activity/act1.jpg',
+      '/ffse1801011/images/employer/002/activity/act2.jpg',
+      '/ffse1801011/images/employer/002/activity/act3.jpg',
+      '/ffse1801011/images/employer/002/activity/act4.jpg',
+      '/ffse1801011/images/employer/002/activity/act5.jpg'],
       ['Chuyên viên marketing tại Đà Nẵng','Kế toán tổng hợp','Quản lý dự án','Chuyên viên tuyển dụng'],
       ['review 1','review 2','review 3'],
       ['User 1','User 2','User 3']
@@ -182,7 +182,7 @@ var emp2=new emp(
 var emp3=new emp(
       "003", 
       "Hyatt Regency - Resort & Hotel Danang",
-      "./images/employer/003/logo.png",
+      "/ffse1801011/images/employer/003/logo.png",
       "25/07/2001",
       "5 Truong Sa Street, Hoa Hai Ward, Ngu Hanh Son District", 
       "Đà Nẵng",
@@ -198,14 +198,14 @@ var emp3=new emp(
       ['https://www.facebook.com/HyattRegencyDanang/',''],
       "Memorable Luxury Beach Resorts Da Nang, Vietnam.",
       "Situated on a tranquil stretch of white sandy beach, at the gateway to the vibrant city of Danang, Hyatt Regency Danang Resort and Spa is an ideal base to explore the exotic charms of Central Vietnam no matter the occasion, from meetings and events to memorable family vacations.",
-      ['./images/employer/003/banner1.jpg',
-      './images/employer/003/banner2.jpg',
-      './images/employer/003/banner3.jpg'],
-      ['./images/employer/003/activity/act1.jpg',
-      './images/employer/003/activity/act2.jpg',
-      './images/employer/003/activity/act3.jpg',
-      './images/employer/003/activity/act4.jpg',
-      './images/employer/003/activity/act5.jpg'],
+      ['/ffse1801011/images/employer/003/banner1.jpg',
+      '/ffse1801011/images/employer/003/banner2.jpg',
+      '/ffse1801011/images/employer/003/banner3.jpg'],
+      ['/ffse1801011/images/employer/003/activity/act1.jpg',
+      '/ffse1801011/images/employer/003/activity/act2.jpg',
+      '/ffse1801011/images/employer/003/activity/act3.jpg',
+      '/ffse1801011/images/employer/003/activity/act4.jpg',
+      '/ffse1801011/images/employer/003/activity/act5.jpg'],
       ['Chuyên viên marketing tại Đà Nẵng','Kế toán tổng hợp','Quản lý dự án','Chuyên viên tuyển dụng'],
       ['review 1','review 2','review 3'],
       ['User 1','User 2','User 3']
@@ -213,7 +213,7 @@ var emp3=new emp(
 var emp4=new emp(
       "004", 
       "Công ty CP TĐ Mặt trời - CN Đà Nẵng",
-      "./images/employer/004/logo.jpg",
+      "/ffse1801011/images/employer/004/logo.jpg",
       "25/07/2001",
       "9th Floor - ACB Tower Building218 Bach Dang Str., Hai Chau Dist.", 
       "Đà Nẵng",
@@ -229,14 +229,14 @@ var emp4=new emp(
       ['',''],
       "Tập đoàn Sun Group được thành lập tại Việt Nam năm 2007, tập trung hoạt động trong 4 lĩnh vực chính: Du lịch nghỉ dưỡng, Vui chơi giải trí, Bất động sản cao cấp, Đầu tư hạ tầng",
       "Sứ mệnh: Kiên định với tiêu chí Chất lượng – Đẳng cấp – Sự khác biệt, mục tiêu của Sun Group là kiến tạo những công trình, sản phẩm và dịch vụ đẳng cấp, mang dấu ấn vượt thời gian, góp phần nâng cao vị thế đất nước, nâng cao chất lượng sống cho người dân và làm đẹp cho vùng đất mà Sun Group đặt chân tới. Sun Group mong muốn xây dựng một thương hiệu Việt uy tín, đẳng cấp, góp phần đưa Việt Nam trở thành điểm đến hấp dẫn của thế giới.",
-      ['./images/employer/004/banner1.jpg',
-      './images/employer/004/banner2.jpg',
-      './images/employer/004/banner3.jpg'],
-      ['./images/employer/004/activity/act1.jpg',
-      './images/employer/004/activity/act2.jpg',
-      './images/employer/004/activity/act3.jpg',
-      './images/employer/004/activity/act4.jpg',
-      './images/employer/004/activity/act5.jpg'],
+      ['/ffse1801011/images/employer/004/banner1.jpg',
+      '/ffse1801011/images/employer/004/banner2.jpg',
+      '/ffse1801011/images/employer/004/banner3.jpg'],
+      ['/ffse1801011/images/employer/004/activity/act1.jpg',
+      '/ffse1801011/images/employer/004/activity/act2.jpg',
+      '/ffse1801011/images/employer/004/activity/act3.jpg',
+      '/ffse1801011/images/employer/004/activity/act4.jpg',
+      '/ffse1801011/images/employer/004/activity/act5.jpg'],
       ['Chuyên viên marketing tại Đà Nẵng','Kế toán tổng hợp','Quản lý dự án','Chuyên viên tuyển dụng'],
       ['review 1','review 2','review 3'],
       ['User 1','User 2','User 3']
@@ -419,7 +419,7 @@ var art1=new article(
       "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
       "30/10/2018",
       "Khoa Do",
-      "./images/articles/camnang.png",
+      "/ffse1801011/images/articles/camnang.png",
       "30",
       "Good!"
       )
@@ -433,7 +433,7 @@ var event1=new event(
       "Công ty TNHH Le Bonjour Job",
       "30/11/2018",
       "1",
-      "./images/events/event1.jpg",
+      "/ffse1801011/images/events/event1.jpg",
       "100",
       "300",
       "Miễn phí",
@@ -448,7 +448,7 @@ var event2=new event(
       "DNC - Danang Coworking Space",
       "23/11/2018",
       "1",
-      "./images/events/event2.jpg",
+      "/ffse1801011/images/events/event2.jpg",
       "100",
       "300",
       "Miễn phí",
@@ -462,7 +462,7 @@ var event3=new event(
       "VCCI Đà Nẵng",
       "17/11/2018",
       "8",
-      "./images/events/event3.jpg",
+      "/ffse1801011/images/events/event3.jpg",
       "50",
       "120",
       "Miễn phí",
@@ -476,7 +476,7 @@ var event4=new event(
       "Edtech - Techfest Vietnam 2018",
       "29/11/2018",
       "3",
-      "./images/events/event4.jpg",
+      "/ffse1801011/images/events/event4.jpg",
       "150",
       "200",
       "Miễn phí",
@@ -490,7 +490,7 @@ var event5=new event(
       "Google Developer Group Mien Trung",
       "30/11/2018",
       "3",
-      "./images/events/event5.jpg",
+      "/ffse1801011/images/events/event5.jpg",
       "100",
       "300",
       "Miễn phí",
@@ -589,10 +589,10 @@ function jobCard(jobArr,position,quantity1,quantity2){
                         <img class='mr-3 col-2 logo' src='`+ empList[jobArr[i].empID].logo +`' alt='Generic placeholder image'>
                               <div class='col-6 pr-0'>
                                     <h5 class='mt-0 truncate'>
-                                    <a href='./employer/job_description.html'>`+ jobArr[i].title +`</a>
+                                    <a href='/ffse1801011/employer/job_description.html'>`+ jobArr[i].title +`</a>
                                     </h5>
                                     <h6 class='truncate'>
-                                    <a href='./employer/employer_profile.html'>`+ empList[jobArr[i].empID].name +`</a>
+                                    <a href='/ffse1801011/employer/employer_profile.html'>`+ empList[jobArr[i].empID].name +`</a>
                                     </h6>
                                     <div class=''>
                                           <div class='mr-3 d-inline-block'><i class='fas fa-money-bill-alt'></i> `+jobArr[i].salary+`
@@ -642,10 +642,10 @@ function jobCard(jobArr,position,quantity1,quantity2){
                               </div>
                               <div class='col-12 pr-0'>
                                     <h5 class='mt-0 truncate'>
-                                    <a href='./employer/job_description.html'>`+ jobArr[i].title +`</a>
+                                    <a href='/ffse1801011/employer/job_description.html'>`+ jobArr[i].title +`</a>
                                     </h5>
                                     <h6 class='truncate'>
-                                    <a href='./employer/employer_profile.html'>`+ empList[jobArr[i].empID].name +`</a>
+                                    <a href='/ffse1801011/employer/employer_profile.html'>`+ empList[jobArr[i].empID].name +`</a>
                                     </h6>
                                     <div class=''>
                                           <div class='mr-3 d-inline-block'><i class='fas fa-money-bill-alt'></i> `+jobArr[i].salary+`
@@ -671,7 +671,7 @@ function jobCardSlim(jobObj,position){
             for (var i=0;i<3;i++){
                   $("#"+position).append(`
                   <div class="media-body jobcard bg-light rounded px-3 py-2 my-3">
-                        <h5 class="mt-0 "><a href="./employer/job_description.html">`+jobObj.title+`</a></h5>
+                        <h5 class="mt-0 "><a href="/ffse1801011/employer/job_description.html">`+jobObj.title+`</a></h5>
                         <div class="mb-1"><i class="fas fa-money-bill-alt"></i> `+jobObj.salary+`</div>
                         <div class="mb-1"><i class="fas fa-map-marker-alt"></i> `+jobObj.city+`</div>
                         <div class="mb-1"><i class="fas fa-users"></i> `+jobObj.vacancy+`
@@ -703,7 +703,7 @@ function vipCard(empArr,position,quantity1,quantity2){
                         <img class="card-img-top w-75 h-25 align-self-center" src="`+ empArr[i].logo +`"
                               alt=' `+empArr[i].name+` logo'>
                         <div class='card-body py-2'>
-                              <a href='./employer/employer_profile.html'>
+                              <a href='/ffse1801011/employer/employer_profile.html'>
                                     <h5 class='card-title text-center'>`+empArr[i].name+`</h5>
                               </a>
                               <p class='card-text text-center'><i class='fas fa-map-marker-alt'></i> `+empArr[i].city+`</p>
@@ -727,7 +727,7 @@ function vipCard(empArr,position,quantity1,quantity2){
       function hiring(params,hirings) {
             str = '';
             for(let i=0;i<hirings;i++){
-                  str += `<li class='list-group-item p-1 text-truncate'><a href='./shared/main_job.html'>`+params[i]+`</a></li>`
+                  str += `<li class='list-group-item p-1 text-truncate'><a href='/ffse1801011/shared/main_job.html'>`+params[i]+`</a></li>`
             };
             return  str;
       }
@@ -842,10 +842,10 @@ function eventCard(eventArr,position,quantity1,quantity2){
                         </div>
                         <div class="row">
                               <div class="col-md-8 pl-5 pb-4">
-                                    <a href="./shared/constructing.html" title="`+eventArr[i].title+`">
+                                    <a href="/ffse1801011/shared/constructing.html" title="`+eventArr[i].title+`">
                                           <h5 class="card-title text-left text-truncate">`+eventArr[i].title+`</h5>
                                     </a>
-                                    <a href="./employer/employer_profile.html" title="`+eventArr[i].host+`">
+                                    <a href="/ffse1801011/employer/employer_profile.html" title="`+eventArr[i].host+`">
                                           <p class="card-text text-left text-truncate">`+eventArr[i].host+`</p>
                                     </a>
 
@@ -908,10 +908,10 @@ function eventCard(eventArr,position,quantity1,quantity2){
                                                 </button>
                                           </div>
                                           <div class="col-12 pl-5 pb-4">
-                                                <a href="./shared/constructing.html" title="`+eventArr[i].title+`">
+                                                <a href="/ffse1801011/shared/constructing.html" title="`+eventArr[i].title+`">
                                                       <h5 class="card-title text-left text-truncate">`+eventArr[i].title+`</h5>
                                                 </a>
-                                                <a href="./employer/employer_profile.html" title="`+eventArr[i].host+`">
+                                                <a href="/ffse1801011/employer/employer_profile.html" title="`+eventArr[i].host+`">
                                                       <p class="card-text text-left">`+eventArr[i].host+`</p>
                                                 </a>
             
