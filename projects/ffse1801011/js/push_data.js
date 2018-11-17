@@ -215,7 +215,7 @@ var emp4=new emp(
       "Công ty CP TĐ Mặt trời - CN Đà Nẵng",
       "/ffse1801011/images/employer/004/logo.jpg",
       "25/07/2001",
-      "9th Floor - ACB Tower Building218 Bach Dang Str., Hai Chau Dist.", 
+      "9th Floor - ACB Tower Building, 218 Bach Dang Str., Hai Chau Dist.", 
       "Đà Nẵng",
       "",
       "Việt Nam",
