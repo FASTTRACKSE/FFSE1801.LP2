@@ -1,4 +1,4 @@
-
+top
 /* banerrrrrrrrrrrrrrrrrrrrrrrr */
 #banner .top{
     /* height: 100px;
@@ -30,11 +30,11 @@
     position: relative;
     overflow: hidden;
 }
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
     #show1 {
         height:170px;
     }
-}
+} */
 #show1 p {
     position: absolute;
     bottom: 38%;

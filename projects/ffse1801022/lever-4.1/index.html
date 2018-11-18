@@ -74,13 +74,13 @@
                     <img src="https://cdn.didongthongminh.vn/upload_images/2018/10/iphone-7-plus-cpo-128gb-1.jpg" />
                 </div>
             </div>
-            <div class="right col-xs-12 col-sm-5 col-md-4">
+            <div class="right col-xs-12 col-sm-5 col-md-4" id="qwe">
                 <div class="row">
                     <div style="padding:0;margin-top: 5px;" class="col-xs-5 col-sm-12 col-md-12">
-                        <img src="https://cdn.didongthongminh.vn/upload_images/2018/10/GIF-iphone-ipad.gif" alt="">
+                        <img class="img1" src="https://cdn.didongthongminh.vn/upload_images/2018/10/GIF-iphone-ipad.gif" alt="">
                     </div>
                     <div style="padding:0;margin-top: 5px;" class="col-xs-7 col-sm-12 col-md-12">
-                        <img src="https://cdn.tgdd.vn/qcao/01_11_2018_17_26_06_Hotsale-J8-T11-398-110.png" alt="">
+                        <img class="img2" src="https://cdn.tgdd.vn/qcao/01_11_2018_17_26_06_Hotsale-J8-T11-398-110.png" alt="">
                     </div>
                 </div>
             </div>
@@ -376,8 +376,9 @@
             })
             if($(window).width()>1400){
                 $("#width").height(240);
-                $("#show1").height(360);
             }
+            $("#show1").height($("#qwe").width()*(2/3) + 4);
+            // alert($("#qwe").width());
         })
 
         var n = [galaxyJ6.showto("#slide2 span", 6, 3, 2),
