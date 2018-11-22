@@ -9,9 +9,7 @@ body{
     background-attachment: fixed;
     
 }
-/* body p{
-    font-size: 18px;
-} */
+
 body a:hover{
     text-decoration: none;
 }

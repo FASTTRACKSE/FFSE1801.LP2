@@ -2,14 +2,16 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: arial;
+	
 }
-#nen{
+body{
 	background: url(images/97cd087ddbd9c33576e8c180c9e4-1435839.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	
+}
+#nen{
 	background-position: center;
-	background-attachment: fixed;
-	position: fixed;
 	height: 695px;
 	width: 100%;
 	display: flex;
