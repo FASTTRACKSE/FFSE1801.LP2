@@ -1,5 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');  
 session_start();
-session_id();
+$a =  session_id();
+var_dump($a);
 ?>
