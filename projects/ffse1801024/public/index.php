@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');  
-session_start();
-$a =  session_id();
-var_dump($a);
+foreach (getallheaders() as $name => $value) {
+    echo "$name: $value\n";
+}
 ?>
