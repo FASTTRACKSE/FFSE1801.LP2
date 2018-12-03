@@ -13,7 +13,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = 'INSERT INTO tablecookie (data)
+$sql = 'INSERT INTO Cookie (datacookie)
 VALUES ("'.$_REQUEST["q"].'")';
 
 if (mysqli_query($conn, $sql)) {
