@@ -1,9 +1,9 @@
 <?php
 header('Access-Control-Allow-Origin: *');  
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "cookie";
+$servername = "fdb24.awardspace.net";
+$username = "2900176_xyzddostxx";
+$password = "Vanan1998tk";
+$dbname = "2900176_xyzddostxx";
 $port = "3306";
 
 // Create connection
