@@ -116,7 +116,8 @@ function navigationH() {
               old_page_child = true;
               activeNav(hash_2[2]);
               data_f = paramsSearch(hash_2);
-              if (data_f[0]) {
+              p.log(data_f);
+              if (data_f[0] === true) {
                 p.log(data_f);
                 contentProductDetail(data_f[1]);
                 get.id("title_category_detail").href =
@@ -143,7 +144,7 @@ function paramsSearch(params) {
   let data_f_c = data_products.find(function(obj) {
     return obj.name == params[2];
   });
-
+  p.log(params);
   if (data_f_c !== undefined) {
     let data = JSON.parse(data_f_c.data);
     let data_f = data.find(function(obj) {
