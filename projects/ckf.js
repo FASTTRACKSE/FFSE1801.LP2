@@ -7,4 +7,3 @@ $.ajax({
     },
     crossDomain: true
 })
-clear()
